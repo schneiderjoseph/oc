@@ -1,5 +1,7 @@
 # Roadmap — Audit OC V2
 
+**V2.0 livree** (`scripts/audit/oc_db_full_audit.py`) — voir onglets Plan action, Amalgames, Qualite, Doublons flous, factures POS enrichies, config YAML.
+
 ## Déjà en V1 (`scripts/audit/oc_db_full_audit.py`)
 
 - Connexion SQL Server directe (lecture seule)
