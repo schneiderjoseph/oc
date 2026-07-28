@@ -1,0 +1,59 @@
+[00:09 -> 00:39] Hi everyone. Today I'm going to go over how to create items on the enterprise website. Items are what you'd purchase from your supplier and will be the ingredients in your prep products. So these are going to be the meats, produce, dry goods, etc. that you would get from them. To create an item, we're going to navigate to the recipe section and then go into items. From here, we can click new item at the top left. The first thing we're going to fill out is the core information. So this is going to be the name, the group, how is it used, etc.
+[00:39 -> 01:09] So the first thing here is going to be the description of the item. In this case, we're going to just make a test item called salt. The description can be whatever you want it to be. It doesn't need to match what your supplier has. So for example, your supplier might have a bunch of access information like chicken breast, random, four ounce skin off, boneless, etc. The only more information you might require is chicken breast four ounce. That's what you can put in there. Like I said, in this case, we're just going to make salt. The next field is going to be the inventory group for the item. So we can hit the drop down here and we can see
+[01:09 -> 01:39] we're going to select whatever group it's going to be associated with. In this case, because we're making salt, we're going to assign it to spice. The next field is going to ask how is it used? In here, you're going to have three options to choose from. Unit, weight or volume. Since I'm setting up salt, I'm going to choose weight. You will want to choose the main way that you're going to be using this item. Once you've saved this, you're not going to be able to change this. You can add in conversions later to use it by different units, but we'll go over that a little bit later. Once you select a type, it's going to populate both the reporting unit and the default reading unit.
+[01:39 -> 02:08] The reporting unit is how you're going to see it on reports. So by default, it's right now it's showing pound, but if you want to report on it by case, bag, or any other unit of measure, you can choose that here. The second unit is going to be the default reading unit. This is going to be the first unit that shows up when you're populating this on a proper product. You're not going to be locked into using only this unit. It's just going to be the first one that shows up. After that, we have two check boxes. The first one is going to be for actualized usage values. By default, this will not be checked off.
+[02:08 -> 02:19] What it is going to do if it is checked off is it's going to remove the variance for this specified item on your usage reports. What it's going to do is it's going to set your theoretical values to equal what you said was used.
+[02:19 -> 02:29] Some common examples that you might want to actualize would be something like fryer oil. The oil is purchased. It's counted, but it's usually not a part of recipes. So the system would normally think that you're missing oil.
+[02:29 -> 02:41] But if you said to actualize, it's not going to show any variance. Other examples you might want to actualize would be something you put out on the table for the customer to use, like ketchup, mustard, salt, pepper, as these are put out for your customer.
+[02:41 -> 02:52] And there's no way of tracking how much each customer is going to be using the last check box is going to be track inventory. What that's going to do is if it's unchecked, it's not going to track the usage or the counts for the specified item.
+[02:52 -> 02:59] Things you might want to have this unchecked on would be something like your small wears, we're not really going to be counting them, but you will be purchasing them.
+[02:59 -> 03:05] After we have the core information filled out, we can click save and that's going to change us to the case size information.
+[03:05 -> 03:12] This is where we're going to enter the supplier information of who are we buying from, what is it costs and what's in the case.
+[03:12 -> 03:16] The first field we're going to fill out here is going to be the supplier. So who are we buying from?
+[03:17 -> 03:20] In this case, I'm going to say we're getting it from General Supplies Code.
+[03:20 -> 03:23] The next two fields are going to be the order code and case description fields.
+[03:23 -> 03:33] If you have the order code from your supplier, I always recommend entering it as it's used for importing electronic invoices into Optic Control from the suppliers that have the EDI integration set up with us.
+[03:33 -> 03:41] The next field is case description. If you choose to use the case description, this will need to match the description that is coming in from your supplier's invoice order guide.
+[03:42 -> 03:48] We typically recommend leaving this field blank as when you're importing the electronic invoice into Optimum, it does one of two things.
+[03:48 -> 03:52] If both the order code and case description are used, it will reference both fields.
+[03:52 -> 03:57] And if one of them is incorrect, which is normally the description, it will prevent the invoice from importing.
+[03:57 -> 04:03] If only the order code is used, it will only use that field as a reference against the electronic invoice.
+[04:03 -> 04:06] After the order code field, we have the barcode field.
+[04:06 -> 04:10] Barcode is used for inventory purposes with our OCMobile app.
+[04:10 -> 04:15] OCMobile is an extension of Optic Control for doing inventory counts on an iOS device.
+[04:15 -> 04:20] You would be able to export the count sheets from the program to an iOS device to do the inventory.
+[04:20 -> 04:25] While you're using that device, you'd be able to use the camera on there to scan barcodes to help with the counting process.
+[04:25 -> 04:30] The next field is going to be the tax group. As we're entering a food item, we don't need to worry about the tax group.
+[04:30 -> 04:38] But if we were building a liquor beer item and the tax was inclusive on that, we would need to apply the tax group so they could help calculate the proper cost.
+[04:38 -> 04:43] After the tax group, we're going to get to the actual case size information and the purchase unit.
+[04:43 -> 04:49] So in here, we're going to enter what the cost of the case is. In this case, I'm going to say it's $20.
+[04:49 -> 04:54] And then from there, we're going to pick what are we getting. So in this situation, I'm going to say we're getting a case of the salt.
+[04:54 -> 05:01] 99% of the time, most of your items are going to be set up by case. However, you might have some items we're buying by catch weight,
+[05:01 -> 05:04] where you might be buying by pound or kilogram.
+[05:04 -> 05:09] The next field is going to be the split unit. And this is going to be a breakdown of whatever is in this unit here.
+[05:09 -> 05:14] So in this case, it's going to be asking, what do we get in a case for this case of salt?
+[05:14 -> 05:18] We're going to say there's 20 pounds in a case, but you'd be able to choose whatever unit you're getting.
+[05:18 -> 05:24] So if you're getting six bags or five boxes, whatever you're getting, you'd be able to choose that unit here.
+[05:24 -> 05:31] The next unit is going to be the pack unit and similar to the split unit, it's going to break down what is in the split you will win.
+[05:31 -> 05:35] So in this scenario, what's in a pound, 16 ounces.
+[05:35 -> 05:42] The next two fields are going to be the yield percentage. If there's a yield for the item, you can enter that here and the actual cost field.
+[05:42 -> 05:47] This is going to be a breakdown of what the cost of this base unit is in this scenario. It's going to be ounce.
+[05:47 -> 05:52] Now that we have all the information filled out, we can click save to save this item.
+[05:52 -> 05:56] The next thing I'm going to talk about in regards to item is very important.
+[05:56 -> 05:59] Let's say that you purchase item for more than one supplier.
+[05:59 -> 06:03] What you don't want to do is you don't want to create an item more than once in the system.
+[06:03 -> 06:08] So if you do need to purchase from another supplier or from the same supplier, but in different case size,
+[06:08 -> 06:16] what we'd want to do is you'd want to create a new case. To do that in the case size section here, we can click new and it'll bring us to the case size window.
+[06:16 -> 06:19] Here we can fill out this supplier's case information.
+[06:19 -> 06:27] Once we save that second case size, we can see that both case sizes are being displayed here.
+[06:27 -> 06:32] You can see the cost of them, what is in it, and the breakdown of the cost per ounce.
+[06:32 -> 06:35] The last thing I'm going to go over is item conversions.
+[06:35 -> 06:38] Right now we set up this item as a weight unit of measure.
+[06:38 -> 06:42] So what that means is if we add it to a recipe, we would only be able to use it by weight units.
+[06:42 -> 06:46] Seeing as it's salt, this is something you might want to use by volume and weight.
+[06:46 -> 06:48] You might want to use it by the teaspoon or tablespoon.
+[06:48 -> 06:53] So what we would need to do is we'd need to add in a conversion to go from weight to volume.
+[06:53 -> 06:59] So what we can do is we can go to the conversions tab, click new and enter in the conversion for this item.
+[06:59 -> 07:05] In this scenario, I know that it's 18 grams for one tablespoon of salt.
+[07:05 -> 07:14] Once we select that and save, we would now be able to use this item by both weight or volume units of measure.
+[07:14 -> 07:17] That is how you add an item to enterprise. Thanks for watching.

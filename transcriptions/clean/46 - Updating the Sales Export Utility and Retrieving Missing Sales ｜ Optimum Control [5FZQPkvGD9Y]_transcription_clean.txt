@@ -1,0 +1,17 @@
+[00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating. Also, if it wasn't auto-updating, to get any sales you would have missed.
+[00:38 -> 00:51] You're going to make sure that check for updates on startup is checked off. You're going to click save and then you'll close the actual sales export.
+[00:51 -> 01:05] Now that we have that setting turned on, we'll reopen the sales export and it's actually going to look for an update this time.
+[01:05 -> 01:21] So now that it's detected one, we click update. It'll ask to allow this on your computer and it'll start the process.
+[01:21 -> 01:33] You'll see that it's actually showing you how much of the file has been downloaded and how long it's taking. So as soon as it's done, it'll extract and you'll be good to go.
+[01:33 -> 01:42] So that is how you would update the sales export to be on the latest. Now, if you have that setting checked, every time it will tell you if it's out of date.
+[01:42 -> 01:49] Now let's actually go into optimal and make sure that all of our sales that we may have missed are going to be there.
+[01:49 -> 02:00] So we'll click the optimal control program. We'll click sales at the top and we can see that we didn't get any of the sales for last this whole week.
+[02:00 -> 02:04] So that was probably because the tool was out of date.
+[02:04 -> 02:12] So what we'll do now is go to the sales export utility and pick any of the days we're missing.
+[02:12 -> 02:23] So if we pick all of this week and we click process, that's actually going to retrieve all your sales and import them right back into that database.
+[02:23 -> 02:29] So this is how you manually process sales if anything ever goes wrong with your sales export.
+[02:29 -> 02:33] Now that it's completed, we go back into optimum.
+[02:33 -> 02:38] We'll refresh this window by just opening the sales window again.
+[02:38 -> 02:53] And we can see it imported all of our sales. If you have any questions on this or if you need any extra help, please call our technical support line at 1-88-7998-5555-extension1.
+[02:53 -> 02:58] We're in the office between Monday and Friday, 9-5 Central Time.
+[02:58 -> 03:00] Thank you. Have a great day.

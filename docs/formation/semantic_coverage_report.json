@@ -1,0 +1,1470 @@
+{
+  "uncovered_or_weak_topics": [
+    {
+      "video": "Local User Creation",
+      "topic_key": "Local User Creation",
+      "keyword_coverage": 0.25,
+      "keywords_found": [
+        "droits"
+      ],
+      "keywords_missing": [
+        "utilisateur local",
+        "local user",
+        "permissions"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 449
+    },
+    {
+      "video": "Item Par Levels",
+      "topic_key": "Item Par Levels",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "par level",
+        "niveau par",
+        "stock minimum",
+        "stock maximum"
+      ],
+      "unique_ui_gaps": [
+        "This will allow you to have an order reminder when the item you set goes below a certain quantity on hand.",
+        "Today I'm going to go over the item par levels window and optum control.",
+        "[02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add."
+      ],
+      "transcript_words": 833
+    },
+    {
+      "video": "Setting Item Par Levels",
+      "topic_key": "Item Par Levels",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "par level",
+        "niveau par",
+        "stock minimum",
+        "stock maximum"
+      ],
+      "unique_ui_gaps": [
+        "This will give [00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to [00:22 -> 00:25] generate an order up to the maximum that you've set.",
+        "Today I'm going to go over how to set up item par levels.",
+        "There [01:11 -> 01:16] is also a dashboard tile you can have to list anything under the minimum."
+      ],
+      "transcript_words": 322
+    },
+    {
+      "video": "Deactivating an Item",
+      "topic_key": "Deactivating an Item",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "désactiv",
+        "deactiv",
+        "inactif"
+      ],
+      "unique_ui_gaps": [
+        "Today, I'm going to show you how to deactivate an item, prep, or product."
+      ],
+      "transcript_words": 371
+    },
+    {
+      "video": "Hot List",
+      "topic_key": "Hot List",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "hot list",
+        "liste chaude"
+      ],
+      "unique_ui_gaps": [
+        "[00:11 -> 00:41] Hi everyone, today we're going to go over hot lists."
+      ],
+      "transcript_words": 328
+    },
+    {
+      "video": "Prep Par Levels",
+      "topic_key": "Prep Par Levels",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "préparation"
+      ],
+      "keywords_missing": [
+        "prep par",
+        "niveau par prep"
+      ],
+      "unique_ui_gaps": [
+        "Today I'm going to go over how to use the prep par levels in Optimum Control.",
+        "Today I'm going to go over how to use the prep par levels in Optimum Control."
+      ],
+      "transcript_words": 789
+    },
+    {
+      "video": "Recipe Book",
+      "topic_key": "Recipe Book",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "recipe book",
+        "livre de recettes"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 185
+    },
+    {
+      "video": "Revaluing Inventory",
+      "topic_key": "Revaluing Inventory",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "réévalu",
+        "revalu",
+        "valeur inventaire"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 481
+    },
+    {
+      "video": "Setting Order Reminders",
+      "topic_key": "Setting Order Reminders",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "commande"
+      ],
+      "keywords_missing": [
+        "rappel",
+        "reminder"
+      ],
+      "unique_ui_gaps": [
+        "[00:06 -> 00:12] In this video, we're going to go over using the order reminder function.",
+        "To do the order reminder, [00:12 -> 00:17] what's going to have to happen first is you're going to have to set up your par levels."
+      ],
+      "transcript_words": 412
+    },
+    {
+      "video": "Order Approvals",
+      "topic_key": "Order Approvals",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "approuver"
+      ],
+      "keywords_missing": [
+        "approbation",
+        "approval"
+      ],
+      "unique_ui_gaps": [
+        "Today, I'm going to go over our order approval feature in Optimum Control."
+      ],
+      "transcript_words": 693
+    },
+    {
+      "video": "Bids",
+      "topic_key": "Bids",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "bid"
+      ],
+      "keywords_missing": [
+        "appel d'offres",
+        "soumission"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 528
+    },
+    {
+      "video": "OC Mobile",
+      "topic_key": "OC Mobile",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "oc mobile",
+        "mobile",
+        "iphone",
+        "ipad",
+        "apple"
+      ],
+      "unique_ui_gaps": [
+        "[00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile."
+      ],
+      "transcript_words": 718
+    },
+    {
+      "video": "How to Enter Beerstore Invoices",
+      "topic_key": "How to Enter Beerstore Invoices",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "bière"
+      ],
+      "keywords_missing": [
+        "beerstore",
+        "beer store"
+      ],
+      "unique_ui_gaps": [
+        "Before you actually attempt to do what I'm doing in this video, you probably should watch the other videos I made on taxes and tax groups, because that'll show you how to handle the tax and the deposit of these invoices."
+      ],
+      "transcript_words": 2061
+    },
+    {
+      "video": "Updating the Sales Export Utility and Retrieving Missing Sales",
+      "topic_key": "Updating the Sales Export Utility",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "sales export",
+        "export ventes",
+        "utility"
+      ],
+      "unique_ui_gaps": [
+        "[00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating."
+      ],
+      "transcript_words": 422
+    },
+    {
+      "video": "Enterprise User Creation",
+      "topic_key": "Enterprise User Creation",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "utilisateur"
+      ],
+      "keywords_missing": [
+        "enterprise user",
+        "création utilisateur enterprise"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 252
+    },
+    {
+      "video": "Recipe Set Availability",
+      "topic_key": "Recipe Set Availability",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "recipe set"
+      ],
+      "keywords_missing": [
+        "disponibilité",
+        "availability"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 228
+    },
+    {
+      "video": "Pending Entities (Enterprise)",
+      "topic_key": "Pending Entities (Enterprise)",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "pending entit",
+        "entités en attente"
+      ],
+      "unique_ui_gaps": [
+        "Today, I'm going to go over the pending entities on the Enterprise website."
+      ],
+      "transcript_words": 650
+    }
+  ],
+  "procedure_gaps_by_video": [
+    {
+      "video": "An Introduction to OC Pro",
+      "gaps": [
+        "Built into the inventory window now, we've added in the [11:42 -> 11:50] export, well, the import and export to OCMobile.",
+        "Some of the widgets I have open are top 10 [01:16 -> 01:23] price changes, period purchases by supplier or group, order reminder.",
+        "So if you have any [01:23 -> 01:27] of your par level set up, it'll actually just tell you right on your dashboard, here are [01:27 -> 01:32] some of the items you're running low on, and it even has a button to create a PO right [01:32 -> 01:38] from here.",
+        "The purpose of a prep par level [03:45 -> 03:51] is to determine how much of a prep is needed to be prepared on a certain day during the week."
+      ]
+    },
+    {
+      "video": "Taxes and Adjustments",
+      "gaps": [
+        "Today I'm going to go over taxes and tax groups in Optimum Control.",
+        "If your items don't have that, then generally speaking you can just add the tax to an invoice you don't need to worry about tax groups, but for those tax inclusive items we're going to create a tax group, so to do that we're going to go into the tax groups window, and then we're going to click add."
+      ]
+    },
+    {
+      "video": "Creating Items",
+      "gaps": [
+        "[05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.",
+        "[12:58 -> 13:05] Once we deactivate an item here, it will no longer show up on our item listing if we try to search for it.",
+        "[05:36 -> 05:40] After the barcode field here, we have the tax group."
+      ]
+    },
+    {
+      "video": "Item Par Levels",
+      "gaps": [
+        "This will allow you to have an order reminder when the item you set goes below a certain quantity on hand.",
+        "Today I'm going to go over the item par levels window and optum control.",
+        "[02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add."
+      ]
+    },
+    {
+      "video": "Setting Item Par Levels",
+      "gaps": [
+        "This will give [00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to [00:22 -> 00:25] generate an order up to the maximum that you've set.",
+        "Today I'm going to go over how to set up item par levels.",
+        "There [01:11 -> 01:16] is also a dashboard tile you can have to list anything under the minimum."
+      ]
+    },
+    {
+      "video": "Deactivating an Item",
+      "gaps": [
+        "Today, I'm going to show you how to deactivate an item, prep, or product."
+      ]
+    },
+    {
+      "video": "Hot List",
+      "gaps": [
+        "[00:11 -> 00:41] Hi everyone, today we're going to go over hot lists."
+      ]
+    },
+    {
+      "video": "Creating Preps",
+      "gaps": [
+        "[03:15 -> 03:22] And if you want to as well, you can also enter a barcode into there for the purpose of scanning barcodes with the OC mobile.",
+        "So, the prep sheet information here is used for the prep par levels and optimum control.",
+        "So, the prep sheet information here is used for the prep par levels and optimum control.",
+        "[09:24 -> 09:32] There is a tab in here specifically for our prep recipes and then in here we can deactivate any recipes we no longer use."
+      ]
+    },
+    {
+      "video": "Prep Par Levels",
+      "gaps": [
+        "Today I'm going to go over how to use the prep par levels in Optimum Control.",
+        "Today I'm going to go over how to use the prep par levels in Optimum Control."
+      ]
+    },
+    {
+      "video": "Recipe Costing",
+      "gaps": [
+        "[02:33 -> 02:39] Running the menu product detail problems report will allow you to target any recipes over a certain desired percentage."
+      ]
+    },
+    {
+      "video": "Creating Products",
+      "gaps": [
+        "[06:52 -> 07:01] Once a recipe has been deactivated, it will no longer be a part of your sales, but you can always come back in here and reactate a recipe at any time.",
+        "[07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report."
+      ]
+    },
+    {
+      "video": "How to Print Countsheets",
+      "gaps": [
+        "Groups [00:33 -> 00:38] are broken down by individual groups, inventory groups, and a hot list is a custom list that [00:38 -> 00:43] you could pre-load that you might want to count more frequently."
+      ]
+    },
+    {
+      "video": "Entering Inventory",
+      "gaps": [
+        "Or if you have our OC mobile, you can click export and export to OC mobile.",
+        "One thing to note is if you do want to count a category group or a hot list, and you want to select multiple groups or hot lists, you can check off this box for multiple count sheets required."
+      ]
+    },
+    {
+      "video": "Item & Recipe Management： Advanced Features",
+      "gaps": [
+        "The duplicate item is going to be the one that you're going to be deactivating [02:40 -> 03:10] and not using anymore."
+      ]
+    },
+    {
+      "video": "Purchasing",
+      "gaps": [
+        "[01:12 -> 01:42] The cauliflower was a split case because we only ordered three pounds instead of an entire case, so we'll select split case to break this up.",
+        "A great report that will give you these numbers is the menu product detail problems report."
+      ]
+    },
+    {
+      "video": "How to Print & Use Inventory Order Forms",
+      "gaps": [
+        "[01:26 -> 01:36] But basically, you could set a min and max on here, and there's another way where you could actually run the order reminder to tell us, hey, this on hand is less than your min.",
+        "[01:20 -> 01:26] The other thing that we have on here is par levels, which you could actually see one of my previous videos for that."
+      ]
+    },
+    {
+      "video": "Setting Order Reminders",
+      "gaps": [
+        "[00:06 -> 00:12] In this video, we're going to go over using the order reminder function.",
+        "To do the order reminder, [00:12 -> 00:17] what's going to have to happen first is you're going to have to set up your par levels."
+      ]
+    },
+    {
+      "video": "Creating an Order",
+      "gaps": [
+        "[05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.",
+        "This can be helpful as you can use forecasted order as well as our item par levels to help you order the correct quantities."
+      ]
+    },
+    {
+      "video": "Order Approvals",
+      "gaps": [
+        "Today, I'm going to go over our order approval feature in Optimum Control."
+      ]
+    },
+    {
+      "video": "OC Mobile",
+      "gaps": [
+        "[00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile."
+      ]
+    },
+    {
+      "video": "How to Enter Beerstore Invoices",
+      "gaps": [
+        "Before you actually attempt to do what I'm doing in this video, you probably should watch the other videos I made on taxes and tax groups, because that'll show you how to handle the tax and the deposit of these invoices."
+      ]
+    },
+    {
+      "video": "Sysco SFTP Update",
+      "gaps": [
+        "With Cisco's recent change from FTP to SFTP, you'll need to make a change in your import configuration to be able to download their files."
+      ]
+    },
+    {
+      "video": "Importing Sales",
+      "gaps": [
+        "The first way to import sales is to use our sales export utility."
+      ]
+    },
+    {
+      "video": "Updating the Sales Export Utility and Retrieving Missing Sales",
+      "gaps": [
+        "[00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating."
+      ]
+    },
+    {
+      "video": "Item Classification Editor",
+      "gaps": [
+        "This will allow you to mass move items, preps, or products to different groups, mass move items or products to different locations, or mass move case sizes or products to different tax groups."
+      ]
+    },
+    {
+      "video": "Usage Summary Overview",
+      "gaps": [
+        "[02:29 -> 02:39] After the dates, we have the filters for if you want to select a specific hot list, so if you have a hot list set up and only want to see those items on the report, you can select that here."
+      ]
+    },
+    {
+      "video": "Accounting Export",
+      "gaps": [
+        "The next thing you'll need to do is select the Accounting Export."
+      ]
+    },
+    {
+      "video": "Item Creation (Enterprise)",
+      "gaps": [
+        "[04:06 -> 04:10] Barcode is used for inventory purposes with our OCMobile app.",
+        "[04:25 -> 04:30] The next field is going to be the tax group."
+      ]
+    },
+    {
+      "video": "Prep Recipe Creation (Enterprise)",
+      "gaps": [
+        "The barcode field is going to be used for inventory counting purposes with our OC mobile app.",
+        "[03:36 -> 03:45] This is used when using the prep par levels that will help you calculate how much of the prep you'd have on a given day based off of sales as well as how long the prep will last.",
+        "[03:36 -> 03:45] This is used when using the prep par levels that will help you calculate how much of the prep you'd have on a given day based off of sales as well as how long the prep will last."
+      ]
+    },
+    {
+      "video": "Item Classification Editor (Enterprise)",
+      "gaps": [
+        "This will allow you to mass move items, preps, or products to different groups, or move case sizes or products to different tax groups."
+      ]
+    },
+    {
+      "video": "Pending Entities (Enterprise)",
+      "gaps": [
+        "Today, I'm going to go over the pending entities on the Enterprise website."
+      ]
+    }
+  ],
+  "all_videos_sorted_by_coverage": [
+    {
+      "video": "Item Par Levels",
+      "topic_key": "Item Par Levels",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "par level",
+        "niveau par",
+        "stock minimum",
+        "stock maximum"
+      ],
+      "unique_ui_gaps": [
+        "This will allow you to have an order reminder when the item you set goes below a certain quantity on hand.",
+        "Today I'm going to go over the item par levels window and optum control.",
+        "[02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add."
+      ],
+      "transcript_words": 833
+    },
+    {
+      "video": "Setting Item Par Levels",
+      "topic_key": "Item Par Levels",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "par level",
+        "niveau par",
+        "stock minimum",
+        "stock maximum"
+      ],
+      "unique_ui_gaps": [
+        "This will give [00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to [00:22 -> 00:25] generate an order up to the maximum that you've set.",
+        "Today I'm going to go over how to set up item par levels.",
+        "There [01:11 -> 01:16] is also a dashboard tile you can have to list anything under the minimum."
+      ],
+      "transcript_words": 322
+    },
+    {
+      "video": "Deactivating an Item",
+      "topic_key": "Deactivating an Item",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "désactiv",
+        "deactiv",
+        "inactif"
+      ],
+      "unique_ui_gaps": [
+        "Today, I'm going to show you how to deactivate an item, prep, or product."
+      ],
+      "transcript_words": 371
+    },
+    {
+      "video": "Hot List",
+      "topic_key": "Hot List",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "hot list",
+        "liste chaude"
+      ],
+      "unique_ui_gaps": [
+        "[00:11 -> 00:41] Hi everyone, today we're going to go over hot lists."
+      ],
+      "transcript_words": 328
+    },
+    {
+      "video": "Recipe Book",
+      "topic_key": "Recipe Book",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "recipe book",
+        "livre de recettes"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 185
+    },
+    {
+      "video": "Revaluing Inventory",
+      "topic_key": "Revaluing Inventory",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "réévalu",
+        "revalu",
+        "valeur inventaire"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 481
+    },
+    {
+      "video": "OC Mobile",
+      "topic_key": "OC Mobile",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "oc mobile",
+        "mobile",
+        "iphone",
+        "ipad",
+        "apple"
+      ],
+      "unique_ui_gaps": [
+        "[00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile."
+      ],
+      "transcript_words": 718
+    },
+    {
+      "video": "Updating the Sales Export Utility and Retrieving Missing Sales",
+      "topic_key": "Updating the Sales Export Utility",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "sales export",
+        "export ventes",
+        "utility"
+      ],
+      "unique_ui_gaps": [
+        "[00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating."
+      ],
+      "transcript_words": 422
+    },
+    {
+      "video": "Pending Entities (Enterprise)",
+      "topic_key": "Pending Entities (Enterprise)",
+      "keyword_coverage": 0.0,
+      "keywords_found": [],
+      "keywords_missing": [
+        "pending entit",
+        "entités en attente"
+      ],
+      "unique_ui_gaps": [
+        "Today, I'm going to go over the pending entities on the Enterprise website."
+      ],
+      "transcript_words": 650
+    },
+    {
+      "video": "Local User Creation",
+      "topic_key": "Local User Creation",
+      "keyword_coverage": 0.25,
+      "keywords_found": [
+        "droits"
+      ],
+      "keywords_missing": [
+        "utilisateur local",
+        "local user",
+        "permissions"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 449
+    },
+    {
+      "video": "Prep Par Levels",
+      "topic_key": "Prep Par Levels",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "préparation"
+      ],
+      "keywords_missing": [
+        "prep par",
+        "niveau par prep"
+      ],
+      "unique_ui_gaps": [
+        "Today I'm going to go over how to use the prep par levels in Optimum Control.",
+        "Today I'm going to go over how to use the prep par levels in Optimum Control."
+      ],
+      "transcript_words": 789
+    },
+    {
+      "video": "Setting Order Reminders",
+      "topic_key": "Setting Order Reminders",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "commande"
+      ],
+      "keywords_missing": [
+        "rappel",
+        "reminder"
+      ],
+      "unique_ui_gaps": [
+        "[00:06 -> 00:12] In this video, we're going to go over using the order reminder function.",
+        "To do the order reminder, [00:12 -> 00:17] what's going to have to happen first is you're going to have to set up your par levels."
+      ],
+      "transcript_words": 412
+    },
+    {
+      "video": "Order Approvals",
+      "topic_key": "Order Approvals",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "approuver"
+      ],
+      "keywords_missing": [
+        "approbation",
+        "approval"
+      ],
+      "unique_ui_gaps": [
+        "Today, I'm going to go over our order approval feature in Optimum Control."
+      ],
+      "transcript_words": 693
+    },
+    {
+      "video": "Bids",
+      "topic_key": "Bids",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "bid"
+      ],
+      "keywords_missing": [
+        "appel d'offres",
+        "soumission"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 528
+    },
+    {
+      "video": "How to Enter Beerstore Invoices",
+      "topic_key": "How to Enter Beerstore Invoices",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "bière"
+      ],
+      "keywords_missing": [
+        "beerstore",
+        "beer store"
+      ],
+      "unique_ui_gaps": [
+        "Before you actually attempt to do what I'm doing in this video, you probably should watch the other videos I made on taxes and tax groups, because that'll show you how to handle the tax and the deposit of these invoices."
+      ],
+      "transcript_words": 2061
+    },
+    {
+      "video": "Enterprise User Creation",
+      "topic_key": "Enterprise User Creation",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "utilisateur"
+      ],
+      "keywords_missing": [
+        "enterprise user",
+        "création utilisateur enterprise"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 252
+    },
+    {
+      "video": "Recipe Set Availability",
+      "topic_key": "Recipe Set Availability",
+      "keyword_coverage": 0.33,
+      "keywords_found": [
+        "recipe set"
+      ],
+      "keywords_missing": [
+        "disponibilité",
+        "availability"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 228
+    },
+    {
+      "video": "An Introduction to OC Pro",
+      "topic_key": "An Introduction to OC Pro",
+      "keyword_coverage": 0.4,
+      "keywords_found": [
+        "interface",
+        "navigation"
+      ],
+      "keywords_missing": [
+        "menu principal",
+        "tableau de bord",
+        "dashboard"
+      ],
+      "unique_ui_gaps": [
+        "Built into the inventory window now, we've added in the [11:42 -> 11:50] export, well, the import and export to OCMobile.",
+        "Some of the widgets I have open are top 10 [01:16 -> 01:23] price changes, period purchases by supplier or group, order reminder.",
+        "So if you have any [01:23 -> 01:27] of your par level set up, it'll actually just tell you right on your dashboard, here are [01:27 -> 01:32] some of the items you're running low on, and it even has a button to create a PO right [01:32 -> 01:38] from here.",
+        "The purpose of a prep par level [03:45 -> 03:51] is to determine how much of a prep is needed to be prepared on a certain day during the week."
+      ],
+      "transcript_words": 2351
+    },
+    {
+      "video": "Item Costing",
+      "topic_key": "Item Costing",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "coût",
+        "cost"
+      ],
+      "keywords_missing": [
+        "dernier prix",
+        "last price"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 467
+    },
+    {
+      "video": "Product Overview",
+      "topic_key": "Product Overview",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "product"
+      ],
+      "keywords_missing": [
+        "aperçu"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 118
+    },
+    {
+      "video": "How to Re-Date or Adjust Inventory",
+      "topic_key": "How to Re-Date or Adjust Inventory",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "ajuster",
+        "adjust"
+      ],
+      "keywords_missing": [
+        "re-date",
+        "redat"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 137
+    },
+    {
+      "video": "How to Print & Use Inventory Order Forms",
+      "topic_key": "How to Print & Use Inventory Order Forms",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "order form"
+      ],
+      "keywords_missing": [
+        "feuille de commande inventaire"
+      ],
+      "unique_ui_gaps": [
+        "[01:26 -> 01:36] But basically, you could set a min and max on here, and there's another way where you could actually run the order reminder to tell us, hey, this on hand is less than your min.",
+        "[01:20 -> 01:26] The other thing that we have on here is par levels, which you could actually see one of my previous videos for that."
+      ],
+      "transcript_words": 390
+    },
+    {
+      "video": "Sysco SFTP Update",
+      "topic_key": "Sysco SFTP Update",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "sysco"
+      ],
+      "keywords_missing": [
+        "sftp"
+      ],
+      "unique_ui_gaps": [
+        "With Cisco's recent change from FTP to SFTP, you'll need to make a change in your import configuration to be able to download their files."
+      ],
+      "transcript_words": 127
+    },
+    {
+      "video": "Creating and Entering Till Tapes",
+      "topic_key": "Creating and Entering Till Tapes",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "till tape"
+      ],
+      "keywords_missing": [
+        "bande de caisse"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 332
+    },
+    {
+      "video": "Usage Summary Overview",
+      "topic_key": "Usage Summary Overview",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "usage summary"
+      ],
+      "keywords_missing": [
+        "résumé d'utilisation"
+      ],
+      "unique_ui_gaps": [
+        "[02:29 -> 02:39] After the dates, we have the filters for if you want to select a specific hot list, so if you have a hot list set up and only want to see those items on the report, you can select that here."
+      ],
+      "transcript_words": 1309
+    },
+    {
+      "video": "Recipe Sets",
+      "topic_key": "Recipe Sets",
+      "keyword_coverage": 0.5,
+      "keywords_found": [
+        "recipe set"
+      ],
+      "keywords_missing": [
+        "ensemble de recettes"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 419
+    },
+    {
+      "video": "Taxes and Adjustments",
+      "topic_key": "Taxes and Adjustments",
+      "keyword_coverage": 0.56,
+      "keywords_found": [
+        "taxe",
+        "tax",
+        "ajustement",
+        "dépôt",
+        "deposit"
+      ],
+      "keywords_missing": [
+        "tax group",
+        "groupe de taxe",
+        "ttc",
+        "inclusive"
+      ],
+      "unique_ui_gaps": [
+        "Today I'm going to go over taxes and tax groups in Optimum Control.",
+        "If your items don't have that, then generally speaking you can just add the tax to an invoice you don't need to worry about tax groups, but for those tax inclusive items we're going to create a tax group, so to do that we're going to go into the tax groups window, and then we're going to click add."
+      ],
+      "transcript_words": 1476
+    },
+    {
+      "video": "How to Add or Edit employees in Optimum Control",
+      "topic_key": "How to Add or Edit employees",
+      "keyword_coverage": 0.6,
+      "keywords_found": [
+        "employé",
+        "utilisateur",
+        "mot de passe"
+      ],
+      "keywords_missing": [
+        "employee",
+        "user"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 335
+    },
+    {
+      "video": "Creating an Order",
+      "topic_key": "Creating an Order",
+      "keyword_coverage": 0.6,
+      "keywords_found": [
+        "commande",
+        "feuille de commande",
+        "export"
+      ],
+      "keywords_missing": [
+        "order guide",
+        "split case"
+      ],
+      "unique_ui_gaps": [
+        "[05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.",
+        "This can be helpful as you can use forecasted order as well as our item par levels to help you order the correct quantities."
+      ],
+      "transcript_words": 1584
+    },
+    {
+      "video": "Creating Items",
+      "topic_key": "Creating Items",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "fiche item",
+        "groupe d'inventaire",
+        "code-barres",
+        "barcode"
+      ],
+      "keywords_missing": [
+        "créer un item",
+        "inventory group"
+      ],
+      "unique_ui_gaps": [
+        "[05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.",
+        "[12:58 -> 13:05] Once we deactivate an item here, it will no longer show up on our item listing if we try to search for it.",
+        "[05:36 -> 05:40] After the barcode field here, we have the tax group."
+      ],
+      "transcript_words": 3087
+    },
+    {
+      "video": "Creating Preps",
+      "topic_key": "Creating Preps",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "prep",
+        "batch recipe"
+      ],
+      "keywords_missing": [
+        "recette de préparation"
+      ],
+      "unique_ui_gaps": [
+        "[03:15 -> 03:22] And if you want to as well, you can also enter a barcode into there for the purpose of scanning barcodes with the OC mobile.",
+        "So, the prep sheet information here is used for the prep par levels and optimum control.",
+        "So, the prep sheet information here is used for the prep par levels and optimum control.",
+        "[09:24 -> 09:32] There is a tab in here specifically for our prep recipes and then in here we can deactivate any recipes we no longer use."
+      ],
+      "transcript_words": 2076
+    },
+    {
+      "video": "Countsheet Setup",
+      "topic_key": "Countsheet Setup",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "feuille de comptage",
+        "configuration"
+      ],
+      "keywords_missing": [
+        "countsheet"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 391
+    },
+    {
+      "video": "How to Print Countsheets",
+      "topic_key": "How to Print Countsheets",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "feuille de comptage",
+        "imprimer"
+      ],
+      "keywords_missing": [
+        "countsheet"
+      ],
+      "unique_ui_gaps": [
+        "Groups [00:33 -> 00:38] are broken down by individual groups, inventory groups, and a hot list is a custom list that [00:38 -> 00:43] you could pre-load that you might want to count more frequently."
+      ],
+      "transcript_words": 236
+    },
+    {
+      "video": "How to Custom Sort Your Countsheet",
+      "topic_key": "How to Custom Sort Your Countsheet",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "tri",
+        "sort"
+      ],
+      "keywords_missing": [
+        "countsheet"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 305
+    },
+    {
+      "video": "Entering Manual Invoices",
+      "topic_key": "Entering Manual Invoices",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "saisir une facture",
+        "invoice"
+      ],
+      "keywords_missing": [
+        "facture manuelle"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 630
+    },
+    {
+      "video": "Item Store Management",
+      "topic_key": "Item Store Management",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "magasin",
+        "multi-établissement"
+      ],
+      "keywords_missing": [
+        "item store"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 491
+    },
+    {
+      "video": "Entering Waste",
+      "topic_key": "Entering Waste",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "perte",
+        "waste"
+      ],
+      "keywords_missing": [
+        "gaspillage"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 242
+    },
+    {
+      "video": "Item Classification Editor",
+      "topic_key": "Item Classification Editor",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "classification",
+        "catégorie"
+      ],
+      "keywords_missing": [
+        "class editor"
+      ],
+      "unique_ui_gaps": [
+        "This will allow you to mass move items, preps, or products to different groups, mass move items or products to different locations, or mass move case sizes or products to different tax groups."
+      ],
+      "transcript_words": 414
+    },
+    {
+      "video": "Accounting Export",
+      "topic_key": "Accounting Export",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "export comptable",
+        "plan comptable"
+      ],
+      "keywords_missing": [
+        "accounting export"
+      ],
+      "unique_ui_gaps": [
+        "The next thing you'll need to do is select the Accounting Export."
+      ],
+      "transcript_words": 468
+    },
+    {
+      "video": "Item Creation (Enterprise)",
+      "topic_key": "Item Creation (Enterprise)",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "enterprise",
+        "consolidation id"
+      ],
+      "keywords_missing": [
+        "créer un item"
+      ],
+      "unique_ui_gaps": [
+        "[04:06 -> 04:10] Barcode is used for inventory purposes with our OCMobile app.",
+        "[04:25 -> 04:30] The next field is going to be the tax group."
+      ],
+      "transcript_words": 1856
+    },
+    {
+      "video": "Item Classification Editor (Enterprise)",
+      "topic_key": "Item Classification Editor",
+      "keyword_coverage": 0.67,
+      "keywords_found": [
+        "classification",
+        "catégorie"
+      ],
+      "keywords_missing": [
+        "class editor"
+      ],
+      "unique_ui_gaps": [
+        "This will allow you to mass move items, preps, or products to different groups, or move case sizes or products to different tax groups."
+      ],
+      "transcript_words": 397
+    },
+    {
+      "video": "Importing Invoices",
+      "topic_key": "Importing Invoices",
+      "keyword_coverage": 0.75,
+      "keywords_found": [
+        "import",
+        "edi",
+        "invoice import"
+      ],
+      "keywords_missing": [
+        "facture électronique"
+      ],
+      "unique_ui_gaps": [],
+      "transcript_words": 990
+    },
+    {
+      "video": "Recipe Costing",
+      "topic_key": "Recipe Costing",
+      "keyword_coverage": 0.8,
+      "keywords_found": [
+        "coût alimentaire",
+        "food cost",
+        "marge",
+        "margin"
+      ],
+      "keywords_missing": [
+        "menu product detail"
+      ],
+      "unique_ui_gaps": [
+        "[02:33 -> 02:39] Running the menu product detail problems report will allow you to target any recipes over a certain desired percentage."
+      ],
+      "transcript_words": 725
+    },
+    {
+      "video": "What is Optimum Control？",
+      "topic_key": "What is Optimum Control",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "triangle",
+        "items",
+        "recettes",
+        "ventes",
+        "tracrite"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 149
+    },
+    {
+      "video": "Setup Creation",
+      "topic_key": "Setup Creation",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "configuration",
+        "setup",
+        "magasin",
+        "store",
+        "fournisseur"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 605
+    },
+    {
+      "video": "Item Conversions",
+      "topic_key": "Item Conversions",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "conversion",
+        "unité",
+        "uom"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 552
+    },
+    {
+      "video": "Case Size Overview",
+      "topic_key": "Case Size Overview",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "case size",
+        "taille de caisse"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 404
+    },
+    {
+      "video": "How to Use the Case Size Overview Window",
+      "topic_key": "Case Size Overview",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "case size",
+        "taille de caisse"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 175
+    },
+    {
+      "video": "Allergen Tracking",
+      "topic_key": "Allergen Tracking",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "allergène",
+        "allergen"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 266
+    },
+    {
+      "video": "Creating Products",
+      "topic_key": "Creating Products",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "product",
+        "recette de menu",
+        "pos id",
+        "pos"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [
+        "[06:52 -> 07:01] Once a recipe has been deactivated, it will no longer be a part of your sales, but you can always come back in here and reactate a recipe at any time.",
+        "[07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report."
+      ],
+      "transcript_words": 1763
+    },
+    {
+      "video": "Entering Inventory",
+      "topic_key": "Entering Inventory",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "inventaire",
+        "comptage",
+        "inventory"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [
+        "Or if you have our OC mobile, you can click export and export to OC mobile.",
+        "One thing to note is if you do want to count a category group or a hot list, and you want to select multiple groups or hot lists, you can check off this box for multiple count sheets required."
+      ],
+      "transcript_words": 743
+    },
+    {
+      "video": "Item & Recipe Management： Advanced Features",
+      "topic_key": "Item & Recipe Management: Advanced Features",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "amalgamate",
+        "replace",
+        "associate",
+        "fusionner"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [
+        "The duplicate item is going to be the one that you're going to be deactivating [02:40 -> 03:10] and not using anymore."
+      ],
+      "transcript_words": 1066
+    },
+    {
+      "video": "Purchasing",
+      "topic_key": "Purchasing",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "achat",
+        "purchas",
+        "commande"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [
+        "[01:12 -> 01:42] The cauliflower was a split case because we only ordered three pounds instead of an entire case, so we'll select split case to break this up.",
+        "A great report that will give you these numbers is the menu product detail problems report."
+      ],
+      "transcript_words": 837
+    },
+    {
+      "video": "Stock Transfers in OC Premier",
+      "topic_key": "Stock Transfers in OC Premier",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "transfert",
+        "transfer",
+        "ocpremier",
+        "multi-établissement"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 1040
+    },
+    {
+      "video": "Importing Sales",
+      "topic_key": "Importing Sales",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "import pos",
+        "ventes",
+        "sales mix"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [
+        "The first way to import sales is to use our sales export utility."
+      ],
+      "transcript_words": 321
+    },
+    {
+      "video": "Pending Sales",
+      "topic_key": "Pending Sales",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "pending sales",
+        "ventes en attente"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 880
+    },
+    {
+      "video": "Creating Budget Worksheets",
+      "topic_key": "Creating Budget Worksheets",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "budget",
+        "prévisionnel",
+        "worksheet"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 879
+    },
+    {
+      "video": "Backups",
+      "topic_key": "Backups",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "sauvegarde",
+        "backup",
+        "restaur"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 285
+    },
+    {
+      "video": "Catering",
+      "topic_key": "Catering",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "catering",
+        "traiteur",
+        "événement"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 1158
+    },
+    {
+      "video": "Buffets",
+      "topic_key": "Buffets",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "buffet"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 916
+    },
+    {
+      "video": "OC Enterprise Setup",
+      "topic_key": "OC Enterprise Setup",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "enterprise",
+        "consolidation",
+        "déploiement",
+        "région"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 553
+    },
+    {
+      "video": "Regions",
+      "topic_key": "Regions",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "région",
+        "region",
+        "enterprise"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 513
+    },
+    {
+      "video": "Prep Recipe Creation (Enterprise)",
+      "topic_key": "Prep Recipe Creation (Enterprise)",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "prep",
+        "enterprise"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [
+        "The barcode field is going to be used for inventory counting purposes with our OC mobile app.",
+        "[03:36 -> 03:45] This is used when using the prep par levels that will help you calculate how much of the prep you'd have on a given day based off of sales as well as how long the prep will last.",
+        "[03:36 -> 03:45] This is used when using the prep par levels that will help you calculate how much of the prep you'd have on a given day based off of sales as well as how long the prep will last."
+      ],
+      "transcript_words": 1360
+    },
+    {
+      "video": "Creating Products (Enterprise)",
+      "topic_key": "Creating Products",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "product",
+        "recette de menu",
+        "pos id",
+        "pos"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 877
+    },
+    {
+      "video": "Recipe Set and Synchronize Configuration (Enterprise)",
+      "topic_key": "Recipe Set and Synchronize Configuration",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "recipe set",
+        "synchroniz",
+        "enterprise"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 746
+    },
+    {
+      "video": "Pending Sales (OC Enterprise)",
+      "topic_key": "Pending Sales",
+      "keyword_coverage": 1.0,
+      "keywords_found": [
+        "pending sales",
+        "ventes en attente"
+      ],
+      "keywords_missing": [],
+      "unique_ui_gaps": [],
+      "transcript_words": 715
+    }
+  ]
+}

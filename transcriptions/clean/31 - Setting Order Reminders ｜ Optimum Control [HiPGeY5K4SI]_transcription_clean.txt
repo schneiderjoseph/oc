@@ -1,0 +1,24 @@
+[00:06 -> 00:12] In this video, we're going to go over using the order reminder function. To do the order reminder,
+[00:12 -> 00:17] what's going to have to happen first is you're going to have to set up your par levels.
+[00:17 -> 00:25] Par levels are your min and max for each item you carry, so when you have less on hand than your min,
+[00:25 -> 00:32] it's going to ask you to order to your max. To start this process, you're going to go to the top and select item par levels.
+[00:34 -> 00:41] And from this window, you should see all of your items in the system. Now you'll see I have some of these par levels set up.
+[00:41 -> 00:44] We have minimum and maximum.
+[00:44 -> 00:49] So the minimum is the trigger. The maximum is the build too.
+[00:49 -> 00:52] So you'll just set that for every last item.
+[00:52 -> 00:56] And once it's in there, you'd save it and then close it.
+[00:56 -> 01:02] Now to actually look at the information what you could do is hit the little plus side on your dashboard.
+[01:02 -> 01:10] And you're going to turn on the order reminder widget. Let's make that a little bit bigger.
+[01:10 -> 01:16] So you could see, based on what I have on hand, how much I require of each item.
+[01:16 -> 01:22] You could also see if something's on order. So that way, okay, well, if you're ordering it, you may not need it.
+[01:22 -> 01:29] It's going to be coming soon. But the suggested order is what we think you'll need to buy.
+[01:29 -> 01:34] So from here, you could click create order.
+[01:34 -> 01:37] And that populates the order window.
+[01:37 -> 01:40] So you'll see it separated by supplier.
+[01:40 -> 01:43] So what you need from each supplier is filled out for you.
+[01:43 -> 01:46] All you simply have to do is edit the numbers.
+[01:46 -> 01:50] You can run to case. So everything's an even case.
+[01:50 -> 01:55] And you could go ahead and save it.
+[01:55 -> 01:59] So once you save it, it'll separate it by supplier for you.
+[01:59 -> 02:01] And from there, you could place your orders.
+[02:01 -> 02:08] If you have any questions on this, please give us a call at support at 1-88-798-5555.

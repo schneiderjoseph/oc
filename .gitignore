@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Générés / temporaires
+*.xlsx
+*.xlsm
+~$*.docx
+OC_Audit_Test_Local.xlsx
+LaReserve_Audit_OC_Critique.xlsx
+
+# Sorties de vérification (régénérables)
+verify_*_db.txt
+verify_*.txt
+chk_out.txt
+bacon_db_result.txt
+actualize_snip.txt
+*_result.txt
+
+# Fichiers de travail ponctuels
+_schema_dump.ps1
+_schema_probe.py
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Données client sensibles (ne pas versionner)
+**/EXPORT/
+**/bar.csv
+Contrat*.docx
+
+# Gros fichiers régénérables (garder les résumés .json / .txt)
+book_full_text.txt

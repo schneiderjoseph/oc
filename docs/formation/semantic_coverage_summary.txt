@@ -1,0 +1,203 @@
+=== COUVERTURE SÉMANTIQUE (livre FR vs vidéos EN) ===
+
+SUJETS FAIBLEMENT COUVERTS OU ABSENTS DU LIVRE:
+
+- Local User Creation (25% mots-clés trouvés)
+  Manque: utilisateur local, local user, permissions
+- Item Par Levels (0% mots-clés trouvés)
+  Manque: par level, niveau par, stock minimum, stock maximum
+  Procédures absentes: This will allow you to have an order reminder when the item you set goes below a certain quantity on hand.
+- Setting Item Par Levels (0% mots-clés trouvés)
+  Manque: par level, niveau par, stock minimum, stock maximum
+  Procédures absentes: This will give [00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to [00:22 -> 00:25] generate an order up to the maximum that you've set.
+- Deactivating an Item (0% mots-clés trouvés)
+  Manque: désactiv, deactiv, inactif
+  Procédures absentes: Today, I'm going to show you how to deactivate an item, prep, or product.
+- Hot List (0% mots-clés trouvés)
+  Manque: hot list, liste chaude
+  Procédures absentes: [00:11 -> 00:41] Hi everyone, today we're going to go over hot lists.
+- Prep Par Levels (33% mots-clés trouvés)
+  Manque: prep par, niveau par prep
+  Procédures absentes: Today I'm going to go over how to use the prep par levels in Optimum Control.
+- Recipe Book (0% mots-clés trouvés)
+  Manque: recipe book, livre de recettes
+- Revaluing Inventory (0% mots-clés trouvés)
+  Manque: réévalu, revalu, valeur inventaire
+- Setting Order Reminders (33% mots-clés trouvés)
+  Manque: rappel, reminder
+  Procédures absentes: [00:06 -> 00:12] In this video, we're going to go over using the order reminder function.
+- Order Approvals (33% mots-clés trouvés)
+  Manque: approbation, approval
+  Procédures absentes: Today, I'm going to go over our order approval feature in Optimum Control.
+- Bids (33% mots-clés trouvés)
+  Manque: appel d'offres, soumission
+- OC Mobile (0% mots-clés trouvés)
+  Manque: oc mobile, mobile, iphone, ipad, apple
+  Procédures absentes: [00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile.
+- How to Enter Beerstore Invoices (33% mots-clés trouvés)
+  Manque: beerstore, beer store
+  Procédures absentes: Before you actually attempt to do what I'm doing in this video, you probably should watch the other videos I made on taxes and tax groups, because that'll show you how to handle the tax and the deposi
+- Updating the Sales Export Utility and Retrieving Missing Sales (0% mots-clés trouvés)
+  Manque: sales export, export ventes, utility
+  Procédures absentes: [00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating.
+- Enterprise User Creation (33% mots-clés trouvés)
+  Manque: enterprise user, création utilisateur enterprise
+- Recipe Set Availability (33% mots-clés trouvés)
+  Manque: disponibilité, availability
+- Pending Entities (Enterprise) (0% mots-clés trouvés)
+  Manque: pending entit, entités en attente
+  Procédures absentes: Today, I'm going to go over the pending entities on the Enterprise website.
+
+
+PROCÉDURES / TERMES UI DANS VIDÉOS MAIS PAS DANS LE LIVRE:
+
+
+[An Introduction to OC Pro]
+  Built into the inventory window now, we've added in the [11:42 -> 11:50] export, well, the import and export to OCMobile.
+
+[An Introduction to OC Pro]
+  Some of the widgets I have open are top 10 [01:16 -> 01:23] price changes, period purchases by supplier or group, order reminder.
+
+[An Introduction to OC Pro]
+  So if you have any [01:23 -> 01:27] of your par level set up, it'll actually just tell you right on your dashboard, here are [01:27 -> 01:32] some of the items you're running low on, and it even has a button to create a PO right [01:32 -> 01:38] from here.
+
+[An Introduction to OC Pro]
+  The purpose of a prep par level [03:45 -> 03:51] is to determine how much of a prep is needed to be prepared on a certain day during the week.
+
+[Taxes and Adjustments]
+  Today I'm going to go over taxes and tax groups in Optimum Control.
+
+[Taxes and Adjustments]
+  If your items don't have that, then generally speaking you can just add the tax to an invoice you don't need to worry about tax groups, but for those tax inclusive items we're going to create a tax group, so to do that we're going to go into the tax groups window, and then we're going to click add.
+
+[Creating Items]
+  [05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.
+
+[Creating Items]
+  [12:58 -> 13:05] Once we deactivate an item here, it will no longer show up on our item listing if we try to search for it.
+
+[Creating Items]
+  [05:36 -> 05:40] After the barcode field here, we have the tax group.
+
+[Item Par Levels]
+  This will allow you to have an order reminder when the item you set goes below a certain quantity on hand.
+
+[Item Par Levels]
+  Today I'm going to go over the item par levels window and optum control.
+
+[Item Par Levels]
+  [02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add.
+
+[Setting Item Par Levels]
+  This will give [00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to [00:22 -> 00:25] generate an order up to the maximum that you've set.
+
+[Setting Item Par Levels]
+  Today I'm going to go over how to set up item par levels.
+
+[Setting Item Par Levels]
+  There [01:11 -> 01:16] is also a dashboard tile you can have to list anything under the minimum.
+
+[Deactivating an Item]
+  Today, I'm going to show you how to deactivate an item, prep, or product.
+
+[Hot List]
+  [00:11 -> 00:41] Hi everyone, today we're going to go over hot lists.
+
+[Creating Preps]
+  [03:15 -> 03:22] And if you want to as well, you can also enter a barcode into there for the purpose of scanning barcodes with the OC mobile.
+
+[Creating Preps]
+  So, the prep sheet information here is used for the prep par levels and optimum control.
+
+[Creating Preps]
+  [09:24 -> 09:32] There is a tab in here specifically for our prep recipes and then in here we can deactivate any recipes we no longer use.
+
+[Prep Par Levels]
+  Today I'm going to go over how to use the prep par levels in Optimum Control.
+
+[Recipe Costing]
+  [02:33 -> 02:39] Running the menu product detail problems report will allow you to target any recipes over a certain desired percentage.
+
+[Creating Products]
+  [06:52 -> 07:01] Once a recipe has been deactivated, it will no longer be a part of your sales, but you can always come back in here and reactate a recipe at any time.
+
+[Creating Products]
+  [07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report.
+
+[How to Print Countsheets]
+  Groups [00:33 -> 00:38] are broken down by individual groups, inventory groups, and a hot list is a custom list that [00:38 -> 00:43] you could pre-load that you might want to count more frequently.
+
+[Entering Inventory]
+  Or if you have our OC mobile, you can click export and export to OC mobile.
+
+[Entering Inventory]
+  One thing to note is if you do want to count a category group or a hot list, and you want to select multiple groups or hot lists, you can check off this box for multiple count sheets required.
+
+[Item & Recipe Management： Advanced Features]
+  The duplicate item is going to be the one that you're going to be deactivating [02:40 -> 03:10] and not using anymore.
+
+[Purchasing]
+  [01:12 -> 01:42] The cauliflower was a split case because we only ordered three pounds instead of an entire case, so we'll select split case to break this up.
+
+[Purchasing]
+  A great report that will give you these numbers is the menu product detail problems report.
+
+[How to Print & Use Inventory Order Forms]
+  [01:26 -> 01:36] But basically, you could set a min and max on here, and there's another way where you could actually run the order reminder to tell us, hey, this on hand is less than your min.
+
+[How to Print & Use Inventory Order Forms]
+  [01:20 -> 01:26] The other thing that we have on here is par levels, which you could actually see one of my previous videos for that.
+
+[Setting Order Reminders]
+  [00:06 -> 00:12] In this video, we're going to go over using the order reminder function.
+
+[Setting Order Reminders]
+  To do the order reminder, [00:12 -> 00:17] what's going to have to happen first is you're going to have to set up your par levels.
+
+[Creating an Order]
+  [05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.
+
+[Creating an Order]
+  This can be helpful as you can use forecasted order as well as our item par levels to help you order the correct quantities.
+
+[Order Approvals]
+  Today, I'm going to go over our order approval feature in Optimum Control.
+
+[OC Mobile]
+  [00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile.
+
+[How to Enter Beerstore Invoices]
+  Before you actually attempt to do what I'm doing in this video, you probably should watch the other videos I made on taxes and tax groups, because that'll show you how to handle the tax and the deposit of these invoices.
+
+[Sysco SFTP Update]
+  With Cisco's recent change from FTP to SFTP, you'll need to make a change in your import configuration to be able to download their files.
+
+[Importing Sales]
+  The first way to import sales is to use our sales export utility.
+
+[Updating the Sales Export Utility and Retrieving Missing Sales]
+  [00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating.
+
+[Item Classification Editor]
+  This will allow you to mass move items, preps, or products to different groups, mass move items or products to different locations, or mass move case sizes or products to different tax groups.
+
+[Usage Summary Overview]
+  [02:29 -> 02:39] After the dates, we have the filters for if you want to select a specific hot list, so if you have a hot list set up and only want to see those items on the report, you can select that here.
+
+[Accounting Export]
+  The next thing you'll need to do is select the Accounting Export.
+
+[Item Creation (Enterprise)]
+  [04:06 -> 04:10] Barcode is used for inventory purposes with our OCMobile app.
+
+[Item Creation (Enterprise)]
+  [04:25 -> 04:30] The next field is going to be the tax group.
+
+[Prep Recipe Creation (Enterprise)]
+  The barcode field is going to be used for inventory counting purposes with our OC mobile app.
+
+[Prep Recipe Creation (Enterprise)]
+  [03:36 -> 03:45] This is used when using the prep par levels that will help you calculate how much of the prep you'd have on a given day based off of sales as well as how long the prep will last.
+
+[Pending Entities (Enterprise)]
+  Today, I'm going to go over the pending entities on the Enterprise website.

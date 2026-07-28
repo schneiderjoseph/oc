@@ -1,0 +1,12 @@
+[00:00 -> 00:19] We're going to go over how to add the recipe set availability widget to your home screen.
+[00:19 -> 00:27] On your home screen you're going to hit the little plus symbol, and you're going to add the recipe set availability option.
+[00:27 -> 00:35] Now if everything's set up in the store information in Optimum, you should see if there's any available recipe set files to download.
+[00:35 -> 00:42] So this could be new items, preps, or products coming from your head office.
+[00:42 -> 00:46] So every time this counts down it will refresh and look for new files.
+[00:46 -> 00:52] If you want to download the new stuff you would just select the file and click download.
+[00:52 -> 00:56] You'll see a pop-up with the process of what's going on.
+[00:56 -> 01:01] And once it's completed you'll see a complete on the end of the bar.
+[01:01 -> 01:06] If you get any errors in this process this is what you would call our technical support.
+[01:06 -> 01:11] And the number is 1, triple 8, 798, 555, 555.
+[01:11 -> 01:17] If you get the complete you know everything's in the system that should be in the system from the head office.
+[01:17 -> 01:21] If you have any trouble with this please give us a call.

@@ -1,0 +1,123 @@
+[00:09 -> 00:39] In today's video, we'll be going into the process of entering in items that you purchase from your suppliers into Optimum Control. To enter an item into the system here, we're going to go to the item option. This will populate a listing of all the items that you purchase from your suppliers. By default, when you come into the item window here, it's going to bring you into the new item creation window. The item creation here is broken down into different sections. So on the left hand side of the item here, we have the core information. The core information is the way you want the item
+[00:39 -> 00:58] to appear in the system, so that's your naming method, the inventory group, and how you plan on using it when it comes to your reporting and recipes. And then on the right hand side, we have the case size information. And the case size information is where we'll indicate who we purchase from, how much it costs, and the breakdown of the item from the supplier.
+[00:58 -> 01:05] So the first field in the item here is the description of the item. So in this example, I'm going to put in an item called salt.
+[01:05 -> 01:16] The next field after the description here is the inventory group you want to associate this item with for reporting. So since I'm putting in salt, I'm going to indicate it's part of my spices.
+[01:16 -> 01:25] The next field after that is the main location we generally store the item in within our establishment. So I'm going to indicate that the item is stored in the store room here.
+[01:25 -> 01:35] After the storage location, it's going to ask us how we plan on using the item, and there's three options when setting up an item in the system.
+[01:35 -> 01:43] We can either indicate we are going to be using it by unit. So for things like bottle beer slice cheese, we would generally select unit.
+[01:43 -> 01:51] Second often here is by weight. So for something like salt, we would generally select a weight type unit such as ounces, pounds, or kilogram.
+[01:51 -> 01:57] And then the third often here is a volume metric unit measure for any of our liquor or juices.
+[01:57 -> 02:05] When we select a unit type, it's going to populate a reporting unit and a default ingredient unit.
+[02:05 -> 02:15] The reporting unit will be the unit measure that displays on a report indicating how much we have purchased, how much we have used, and how much we have on hand when we're looking at any reports.
+[02:15 -> 02:24] If you do not like the default reporting unit, you can always hit the drop down here and change it to your preferred unit measure.
+[02:24 -> 02:34] After the reporting unit, we have the default ingredient unit. The default ingredient unit will be the unit measure that populates first when you're using the item in your recipes.
+[02:34 -> 02:40] This example, my default unit is ounces, so I put salt in a recipe. It will populate ounces first.
+[02:40 -> 02:52] But we will have the ability to use it by any other weight type option when it comes to our recipe, so I can still use it by the pounds, by the kilogram, or by the gram if needed.
+[02:52 -> 02:56] After the default ingredient unit here, we have two check boxes right below.
+[02:56 -> 03:04] The first check box asks if it's a key inventory item. By default, all items entered into the system are key items.
+[03:04 -> 03:09] This is more related to the inventory accounting process, so we'll discuss more on this when we're doing that training session.
+[03:09 -> 03:14] The second check box here asks if you want to actualize the usage values of an item.
+[03:14 -> 03:18] By default, all items entered into the system are not actualized.
+[03:18 -> 03:25] Actualizing the usage values of an item will remove the variances from your reports.
+[03:25 -> 03:32] Situations where you don't want variances on an item or items that you purchase, you inventory, but you can't really associate with your recipe.
+[03:32 -> 03:40] A common example would be your fire oil. That is an item that you purchase, you inventory, but you don't ever really associate with your recipes.
+[03:40 -> 03:44] Because all you do is you pour into a defire, and when you're done with it, you pour it out.
+[03:44 -> 03:48] And the system will never track any theoretical usage on it.
+[03:48 -> 04:02] So to prevent the system from thinking that you're just missing leaders upon leader of oil, you just actualize the usage which will set the theoretical usage to match what you've indicated as an actual usage based off your inventory accounts and your purchases.
+[04:02 -> 04:08] Once you have all the core information entered into the item on the left hand side here, we move over the right hand side.
+[04:08 -> 04:11] And this is where we're going to indicate the case size information of the item.
+[04:11 -> 04:17] So this we're going to select who we purchased from, how much it costs, and the breakdown the item from the supply.
+[04:17 -> 04:21] So the first field here is the supplier that we're going to be purchasing from.
+[04:21 -> 04:24] So here I'm going to indicate down buying this from Cisco.
+[04:24 -> 04:32] The next field after that here is the or code or product ID or item number that's used to identify this item in your supplier system.
+[04:32 -> 04:38] This field is used when importing electronic invoices into often control from the suppliers that do integrate with us.
+[04:38 -> 04:48] So if you have this information, I always recommend entering it in, otherwise you can leave a blank and fill in at a later date.
+[04:48 -> 04:52] The next field after the or code here is the case description.
+[04:52 -> 04:56] The case description if you choose to use this field must be your supplier's description.
+[04:56 -> 05:05] So whatever you see on their invoice, this field is used as part of the electronic invoice importing functionality if both the or code and description is used.
+[05:05 -> 05:08] I usually recommend leaving the case description blank.
+[05:08 -> 05:13] So when importing the electronic invoices, it only references the or code field.
+[05:13 -> 05:17] After the case description here, we have a barcode field.
+[05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.
+[05:30 -> 05:36] And with the device, you can use the camera on there to scan barcodes to do the inventory counts.
+[05:36 -> 05:40] After the barcode field here, we have the tax group.
+[05:40 -> 05:46] The tax group will be applied to the item to help you calculate how much the item costs if there were taxes applied to it.
+[05:46 -> 05:49] Next field after that here is the purchase price.
+[05:49 -> 05:52] So this is where we indicate how much the item costs from our supplier.
+[05:52 -> 05:59] So in this example here, I'm going to say that when I'm purchasing salt, it's going to be $20 for a case of salt.
+[05:59 -> 06:03] After the purchase price here, we have the split unit.
+[06:03 -> 06:09] The split unit is the breakdown of how an item gets delivered to you when you purchase it from your supplier.
+[06:09 -> 06:18] By default, the split unit will be the same as the reporting unit, but you can always indicate a different split unit if the way the item is delivered to is different.
+[06:18 -> 06:27] So for example, if I'm buying a case of salt for my supplier, but inside of the case are bags, I can select the split unit to be bags instead.
+[06:27 -> 06:34] So once I select the split unit here, it's going to now ask me how many bags are in a case.
+[06:34 -> 06:36] So here, I'll indicate the breakdown.
+[06:36 -> 06:40] I'm going to say that there are four bags in a case for $20.
+[06:40 -> 06:43] The next field after that here is the pack unit.
+[06:43 -> 06:47] And in this example, it's going to ask us how many ounces are in one bag.
+[06:47 -> 06:51] So I'm going to indicate that it is a five pound bag or 80 ounces.
+[06:51 -> 06:59] After the pack unit here, there is a field for a yield percentage.
+[06:59 -> 07:04] So depending on the type of items that you're purchasing from your supplier, there might be a yield on it.
+[07:04 -> 07:08] This is more common with things like your produce items such as bananas,
+[07:08 -> 07:15] where when you purchase a case of bananas, that's to say 10 pounds, we know that you don't generally get 10 pounds of usable bananas.
+[07:15 -> 07:21] As generally with any of your recipes, you generally have to peel the banana before you can use it.
+[07:21 -> 07:25] So bananas would generally have a roughly 65% yield.
+[07:25 -> 07:32] And if you indicate a yield percentage on the case size here, it will affect the actual cost and information right below it.
+[07:33 -> 07:40] So if I indicate that there is a 50% yield on salt, you'll see the actual cost and information here will pretty much just double up.
+[07:40 -> 07:46] And when you're costing up any of your recipes, it will use the actual cost per ounce here to cost it out.
+[07:46 -> 07:56] Once you have all the case size information entered into the system here, we can then save this item.
+[07:56 -> 07:58] So the next thing I'm going to talk about is really important.
+[07:58 -> 08:04] So if you purchase an item from multiple suppliers, what you never want to do is add an item in the system more than once.
+[08:04 -> 08:11] So what you want to do, you want to come back into the existing item here and add in a secondary supplier for the existing item.
+[08:11 -> 08:14] So add the secondary supplier into the existing item here.
+[08:14 -> 08:18] We would hit the add button at the top of the item menu.
+[08:18 -> 08:21] And this will reset the supplier information on the right hand side.
+[08:21 -> 08:25] And now we can select the secondary supplier that we purchased this item from.
+[08:25 -> 08:30] So I'm going to enter in a secondary case size for GFS for my item salt.
+[08:35 -> 08:45] So once I save my secondary case size in the system here, when I hit the view button at the top of the screen here, it will show me all the different case sizes that are available for this item.
+[08:45 -> 08:54] So when I put a purchase in the system for either GFS or for Cisco or for both suppliers, the system will know an overall quantity on hand that will add to my stock levels.
+[08:54 -> 09:03] So any recipes that you sell will be reducing from an overall quantity on hand between both suppliers.
+[09:03 -> 09:07] Once you have your case sizes added in here, at the top of the screen we have some additional tabs as well.
+[09:07 -> 09:10] So after the case size tab here is a location tab.
+[09:10 -> 09:15] This is where you can assign additional location for the item if the item is stored in more than one location.
+[09:15 -> 09:20] So on your inventory, count sheet, the item will show up once under each of its assigned location.
+[09:20 -> 09:27] After the location tab here is a conversion tab.
+[09:27 -> 09:35] So the conversion tab here will allow you to add in an item specific conversion that will only apply to this item and to no other item in the system.
+[09:35 -> 09:40] Because right now if I wanted to use salt in a recipe, the only options I'm going to have are wait.
+[09:40 -> 09:45] So we'll take a quick look at that here by going into the recipes.
+[09:45 -> 09:51] And here we're going to add the item salt to the recipe.
+[09:51 -> 09:54] And you'll see by default it's going to ask me how many ounces I want to use.
+[09:54 -> 09:59] But I can hit the drop down here and select any other weight conversion that's available in the system.
+[09:59 -> 10:07] But if I wanted to use this item by let's say teaspoon or tablespoon, I would need to add in a conversion from weight to volume.
+[10:07 -> 10:12] To do so, I'm going to go back to the item here and here I'm going to hit the add off and at the top of the screen.
+[10:12 -> 10:19] And I'm going to put in a conversion indicating that one tablespoon is equal to 18 grams.
+[10:19 -> 10:30] So once I save this conversion in the system here, I'm going to go back to the recipe and I hit the drop down for the units that are available for salt.
+[10:30 -> 10:33] I now have all the volume metric conversions available.
+[10:33 -> 10:37] So now I can use it by teaspoon, take the spoon, cup, whatever I like.
+[10:37 -> 10:46] After the conversion tap here, we have a nutrition tap.
+[10:46 -> 10:51] So when it comes to nutritional information and often control, it can be entered in in one of two ways.
+[10:51 -> 10:54] You can do it from a label.
+[10:54 -> 11:00] So this often here, you can take a label from the packet and manually enter in the nutritional information.
+[11:00 -> 11:03] This option though is generally not very popular.
+[11:03 -> 11:10] As most customers, if they do use the nutritional information, it's going to go with the second method here, which is the link to option.
+[11:10 -> 11:15] The link to option here will allow you to import the nutritional information from the USDA.
+[11:15 -> 11:19] So here we're going to search for the nutritional information for salt.
+[11:19 -> 11:26] And when importing the nutritional information into the system here, it will also give you available conversions to import as well.
+[11:26 -> 11:34] So this will be very helpful if you need the way to volume conversions for a lot of your items.
+[11:34 -> 11:42] And then once we hit finish here, it will import in the nutritional information and it will import in all the conversions I wanted as well.
+[11:42 -> 11:47] And then the last tab that's available in the item window here is the allergen tap.
+[11:47 -> 11:51] So this is where we can assign one of the allergens that we have created in the system.
+[11:51 -> 12:02] So if I assign peanuts to salt, any recipes that use salt will have the peanut allergen associated with it when I print off a recipe card or if I generate any allergen reports.
+[12:02 -> 12:14] As I mentioned, allergens is an optional feature. If you don't want to use it, you don't need to assign any allergens.
+[12:14 -> 12:23] The last thing we're going to talk about in today's training session is making an item we no longer use inactive or if we accidentally create an item more than once and we want to get rid of it.
+[12:23 -> 12:31] So we're going to go back to the main menu here and we're going to go to the last option in the main menu called the item and recipe management.
+[12:31 -> 12:39] This will probably a listing of all the items that we've entered into the system and we can search for an item that we no longer use.
+[12:39 -> 12:43] And we can make it inactive by unchecking the active box.
+[12:43 -> 12:53] Once an item has been made inactive, it will no longer be available for recipe costing. It will no longer show up on any future account sheets, but it will not affect your retroactive reporting.
+[12:53 -> 12:58] As if an item was part of the reporting period, it will still remain on your old reports.
+[12:58 -> 13:05] Once we deactivate an item here, it will no longer show up on our item listing if we try to search for it.
+[13:05 -> 13:18] But you can always reactivate an inactive item at any time as well by going back into the item recipe manager and changing the filters to display the inactive items.
+[13:18 -> 13:25] And here I can reactivate the item and it will now once again be available for my recipe costing.
+[13:25 -> 13:38] There is no way to delete an item once it's been entered into the system. You can only simply make it inactive, but making it inactive is just as good as it no longer being in the system.
+[13:38 -> 13:55] Also take note that if a item is being used in a recipe, you will not be able to make that item inactive until either a all the recipes it's associated with have been made inactive first, or the item is removed from all of its active recipes.
+[13:55 -> 14:04] And to view the recipes here, for example, if I select the almond slices here, it shows me that the almond slice is part of two recipes, so I will not be able to make this item inactive.
+[14:04 -> 14:15] As you see, it will tell me that's being used as an ingredient in recipes, so I have to either make the two recipes inactive or remove it from those recipes before I can make the almond slices inactive.

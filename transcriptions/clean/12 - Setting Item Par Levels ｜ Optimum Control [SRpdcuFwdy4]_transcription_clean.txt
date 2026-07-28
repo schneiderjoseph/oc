@@ -1,0 +1,16 @@
+[00:10 -> 00:14] Hi everyone! Today I'm going to go over how to set up item par levels. If you're using
+[00:14 -> 00:18] Optimum Control to create your orders, you can set up item par levels. This will give
+[00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to
+[00:22 -> 00:25] generate an order up to the maximum that you've set. You'll need to make sure that your
+[00:25 -> 00:30] sales and invoices are going in daily in order to keep the quantity on hand levels accurate.
+[00:30 -> 00:34] To set up the item par levels, navigate from the main menu to the item par levels in
+[00:34 -> 00:38] the inventory section. This is going to bring up a list of all of your items. You'll be able
+[00:38 -> 00:44] to see a minimum and a maximum for each item. Set the minimum to the point in which you
+[00:44 -> 00:48] would want to reorder. For example, if you want to reorder once you are under one case,
+[00:48 -> 00:53] you can enter that here. Set the maximum to what you'd want to reorder to. In this same
+[00:53 -> 00:58] example, if you want to have at most three cases on hand, you can set this to three. Once
+[00:58 -> 01:02] you are under one case, it will generate an order to get you to three cases. Once you have
+[01:02 -> 01:07] that information entered, you can click Save at the top left. Now that this is set up,
+[01:07 -> 01:11] you'll be able to include items below par levels when you are forecasting an order. There
+[01:11 -> 01:16] is also a dashboard tile you can have to list anything under the minimum. That is how
+[01:16 -> 01:18] you set up the item par levels. Thanks for watching.

@@ -1,0 +1,27 @@
+[00:10 -> 00:40] Hi everyone. Today I'm going to show you how to process pending sales on Optimum Control. The first step is going to be to go into the sales window. This will bring up the calendar sales view. From here you're going to be able to see which days have pending sales based on the icons next to the sales figures. The yield icon means that there are pending sales and if you hover over it'll let you know how many pending sales you have and how many mismatch sales you have. The second icon means that there are ignored sales and if you hover over it'll let you know how many products were ignored.
+[00:40 -> 01:11] To process the pending sales we can double click into the day we want to process. In here it's going to list these sales as either unlinked, mismatched, ignored or valid. Unlinked means that the POS ID is not in Optimum Control. Mismatched means that the ID is in Optimum Control, however the description does not match what the program is expecting. Ignored means that these products will not count towards sales or usage and valid means that the product is linked up and being processed.
+[01:11 -> 01:22] To process unlinked sales you will want to highlight the product you want to link up and then from here it's going to give you three options. The first option is going to be to ignore the POS ID.
+[01:22 -> 01:32] So this is going to be for anything that doesn't affect sales or usage. An example in this case is going to be well done. So we can just hit the little ignore icon here and it'll push it into the ignored section.
+[01:32 -> 01:45] The next option is to link up the POS ID with a product existing in Optimum Control already. To do that we can highlight the product again, hit the magnifying glass and it'll bring up the list of all of the products in Optimum Control that are currently unlinked.
+[01:45 -> 01:49] In here it's showing as burger so we can double click on that and it'll link up.
+[01:49 -> 01:56] The last option is going to be to create the product. So to do that we can hit this last option here to create the new product.
+[01:56 -> 02:03] It's going to bring up the product window and it's going to fill in everything it knows on the left side here. So description, group, POS ID, POS description and sales price.
+[02:03 -> 02:12] The last thing we'll need to fill in is the ingredients. So we can just quickly add in fries, 10 ounces and save that.
+[02:12 -> 02:20] Once we go back to the sales that's now moved to the valid section. After the unlinked sales the next type is going to be mismatched description.
+[02:21 -> 02:29] What this means is the POS description coming in isn't matching in what we're expecting. So this is going to be the name that is coming in from the sales file.
+[02:29 -> 02:35] This is the name of the product in Optimum Control and this is the POS description we're expecting.
+[02:35 -> 02:42] In this case we know it's the same thing so we can just switch the description so we can highlight it and it's going to unlock these two options at the top switcher unlinked.
+[02:42 -> 02:49] Like I said because it's the same thing we can hit switch and it'll change the POS description to what it should be now coming in from the file.
+[02:49 -> 02:55] If it wasn't the same product we'd be able to click unlink and it would move it just back to the unlinked sales.
+[02:55 -> 03:01] The next section is going to be ignored. In here are going to be anything that you've already ignored.
+[03:01 -> 03:08] If you've ignored something incorrectly what you can do to get it back is you can highlight the product and there's an option to include it at the top.
+[03:08 -> 03:14] You can include, unignore the PLU and it'll move it to wherever it should be if it already has the product in the system.
+[03:14 -> 03:19] It'll move to valid if not it'll move it to either mismatched or unlinked.
+[03:19 -> 03:21] The last section is going to be the valid sales.
+[03:21 -> 03:25] This is going to be everything that has been processed into Optimum Control and is counting towards your sales.
+[03:25 -> 03:30] So in here you can see the description, the price, the POS ID, POS description, sales,
+[03:30 -> 03:33] suppose the quantity sold and the sales total.
+[03:33 -> 03:38] After we're done linking everything up we can then click save at the top to save any changes we've made
+[03:38 -> 03:40] and then click open to bring us back to the sales window.
+[03:40 -> 03:45] If it's then going to have an updated sales total as well as update any icons that it needs to.
+[03:45 -> 03:48] So in this case it's still just letting us know we have one ignored sale.

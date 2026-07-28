@@ -1,0 +1,53 @@
+[00:09 -> 00:39] In today's video, we're going to be going over the product recipe entry process in Optimum Control. The product recipes are all of your plated recipes, so this will be everything that's on your actual menu. The product recipes in Optimum Control is what will get linked up between Optimum Control and the POS system, so when the sales are imported we know how much to reduce from your inventory levels based on the recipes that have been entered into the system. So we're going to go into the main menu here and we're going to click on the product option. This will bring us into the product
+[00:39 -> 01:09] recipe window here, have a listing of all the product recipes we've entered in the system, and by default it will bring us into a blank product card. So the product recipes broken down into two sections here. On the left hand side, we have all the product information indicating the name of the product, how we plan on grouping it, and the links between Optimum Control and the POS system. And then on the right hand side, we have the ingredient portion, and when it comes to the ingredients that can go into a product recipe, you can select from any item you've entered in the system, you can select from any product
+[01:09 -> 01:38] prep recipe, or you can also select from any other product as an ingredient. So here we're going to start on the left hand side in the core information of the product recipe. So in the core information here, the first field is the description of the recipe, the description here can be whatever you like. It does not need to match the POS system. The second field after that here is the sales group. So the sales group, you'll generally want to make sure it matches up the way it is on your menu and the way it's set up in the POS system.
+[01:38 -> 01:54] So this is when you're running a report in Optimum Control or in the POS system, they will be the same. After that here, there is a barco field. The barco field, you'll most likely not use if you're a restaurant, it is used if you're a retail shop that is using Optimum Control.
+[01:54 -> 02:05] And then after that, we have the actual cost of the recipe based on the ingredients that we enter into the system. After the core information is filled out, the next section here is the pricing information.
+[02:05 -> 02:15] And the pricing information is where we indicate the selling price of the recipe, which will then show us the costing and where we'll enter in the links between Optimum Control and the POS system.
+[02:16 -> 02:22] So if we take a look at the first two fields here in the pricing information, we have the POS ID and POS description.
+[02:22 -> 02:32] The POS ID and POS description are the fields that are going to be used to link up a recipe you've entered into Optimum Control with the buttons that are pressed in the POS system.
+[02:33 -> 02:39] So if you don't have this information, just leave it blank and you can fill this in later on when you start importing the sales.
+[02:40 -> 02:53] The next field after that here is the selling price. So this is how much the menu item will be from on your menu and then based off the selling price and the ingredients that we enter in, they'll start calculating the cost of our recipe.
+[02:53 -> 02:57] So here we're going to open up an existing recipe we have in the system here as the example.
+[02:58 -> 03:07] So here's the recipe that I have for chili bowl. So as you see, the first field here was the description where I've indicated I'm indicating it's part of the appetizers on my menu.
+[03:08 -> 03:14] I don't have a barcode for my chili bowl and then it shows me my costing here based off the ingredients on the right hand side.
+[03:15 -> 03:23] After that here, we have the pricing information. So if I had the POS ID and description here from my POS system, I can fill that out.
+[03:24 -> 03:37] And then I'm indicating that on my menu, this recipe costs $5.50 and then based off of my ingredients here, it shows me my margin is $4.60 and my cost on this recipe is running around 16%.
+[03:37 -> 03:44] Once we have all the information on the left hand side of the product filled out, we move over to the right hand side here to indicate all the ingredients.
+[03:45 -> 03:51] So if I wanted to enter an ingredient, there's an option at the top of the screen here to indicate the type of ingredient we want to enter in.
+[03:51 -> 04:01] We can select from, as I mentioned earlier, items, preps or products and we select the respective type, it'll pop a listing of that type of ingredient for us to enter in to the recipe.
+[04:02 -> 04:13] And when we select an ingredient, it will ask us how much we want to put in, it'll ask us the unit of measure and then it'll display the costing of each individual ingredient.
+[04:13 -> 04:19] So right now, based on the current ingredients in this recipe, it currently costs me $1.29 to produce.
+[04:19 -> 04:28] And if we click on the icons that are next to the ingredients description, it will open up the respective ingredient in a new window.
+[04:28 -> 04:36] So if I need to see if my chili prep was set up properly, I can click on the icon here and open up the prep recipe for my chili.
+[04:36 -> 04:44] If I click on the icon for the items, it'll open that respective item in the item window here.
+[04:49 -> 04:54] Once we have our recipe completed, we'll see at the top of the screen here we have some additional tabs available.
+[04:54 -> 04:58] So after the ingredient tab here, there is a recipe instruction tab.
+[04:58 -> 05:07] In here is where you can indicate all the instructions required in preparing the product recipe, along with attaching an image to the recipe as well.
+[05:07 -> 05:16] You also have the option to import a word document to populate the recipe instructions if you have your instructions written up in a word document from the past.
+[05:16 -> 05:22] And if you want to attach a picture to the recipe card, there is a browse image option at the top of the screen.
+[05:22 -> 05:30] Once you have all the information for your recipe instructions completed, you can then print off the recipe here, and I'll show you what that looks like.
+[05:30 -> 05:36] So display all the ingredients at the top of the screen here. It'll show us the picture on the right-hand side.
+[05:36 -> 05:42] And if you have allergens set up in the system, it shows us the allergens that are associated with this recipe.
+[05:42 -> 05:45] And then all the ingredients will follow below.
+[05:45 -> 05:53] After the recipe instruction tab here, we have the ingredient nutrition tab.
+[05:53 -> 05:59] This will display all the ingredients that are in the recipe and the nutritional information that are associated with it.
+[05:59 -> 06:09] And based off this information here, we can click the calculate nutrition button at the top of the screen here, and this will then calculate the nutritional values for your recipe.
+[06:09 -> 06:17] You can also manually enter in the nutritional information into the system if you have obtained the nutritional information from a third-party program.
+[06:17 -> 06:26] And to do so, there is a from label button at the top of the screen here, and this will then allow you to manually enter in the nutritional information for your recipe instead.
+[06:26 -> 06:36] So once your recipes have been entered in the system, and let's say you no longer need it anymore because it's a seasonal recipe, or something that you're just taking off the menu, and you want to make it inactive.
+[06:36 -> 06:42] To do so, we go back to the main menu here, and we're going to go into the options that says item and recipe management.
+[06:42 -> 06:47] This will have a tab here for your product recipes and have a listing of all your menu recipes.
+[06:47 -> 06:52] And if there's something you no longer carry, you can come in here and make that recipe inactive.
+[06:52 -> 07:01] Once a recipe has been deactivated, it will no longer be a part of your sales, but you can always come back in here and reactate a recipe at any time.
+[07:01 -> 07:10] So the last thing we're going to talk about in this video are the reports that are available for your product recipes.
+[07:10 -> 07:19] So in the report section here, under the recipe section, you can print off a full product booklet under the product recipe book.
+[07:19 -> 07:30] So as you see here, it'll display each of the recipes that you've set up in the system along with all of their instructions.
+[07:30 -> 07:39] And then you can print off this book, or you can export it to a PDF file.
+[07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report.
+[07:46 -> 07:52] This report here will allow you to specify a specific percentage to display of your recipes.
+[07:52 -> 07:57] So here I'm going to say 30% and this will display all recipes over 30%.
+[07:57 -> 08:04] And letting me know that I need to go back and investigate these recipes and basically get them into a better cost percentage.
+[08:04 -> 08:11] Because prices over a long period of time between yourself and suppliers, as you're entering invoices in the system, will generally increase,
+[08:11 -> 08:13] which will affect the costing of all your recipes.
+[08:13 -> 08:22] And this report can help you determine which recipes are affected the most, free to revisit and correct those values of your recipes to get better food costing.

@@ -1,0 +1,163 @@
+=== MAPPING 66 VIDÉOS vs LIVRE ===
+
+COUVERT (dans le livre): 18
+  ✓ Setup Creation
+  ✓ Item Costing
+  ✓ Item Conversions
+  ✓ Allergen Tracking
+  ✓ Product Overview
+  ✓ Countsheet Setup
+  ✓ How to Custom Sort Your Countsheet
+  ✓ How to Re-Date or Adjust Inventory
+  ✓ Bids
+  ✓ Entering Manual Invoices
+  ✓ Importing Invoices
+  ✓ Creating and Entering Till Tapes
+  ✓ Pending Sales
+  ✓ Entering Waste
+  ✓ Creating Budget Worksheets
+  ✓ Backups
+  ✓ Catering
+  ✓ Buffets
+
+PARTIELLEMENT COUVERT: 32
+  ~ An Introduction to OC Pro (Ch.1)
+      → Dashboard widgets
+      → Order reminder tile
+      → OC Mobile export from inventory
+      → Prep par levels overview
+  ~ Taxes and Adjustments (Ch.1 setup)
+      → Tax groups window
+      → Price including tax checkbox
+      → Show advanced tax adjustment fields preference
+      → Recoverable vs non-recoverable tax
+      → Apply purchase amount to items
+      → Recalculate existing invoices after tax group change
+  ~ Creating Items (Ch.3)
+      → Barcode for OC Mobile
+      → Tax group on item
+      → OR code for EDI import only vs OR code+description
+  ~ Case Size Overview (Ch.3)
+  ~ How to Use the Case Size Overview Window (Ch.3)
+  ~ Item Par Levels (Ch.7?)
+      → Item par levels window
+      → Dashboard order reminder tile
+      → Create order from par level
+      → Include items below par level checkbox
+  ~ Setting Item Par Levels (Ch.7?)
+      → Min/max par setup
+      → Dashboard tile for items under minimum
+  ~ Creating Preps (Ch.4)
+      → Prep sheet info for prep par levels
+      → Barcode on prep for OC Mobile
+      → Deactivate prep recipes tab
+  ~ Recipe Costing (Ch.4+13)
+      → Menu product detail problems report at threshold %
+  ~ Creating Products (Ch.4)
+      → Menu product detail problems report
+      → Calculate nutrition button
+      → Deactivate/reactivate products
+  ~ How to Print Countsheets (Ch.6)
+      → Hot list as count group type
+  ~ Entering Inventory (Ch.6)
+      → Export to OC Mobile
+      → Multiple count sheets for hot lists
+      → Hot list counting
+  ~ Purchasing (Ch.8)
+      → Split case on invoice
+      → Menu product detail problems report
+  ~ How to Print & Use Inventory Order Forms (Ch.7)
+      → Par levels on order forms
+      → Order reminder alternative
+  ~ Creating an Order (Ch.7)
+      → Order guide window
+      → Export file path setup
+      → Split case on orders
+      → Include items below par level
+      → Forecasted order integration
+  ~ Order Approvals (Ch.7)
+      → Order approval workflow
+      → Export blocked until approved
+  ~ Stock Transfers in OC Premier (Ch.2)
+  ~ Item Store Management (Ch.2)
+  ~ Importing Sales (Ch.9)
+      → Sales export utility as import method
+  ~ Item Classification Editor (Ch.12)
+      → Mass move to tax groups
+      → Mass move case sizes
+  ~ Usage Summary Overview (Ch.13)
+      → Hot list filter on Usage Summary
+  ~ Accounting Export (Ch.13)
+      → Accounting Export selection steps
+  ~ OC Enterprise Setup (Ch.17)
+  ~ Regions (Ch.17)
+  ~ Item Creation (Enterprise) (Ch.3+17)
+      → Consolidation ID workflow details
+      → Barcode OC Mobile
+  ~ Prep Recipe Creation (Enterprise) (Ch.4+17)
+      → Prep par levels duration/shelf life
+  ~ Creating Products (Enterprise) (Ch.4+17)
+  ~ Item Classification Editor (Enterprise) (Ch.12+17)
+  ~ Recipe Sets (Ch.17)
+      → Recipe sets window
+      → New recipe set workflow
+      → Recipe set installer tile
+      → Schedule install date
+  ~ Recipe Set Availability (Ch.17)
+      → Store-level recipe set availability control
+  ~ Recipe Set and Synchronize Configuration (Enterprise) (Ch.17)
+      → Synchronize configuration with recipe sets
+  ~ Pending Sales (OC Enterprise) (Ch.9+17)
+
+ABSENT OU QUASI ABSENT: 14
+  ✗ How to Add or Edit employees in Optimum Control (?)
+      → Employee management in OC - not in book TOC
+  ✗ Local User Creation (?)
+      → Local user creation
+      → Access levels/permissions
+  ✗ Deactivating an Item (?)
+      → Deactivate item/prep/product
+      → Hidden from search after deactivation
+      → Reactivate recipes
+  ✗ Hot List (?)
+      → Hot list creation
+      → Use hot list for inventory counts
+      → Filter Usage Summary by hot list
+  ✗ Prep Par Levels (?)
+      → Prep par levels window in recipe section
+      → Prep par report with extra columns
+      → Calculate prep needed based on sales
+  ✗ Recipe Book (?)
+      → Recipe Book feature/window
+  ✗ Revaluing Inventory (?)
+      → Re-value inventory procedure
+      → Preferences > Inventory > Last cost
+      → Trick: change count to 0 and back to re-summarize
+  ✗ Setting Order Reminders (?)
+      → Order reminder function
+      → Requires par levels first
+      → Dashboard integration
+  ✗ OC Mobile (?)
+      → Full OC Mobile workflow
+      → Apple devices only
+      → Preferences login
+      → Export/import merge vs overwrite
+      → Multi-device merge sequence
+  ✗ How to Enter Beerstore Invoices (?)
+      → Beer Store specific invoice workflow
+      → Deposit handling for beer
+  ✗ Sysco SFTP Update (Ch.8 EDI)
+      → FTP to SFTP migration for Sysco import config
+  ✗ Updating the Sales Export Utility and Retrieving Missing Sales (Ch.9)
+      → Sales export utility auto-update
+      → Retrieve missing sales
+  ✗ Enterprise User Creation (Ch.17)
+      → Enterprise website user creation
+      → Utility > Users
+      → Temporary password email
+      → Custom access levels on website
+  ✗ Pending Entities (Enterprise) (Ch.17)
+      → Pending entities approval page
+      → Company > Preferences > require approval
+      → Approve vs ignore entities
+      → Reports show unapproved pending entities

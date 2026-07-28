@@ -1,0 +1,43 @@
+[00:01 -> 00:16] In this video I'm going to take you through how to use the budget worksheet in Optimum Control version 5.
+[00:16 -> 00:26] The first thing you want to do is make sure you set your periods. This is located under the gear at the top.
+[00:26 -> 00:35] From here you're going to select preferences and then accounting, and then you'll see period preferences.
+[00:35 -> 00:45] Under period preferences you're going to define the length of your periods, so if it's a seven-day period you'll put that.
+[00:45 -> 00:54] Month in treatment will be break extended work nor break would mean that you're actually breaking up your month end,
+[00:54 -> 01:03] and you're going to account like normal on the seventh day, but then you're actually going to account on the end of the month as well.
+[01:03 -> 01:09] Extended would mean that it just extends the period to the end of the day at the end of the month.
+[01:09 -> 01:15] Ignore would be just simply to ignore the month end and count every period end.
+[01:15 -> 01:20] Fiscal year end option here will set when you want to start generating the periods.
+[01:20 -> 01:28] So if we put the first of January, when we go to generate the periods it'll start generating them after this date.
+[01:28 -> 01:32] Underneath we have the period lock-up automatically option.
+[01:32 -> 01:39] If you have this turned on, whatever dates, days you have set below will automatically lock the period.
+[01:39 -> 01:46] So that way when after three days or four days nobody can come back and alter any of the data, it's locked in there.
+[01:46 -> 01:53] Now that all these settings have been saved, we can define our periods.
+[01:53 -> 02:00] So to do that you're going to select setup, and at the bottom of the list you're going to find periods.
+[02:00 -> 02:07] So I've already generated my period, but how I did that was just up here click generate periods,
+[02:07 -> 02:14] and then select how many periods you'd like to generate starting from your fiscal year end that you set in the previous window.
+[02:14 -> 02:19] So I've already done that and it generated this as a period.
+[02:19 -> 02:26] Using these periods now we could actually go to the main window and access the budget worksheet.
+[02:26 -> 02:35] On that budget worksheet, the first thing you'll see is the fiscal year, the selected period, the projected sales,
+[02:35 -> 02:38] and then all the different accounts and incomes.
+[02:38 -> 02:47] So there's two ways to really do this. You could either take one of these budgets and select your period you'd like to use,
+[02:47 -> 02:53] enter the total projected sales that you estimate you're going to make,
+[02:53 -> 02:58] and enter all the amounts in either as amounts or percentages.
+[02:58 -> 03:04] You'll notice there's fixed and actualized. So fixed is for things like rent, loan payments,
+[03:04 -> 03:08] it's always going to be the same amount so you could fix the total dollar amount.
+[03:08 -> 03:15] Actualize actually uses what the actual values are as what the budget should be.
+[03:15 -> 03:19] So that way it's a wash and it's easier to set up quicker.
+[03:19 -> 03:29] So one way to do this is again to pick all of those fields, enter all the data as amounts or percentages and then just save it.
+[03:29 -> 03:34] Now the quicker way to do this would be to actually set up what we call a template.
+[03:34 -> 03:40] So if you select edit template at the top, kind of the same idea but you could set up a template.
+[03:40 -> 03:47] So you put in all the percentages and now you could just quickly go back to the first window here
+[03:47 -> 03:54] and instead of putting in the numbers every time, you could simply just select apply template.
+[03:54 -> 03:58] And that would actually override all the numbers with what you have as your template.
+[03:58 -> 04:06] So now you could just click save and that would actually give you your budgets all set up within the budget worksheet.
+[04:06 -> 04:11] This report here is the budget variance detail report.
+[04:11 -> 04:16] I opened it up within the software and saved it to excel just to show you a little bit clearer.
+[04:17 -> 04:24] In this report, this will show you how your actual budget ran against what you budgeted in the worksheet.
+[04:24 -> 04:31] So you could see here based on each section how much you budgeted versus what the variance was, how close you ran.
+[04:31 -> 04:35] So it's a great way to see all the different totals of what you plan for.
+[04:35 -> 04:40] You'll notice at the top, it's going to sort each of your periods next to each other.
+[04:40 -> 04:44] So you could see how it's been handled throughout the time.
+[04:44 -> 04:51] If you have any questions on this, please call support at 1-888-5555.

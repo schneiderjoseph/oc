@@ -1,0 +1,42 @@
+[00:09 -> 00:39] Hi, everyone. Today, I'm going to go over how to create an order in Optimum Control. Depending on your supplier, you can create an order and then export it to a file to either import it into your supplier's ordering system, or in other cases, you can export a PDF file and send it to the supplier directly. This can be helpful as you can use forecasted order as well as our item par levels to help you order the correct quantities. We are first going to navigate to the orders window, which is going to be in the purchasing section of the main menu. From here, the first thing we're going to need to do for
+[00:39 -> 01:09] our supplier is to set up the configuration for that. So, do that. We're going to click export, configure at the top. From here, we're going to choose the supplier we want to make the change for. So, in this case, it's going to be our national supplier. And then in here, we can choose our specification. So, if you see your supplier, you can choose it here. I'm just going to go with the generic order export. We can also create custom exports if that is required. And then the next option is going to be the order export path.
+[01:09 -> 01:32] This is where you can set up the file path that we exporting the file to so you can easily find it when you're importing it into the ordering system from the supplier. I'm just going to put it on my desktop just to make it simple and then save. Now that our configuration is complete, we can create a new order. To do that, we're going to click new at the top left. It's going to bring up our create order window where we have a couple different options to create the order.
+[01:32 -> 01:39] The first option we have is new worksheet where to give you a blank sheet for you to choose what items and quantities you want to include on the order.
+[01:39 -> 01:49] The next option is going to be order guide. Using this option will give you the ability to choose any order guide that you have created to populate the items. Let's create order guide now as an example.
+[01:49 -> 01:55] So, to do that, we're going to close out of this window here and we're going to go into the order guide option at the top.
+[01:55 -> 02:08] From here to create a new one, we're going to click new and it will bring up our order guide window. Once this is up, the first thing we'll have to do is fill the name of the order guide. I'm just going to name it national supplier.
+[02:08 -> 02:26] And then from here, we need to choose what type of order guide we're going to create, either a dynamic or a fixed. A dynamic will let you choose either a supplier, location, group or category and check off any that are going to be required and the items will update based off of what is in that supplier, location, group or category.
+[02:26 -> 02:34] A fixed order guide is going to have it so you can choose just specific items that you want on the list and it's never going to change by itself.
+[02:34 -> 02:45] For this example, let's make a dynamic order guide and we're just going to choose our national supplier as the supplier we want included in this order guide. So, we're going to select it and click save.
+[02:45 -> 02:56] We can then close that in this window. If we go back to new and then go into the order guide section, we can see that our order guide is populating there now. The next option is going to be the import order source option.
+[02:56 -> 03:06] This will give you the ability to select an event or requisition that has been created to order the stock for. This can be useful if you have a large catering event and need to ensure that you have everything ordered for it.
+[03:06 -> 03:12] This is going to populate both the items and the stock for the event or requisition that you're populating.
+[03:12 -> 03:21] The last option is the forecasted order. Here you can create an order based on your previous sales forecasted by their dollar value or amount of days.
+[03:21 -> 03:28] You can select which you want to forecast it by and then put in the corresponding either amount of days or sales that you're expecting.
+[03:28 -> 03:38] From there, you can choose what date range you want to base it off. So, if you want to base it off of the sales from last month, this year, last year, or custom date range, you can select that here.
+[03:38 -> 03:44] And then after that, we have a couple checkboxes that we can go over.
+[03:44 -> 03:52] The first checkbox is for adjust for current quantity on hand. If this is checked off, what it's going to do is it's going to adjust the order for what you have in your store.
+[03:52 -> 04:00] If it isn't checked off, it's not going to take into account what you currently have within the store and it's going to generate the order based off of just what you actually need.
+[04:00 -> 04:09] The next checkbox is round and nearest case size. What this is going to do is if it's checked off, it's going to round your case size up to the nearest whole case.
+[04:09 -> 04:17] This can be useful, as if you're forecasting an order, you might be forecasted to use 1.8 cases of something, whereas you're not able to order that.
+[04:17 -> 04:23] So, if you have this checked off, it would round that up to 2 cases. The last checkbox is going to be to include key items only.
+[04:23 -> 04:29] So, you can check this off if you only want to include the key items within your system and not all of your additional items.
+[04:29 -> 04:35] The last checkbox is going to be an option for any type of order, and that is to include items below par level.
+[04:35 -> 04:40] If you are using item par levels, it will include the items that are below the levels that you have set.
+[04:40 -> 04:44] We have a video going over how to use that and that will be in the description below.
+[04:45 -> 04:48] As an example, let's create an order using the order guide that we created.
+[04:48 -> 04:52] So, we're going to select that as an option, select the order guide and click continue.
+[04:52 -> 05:00] This is going to bring up our new order window where it's going to display any of the items that are with the national supplier, and as that is the supplier we chose for this.
+[05:00 -> 05:04] On this page, you'll be able to input or edit any of the quantities for each item.
+[05:04 -> 05:08] I'm just going to put in some random quantities for a couple of these items here.
+[05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.
+[05:19 -> 05:26] Another thing to note is in order to make sure that the order goes through successfully, you'll need to make sure to have the order code for each of your items.
+[05:26 -> 05:30] The order code is going to communicate with the supplier which item you're wanting to order from them.
+[05:30 -> 05:40] So, as we can see, we have one item here that doesn't have an order code, you would need to make sure to go into that item and put that in before you export the order in order to make sure that this gets ordered successfully.
+[05:40 -> 05:45] Once you have all of your items and quantities entered, we can then save the order by clicking save at the top.
+[05:45 -> 05:51] If there's any zeros, it's going to ask us if we want to remove any items with zero quantities, you'll generally want to click yes to this.
+[05:51 -> 05:56] This will bring us back to the main order window where we can see the order we have created.
+[05:56 -> 06:03] The next thing to do is to export the order to a file so that we can send it to our supplier so we can highlight it and click export.
+[06:03 -> 06:09] This is going to go to where we chose earlier. From here, we can click save, and it'll save it as a file in that area.
+[06:09 -> 06:17] From here, you can upload this or send it to your supplier. If you need any assistance with that, it's best to reach out to your supplier to see what the best way to receive the order is.
+[06:17 -> 06:21] That is how you create an order in OpticControl. Thanks for watching.

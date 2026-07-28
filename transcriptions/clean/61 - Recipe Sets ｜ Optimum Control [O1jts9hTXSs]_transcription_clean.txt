@@ -1,0 +1,13 @@
+[00:09 -> 00:17] Hi, everyone. Today we're going to go over how to create a recipe set in Optimum Control. A recipe set is how you'd send out new or edited items,
+[00:17 -> 00:26] preps, and products to the store level from OC Enterprise. To create a recipe set, you'll go under recipe, then recipe sets.
+[00:26 -> 00:37] This will bring you to the recipe sets window where I'll display all the previous recipe sets that have been sent down. It'll let you know the name, date, and how many stores it's been installed in.
+[00:37 -> 00:44] To create a new one, we're going to click new recipe set at the top left. This will bring us to the recipe set creation window.
+[00:44 -> 00:55] This window is broken into three sections. On the left side, we have the recipe set info. This is where you can name the recipe set. Choose the date you wanted to be installed on if you don't want it installed right away,
+[00:55 -> 01:04] as well as choose which stores get it by either selecting the whole concept, a region if you have those set up, or checking off the individual store.
+[01:04 -> 01:09] The middle section is going to list all items, preps, and products that are not yet included in the recipe set,
+[01:09 -> 01:19] whereas the right side is going to be everything that is included. By default, items, preps, or products that you create or add it will automatically be moved to the right hand side.
+[01:19 -> 01:25] If you would like to include anything that you did not edit or create, you can move from the middle section to the right hand side.
+[01:25 -> 01:34] So we can select a couple items here, or if we want to select a group, we can highlight the top one, hold shift, highlight the bottom one, and click add.
+[01:34 -> 01:44] Once you have all of your items selected, you can click save. It will then start creating the recipe set. This process can take up to a minute or two depending on the size of the recipe set.
+[01:44 -> 01:54] Once it's done saving, at the store level, you can either close and reopen the program to install the recipe set, or use the recipe set installer tile to install it.
+[01:54 -> 01:57] And that is how you create a recipe set in OC Enterprise. Thanks for watching.

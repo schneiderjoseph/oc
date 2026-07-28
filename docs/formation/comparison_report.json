@@ -1,0 +1,4012 @@
+{
+  "book_stats": {
+    "chars": 74098,
+    "words": 11166
+  },
+  "transcription_count": 66,
+  "videos_not_mentioned_in_book": [
+    {
+      "title": "Enterprise User Creation ｜ Optimum Control",
+      "file": "55 - Enterprise User Creation ｜ Optimum Control [nOrVou_JN4I]_transcription_clean.txt",
+      "coverage": 0.0
+    }
+  ],
+  "missing_important_content": [
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "[05:47 -> 05:54] It is important to set up the tax groups for tax inclusive items do sure the costs and accounting is correct for these items in order to get accurate reporting.",
+      "score": 7
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "[04:38 -> 04:43] And from here there's a check box for show advanced tax adjustment fields and invoice window.",
+      "score": 6
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "[06:00 -> 06:07] You can do that as well by just going into the tax and adjustments tab, clicking add and then selecting whichever tax you want to add.",
+      "score": 6
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.",
+      "score": 5
+    },
+    {
+      "video": "Item Par Levels ｜ Optimum Control",
+      "sentence": "[02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add.",
+      "score": 5
+    },
+    {
+      "video": "Prep Par Levels ｜ Optimum Control",
+      "sentence": "[00:39 -> 01:09] We're going to navigate to the prep par level window, which is in the recipe section of the main menu.",
+      "score": 5
+    },
+    {
+      "video": "Importing Invoices ｜ Optimum Control",
+      "sentence": "The first step is to go into the invoices window, from here, invoice import, and then we're going to select the supplier importing from the dropdown.",
+      "score": 5
+    },
+    {
+      "video": "Pending Entities (Enterprise) ｜ Optimum Control",
+      "sentence": "[02:18 -> 02:27] If you do have a setup where you must approve the pending entities, and if no one is checking on whether they should be added or not to Enterprise, the pending entities will still display on your reports.",
+      "score": 5
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[11:42 -> 11:50] export, well, the import and export to OCMobile.",
+      "score": 4
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "For taxes it's likely going to be a percentage, whereas for a deposit it's going to be value, and this is going to be whatever the cost of that adjustment or taxes, so in the case of a tax we have 6% for GST, in the case for the bottle deposit we have $2.00",
+      "score": 4
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "If your items don't have that, then generally speaking you can just add the tax to an invoice you don't need to worry about tax groups, but for those tax inclusive items we're going to create a tax group, so to do that we're going to go into the tax groups window, and then we're going to click add.",
+      "score": 4
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "[03:29 -> 03:36] The next thing we must do is assign this to an item, so from the main menu we're going to go into the items window and then find the items we want to assign it to.",
+      "score": 4
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "[03:52 -> 04:06] This is something you're going to want to check off seeing as this is for a price inclusive item, so when we check that off it's going to say the purchase price is 4855, but once we factor in the tax and adjustments it's going to go down to 4615 as the actual cost.",
+      "score": 4
+    },
+    {
+      "video": "Taxes and Adjustments ｜ Optimum Control",
+      "sentence": "[05:09 -> 05:16] Now if we go to the taxes and adjustments tab it's going to have it calculated out for what the PST is as well as the 24 bottle deposit.",
+      "score": 4
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[00:39 -> 00:58] to appear in the system, so that's your naming method, the inventory group, and how you plan on using it when it comes to your reporting and recipes.",
+      "score": 4
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[01:05 -> 01:16] The next field after the description here is the inventory group you want to associate this item with for reporting.",
+      "score": 4
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[04:32 -> 04:38] This field is used when importing electronic invoices into often control from the suppliers that do integrate with us.",
+      "score": 4
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[04:56 -> 05:05] So whatever you see on their invoice, this field is used as part of the electronic invoice importing functionality if both the or code and description is used.",
+      "score": 4
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[05:08 -> 05:13] So when importing the electronic invoices, it only references the or code field.",
+      "score": 4
+    },
+    {
+      "video": "Item Par Levels ｜ Optimum Control",
+      "sentence": "[02:48 -> 02:59] From this tile, we can click create order to create an order with those items, with the quantities filled out to get us to that maximum par level.",
+      "score": 4
+    },
+    {
+      "video": "Item Par Levels ｜ Optimum Control",
+      "sentence": "[03:14 -> 03:22] So if we click new at the top, we won't save these changes, and if we create an order by any other way, there's this check box for include items below par level.",
+      "score": 4
+    },
+    {
+      "video": "Item Par Levels ｜ Optimum Control",
+      "sentence": "[03:22 -> 03:32] If we check this off, regardless of which option we choose, once we click continue, it's going to keep those same items, bringing us up to the maximum par level, included in the order.",
+      "score": 4
+    },
+    {
+      "video": "Hot List ｜ Optimum Control",
+      "sentence": "[01:14 -> 01:27] Now that we have the hot list saved we can close out of this window and to create an inventory with that hot list we would just click new inventory at the top left here.",
+      "score": 4
+    },
+    {
+      "video": "Creating Preps ｜ Optimum Control",
+      "sentence": "So, to access the prep recipe window here, we're going to go into the main menu, and we're going to go into the recipe section here, and we're going to click on prep.",
+      "score": 4
+    },
+    {
+      "video": "Creating Preps ｜ Optimum Control",
+      "sentence": "[03:33 -> 03:44] And the prep par levels is a system that has been implemented to help us calculate how much of a prepared recipe we need for a given day of sales based off of the sales that have been imported into the system so far.",
+      "score": 4
+    },
+    {
+      "video": "Creating Preps ｜ Optimum Control",
+      "sentence": "[05:06 -> 05:11] If I select the prep recipe, it'll open up the prep recipe in its own window as well.",
+      "score": 4
+    },
+    {
+      "video": "Prep Par Levels ｜ Optimum Control",
+      "sentence": "[02:47 -> 02:57] This report is going to display very similarly to the prep par levels window with two added columns.",
+      "score": 4
+    },
+    {
+      "video": "Recipe Costing ｜ Optimum Control",
+      "sentence": "Food and beverage costs are some of the most important elements to watch in any operation, as they dictate how profitable your operation will be.",
+      "score": 4
+    },
+    {
+      "video": "Recipe Costing ｜ Optimum Control",
+      "sentence": "[00:41 -> 01:11] it's important to have your food cost reflect this.",
+      "score": 4
+    },
+    {
+      "video": "Recipe Costing ｜ Optimum Control",
+      "sentence": "[02:33 -> 02:39] Running the menu product detail problems report will allow you to target any recipes over a certain desired percentage.",
+      "score": 4
+    },
+    {
+      "video": "Recipe Costing ｜ Optimum Control",
+      "sentence": "[02:39 -> 02:46] When I run this report at 30%, you'll see several recipes that require attention as they have a higher cost than the desired percentage.",
+      "score": 4
+    },
+    {
+      "video": "Creating Products ｜ Optimum Control",
+      "sentence": "[02:22 -> 02:32] The POS ID and POS description are the fields that are going to be used to link up a recipe you've entered into Optimum Control with the buttons that are pressed in the POS system.",
+      "score": 4
+    },
+    {
+      "video": "Creating Products ｜ Optimum Control",
+      "sentence": "[03:24 -> 03:37] And then I'm indicating that on my menu, this recipe costs $5.50 and then based off of my ingredients here, it shows me my margin is $4.60 and my cost on this recipe is running around 16%.",
+      "score": 4
+    },
+    {
+      "video": "Creating Products ｜ Optimum Control",
+      "sentence": "[05:59 -> 06:09] And based off this information here, we can click the calculate nutrition button at the top of the screen here, and this will then calculate the nutritional values for your recipe.",
+      "score": 4
+    },
+    {
+      "video": "Creating Products ｜ Optimum Control",
+      "sentence": "[06:42 -> 06:47] This will have a tab here for your product recipes and have a listing of all your menu recipes.",
+      "score": 4
+    },
+    {
+      "video": "Creating Products ｜ Optimum Control",
+      "sentence": "[07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report.",
+      "score": 4
+    },
+    {
+      "video": "Creating Products ｜ Optimum Control",
+      "sentence": "[08:13 -> 08:22] And this report can help you determine which recipes are affected the most, free to revisit and correct those values of your recipes to get better food costing.",
+      "score": 4
+    },
+    {
+      "video": "Item & Recipe Management： Advanced Features ｜ Optimum Control",
+      "sentence": "After you have your backup created, you can click the amalgamate button to bring up the amalgamate window.",
+      "score": 4
+    },
+    {
+      "video": "Purchasing ｜ Optimum Control",
+      "sentence": "For any taxes, you can select the taxes and adjustment tab.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "Depending on your supplier, you can create an order and then export it to a file to either import it into your supplier's ordering system, or in other cases, you can export a PDF file and send it to the supplier directly.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "[01:09 -> 01:32] This is where you can set up the file path that we exporting the file to so you can easily find it when you're importing it into the ordering system from the supplier.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "[01:55 -> 02:08] From here to create a new one, we're going to click new and it will bring up our order guide window.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "[04:29 -> 04:35] The last checkbox is going to be an option for any type of order, and that is to include items below par level.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "[04:48 -> 04:52] So, we're going to select that as an option, select the order guide and click continue.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "[05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.",
+      "score": 4
+    },
+    {
+      "video": "Creating an Order ｜ Optimum Control",
+      "sentence": "[05:56 -> 06:03] The next thing to do is to export the order to a file so that we can send it to our supplier so we can highlight it and click export.",
+      "score": 4
+    },
+    {
+      "video": "Order Approvals ｜ Optimum Control",
+      "sentence": "[02:22 -> 02:31] And then if we go back to the Orders window, we can see if we highlight the orders, export is still unavailable because it hasn't been approved, but the set approved option is there.",
+      "score": 4
+    },
+    {
+      "video": "OC Mobile ｜ Optimum Control",
+      "sentence": "[00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile.",
+      "score": 4
+    },
+    {
+      "video": "OC Mobile ｜ Optimum Control",
+      "sentence": "Once the inventory is brought up, we can click export at the top, 20CMobile, it doesn't say it's exporting and complete, and the bottom right it'll let us know when it's available for download on the device.",
+      "score": 4
+    },
+    {
+      "video": "OC Mobile ｜ Optimum Control",
+      "sentence": "[02:33 -> 02:43] When it is, you can click import at the top, from OCMobile.",
+      "score": 4
+    },
+    {
+      "video": "Stock Transfers in OC Premier ｜ Optimum Control",
+      "sentence": "[01:54 -> 01:59] Then we'll go into the stock transfer section of the main menu again and select approve requests.",
+      "score": 4
+    },
+    {
+      "video": "Stock Transfers in OC Premier ｜ Optimum Control",
+      "sentence": "[03:53 -> 04:00] We can go to the main menu and we're going to want to do this from the store transferring out and then go into the transfer window here.",
+      "score": 4
+    },
+    {
+      "video": "Entering Manual Invoices ｜ Optimum Control",
+      "sentence": "Invoices are important to enter to ensure the cost of your items are being updated and for the use of the items to be tracked.",
+      "score": 4
+    },
+    {
+      "video": "Entering Manual Invoices ｜ Optimum Control",
+      "sentence": "[02:04 -> 02:16] The next tab we're going to go into is the Tax and Adjustments tab.",
+      "score": 4
+    },
+    {
+      "video": "Importing Invoices ｜ Optimum Control",
+      "sentence": "Go to the Taxes and Adjustments tab, click Add, put in our taxes,",
+      "score": 4
+    },
+    {
+      "video": "How to Enter Beerstore Invoices ｜ Optimum Control",
+      "sentence": "[09:23 -> 09:30] So, it's always important to double check your unit costs to make sure nothing's different from the last time you purchased it.",
+      "score": 4
+    },
+    {
+      "video": "How to Enter Beerstore Invoices ｜ Optimum Control",
+      "sentence": "[11:32 -> 11:37] So, now what you want to do is select taxes and adjustments.",
+      "score": 4
+    },
+    {
+      "video": "Item Store Management ｜ Optimum Control",
+      "sentence": "This is an important tool to use as it will tell you the system that is the same item, prepper, product, across the stores, and will allow transfers in consolidated reporting for the item.",
+      "score": 4
+    },
+    {
+      "video": "Updating the Sales Export Utility and Retrieving Missing Sales ｜ Optimum Control",
+      "sentence": "[02:12 -> 02:23] So if we pick all of this week and we click process, that's actually going to retrieve all your sales and import them right back into that database.",
+      "score": 4
+    },
+    {
+      "video": "Usage Summary Overview ｜ Optimum Control",
+      "sentence": "To ensure this report is accurate, you must have all of your sales, purchases, waste, and inventory complete.",
+      "score": 4
+    },
+    {
+      "video": "Usage Summary Overview ｜ Optimum Control",
+      "sentence": "[02:59 -> 03:03] Once you have all of your parameters selected for the report, we can click run report to generate it.",
+      "score": 4
+    },
+    {
+      "video": "Usage Summary Overview ｜ Optimum Control",
+      "sentence": "[05:10 -> 05:22] The last field that's drillable is going to be the waste, and when you drill into this, it's going to bring you the waste detail report, which, like the item sales detail report, will show you what days it was wasted on and how much.",
+      "score": 4
+    },
+    {
+      "video": "Backups ｜ Optimum Control",
+      "sentence": "Once we click that, it will bring up a window where we can choose where we want to backup to, and then it will have the backup button which we can click to make the backup.",
+      "score": 4
+    },
+    {
+      "video": "OC Enterprise Setup ｜ Optimum Control",
+      "sentence": "It is important to set these up correctly so that all of your items, preps and products, have the correct general information in order to use and report on them correctly.",
+      "score": 4
+    },
+    {
+      "video": "Item Creation (Enterprise) ｜ Optimum Control",
+      "sentence": "[03:23 -> 03:33] If you have the order code from your supplier, I always recommend entering it as it's used for importing electronic invoices into Optic Control from the suppliers that have the EDI integration set up with us.",
+      "score": 4
+    },
+    {
+      "video": "Item Creation (Enterprise) ｜ Optimum Control",
+      "sentence": "[03:42 -> 03:48] We typically recommend leaving this field blank as when you're importing the electronic invoice into Optimum, it does one of two things.",
+      "score": 4
+    },
+    {
+      "video": "Item Creation (Enterprise) ｜ Optimum Control",
+      "sentence": "[03:57 -> 04:03] If only the order code is used, it will only use that field as a reference against the electronic invoice.",
+      "score": 4
+    },
+    {
+      "video": "Prep Recipe Creation (Enterprise) ｜ Optimum Control",
+      "sentence": "[02:30 -> 02:39] After we have all of the units selected, so we have one batch with five pounds in a batch and then 16 ounces in a pound, it's going to break down with the actual cost per recipe unit is.",
+      "score": 4
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[03:51 -> 03:55] The prep par levels are determined by the sales that have been imported into optimal, and",
+      "score": 3
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[04:20 -> 04:27] Now, with all this information, we could actually go right to the main menu, select prep",
+      "score": 3
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[06:32 -> 06:39] activity report if you click the name.",
+      "score": 3
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[07:28 -> 07:34] You simply just go to the top, click Reports, and there you are.",
+      "score": 3
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[10:41 -> 10:47] you could quickly look and see did I miss any of those Tuesday orders, or I could put the invoice in.",
+      "score": 3
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[10:53 -> 10:58] Invoice, sales, waste, all the lists are built this way now.",
+      "score": 3
+    },
+    {
+      "video": "An Introduction to OC Pro ｜ Optimum Control",
+      "sentence": "[11:10 -> 11:16] The inventory window has been updated as well.",
+      "score": 3
+    },
+    {
+      "video": "Setup Creation ｜ Optimum Control",
+      "sentence": "[00:58 -> 01:09] Categories are going to be your groups of groups for use and filtering or looking at your reports, whereas the inventory and sales groups are going to be used for items and products respectively.",
+      "score": 3
+    },
+    {
+      "video": "Setup Creation ｜ Optimum Control",
+      "sentence": "[02:18 -> 02:27] The units of measures are used in setting up your items to indicate how you plan on purchasing them, versus how you plan on reporting on them, versus how you plan on using them in your recipes.",
+      "score": 3
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[01:16 -> 01:25] The next field after that is the main location we generally store the item in within our establishment.",
+      "score": 3
+    },
+    {
+      "video": "Creating Items ｜ Optimum Control",
+      "sentence": "[01:57 -> 02:05] When we select a unit type, it's going to populate a reporting unit and a default ingredient unit.",
+      "score": 3
+    },
+    {
+      "video": "Item Costing ｜ Optimum Control",
+      "sentence": "[01:37 -> 01:48] Once we have chosen our settings, we can click calculate costing.",
+      "score": 3
+    }
+  ],
+  "per_video_gaps": [
+    {
+      "title": "What is Optimum Control？",
+      "file": "00 - What is Optimum Control？ [I86e7i8ENJQ]_transcription_clean.txt",
+      "trans_words": 149,
+      "missing_sentences_count": 0,
+      "top_missing_sentences": [],
+      "unique_key_phrases": [
+        "bit of advice. to run his restaurant",
+        "set out with that goal. but",
+        "1.5% that he was losing up",
+        "that gave him better insight",
+        "the time greg didn t realize",
+        "s a restaurant owner. before",
+        "that gave him better",
+        "where he could cut how to maximize",
+        "have been operating at 28.5%. at",
+        "so greg set out with that goal."
+      ]
+    },
+    {
+      "title": "An Introduction to OC Pro ｜ Optimum Control",
+      "file": "01 - An Introduction to OC Pro ｜ Optimum Control [O0MhrTRe8ro]_transcription_clean.txt",
+      "trans_words": 2351,
+      "missing_sentences_count": 44,
+      "top_missing_sentences": [
+        {
+          "sentence": "[11:42 -> 11:50] export, well, the import and export to OCMobile.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:51 -> 03:55] The prep par levels are determined by the sales that have been imported into optimal, and",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:20 -> 04:27] Now, with all this information, we could actually go right to the main menu, select prep",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[06:32 -> 06:39] activity report if you click the name.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[07:28 -> 07:34] You simply just go to the top, click Reports, and there you are.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[10:41 -> 10:47] you could quickly look and see did I miss any of those Tuesday orders, or I could put the invoice in.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[10:53 -> 10:58] Invoice, sales, waste, all the lists are built this way now.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[11:10 -> 11:16] The inventory window has been updated as well.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "could actually see 06 40 -> 06",
+        "their own employee 09 05 -> 09",
+        "more flexibility with the way we 10 04",
+        "export your count sheets",
+        "55 the prep par levels are determined by",
+        "report. so this gives you that functionality of",
+        "so you could see what",
+        "34 to give it even more",
+        "cost more than if 12 57 -> 13",
+        "11 so now if you take any of"
+      ]
+    },
+    {
+      "title": "Setup Creation ｜ Optimum Control",
+      "file": "02 - Setup Creation ｜ Optimum Control [yviqGiHkVOk]_transcription_clean.txt",
+      "trans_words": 605,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:58 -> 01:09] Categories are going to be your groups of groups for use and filtering or looking at your reports, whereas the inventory and sales groups are going to be used for items and products respectively.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:18 -> 02:27] The units of measures are used in setting up your items to indicate how you plan on purchasing them, versus how you plan on reporting on them, versus how you plan on using them in your recipes.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:09 -> 01:23] For example, in the inventory groups section, we have groups such as meat, produce, and bread that are all in the food category.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "09 categories are going to be your groups",
+        "-> 02 09 after the storage locations we",
+        "one thing we do suggest is with",
+        "accounting program. if you re planning",
+        "from your accounting software. if you want",
+        "of groups for use and filtering or looking",
+        "left as well as the delete and the",
+        "its assigned locations. an item",
+        "up your items you can",
+        "volume units of measure and some"
+      ]
+    },
+    {
+      "title": "Taxes and Adjustments ｜ Optimum Control",
+      "file": "03 - Taxes and Adjustments ｜ Optimum Control [V-FpLoKRPQ8]_transcription_clean.txt",
+      "trans_words": 1476,
+      "missing_sentences_count": 41,
+      "top_missing_sentences": [
+        {
+          "sentence": "[05:47 -> 05:54] It is important to set up the tax groups for tax inclusive items do sure the costs and accounting is correct for these items in order to get accurate reporting.",
+          "importance_score": 7
+        },
+        {
+          "sentence": "[04:38 -> 04:43] And from here there's a check box for show advanced tax adjustment fields and invoice window.",
+          "importance_score": 6
+        },
+        {
+          "sentence": "[06:00 -> 06:07] You can do that as well by just going into the tax and adjustments tab, clicking add and then selecting whichever tax you want to add.",
+          "importance_score": 6
+        },
+        {
+          "sentence": "For taxes it's likely going to be a percentage, whereas for a deposit it's going to be value, and this is going to be whatever the cost of that adjustment or taxes, so in the case of a tax we have 6% for GST, in the case for the bottle deposit we have $2.00",
+          "importance_score": 4
+        },
+        {
+          "sentence": "If your items don't have that, then generally speaking you can just add the tax to an invoice you don't need to worry about tax groups, but for those tax inclusive items we're going to create a tax group, so to do that we're going to go into the tax groups window, and then we're going to click add.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:29 -> 03:36] The next thing we must do is assign this to an item, so from the main menu we're going to go into the items window and then find the items we want to assign it to.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:52 -> 04:06] This is something you're going to want to check off seeing as this is for a price inclusive item, so when we check that off it's going to say the purchase price is 4855, but once we factor in the tax and adjustments it's going to go down to 4615 as the actual cost.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:09 -> 05:16] Now if we go to the taxes and adjustments tab it's going to have it calculated out for what the PST is as well as the 24 bottle deposit.",
+          "importance_score": 4
+        }
+      ],
+      "unique_key_phrases": [
+        "for price including tax. 03 52 -> 04",
+        "the purchase price is 4855 but once",
+        "case for the bottle deposit",
+        "down to 4615 as the actual cost. 04",
+        "on the amount in invoice line here. 05",
+        "so basically just the name of",
+        "and service tax however this could just be",
+        "add it to the invoice. 06 12 ->",
+        "thing you need to do",
+        "invoice line here. 05 22"
+      ]
+    },
+    {
+      "title": "How to Add or Edit employees in Optimum Control",
+      "file": "04 - How to Add or Edit employees in Optimum Control [BxDQ7cTldjI]_transcription_clean.txt",
+      "trans_words": 335,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:10 -> 00:17] going to select the gear at the top left corner, and then we'll select security, and then",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:24 -> 00:28] So if you want to change any of them, you could select them and change any of the data",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:02 -> 01:07] older employees that you may want to get rid of, you would select active and uncheck it.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "the person is going to be able to",
+        "going to select the gear at the top",
+        "they re logging will not",
+        "that person could log into the",
+        "if you need any help on this",
+        "you re currently logged",
+        "-> 01 44 but if you re",
+        "and uncheck it. 01 07 -> 01",
+        "be able to adjust to make somebody",
+        "work from the system anymore"
+      ]
+    },
+    {
+      "title": "Local User Creation ｜ Optimum Control",
+      "file": "05 - Local User Creation ｜ Optimum Control [wWfroNzLErU]_transcription_clean.txt",
+      "trans_words": 449,
+      "missing_sentences_count": 1,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:41 -> 02:07] of what they have access to, and what they have access to within that window.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "we go into one of them we can",
+        "to enter new users into optimum control. while",
+        "information. the only required fields are the",
+        "we can save again and",
+        "can break it down by window 01",
+        "just going to save this user for",
+        "will control what each",
+        "if we go into the employees 00 40",
+        "is recommended that each person have their",
+        "the user name and this is"
+      ]
+    },
+    {
+      "title": "Creating Items ｜ Optimum Control",
+      "file": "06 - Creating Items ｜ Optimum Control [5Yyvas_y7i0]_transcription_clean.txt",
+      "trans_words": 3087,
+      "missing_sentences_count": 71,
+      "top_missing_sentences": [
+        {
+          "sentence": "[05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.",
+          "importance_score": 5
+        },
+        {
+          "sentence": "[00:39 -> 00:58] to appear in the system, so that's your naming method, the inventory group, and how you plan on using it when it comes to your reporting and recipes.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:05 -> 01:16] The next field after the description here is the inventory group you want to associate this item with for reporting.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[04:32 -> 04:38] This field is used when importing electronic invoices into often control from the suppliers that do integrate with us.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[04:56 -> 05:05] So whatever you see on their invoice, this field is used as part of the electronic invoice importing functionality if both the or code and description is used.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:08 -> 05:13] So when importing the electronic invoices, it only references the or code field.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:16 -> 01:25] The next field after that is the main location we generally store the item in within our establishment.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:57 -> 02:05] When we select a unit type, it's going to populate a reporting unit and a default ingredient unit.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "discuss more on this when",
+        "you generally have to peel",
+        "this will probably a",
+        "system will never track any",
+        "export your count sheets",
+        "made inactive first or the item is",
+        "two recipes inactive or remove",
+        "been entered into the system. you can only",
+        "hit the drop down here and change it",
+        "you can use it. 07 21 ->"
+      ]
+    },
+    {
+      "title": "Item Costing ｜ Optimum Control",
+      "file": "07 - Item Costing ｜ Optimum Control [37YBHv8W_6M]_transcription_clean.txt",
+      "trans_words": 467,
+      "missing_sentences_count": 5,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:37 -> 01:48] Once we have chosen our settings, we can click calculate costing.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Today we're going to go over item costing on the Enterprise website.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "If you want to update your item costs on the OC Enterprise website based on purchases at the store, you can use the item costing tool.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Here you can select a specific region or store that you want to update with, as well as what date range of invoices you want.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:15 -> 01:22] The last thing to select is if you want to change the price change threshold and if you want to see any of the items that are under that threshold.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "not. 01 48 -> 01 59 if",
+        "under that threshold. 01 22 ->",
+        "to update or if you have a region",
+        "to update your item costs on the",
+        "the next option is to",
+        "any specific regions or suppliers that you",
+        "at 10% and you leave",
+        "down here whether it s most recent",
+        "s going to display anything over",
+        "we have a couple of different options on"
+      ]
+    },
+    {
+      "title": "Item Conversions ｜ Optimum Control",
+      "file": "08 - Item Conversions ｜ Optimum Control [1hDMXW5bBLA]_transcription_clean.txt",
+      "trans_words": 552,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:43 -> 02:15] to import, and then click finish.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "The first step is to go and do an item, so we can navigate to the items view, which is in the inventory section in the main menu.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So we'll put in the conversion by going into the tab here, and then we can click add.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "We can go from one tablespoon to 18 grams.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:13 -> 01:43] and we'll see the teaspoon, tablespoon, court, any volume unit of measures now available.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So if we go to the Nutrition tab, click link to and search up Salt, highlight that, click next.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "the conversion of weight to",
+        "knew the conversion of weight to",
+        "item. let s look at salt as",
+        "to get to. as an example let s",
+        "weight and there s no way",
+        "or tablespoon. you can google the conversion or",
+        "have measured. we go into a conversion. this",
+        "as weighed out into teaspoon",
+        "well. this works the same",
+        "going to have measured."
+      ]
+    },
+    {
+      "title": "Case Size Overview ｜ Optimum Control",
+      "file": "09 - Case Size Overview ｜ Optimum Control [OoRCGFYZ1W0]_transcription_clean.txt",
+      "trans_words": 404,
+      "missing_sentences_count": 5,
+      "top_missing_sentences": [
+        {
+          "sentence": "Now these are two fields that you can actually edit in this window if you need to mass change any order code or barcodes.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From the main menu, you can go into the case size overview in the inventory section.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "If you supply your information, then we have your order code and barcode field.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:16 -> 01:45] Continuing on, you'll see a breakdown of the case size information such as the cost and what's actually in the case size.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "If you click this drop down here, you'll be able to see you can search by description, barcode or order code.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "at. 01 45 -> 01 52 you",
+        "indicate the current case size. 00 43 ->",
+        "drop down here you ll",
+        "then we can save that",
+        "such as the cost and what s actually",
+        "a couple of ways to find a case",
+        "can go into the case size overview",
+        "you can actually edit in this window if",
+        "by description barcode or order code.",
+        "the top of the window you ll"
+      ]
+    },
+    {
+      "title": "How to Use the Case Size Overview Window ｜ Optimum Control",
+      "file": "10 - How to Use the Case Size Overview Window ｜ Optimum Control [IDVZjuj_qSY]_transcription_clean.txt",
+      "trans_words": 175,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:03 -> 00:33] I'm going to show you how to use the case size overview window.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "To access this window, you're going to select the case size overview at the top toolbar, and it'll open it up.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Now what you'll do is you'll select your inventory groups on the left to see which items fall underneath it.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "If you want to manually make adjustments on how much you're buying each item for, you'd be able to select the description.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:33 -> 00:48] It brings you into the item window, where you can manually change the purchase price.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:48 -> 01:00] It's a great tool to organize your database and just get a glimpse of what's in there.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "get a glimpse of what",
+        "this is a great window to",
+        "everything. if you want",
+        "to select the description.",
+        "be able to select the description.",
+        "get a glimpse of what s in",
+        "which supplier. 00 48",
+        "from current prices everything. if you",
+        "please call support at 1-88-598-5555.",
+        "the item window where you can manually"
+      ]
+    },
+    {
+      "title": "Item Par Levels ｜ Optimum Control",
+      "file": "11 - Item Par Levels ｜ Optimum Control [fxixHuXl6Uc]_transcription_clean.txt",
+      "trans_words": 833,
+      "missing_sentences_count": 21,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add.",
+          "importance_score": 5
+        },
+        {
+          "sentence": "[02:48 -> 02:59] From this tile, we can click create order to create an order with those items, with the quantities filled out to get us to that maximum par level.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:14 -> 03:22] So if we click new at the top, we won't save these changes, and if we create an order by any other way, there's this check box for include items below par level.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:22 -> 03:32] If we check this off, regardless of which option we choose, once we click continue, it's going to keep those same items, bringing us up to the maximum par level, included in the order.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "To set up the item par levels we're going to navigate to the item par level window from the main menu.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "As an example, if you look at these buttons here there's a minimum reorder level of 30 and a maximum of 50.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:28 -> 01:35] In this window there's also a couple checkboxes available as well, there's key items, and then a checkbox if you want to actualize the item.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:35 -> 01:44] Key items are used when creating an inventory or in some of your reports, so in an inventory you can create a key item count which will only include the items that are checked off here.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "you the labor of checking the",
+        "39 if we go back into the",
+        "a theoretical values to equal",
+        "your items. on each item line",
+        "are set to attain specific",
+        "key items and then a checkbox",
+        "keep those same items bringing us",
+        "for an item as well as the",
+        "then a checkbox if you",
+        "select order reminder and select add."
+      ]
+    },
+    {
+      "title": "Setting Item Par Levels ｜ Optimum Control",
+      "file": "12 - Setting Item Par Levels ｜ Optimum Control [SRpdcuFwdy4]_transcription_clean.txt",
+      "trans_words": 322,
+      "missing_sentences_count": 9,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:14 -> 00:18] Optimum Control to create your orders, you can set up item par levels.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:25 -> 00:30] sales and invoices are going in daily in order to keep the quantity on hand levels accurate.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:30 -> 00:34] To set up the item par levels, navigate from the main menu to the item par levels in",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:07 -> 01:11] you'll be able to include items below par levels when you are forecasting an order.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:18 -> 00:22] you order reminders once you hit a certain threshold of an item and will allow you to",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:22 -> 00:25] generate an order up to the maximum that you've set.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:58 -> 01:02] you are under one case, it will generate an order to get you to three cases.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:02 -> 01:07] that information entered, you can click Save at the top left.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "below par levels when you are",
+        "invoices are going in",
+        "under one case it will generate an",
+        "levels navigate from the main",
+        "quantity on hand levels",
+        "you want to reorder once you are",
+        "sales and invoices are going in",
+        "certain threshold of an item and will",
+        "the top left. now that this is",
+        "if you re using 00 14 -> 00"
+      ]
+    },
+    {
+      "title": "Deactivating an Item ｜ Optimum Control",
+      "file": "13 - Deactivating an Item ｜ Optimum Control [5ETAIJZPcRA]_transcription_clean.txt",
+      "trans_words": 371,
+      "missing_sentences_count": 4,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:40 -> 01:11] You can go into whichever tab you're wanting to deactivate.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So, in order to deactivate this item, what we need to do is either remove it from the menu,",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So, we can go into the prep tab, deactivate that, click save, and now we can go back into the item tab, uncheck the box, and click save.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:46 -> 01:51] And that is how you use the item and recipe management to activate and deactivate items.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "back a previously deactivated",
+        "prep or product because it s going",
+        "to deactivate. to deactivate",
+        "product. by doing this you will no longer",
+        "into an issue is if the item",
+        "this item what we need",
+        "to search for the item or find",
+        "may come across a situation where you",
+        "to deactivate an item you simply need to",
+        "and deactivate items. thanks for watching."
+      ]
+    },
+    {
+      "title": "Allergen Tracking ｜ Optimum Control",
+      "file": "14 - Allergen Tracking ｜ Optimum Control [GzZvezOIFVw]_transcription_clean.txt",
+      "trans_words": 266,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:09 -> 01:28] To see a report on that, you would select reports, and you would select nutrition, and that's called the allergens report.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:36 -> 00:59] Or items, select any item you want to flag to have an allergen.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:28 -> 01:35] And now we see that all these finished products or menu items contain dairy.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "the dairy towards the butter and we",
+        "track allergens. so the first",
+        "and now we see that all these",
+        "28 to see a report on that",
+        "36 in this video we re going to",
+        "ll select allergens and you could add",
+        "we can click add and we can",
+        "questions on this please call our support",
+        "track dairy. we ll save that.",
+        "kind of allergen you want"
+      ]
+    },
+    {
+      "title": "Hot List ｜ Optimum Control",
+      "file": "15 - Hot List ｜ Optimum Control [8HRigy7l0VY]_transcription_clean.txt",
+      "trans_words": 328,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:14 -> 01:27] Now that we have the hot list saved we can close out of this window and to create an inventory with that hot list we would just click new inventory at the top left here.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:27 -> 01:34] Click finish and it'll bring up the count sheet with only the items we selected.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "To create a hot list we're going to navigate to count inventory and then from here select hot lists at the top.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "27 -> 01 34 click finish",
+        "want to count you can move",
+        "go over hot lists. in optimum",
+        "we re going to go over hot lists.",
+        "can then click save and this will save",
+        "and to create an inventory with",
+        "to count. on the left side of",
+        "and then choose the hot",
+        "not do an all items count.",
+        "41 hi everyone today we re going to"
+      ]
+    },
+    {
+      "title": "Creating Preps ｜ Optimum Control",
+      "file": "16 - Creating Preps ｜ Optimum Control [RNPrtlFMvp4]_transcription_clean.txt",
+      "trans_words": 2076,
+      "missing_sentences_count": 61,
+      "top_missing_sentences": [
+        {
+          "sentence": "So, to access the prep recipe window here, we're going to go into the main menu, and we're going to go into the recipe section here, and we're going to click on prep.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:33 -> 03:44] And the prep par levels is a system that has been implemented to help us calculate how much of a prepared recipe we need for a given day of sales based off of the sales that have been imported into the system so far.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:06 -> 05:11] If I select the prep recipe, it'll open up the prep recipe in its own window as well.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "The second field here is the inventory group we want to associate the recipe with.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:38 -> 01:53] The next field after that here is asking us how we pawn on using the recipe, and just like with items you get three options, you can either set it up by weight, by volume, or by unit type, and once the recipe has been saved, the respective type is then locked.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:06 -> 02:29] So, you can say, bottle, insert, bin, depending on the prep recipe.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:29 -> 02:39] The next field after that here is asking what the recipe unit is going to be, and then the quantity will be based off of the batch yield.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:39 -> 02:54] So, it shows that there is going to be 16 ounces per pound, 12.5 pounds per batch, and then show us the cost per recipe unit.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "-> 09 23 and the last thing",
+        "for you. so the prep recipe window here",
+        "show the inactive recipes here and you",
+        "entered in here we can then print",
+        "recipe the first field is the",
+        "for your recipe. 05 36 ->",
+        "can indicate the desired batch",
+        "and it will display all",
+        "last thing we ll talk about regarding the",
+        "08 37 so if we take a"
+      ]
+    },
+    {
+      "title": "Prep Par Levels ｜ Optimum Control",
+      "file": "17 - Prep Par Levels ｜ Optimum Control [_fEarg4olkg]_transcription_clean.txt",
+      "trans_words": 789,
+      "missing_sentences_count": 10,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:39 -> 01:09] We're going to navigate to the prep par level window, which is in the recipe section of the main menu.",
+          "importance_score": 5
+        },
+        {
+          "sentence": "[02:47 -> 02:57] This report is going to display very similarly to the prep par levels window with two added columns.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "Once we have all the parameters selected correctly, we can click run report to generate.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "The prep par levels are a function that can help you determine how much prep recipes needed for a given day of sales based on the sales that have been entered into Optimum Control.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "For example, if you have a Caesar salad on the menu, and you make your own Caesar dressing, the prep par level will calculate the amount you need to have prepared for that day of sales based on the previous sales that have been entered.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "And then what we can do is we can calculate the required amounts for this prep by clicking that button at the top.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "And if you need to edit any field, they are editable.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So we're going to navigate back to the main menu and then into reports.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "preps we have in the system. from",
+        "we can run. 02 11 -> 02 21",
+        "01 42 an example and then",
+        "we do that we ll be able to",
+        "we ll be able to choose the",
+        "edit any field they are",
+        "that on hand for you",
+        "on the prep sheets. to",
+        "to be a couple different options you",
+        "window with two added columns. the"
+      ]
+    },
+    {
+      "title": "Recipe Costing ｜ Optimum Control",
+      "file": "18 - Recipe Costing ｜ Optimum Control [LEGriVpZRco]_transcription_clean.txt",
+      "trans_words": 725,
+      "missing_sentences_count": 21,
+      "top_missing_sentences": [
+        {
+          "sentence": "Food and beverage costs are some of the most important elements to watch in any operation, as they dictate how profitable your operation will be.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[00:41 -> 01:11] it's important to have your food cost reflect this.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[02:33 -> 02:39] Running the menu product detail problems report will allow you to target any recipes over a certain desired percentage.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[02:39 -> 02:46] When I run this report at 30%, you'll see several recipes that require attention as they have a higher cost than the desired percentage.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "As you can see, it's very important to not only start with a good food cost percentage, but maintain it in the future.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "The prep window gives you the ability to see how much the batch will cost to make and how you will break it down for other recipes.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:19 -> 02:28] One of the largest benefits to how Optimum Control functions is that every invoice you save will automatically change the cost of items that will roll into the cost of preps and products.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:28 -> 02:33] Because of this, at any given time you can see the current cost of goods for any recipe.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "the overall cost and on the left",
+        "products from the symbols",
+        "i ve already built out and",
+        "let you set a correct price for your",
+        "going to go over recipe costing and",
+        "sections. the core information is",
+        "over how it was created and",
+        "00 41 hi everyone. in this video we",
+        "future. with ingredients changing in cost every",
+        "additional ingredients you can click above"
+      ]
+    },
+    {
+      "title": "Recipe Book ｜ Optimum Control",
+      "file": "19 - Recipe Book ｜ Optimum Control [F-3ybaXxYPU]_transcription_clean.txt",
+      "trans_words": 185,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "First, we're going to navigate to the recipe book, which is in the report section of the main menu.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From here, you can select any individual recipes you want, print it off, or you can click check all of the bottom to select all of them.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:40 -> 00:55] This will display the recipe book on the right hand side and enable the print and save options.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "paper copy to go to a printer",
+        "how you want to print the book",
+        "are displaying. from here you can select any",
+        "which type of recipe they",
+        "control. using the recipe book you ll",
+        "right hand side and enable the print and",
+        "you re going to see two tabs one",
+        "print and save options. from here you",
+        "menu. from here you re",
+        "choose how you want to print the"
+      ]
+    },
+    {
+      "title": "Product Overview ｜ Optimum Control",
+      "file": "20 - Product Overview ｜ Optimum Control [LrM3I_00N5w]_transcription_clean.txt",
+      "trans_words": 118,
+      "missing_sentences_count": 4,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:00 -> 00:27] In this video, we're going to go over the product overview window to open it, select product overview from the toolbar at the top, and it should open with all the things that you have programmed in its products.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:55 -> 01:01] Once you've made all your changes, you would click save, and that would take place in the database.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:43 -> 00:55] So if you want to make bulk changes of how much you're selling each of your products for, you would actually just go in, select the product, and change the price.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:01 -> 01:07] If you have any questions on this window, please call support at 1-88-798-5555.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "to open it select product overview",
+        "the things that you have programmed in",
+        "your products for you",
+        "that would take place in the database.",
+        "bulk changes of how much you",
+        "programmed in its products. 00 43 ->",
+        "in the database. 01 01 -> 01 07",
+        "make bulk changes of how",
+        "much you re selling each",
+        "open it select product overview from"
+      ]
+    },
+    {
+      "title": "Creating Products ｜ Optimum Control",
+      "file": "21 - Creating Products ｜ Optimum Control [dpMO4S_Ougw]_transcription_clean.txt",
+      "trans_words": 1763,
+      "missing_sentences_count": 54,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:22 -> 02:32] The POS ID and POS description are the fields that are going to be used to link up a recipe you've entered into Optimum Control with the buttons that are pressed in the POS system.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:24 -> 03:37] And then I'm indicating that on my menu, this recipe costs $5.50 and then based off of my ingredients here, it shows me my margin is $4.60 and my cost on this recipe is running around 16%.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:59 -> 06:09] And based off this information here, we can click the calculate nutrition button at the top of the screen here, and this will then calculate the nutritional values for your recipe.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[06:42 -> 06:47] This will have a tab here for your product recipes and have a listing of all your menu recipes.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[08:13 -> 08:22] And this report can help you determine which recipes are affected the most, free to revisit and correct those values of your recipes to get better food costing.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "The product recipes in Optimum Control is what will get linked up between Optimum Control and the POS system, so when the sales are imported we know how much to reduce from your inventory levels based on the recipes that have been entered into the system.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:39 -> 01:09] recipe window here, have a listing of all the product recipes we've entered in the system, and by default it will bring us into a blank product card.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "how much to reduce from",
+        "select from as i mentioned",
+        "product recipe entry process",
+        "control with the buttons that are",
+        "looks like. 05 30 -> 05",
+        "all your recipes. 08 13 -> 08",
+        "here we re going to start on the",
+        "system and by default it",
+        "and to do so there is",
+        "the barco field you ll most"
+      ]
+    },
+    {
+      "title": "Countsheet Setup ｜ Optimum Control",
+      "file": "22 - Countsheet Setup ｜ Optimum Control [DJ0bPAlshjk]_transcription_clean.txt",
+      "trans_words": 391,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "To get to the window, we're going to go under count inventory, and then count sheet setup at the top.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Track inventory is going to be assigned to each item, and what this checkbox is going to do is, if it is checked off,",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:39 -> 00:56] it will be by default, it's going to track the inventory item, so it will be on your count sheets and it will keep a quantity on hand.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:19 -> 01:29] It will then ask you want to reset all case size to current, click yes, that's going to uncheck all the should count boxes, and this will make it so that only your default case size is going to show up on your count sheet.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:29 -> 01:37] After you click reset, just click save, and it will go through the process of saving it so that only your default case size will show up on the count sheet.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:37 -> 01:40] And that is the count sheet setup window.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "want additional case sizes",
+        "load a list with all of",
+        "count. track inventory is going to be assigned",
+        "indicated by the shopping card icon. but if",
+        "should count boxes and this",
+        "track inventory is going to",
+        "and that is the count sheet setup window.",
+        "re going to go under count",
+        "this checkbox is going to do is if",
+        "case sizes on your count sheet"
+      ]
+    },
+    {
+      "title": "How to Print Countsheets ｜ Optimum Control",
+      "file": "23 - How to Print Countsheets ｜ Optimum Control [npTvmozY8ng]_transcription_clean.txt",
+      "trans_words": 236,
+      "missing_sentences_count": 5,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:08 -> 00:14] count inventory from the toolbar at the top, choose your day you're counting, select",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:14 -> 00:19] new, and then what you're going to do is select what type of inventory you're going to",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:02 -> 00:08] Today we're going to go over how to count inventory and optimal control.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:33 -> 00:38] are broken down by individual groups, inventory groups, and a hot list is a custom list that",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:53 -> 00:59] you could select to sort by a location, group, category, or even a custom, so it's sheet",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "how to count inventory and optimal",
+        "would like. from here you could",
+        "any questions on this please call technical support",
+        "count inventory and optimal control. to",
+        "database. groups 00 33 ->",
+        "to shelf. now to actually",
+        "items. categories would be",
+        "frequently. we re going to select 00",
+        "please call technical support 01",
+        "broken down by individual groups inventory"
+      ]
+    },
+    {
+      "title": "How to Custom Sort Your Countsheet ｜ Optimum Control",
+      "file": "24 - How to Custom Sort Your Countsheet ｜ Optimum Control [0fxdggQFpZU]_transcription_clean.txt",
+      "trans_words": 305,
+      "missing_sentences_count": 5,
+      "top_missing_sentences": [
+        {
+          "sentence": "To create a customized sort list, we're going to go into count inventory and then select customize sort.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:39 -> 01:12] order you want it to be in.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you're satisfied with the order, you can then click save.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "But since we have a custom sort, we can select custom and it'll show in that order.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you select it here, it's going to remember that going forward.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "create a customized sort list we re going",
+        "supposed to be under",
+        "by location which is going to break it",
+        "save. there s also an option",
+        "you are only sorting some of your",
+        "it s going to show by location",
+        "going to go into count inventory and",
+        "want it to be in. once you re",
+        "it s going to ask us which way",
+        "want to sort it. by default it s"
+      ]
+    },
+    {
+      "title": "Entering Inventory ｜ Optimum Control",
+      "file": "25 - Entering Inventory ｜ Optimum Control [twjGI2cOw40]_transcription_clean.txt",
+      "trans_words": 743,
+      "missing_sentences_count": 14,
+      "top_missing_sentences": [
+        {
+          "sentence": "Or if you have our OC mobile, you can click export and export to OC mobile.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From the main menu, we're going to navigate to count inventory in the inventory section.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "From there, to create a new inventory, we're just going to click new at the top left.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "From here, you can choose what type of inventory you want to create as well as select the date.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:40 -> 01:10] In the morning, you'd want to select yesterday's date as you're counting what you would have had at the end of yesterday.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Next, you can select what kind of inventory you're doing.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "One thing to note is if you do want to count a category group or a hot list, and you want to select multiple groups or hot lists, you can check off this box for multiple count sheets required.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:10 -> 01:40] Click next, and it'll give you the options available.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "will give you a list of",
+        "have another video on this as",
+        "will just print off the",
+        "reason wrong count click ok",
+        "there s three columns for",
+        "give you a couple options to get",
+        "the end of yesterday. next you can",
+        "mobile. we have another",
+        "print it off by clicking print and",
+        "do want to count a category"
+      ]
+    },
+    {
+      "title": "How to Re-Date or Adjust Inventory ｜ Optimum Control",
+      "file": "26 - How to Re-Date or Adjust Inventory ｜ Optimum Control [732lbKtDc_0]_transcription_clean.txt",
+      "trans_words": 137,
+      "missing_sentences_count": 5,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:03 -> 00:34] Here is how to adjust and re-date inventory in Optimum Control.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "You'll select count inventory from the toolbar at the top.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "To adjust the date, you'll actually just select the inventory you've entered.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "And on the calendar select the new date that you want the inventory for.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "To adjust the inventory, what you're going to do is open up the inventory, select adjust count sheet.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "any questions on this please call technical support",
+        "adjustment reason. so if it was the wrong",
+        "in optimum control. you ll select count inventory",
+        "the new date that you want the",
+        "to give an adjustment",
+        "ll click re-date inventory.",
+        "new date that you want the inventory",
+        "going to then re-summarize and",
+        "toolbar at the top. to",
+        "please call technical support"
+      ]
+    },
+    {
+      "title": "Revaluing Inventory ｜ Optimum Control",
+      "file": "27 - Revaluing Inventory ｜ Optimum Control [Frf-ktDxQMg]_transcription_clean.txt",
+      "trans_words": 481,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "To do this, we're going to go into the settings, gear icon on the top left, go under preferences, inventory, and select last cost.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "We're going to go into the main menu, go into the count inventory window,",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:10 -> 00:40] In Optimum Control, you may run into a situation where you notice that your item or variants in the usage summary report is not the value you are expecting.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "In order to fix this, you can re-value your inventory.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "It'll then bring us to the report where we can see that we bought one case for $39.95, $64.00 at a distance.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:42 -> 02:06] and the inventory want to adjust.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "we can update it to what the price",
+        "the count sheet. what we re",
+        "we can re-summarize and save. the reason is",
+        "to do this we re going",
+        "right into the item.",
+        "the inventory here. adjust",
+        "double check if the purchases are",
+        "into a situation where you",
+        "case size change. in order to fix this",
+        "change. in order to fix this"
+      ]
+    },
+    {
+      "title": "Item & Recipe Management： Advanced Features ｜ Optimum Control",
+      "file": "28 - Item & Recipe Management： Advanced Features ｜ Optimum Control [M22H8HZZrQs]_transcription_clean.txt",
+      "trans_words": 1066,
+      "missing_sentences_count": 13,
+      "top_missing_sentences": [
+        {
+          "sentence": "After you have your backup created, you can click the amalgamate button to bring up the amalgamate window.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:50 -> 04:03] To use it, let's click into it and it's going to bring up the associate items window from here.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Today I'm going to go over how to use the advanced features in the item and recipe management window.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:40 -> 01:10] This is going to be found in the miscellaneous section on the main menu on the right side.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:10 -> 01:40] From here, we can highlight the products we want to replace, so I'm going to highlight both of them by clicking one holding shift and clicking the bottom one.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once we do that, we can click replace ingredient and it's going to bring up the replacing ingredient window, where we can search for the item we want to replace it with.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "One thing to note is when you are selecting an item,",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once we have that selected, we can click replace.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "from here we can highlight the products",
+        "fresh cucumber usage into",
+        "deactivating 02 40 ->",
+        "you re using going forward so",
+        "there are three features",
+        "with. in this case it s",
+        "example. in this database i know that we",
+        "it with. in this case it",
+        "database i know that we have",
+        "click yes. now we can see that there"
+      ]
+    },
+    {
+      "title": "Purchasing ｜ Optimum Control",
+      "file": "29 - Purchasing ｜ Optimum Control [hMBuyvdh_m8]_transcription_clean.txt",
+      "trans_words": 837,
+      "missing_sentences_count": 18,
+      "top_missing_sentences": [
+        {
+          "sentence": "For any taxes, you can select the taxes and adjustment tab.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "You can double click on the left or drag and drop the items to the right side of the window to add them to the invoice.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:12 -> 01:42] The cauliflower was a split case because we only ordered three pounds instead of an entire case, so we'll select split case to break this up.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "You'll be able to see how your invoice was coded by selecting the account balance tab.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:42 -> 03:12] as you enter to change your costs on all your existing recipes.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:12 -> 03:42] However, we have an interface to all these suppliers that can generate EDI 810 invoices that can be imported into optimum control rather than manually entered.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "A 5-page invoice could take you as little as 5 minutes to import.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Entering your purchases into Optimum Control is one of the most important functions of the software.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "this can also be displayed as a report",
+        "control. the numbers provided",
+        "ll be adding celery carrots",
+        "used for valuable decision making",
+        "you to code things like",
+        "we re going to finish filling",
+        "of seeing the current cost of goods",
+        "an optimum control. entering your",
+        "possible k sizes displayed right here in one",
+        "is great as it will limit"
+      ]
+    },
+    {
+      "title": "How to Print & Use Inventory Order Forms ｜ Optimum Control",
+      "file": "30 - How to Print & Use Inventory Order Forms ｜ Optimum Control [FFs_y5Amgrg]_transcription_clean.txt",
+      "trans_words": 390,
+      "missing_sentences_count": 11,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:19 -> 00:32] So, you're going to select the Invitory Order form, and the choice is yours.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:03 -> 00:09] In this video, we're going to go over how to print off the Invitory Order form for ordering Invitory.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:09 -> 00:19] So, to generate the actual form, you're going to go to the top two reports, and this report is actually under Purchasing.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "If you'd like to see all suppliers, just leave it as it is and click Run Report, and that generates the report.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:46 -> 00:58] So, what this is meant for is you could print it off, walk around, and by area you could see all the items on your shelf, who you buy them from, the order code, how you receive it.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:15 -> 01:20] So, in a couple days, we're going to be totally out of almonds, so we better order that item.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:20 -> 01:26] The other thing that we have on here is par levels, which you could actually see one of my previous videos for that.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:26 -> 01:36] But basically, you could set a min and max on here, and there's another way where you could actually run the order reminder to tell us, hey, this on hand is less than your min.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "and that generates the report.",
+        "the order form. if you have any questions",
+        "of almonds so we better",
+        "your goods. 01 54 -> 02",
+        "where you could filter",
+        "hand is less than your min.",
+        "this knowledge you d write down what",
+        "01 54 -> 02 04 but that s",
+        "reference but there is",
+        "if you have any questions"
+      ]
+    },
+    {
+      "title": "Setting Order Reminders ｜ Optimum Control",
+      "file": "31 - Setting Order Reminders ｜ Optimum Control [HiPGeY5K4SI]_transcription_clean.txt",
+      "trans_words": 412,
+      "missing_sentences_count": 11,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:29 -> 01:34] So from here, you could click create order.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:34 -> 01:37] And that populates the order window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:06 -> 00:12] In this video, we're going to go over using the order reminder function.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:12 -> 00:17] what's going to have to happen first is you're going to have to set up your par levels.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:17 -> 00:25] Par levels are your min and max for each item you carry, so when you have less on hand than your min,",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:25 -> 00:32] it's going to ask you to order to your max.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "To start this process, you're going to go to the top and select item par levels.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:34 -> 00:41] And from this window, you should see all of your items in the system.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "is the build too. 00",
+        "order is what we think you",
+        "on your dashboard. 01",
+        "to actually look at the information what you",
+        "so everything s an even case. 01",
+        "you re going to turn on",
+        "that for every last item. 00 52",
+        "-> 01 43 so what you need",
+        "order. so that way okay well if you",
+        "even case. 01 50 -> 01 55 and"
+      ]
+    },
+    {
+      "title": "Creating an Order ｜ Optimum Control",
+      "file": "32 - Creating an Order ｜ Optimum Control [nBxQxzhbIjw]_transcription_clean.txt",
+      "trans_words": 1584,
+      "missing_sentences_count": 40,
+      "top_missing_sentences": [
+        {
+          "sentence": "Depending on your supplier, you can create an order and then export it to a file to either import it into your supplier's ordering system, or in other cases, you can export a PDF file and send it to the supplier directly.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:09 -> 01:32] This is where you can set up the file path that we exporting the file to so you can easily find it when you're importing it into the ordering system from the supplier.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:55 -> 02:08] From here to create a new one, we're going to click new and it will bring up our order guide window.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[04:29 -> 04:35] The last checkbox is going to be an option for any type of order, and that is to include items below par level.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[04:48 -> 04:52] So, we're going to select that as an option, select the order guide and click continue.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:56 -> 06:03] The next thing to do is to export the order to a file so that we can send it to our supplier so we can highlight it and click export.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "We are first going to navigate to the orders window, which is going to be in the purchasing section of the main menu.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "here. i m just going to",
+        "click new at the top left. it s",
+        "re importing it into the",
+        "to order a split case for",
+        "going to go into the order",
+        "file path that we exporting the file",
+        "it as a file in that area. 06",
+        "can easily find it when you",
+        "file so that we can send",
+        "that will be in the description"
+      ]
+    },
+    {
+      "title": "Order Approvals ｜ Optimum Control",
+      "file": "33 - Order Approvals ｜ Optimum Control [GZUyYua4GCY]_transcription_clean.txt",
+      "trans_words": 693,
+      "missing_sentences_count": 18,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:22 -> 02:31] And then if we go back to the Orders window, we can see if we highlight the orders, export is still unavailable because it hasn't been approved, but the set approved option is there.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "This allows for an additional level of cost controls to ensure orders are within approval limits.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:40 -> 01:10] Next, we will need to set the users with and without enough permission to export the order.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "We go to the Axis levels, and because we're making it so that the Manager doesn't have enough permission to export the order, we're going to select that user through that Axis level, and then we're going to go into Purchasing, Orders, Order Selection View, Commands, and then we see an option for approve order here.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:45 -> 01:50] Next to show how this works, I'm going to sign in as the Manager user and navigate to the order window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:58 -> 02:07] And then if we go to the order window, we see there's two orders here.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:38 -> 02:49] Now we can filter this for approved orders and we can see they're both there and the export option is available.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:49 -> 03:07] Now, if we sign back in as the Manager user and go to the orders, if we highlight for approved orders again, we now have the ability to export this approved order.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "the orders if we highlight for",
+        "level and then we re going to go",
+        "confirm that the users",
+        "to do this we re going",
+        "10 next we will need to set",
+        "orders and we can see they re",
+        "ensure orders are within approval limits. there are",
+        "to go into purchasing orders",
+        "can also double check that the head",
+        "have two users a head office"
+      ]
+    },
+    {
+      "title": "Bids ｜ Optimum Control",
+      "file": "34 - Bids ｜ Optimum Control [ntIou_NPw0Y]_transcription_clean.txt",
+      "trans_words": 528,
+      "missing_sentences_count": 11,
+      "top_missing_sentences": [
+        {
+          "sentence": "Once they're imported, when you generate an order, it will select the case size to use based on the best price.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "This time, instead of clicking export, we'll click import.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:24 -> 02:32] That is how you export and import bids into OC.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Today, I'm going to go over how to export and import bid prices.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Today, I'm going to go over how to export and import those bid sheets into the program.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "First, we will need to go into the bid list window, which is under orders, and then bid lists.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Next, to generate the file, to simplest clicking export at the top, and then choosing where you want to save the file.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you have that location selected, click save.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "bakery shop because currently that s the only",
+        "where you want to save the file.",
+        "match whatever was in the",
+        "import those bid sheets into the program. first",
+        "import bid prices. in optimum control you",
+        "chance to have a copy 01 42 ->",
+        "prices from your suppliers. once they re",
+        "they re imported when you generate an order",
+        "price is and the price here is",
+        "bid price. they will just"
+      ]
+    },
+    {
+      "title": "OC Mobile ｜ Optimum Control",
+      "file": "35 - OC Mobile ｜ Optimum Control [WclwITIKGeE]_transcription_clean.txt",
+      "trans_words": 718,
+      "missing_sentences_count": 19,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "Once the inventory is brought up, we can click export at the top, 20CMobile, it doesn't say it's exporting and complete, and the bottom right it'll let us know when it's available for download on the device.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[02:33 -> 02:43] When it is, you can click import at the top, from OCMobile.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[00:39 -> 01:01] you can do it at the top left here, choose the date you want to count, the type of inventory, in this case we're going to do in all items, and click finish.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:27 -> 01:47] On the left hand side here, we can swipe down to refresh to check the server for any new inventories, in this case we see the one we just exported, and then we can click on it to start downloading.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:55 -> 03:00] If we're just importing from one device, and you have no manual counts, it doesn't really matter whether you click no or yes.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:01 -> 03:11] If you are importing from multiple devices, you'll need to make sure you export from device A first, wait for it to tell you it's ready, then import and merge.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:11 -> 03:18] And then you'd go to your second device, and follow the same steps, export, wait for the message to come up, import and merge.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "go to your second device",
+        "it asks for it click sign it. once",
+        "cancel to cancel the import. 02",
+        "what s on the desktop with whatever we",
+        "will come in we can then save the",
+        "side is going to be the count",
+        "sheets are available in this case it",
+        "do in all items and click",
+        "going to be exporting. so we can",
+        "asks for it click sign it. once you"
+      ]
+    },
+    {
+      "title": "Stock Transfers in OC Premier ｜ Optimum Control",
+      "file": "36 - Stock Transfers in OC Premier ｜ Optimum Control [GDp5o6h1q3Y]_transcription_clean.txt",
+      "trans_words": 1040,
+      "missing_sentences_count": 27,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:54 -> 01:59] Then we'll go into the stock transfer section of the main menu again and select approve requests.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:53 -> 04:00] We can go to the main menu and we're going to want to do this from the store transferring out and then go into the transfer window here.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:33 -> 01:42] And once you have all the items that you want selected, you can click save the top, and it'll send it to the warehouse to see if they can fulfill the request and send it the stock needed.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:32 -> 02:40] Or we can go into the fulfill window and see all of the transfers that have been approved have not yet been transferred over.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:07 -> 03:13] So say we want to fulfill this request, we can check that off, click save and it'll be transferred over.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:40 -> 03:46] Once we click create, it'll go back into here as an approved transfer.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:08 -> 04:12] To create a new transfer, we would just click new at the top.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:15 -> 04:19] Select the items that are being transferred over.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "the store you want to",
+        "53 if you don t want to do",
+        "below. 04 44 -> 04 46 thanks for",
+        "move it to the approve section.",
+        "into the stock request that we just made.",
+        "requisitions. if we look",
+        "going to let us know the",
+        "to display any request that been",
+        "the first is using stock requisitions where",
+        "-> 04 46 thanks for watching."
+      ]
+    },
+    {
+      "title": "Entering Manual Invoices ｜ Optimum Control",
+      "file": "37 - Entering Manual Invoices ｜ Optimum Control [2V39Wps0Pb0]_transcription_clean.txt",
+      "trans_words": 630,
+      "missing_sentences_count": 16,
+      "top_missing_sentences": [
+        {
+          "sentence": "Invoices are important to enter to ensure the cost of your items are being updated and for the use of the items to be tracked.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[02:04 -> 02:16] The next tab we're going to go into is the Tax and Adjustments tab.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "The first step is to navigate to the invoices window, which is in the purchasing section of the main menu.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "To start entering a new invoice, we're going to click New in the top left corner of the window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:40 -> 01:13] This will bring up the invoice window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From here, you can go down the list and add anything you want to the invoice, so we can either double-click on an item, or we can search for it in this field by the name or name.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From here, you can click Add at the top, and it's going to list any tax and adjustments that you've created.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:16 -> 02:30] These would be entered in the Settings, Setup, and Tax and Adjustments section.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "we do that it s added",
+        "to navigate to the invoices window which is",
+        "here but this was updated",
+        "added to the total at the",
+        "how to enter manual invoices into optimum",
+        "the window. 00 40 -> 01 13",
+        "invoice has been saved. 03",
+        "in the settings but by",
+        "click new in the top left corner of",
+        "and for the use of the"
+      ]
+    },
+    {
+      "title": "Importing Invoices ｜ Optimum Control",
+      "file": "38 - Importing Invoices ｜ Optimum Control [edeGrE-aia0]_transcription_clean.txt",
+      "trans_words": 990,
+      "missing_sentences_count": 31,
+      "top_missing_sentences": [
+        {
+          "sentence": "The first step is to go into the invoices window, from here, invoice import, and then we're going to select the supplier importing from the dropdown.",
+          "importance_score": 5
+        },
+        {
+          "sentence": "Go to the Taxes and Adjustments tab, click Add, put in our taxes,",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[00:10 -> 00:40] Hi everyone, today we're going to go over how to import invoices into Optimum Control.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Once we do that, if the supplier has it enabled, we can click get invoices to download files from the FTP site, then they'll display in the window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:40 -> 01:10] checkbox, hit process at the top, and it'll process that invoice.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From there you can check your invoice to make sure that is the taxes, and if it is, we can click OK.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:10 -> 01:45] we can then save, and when we go back to this window here we see invoice saved.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "To fix this, we can click the dropdown menu, and I'll have a number of different ways to resolve this.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "that that item is no longer an",
+        "there you can check your invoice to",
+        "case description blank so it just goes",
+        "we can refresh and all",
+        "to create the item for you.",
+        "coming in. 03 17 -> 03 22",
+        "the order code to go towards for",
+        "00 40 hi everyone today we re going",
+        "case description than what s coming in.",
+        "-> 04 59 and that s how"
+      ]
+    },
+    {
+      "title": "How to Enter Beerstore Invoices ｜ Optimum Control",
+      "file": "39 - How to Enter Beerstore Invoices ｜ Optimum Control [w2qr1iG-fDc]_transcription_clean.txt",
+      "trans_words": 2061,
+      "missing_sentences_count": 43,
+      "top_missing_sentences": [
+        {
+          "sentence": "[09:23 -> 09:30] So, it's always important to double check your unit costs to make sure nothing's different from the last time you purchased it.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[11:32 -> 11:37] So, now what you want to do is select taxes and adjustments.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[00:33 -> 01:03] This tends to be a little bit more complicated than normal invoices, just because there's a lot of handwritten notes, and the general layout of the invoice itself is pretty confusing.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:03 -> 01:22] And that order number is the same as an invoice number.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[05:51 -> 05:59] Once in optimal, select invoices at the top, and we're going to make a new invoice.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[06:16 -> 06:31] The invoice number, which again will be the ordered number at the top, and the invoice total, which will be the very last page of the invoice to sum.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[11:37 -> 11:44] Taxes and adjustments are going to be the balance of all your deposits and the HSD total.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[11:49 -> 11:57] So, we see that the amount of tax on the invoice is a total of $355.23.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "that s negative 800 because you re getting",
+        "invoices. so make sure you watch that video",
+        "the invoice itself is",
+        "after you put in all your taxes",
+        "section. so it s broken up",
+        "02 43 the total is 3 054.55",
+        "that s kind of the breakdown of the",
+        "32 all right. so that s everything that",
+        "price goes up or down you",
+        "is for the bottles. 12"
+      ]
+    },
+    {
+      "title": "Sysco SFTP Update ｜ Optimum Control",
+      "file": "40 - Sysco SFTP Update ｜ Optimum Control [pHX_k3numak]_transcription_clean.txt",
+      "trans_words": 127,
+      "missing_sentences_count": 1,
+      "top_missing_sentences": [
+        {
+          "sentence": "To do that, click into invoices, invoice import, go into importconfig, find Cisco, double click into it, and then all we're going to have to do is add an S in front of FTP and an S in front of B2B, and then just confirm outbound has a capital O but lowercase everything else.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "do is add an s in front of",
+        "double click into it and",
+        "out of this and continue downloading",
+        "be able to download their files. to do",
+        "outbound has a capital o but lowercase everything",
+        "normal. thanks have a good",
+        "and then just confirm outbound has",
+        "do that click into invoices invoice import",
+        "make sure it works. it should come",
+        "to be able to download their files. to"
+      ]
+    },
+    {
+      "title": "Item Store Management ｜ Optimum Control",
+      "file": "41 - Item Store Management ｜ Optimum Control [5e1C1IfglTY]_transcription_clean.txt",
+      "trans_words": 491,
+      "missing_sentences_count": 7,
+      "top_missing_sentences": [
+        {
+          "sentence": "This is an important tool to use as it will tell you the system that is the same item, prepper, product, across the stores, and will allow transfers in consolidated reporting for the item.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "At the top of each column, you'll see tabs to differentiate between items, preps, or products, depending on what you're wanting to transfer.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "You'll also have the ability to top the window, either search for specific item, prepper, product, or we have filters for active or inactive, or inventory your sales groups, depending if you're an item, prepper, product.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "In this database, there's only one other store, store two, so we're going to select that.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:39 -> 02:09] to transfer over, you can simply highlight what you want to transfer over and move it across.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Or you can also highlight individual items by highlighting one, holding control on your keyboard, holding another, holding control on the keyboard, clicking another, and you'll be able to transfer all of those over.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:09 -> 02:20] that you want, you can then click save to save the changes.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "to save the changes. that s how you",
+        "to do this we re going",
+        "want to multi-select a couple of",
+        "two columns here. the column on the",
+        "ll see tabs to differentiate",
+        "the bottom one. it ll highlight",
+        "or products between the two",
+        "in between and you can drag",
+        "under the settings or the gear icon.",
+        "you have to drop down we ll"
+      ]
+    },
+    {
+      "title": "Importing Sales ｜ Optimum Control",
+      "file": "42 - Importing Sales ｜ Optimum Control [lvGbR6Stjno]_transcription_clean.txt",
+      "trans_words": 321,
+      "missing_sentences_count": 7,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:28 -> 01:34] If you have any pending sales you want to learn how to process them, you can click the link at the end of this video to learn more.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "The first way to import sales is to use our sales export utility.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:50 -> 01:02] The second way to import sales is through a CSV file from your POS system.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you have that file, what you do is from the main menu, you'd go into the sales window.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:02 -> 01:14] At the top left, we'd click New.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "From there, we can double-click on the file we want to import and click Continue.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:34 -> 01:38] That is how you import sales and adopt control.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "default import folder. from there we can double-click",
+        "could take a couple of",
+        "this will then load up the sales.",
+        "know the sales have been imported in.",
+        "browse to our default import folder.",
+        "the sales have been now imported. 01 28",
+        "been configured. once you",
+        "the sales have been imported in. 00 50",
+        "or two. but we re just going to",
+        "sales have been imported in."
+      ]
+    },
+    {
+      "title": "Creating and Entering Till Tapes ｜ Optimum Control",
+      "file": "43 - Creating and Entering Till Tapes ｜ Optimum Control [R0c9cbfNWDE]_transcription_clean.txt",
+      "trans_words": 332,
+      "missing_sentences_count": 5,
+      "top_missing_sentences": [
+        {
+          "sentence": "This will bring up a new window that will allow you to select the products in your Tiltape.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you've selected everything that you want to be included in your Tiltape, click Save.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you've selected everything that you want to be included in your Tiltape, click Save.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "To do that, we can click New at the top left, select New Tiltape Sale, select the Tiltape list you want to use, and click Continue.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:42 -> 01:55] After you're done entering in all of your quantities and sales, you can double-check that the date you're putting in is correct, and then click Save.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "tiltape. to create a",
+        "to create your tiltape list. to do",
+        "to create the tiltape itself.",
+        "we re going to do today we",
+        "to do this we re going",
+        "40 hi everyone. today i ll be going",
+        "we hold shift highlight the bottom product and",
+        "is to create the tiltape itself. to",
+        "products. we can then either move",
+        "first step to entering a tiltape"
+      ]
+    },
+    {
+      "title": "Pending Sales ｜ Optimum Control",
+      "file": "44 - Pending Sales ｜ Optimum Control [ts4DlTvSpUM]_transcription_clean.txt",
+      "trans_words": 880,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:40 -> 01:11] To process the pending sales we can double click into the day we want to process.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:38 -> 03:40] and then click open to bring us back to the sales window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:45 -> 01:49] In here it's showing as burger so we can double click on that and it'll link up.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:56 -> 02:03] It's going to bring up the product window and it's going to fill in everything it knows on the left side here.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:49 -> 02:55] If it wasn't the same product we'd be able to click unlink and it would move it just back to the unlinked sales.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:33 -> 03:38] After we're done linking everything up we can then click save at the top to save any changes we've made",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "you ve already ignored. 03 01 -> 03",
+        "the pos id is not in",
+        "case we know it s the same",
+        "next type is going to",
+        "same thing so we can",
+        "does not match what the",
+        "product existing in optimum control already.",
+        "56 -> 02 03 it s going",
+        "made 03 38 -> 03 40 and",
+        "last section is going to be the valid"
+      ]
+    },
+    {
+      "title": "Entering Waste ｜ Optimum Control",
+      "file": "45 - Entering Waste ｜ Optimum Control [zoGzcwox1oQ]_transcription_clean.txt",
+      "trans_words": 242,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "To create a new one, we simply need to click new in the top left and it's going to bring up a new waste window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "From the main menu, we're going to go into the sales section and then into waste.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "The next step is to select the date we're putting in waste for.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:40 -> 01:10] I'm going to choose what we wasted.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once we have everything entered that we want to waste, we can then click save and this will save the wasted items.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:10 -> 01:15] To finish saving, you have now entered waste for that day in Optin Control.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "can hit this calendar icon here and choose",
+        "have now entered waste",
+        "one we simply need to click new",
+        "display any previous days of",
+        "m going to leave it at today",
+        "s going to come up with a calendar",
+        "total. once we have everything entered that we",
+        "this scenario i m going to say it",
+        "well as the reasoning. after that we can",
+        "01 10 i m going to choose what"
+      ]
+    },
+    {
+      "title": "Updating the Sales Export Utility and Retrieving Missing Sales ｜ Optimum Control",
+      "file": "46 - Updating the Sales Export Utility and Retrieving Missing Sales ｜ Optimum Control [5FZQPkvGD9Y]_transcription_clean.txt",
+      "trans_words": 422,
+      "missing_sentences_count": 10,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:12 -> 02:23] So if we pick all of this week and we click process, that's actually going to retrieve all your sales and import them right back into that database.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[00:03 -> 00:16] In this video, we're going to go over how to make sure that the sales export utility is auto-updating.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "You're going to click save and then you'll close the actual sales export.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:51 -> 01:05] Now that we have that setting turned on, we'll reopen the sales export and it's actually going to look for an update this time.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:05 -> 01:21] So now that it's detected one, we click update.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:33 -> 01:42] So that is how you would update the sales export to be on the latest.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:49 -> 02:00] So we'll click the optimal control program.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:04 -> 02:12] So what we'll do now is go to the sales export utility and pick any of the days we're missing.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "ever goes wrong with your sales export.",
+        "click sales at the top and",
+        "the sales export utility and pick any",
+        "friday 9-5 central time. 02 58 -> 03",
+        "you re going to click",
+        "to look for an update this time.",
+        "re missing. 02 12 -> 02 23",
+        "if you have any questions",
+        "the sales export and it s actually going",
+        "all of our sales that we"
+      ]
+    },
+    {
+      "title": "Item Classification Editor ｜ Optimum Control",
+      "file": "47 - Item Classification Editor ｜ Optimum Control [4x3e_agvIdo]_transcription_clean.txt",
+      "trans_words": 414,
+      "missing_sentences_count": 2,
+      "top_missing_sentences": [
+        {
+          "sentence": "Once you're in this window you can choose what you're wanting to update, whether that be groups, locations, or tax groups by hitting this drop down.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:40 -> 01:57] save your changes, just click save the top right here, and it will move everything over.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "that says retain previous location. if",
+        "into its other location.",
+        "as an example. 00 40 ->",
+        "changes just click save the top",
+        "top left utilities and then item",
+        "this tool can be found under the",
+        "item and then holding control as",
+        "use the item classification editor. this tool",
+        "move items preps or products to different groups",
+        "be able to see what s"
+      ]
+    },
+    {
+      "title": "Usage Summary Overview ｜ Optimum Control",
+      "file": "48 - Usage Summary Overview ｜ Optimum Control [DC-CNmVgw1I]_transcription_clean.txt",
+      "trans_words": 1309,
+      "missing_sentences_count": 23,
+      "top_missing_sentences": [
+        {
+          "sentence": "To ensure this report is accurate, you must have all of your sales, purchases, waste, and inventory complete.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[02:59 -> 03:03] Once you have all of your parameters selected for the report, we can click run report to generate it.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[05:10 -> 05:22] The last field that's drillable is going to be the waste, and when you drill into this, it's going to bring you the waste detail report, which, like the item sales detail report, will show you what days it was wasted on and how much.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[01:25 -> 01:35] Once we select it, we have a couple different parameters to run the report.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "This report is based off inventory, so you'll need to select the dates of inventory as you want to look between.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:29 -> 02:39] After the dates, we have the filters for if you want to select a specific hot list, so if you have a hot list set up and only want to see those items on the report, you can select that here.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:03 -> 03:10] From the top of the report, we're going to see some general information about the report, so on the far left, we're going to have the inventory date range.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:32 -> 04:40] So for example, the opening and ending inventory, if we drill into it, we'll get the inventory count detail report, we'll show how much of each was counted.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "for this item and your",
+        "04 04 the actual usage is going to",
+        "items and 10 underused",
+        "checkbox at the top. the first",
+        "within the period. 04 46 -> 04",
+        "waste detail report which like the item",
+        "have all of your parameters selected for the",
+        "variance. waste will show here",
+        "that here. 02 39 -> 02",
+        "items that you have checked off"
+      ]
+    },
+    {
+      "title": "Accounting Export ｜ Optimum Control",
+      "file": "49 - Accounting Export ｜ Optimum Control [FJ26p9Wa4-U]_transcription_clean.txt",
+      "trans_words": 468,
+      "missing_sentences_count": 9,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:06 -> 02:15] Now that we have the File exported, you can then take that to your Accounting Program and import it in.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:10 -> 00:40] Today, we're going to go over how to set up an export into your accounting system.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "The next thing you'll need to do is select the Accounting Export.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:22 -> 01:31] The next thing to do is to actually export the Accounting Data from Option Control.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So, we're going to go to the main menu, and then in the Accounting section, Export Accounting Data.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:39 -> 01:46] So, I'm going to Save this Week and Unexported En voices.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "I'm going to click Check All, and click Export.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you have that selected, you can click Save.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "options here. we can choose either all",
+        "into one of our suppliers as an",
+        "from here we can choose the",
+        "if we go into one of our suppliers",
+        "t necessarily need that",
+        "suppliers and then if we",
+        "is the number you need",
+        "need that recap right now.",
+        "save. 01 57 -> 02 06",
+        "re going to need to just enter"
+      ]
+    },
+    {
+      "title": "Creating Budget Worksheets ｜ Optimum Control",
+      "file": "50 - Creating Budget Worksheets ｜ Optimum Control [fixY-YpGB3Y]_transcription_clean.txt",
+      "trans_words": 879,
+      "missing_sentences_count": 13,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:07 -> 02:14] and then select how many periods you'd like to generate starting from your fiscal year end that you set in the previous window.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:26 -> 00:35] From here you're going to select preferences and then accounting, and then you'll see period preferences.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:53 -> 02:00] So to do that you're going to select setup, and at the bottom of the list you're going to find periods.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:00 -> 02:07] So I've already generated my period, but how I did that was just up here click generate periods,",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:19 -> 02:26] Using these periods now we could actually go to the main window and access the budget worksheet.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:26 -> 02:35] On that budget worksheet, the first thing you'll see is the fiscal year, the selected period, the projected sales,",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:19 -> 03:29] So one way to do this is again to pick all of those fields, enter all the data as amounts or percentages and then just save it.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:34 -> 03:40] So if you select edit template at the top, kind of the same idea but you could set up a template.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "want to start generating the periods. 01",
+        "different accounts and incomes.",
+        "generate the periods it ll start",
+        "below will automatically lock",
+        "period you d like to use 02",
+        "and then just save it. 03 29",
+        "of these budgets and",
+        "be just simply to ignore the month",
+        "breaking up your month end 00 54",
+        "budgeted versus what the variance"
+      ]
+    },
+    {
+      "title": "Backups ｜ Optimum Control",
+      "file": "51 - Backups ｜ Optimum Control [Q_7PrhAXSOg]_transcription_clean.txt",
+      "trans_words": 285,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "Once we click that, it will bring up a window where we can choose where we want to backup to, and then it will have the backup button which we can click to make the backup.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "Today, I'm going to go over how to make a backup of the Optimum Control database.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "The database is going to be stored locally on your computer, and it is best practice to make regular backups of it in the event that something happens to your computer.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once we're in here, you can click the three dots here to browse to whichever file path you want the backup to go to.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "You don't want to backup locally if possible because if the hard drive crashes, you would lose the backup as well as the database.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:09 -> 01:16] you can click Save the top right.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "left go under preferences and then system settings.",
+        "the hard drive crashes you would",
+        "drive crashes you would lose the backup",
+        "and then it will have the backup button",
+        "we can click to make the backup. now",
+        "to advocate to the backup",
+        "however you can also",
+        "a window where we can choose where we",
+        "button which we can click",
+        "backup of the optimum control database. the database"
+      ]
+    },
+    {
+      "title": "Catering ｜ Optimum Control",
+      "file": "52 - Catering ｜ Optimum Control [H7xZhD1Vivo]_transcription_clean.txt",
+      "trans_words": 1158,
+      "missing_sentences_count": 13,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:40 -> 01:10] We can click new at the top left and we'll bring us into the catering window view.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:55 -> 04:03] The second will be cost percentage where you can enter the cost percentage you want in the fields below and it'll calculate based on the cost of the items entered.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:21 -> 04:27] The usage in the sales will not take place until the event is extracted by clicking this button here, but before we do that, I'll just show one other thing.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "We'll first go into the catering window, which is in the event section of the main menu.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "And then we can select the customer going through the rest of the fields.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:19 -> 02:29] The next field will go into is the guest section, which is the bottom left here to add to a guest to the event.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:45 -> 03:02] The top right of the window.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:18 -> 03:32] One thing to know is with the items and preps by default, there's an added cost to them based on the cost percentage you have in the settings to modify this.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "with the quote date.",
+        "complete. we can extract it",
+        "generic guests. and this",
+        "want the sales associated with this event to",
+        "end time of the event. 02 19 ->",
+        "the menu list. this is where you enter",
+        "there s a couple things within the catering",
+        "we re going to start with the quote",
+        "into the bottom right here where we",
+        "to add some generic guests. and this is"
+      ]
+    },
+    {
+      "title": "Buffets ｜ Optimum Control",
+      "file": "53 - Buffets ｜ Optimum Control [EoqmhhQGzp0]_transcription_clean.txt",
+      "trans_words": 916,
+      "missing_sentences_count": 11,
+      "top_missing_sentences": [
+        {
+          "sentence": "Tender buffet, first we're going to navigate to the buffet window from the main menu which is in the event section.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:41 -> 01:11] We're going to start a new one by clicking new in the top left.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "The first is if everyone pays the same flat fee, you can have a generic guest or buffet guest, or if you have different costs depending on adults for his kids or something else, you can set those types up here.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "So we'll click add item, select it, and from here, it's going to be added as a line.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:17 -> 02:31] And then we have for open, add, and and waste.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:40 -> 02:50] The second or less field is going to be end.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:50 -> 02:57] Now, if this was something that you could reuse again, you could leave this as is, and that five will go back into your inventory.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:57 -> 03:04] If it's something that you can't reuse, you can add that five into the waste, and it'll be added back into how much was served.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "need to fill out. we have the unit",
+        "have all of our guests and items filled",
+        "each. the next section we",
+        "s what we started with. 02",
+        "to account for how many people",
+        "out we can then save the",
+        "going to add a guest to the window",
+        "we re going to start a new",
+        "that you could reuse",
+        "going to see some more"
+      ]
+    },
+    {
+      "title": "OC Enterprise Setup ｜ Optimum Control",
+      "file": "54 - OC Enterprise Setup ｜ Optimum Control [oyRZyGXLI0s]_transcription_clean.txt",
+      "trans_words": 553,
+      "missing_sentences_count": 4,
+      "top_missing_sentences": [
+        {
+          "sentence": "It is important to set these up correctly so that all of your items, preps and products, have the correct general information in order to use and report on them correctly.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "If you want to add any new accounts, you can click add at the top left here, or if you want to edit that field or the name of the account, you can click edit here, or delete if you don't want the account at all.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Categories are going to be your groups of groups for use when filtering or looking at your reports, whereas the inventory and sales groups are going to be for your inventory items and products respectively.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:32 -> 02:38] That is all of the required information you need in order to start setting up your items.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "the food category whereas if we go",
+        "and then we have some generic ones",
+        "the accounts are used for integration between",
+        "going to cover is accounts. the",
+        "will need to create or edit groups",
+        "delete goes for any of the",
+        "from your accounting software. if you want",
+        "is going to be the name of it",
+        "units of measure. the units of measure",
+        "and bread that are all in the"
+      ]
+    },
+    {
+      "title": "Enterprise User Creation ｜ Optimum Control",
+      "file": "55 - Enterprise User Creation ｜ Optimum Control [nOrVou_JN4I]_transcription_clean.txt",
+      "trans_words": 252,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:09 -> 00:41] Hi everyone, today I'm going to go over how to create a new user on the Enterprise website.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "From here to create a new user, we can click that at the top left here, and we'll bring us to a window where you can fill in the information for them.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "The most important thing to fill out is going to be the email address as well as the access level, so I'm just going to put in an email here, and then we can choose which access level.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "you would fill out would be",
+        "a phone number. once",
+        "email here and then we can",
+        "ask them to reset their password.",
+        "here. the next thing",
+        "the enterprise website. for someone",
+        "here. the next thing you would",
+        "assign it here. the next thing you",
+        "the most important thing to fill out is",
+        "email here and then we"
+      ]
+    },
+    {
+      "title": "Regions ｜ Optimum Control",
+      "file": "56 - Regions ｜ Optimum Control [vH97-_z6PIY]_transcription_clean.txt",
+      "trans_words": 513,
+      "missing_sentences_count": 8,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:37 -> 01:46] From there, we can click edit to go into the store information, and then in the region drop down, select the region we want to assign it to.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:10 -> 00:40] Hi everyone, today I'm going to go over regions on OC Enterprise.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "In this scenario, we're going to create a new one though, so we're going to click new region at the top, and then we're going to just name this one region 2, and then save.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:10 -> 01:27] to the region, so we're going to click assign suppliers here.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "From here, we can check off any suppliers that this region would need to be ordering from, so I'm just going to check off a couple as an example, and then we would click save.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:46 -> 01:57] Now that we have a region assigned to this store, once we create a recipe set that's being sent down to this location, it'll only send down K sizes from the suppliers indicated in the region.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:57 -> 02:06] If you send down an item without a K size from that supplier list that we've chosen for the region, it will add the default K size selected for the item and the supplier for it.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:12 -> 02:15] That is how you set up regions on OC Enterprise.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "a region assigned to this",
+        "different suppliers which could cause",
+        "region would need to be ordering from so",
+        "to do this we re going",
+        "02 06 -> 02 12 if you",
+        "for it. 02 06 -> 02 12",
+        "underneath company and then go into regions. from",
+        "sheets. 00 40 -> 01 10",
+        "supplier case size that",
+        "then into stores. this will bring up a"
+      ]
+    },
+    {
+      "title": "Item Creation (Enterprise) ｜ Optimum Control",
+      "file": "57 - Item Creation (Enterprise) ｜ Optimum Control [W0rGrSsKtyk]_transcription_clean.txt",
+      "trans_words": 1856,
+      "missing_sentences_count": 40,
+      "top_missing_sentences": [
+        {
+          "sentence": "[03:23 -> 03:33] If you have the order code from your supplier, I always recommend entering it as it's used for importing electronic invoices into Optic Control from the suppliers that have the EDI integration set up with us.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:42 -> 03:48] We typically recommend leaving this field blank as when you're importing the electronic invoice into Optimum, it does one of two things.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:57 -> 04:03] If only the order code is used, it will only use that field as a reference against the electronic invoice.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[03:20 -> 03:23] The next two fields are going to be the order code and case description fields.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:48 -> 03:52] If both the order code and case description are used, it will reference both fields.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:52 -> 03:57] And if one of them is incorrect, which is normally the description, it will prevent the invoice from importing.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:03 -> 04:06] After the order code field, we have the barcode field.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[04:06 -> 04:10] Barcode is used for inventory purposes with our OCMobile app.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "barcodes to help with",
+        "going to have three options to",
+        "case information. 06 19 -> 06 27",
+        "to fill out here is going",
+        "06 38 -> 06 42 so what",
+        "about the tax group. 04 30 -> 04",
+        "in the system. 06 03 -> 06 08",
+        "reporting unit is how you re",
+        "be a breakdown of what the cost",
+        "we d need to add in a conversion"
+      ]
+    },
+    {
+      "title": "Prep Recipe Creation (Enterprise) ｜ Optimum Control",
+      "file": "58 - Prep Recipe Creation (Enterprise) ｜ Optimum Control [nSyed5U2HYY]_transcription_clean.txt",
+      "trans_words": 1360,
+      "missing_sentences_count": 31,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:30 -> 02:39] After we have all of the units selected, so we have one batch with five pounds in a batch and then 16 ounces in a pound, it's going to break down with the actual cost per recipe unit is.",
+          "importance_score": 4
+        },
+        {
+          "sentence": "[00:40 -> 01:11] will be to go to the prep window, so we're going to go into the recipe section, and then into preps.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:51 -> 03:00] If you make a large amount of the prep recipe and you want to be able to count for its value as part of your inventory, you can add it to your count sheet by checking off the box for include on count sheet.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "The barcode field is going to be used for inventory counting purposes with our OC mobile app.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:12 -> 03:16] OC Mobile is an extension of control for conducting inventory counts.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:16 -> 03:23] The app will allow you to export the count sheets from the program to an iOS device and then import that count sheet back into the program.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:50 -> 03:57] When creating a prep recipe, you can select from any item or any prep recipe they've entered into optimal control to use as an ingredient.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[03:58 -> 04:03] To add an ingredient into the recipe, there are two buttons at the top here.",
+          "importance_score": 3
+        }
+      ],
+      "unique_key_phrases": [
+        "already a save prep so it",
+        "in the way they want to",
+        "by default there is a group set",
+        "going to go into the recipe section and",
+        "the ingredients of this recipe. 04",
+        "you d have on a given day",
+        "are your product recipes. the prep or",
+        "re doing their inventory.",
+        "next field is going to be inventory group.",
+        "after we have all of the units selected"
+      ]
+    },
+    {
+      "title": "Creating Products (Enterprise) ｜ Optimum Control",
+      "file": "59 - Creating Products (Enterprise) ｜ Optimum Control [-yY8MGfU2Sg]_transcription_clean.txt",
+      "trans_words": 877,
+      "missing_sentences_count": 9,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:39 -> 01:11] recipe section, we can click products to go into there.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[02:21 -> 02:28] The selling price, cost per cent and gross per cent will each recalculate each other when you put in new information into the field.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Your prep or batch recipes are going to be prepared recipes such as sauces, dressings, burger patties, if you make in-house patties, whereas the products are going to be your plated recipes, so that'd be everything you have on your menu.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:41 -> 02:01] After the barcode, we have the actual product cost, so this is going to be a calculation of all of the cost based off your ingredients.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:28 -> 02:37] For example, if we change this to 650, it will update the cost per cent and the gross per cent.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:04 -> 03:11] After we do that, it'll calculate the cost and then update the total cost as well as your gross margin and everything.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:23 -> 03:32] We also have an additional tab for instructions here.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:32 -> 03:37] We also have the ability to add an image to the recipe card if you want to show exactly how it's supposed to be plated.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "to the recipe card if you want to",
+        "want to call the product",
+        "what you want to name the product. now",
+        "to be the link between optimum control and",
+        "have the core information. on the right-hand",
+        "so the pos id is going to be",
+        "a calculation of all of the",
+        "link between optimum control and your",
+        "need to match your pos system",
+        "right hand side and indicate"
+      ]
+    },
+    {
+      "title": "Item Classification Editor (Enterprise) ｜ Optimum Control",
+      "file": "60 - Item Classification Editor (Enterprise) ｜ Optimum Control [XxrFbJgjad4]_transcription_clean.txt",
+      "trans_words": 397,
+      "missing_sentences_count": 3,
+      "top_missing_sentences": [
+        {
+          "sentence": "[01:39 -> 01:50] If you go through each type of entity, you have sales group, inventory group, etc., they're all going to be laid out the same, and they'll be able to transfer everything over just the same.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:39 -> 01:09] tax group products, and tax group case sizes.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "This can be useful checkbox if you're wanting to delete a tax, group, or group, but when you try it says you can't because it's in use.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "a tax group or group but when you",
+        "useful tool to mass move",
+        "it ll update. 01 39 -> 01 50",
+        "ll see a checkbox to show an active.",
+        "be useful as if you are making the",
+        "the same time. the first thing we",
+        "move items preps or products to different groups",
+        "we can just grab the entire group and",
+        "group but when you try it says you",
+        "and they ll be able to transfer everything"
+      ]
+    },
+    {
+      "title": "Recipe Sets ｜ Optimum Control",
+      "file": "61 - Recipe Sets ｜ Optimum Control [O1jts9hTXSs]_transcription_clean.txt",
+      "trans_words": 419,
+      "missing_sentences_count": 11,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:26 -> 00:37] This will bring you to the recipe sets window where I'll display all the previous recipe sets that have been sent down.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:37 -> 00:44] To create a new one, we're going to click new recipe set at the top left.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:25 -> 01:34] So we can select a couple items here, or if we want to select a group, we can highlight the top one, hold shift, highlight the bottom one, and click add.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:34 -> 01:44] Once you have all of your items selected, you can click save.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[01:54 -> 01:57] And that is how you create a recipe set in OC Enterprise.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "This will bring us to the recipe set creation window.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:44 -> 00:55] This window is broken into three sections.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:55 -> 01:04] as well as choose which stores get it by either selecting the whole concept, a region if you have those set up, or checking off the individual store.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "is how you d send out",
+        "recipe set creation window. 00 44",
+        "44 once you have all of",
+        "if you have those set",
+        "you know the name date and how",
+        "middle section to the right hand side. 01",
+        "set at the top left. this",
+        "reopen the program to install the recipe set",
+        "window is broken into three",
+        "let you know the name date and how"
+      ]
+    },
+    {
+      "title": "Recipe Set Availability ｜ Optimum Control",
+      "file": "62 - Recipe Set Availability ｜ Optimum Control [a_QVb4KxTVo]_transcription_clean.txt",
+      "trans_words": 228,
+      "missing_sentences_count": 4,
+      "top_missing_sentences": [
+        {
+          "sentence": "[00:46 -> 00:52] If you want to download the new stuff you would just select the file and click download.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "[00:00 -> 00:19] We're going to go over how to add the recipe set availability widget to your home screen.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:19 -> 00:27] On your home screen you're going to hit the little plus symbol, and you're going to add the recipe set availability option.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:27 -> 00:35] Now if everything's set up in the store information in Optimum, you should see if there's any available recipe set files to download.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "01 17 if you get the",
+        "screen. 00 19 -> 00 27 on",
+        "35 -> 00 42 so this could",
+        "17 -> 01 21 if you have",
+        "ll see a complete on the end of",
+        "you have any trouble with this please give",
+        "have any trouble with this please give us",
+        "is what you would call",
+        "from your head office. 00 42 -> 00",
+        "00 42 so this could be new"
+      ]
+    },
+    {
+      "title": "Recipe Set and Synchronize Configuration (Enterprise) ｜ Optimum Control",
+      "file": "63 - Recipe Set and Synchronize Configuration (Enterprise) ｜ Optimum Control [bNI5nJeevEk]_transcription_clean.txt",
+      "trans_words": 746,
+      "missing_sentences_count": 6,
+      "top_missing_sentences": [
+        {
+          "sentence": "When using OC Enterprise, you can choose what gets updated when you send a recipe set down to the store level.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once the recipe set configuration window loads, you're going to see a drop down for each class to update.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "If you change the group of an item at the enterprise level and send down a recipe set, it will update that group for the particular item.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:05 -> 02:20] If a store has added a substitute case size that only that one store gets and has not been entered on enterprise, merge would update the common case sizes between enterprise and head office, but it'll leave the additional case size alone so they can continue receiving it.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:57 -> 03:13] If you have any of these three options selected, what it's going to do is if say you have the create modify selected, if you create or modify an account, after it's saved, the next time the program is entered at the store level, it'll synchronize that account and send it down to the store level.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[03:25 -> 03:33] That is how you update both the recipe set configuration as well as the synchronized configuration to choose what gets updated at the store level.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "down. this would be used",
+        "so they can continue receiving",
+        "next option is to update. this will obviously",
+        "go into the item as an example.",
+        "the next option is to",
+        "to update. if you change",
+        "rest beside configuration. 03",
+        "choose how and when non-item entities",
+        "re going to be able to choose",
+        "between enterprise and head office"
+      ]
+    },
+    {
+      "title": "Pending Entities (Enterprise) ｜ Optimum Control",
+      "file": "64 - Pending Entities (Enterprise) ｜ Optimum Control [PoHAPquhOzs]_transcription_clean.txt",
+      "trans_words": 650,
+      "missing_sentences_count": 11,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:18 -> 02:27] If you do have a setup where you must approve the pending entities, and if no one is checking on whether they should be added or not to Enterprise, the pending entities will still display on your reports.",
+          "importance_score": 5
+        },
+        {
+          "sentence": "[01:17 -> 01:28] Once that is checked off, anything new that goes onto the Enterprise website would go into the approved pending entities page, which can be found under utility.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "Today, I'm going to go over the pending entities on the Enterprise website.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[00:39 -> 00:53] For every store, if that item is included in a recipe set at any point.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:10 -> 01:17] If it is left unchecked, any new entity that is being sent up would automatically be added to the Enterprise website without a formal review.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:46 -> 01:52] So what approval do is if you do that and save, it'll add that case size in this case to the item.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[01:52 -> 02:02] If you don't want that case size going into your item and to be sent to your other stores, you could ignore it and save, and that'll just make it so that this case size doesn't get added to the Enterprise level.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:13 -> 02:18] Now that we've gone through all the pending entities, we can see that this page is blank and there's nothing left for us to approve.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "for the supplier. 02 44 -> 02",
+        "48 -> 02 51 that is how you",
+        "other stores there is a",
+        "-> 01 46 the action that s either",
+        "that and save it ll add that",
+        "that we ve gone through",
+        "you do that and save it ll",
+        "action that s either going to",
+        "level creates a new entity",
+        "enterprise you might run"
+      ]
+    },
+    {
+      "title": "Pending Sales (OC Enterprise) ｜ Optimum Control",
+      "file": "65 - Pending Sales (OC Enterprise) ｜ Optimum Control [P-4-IaKjGqk]_transcription_clean.txt",
+      "trans_words": 715,
+      "missing_sentences_count": 12,
+      "top_missing_sentences": [
+        {
+          "sentence": "[02:58 -> 03:04] And this will make it so the next time you create a recipe set, they're going to be automatically added to the exported section.",
+          "importance_score": 3
+        },
+        {
+          "sentence": "When you're using enterprise, if you have pending sales at the store level, the head office will need to create the product or need to link up the products at the head office level.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once the pending sales window loads up, you'll be able to choose the criteria that you're going to be checking for.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once you have all that selected, we can just click go, and it'll start loading it up.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once the pending sales loads, you'll be able to see the pending sales for the criteria we selected.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "We'll have to send that down as a recipe set, but we'll do that after we process the rest of the pending sales.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "[02:13 -> 02:41] And it'll bring up a new window where we can add in the information for it.",
+          "importance_score": 2
+        },
+        {
+          "sentence": "Once we do that, we can go back to the pending sales window.",
+          "importance_score": 2
+        }
+      ],
+      "unique_key_phrases": [
+        "that this has been created. so i m",
+        "is mismatched at both levels. the",
+        "switch description. once we do that we can",
+        "fix those we have two different options. we",
+        "store level you ll need",
+        "fries sales group is going to be appetizers.",
+        "re going to be automatically added",
+        "use the pending sales tool",
+        "both levels. the product in question is burger",
+        "head office will need to create the product"
+      ]
+    }
+  ],
+  "book_titles_coverage": [
+    {
+      "file": "00 - What is Optimum Control？ [I86e7i8ENJQ]_transcription_clean.txt",
+      "title": "What is Optimum Control？",
+      "title_word_coverage": 0.0,
+      "title_words": [
+        "what"
+      ]
+    },
+    {
+      "file": "01 - An Introduction to OC Pro ｜ Optimum Control [O0MhrTRe8ro]_transcription_clean.txt",
+      "title": "An Introduction to OC Pro ｜ Optimum Control",
+      "title_word_coverage": 0.0,
+      "title_words": [
+        "introduction"
+      ]
+    },
+    {
+      "file": "35 - OC Mobile ｜ Optimum Control [WclwITIKGeE]_transcription_clean.txt",
+      "title": "OC Mobile ｜ Optimum Control",
+      "title_word_coverage": 0.0,
+      "title_words": [
+        "mobile"
+      ]
+    },
+    {
+      "file": "51 - Backups ｜ Optimum Control [Q_7PrhAXSOg]_transcription_clean.txt",
+      "title": "Backups ｜ Optimum Control",
+      "title_word_coverage": 0.0,
+      "title_words": [
+        "backups"
+      ]
+    },
+    {
+      "file": "55 - Enterprise User Creation ｜ Optimum Control [nOrVou_JN4I]_transcription_clean.txt",
+      "title": "Enterprise User Creation ｜ Optimum Control",
+      "title_word_coverage": 0.0,
+      "title_words": [
+        "user",
+        "creation"
+      ]
+    },
+    {
+      "file": "05 - Local User Creation ｜ Optimum Control [wWfroNzLErU]_transcription_clean.txt",
+      "title": "Local User Creation ｜ Optimum Control",
+      "title_word_coverage": 0.33,
+      "title_words": [
+        "local",
+        "user",
+        "creation"
+      ]
+    },
+    {
+      "file": "50 - Creating Budget Worksheets ｜ Optimum Control [fixY-YpGB3Y]_transcription_clean.txt",
+      "title": "Creating Budget Worksheets ｜ Optimum Control",
+      "title_word_coverage": 0.33,
+      "title_words": [
+        "creating",
+        "budget",
+        "worksheets"
+      ]
+    },
+    {
+      "file": "57 - Item Creation (Enterprise) ｜ Optimum Control [W0rGrSsKtyk]_transcription_clean.txt",
+      "title": "Item Creation (Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.33,
+      "title_words": [
+        "item",
+        "creation",
+        "(enterprise)"
+      ]
+    },
+    {
+      "file": "59 - Creating Products (Enterprise) ｜ Optimum Control [-yY8MGfU2Sg]_transcription_clean.txt",
+      "title": "Creating Products (Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.33,
+      "title_words": [
+        "creating",
+        "products",
+        "(enterprise)"
+      ]
+    },
+    {
+      "file": "64 - Pending Entities (Enterprise) ｜ Optimum Control [PoHAPquhOzs]_transcription_clean.txt",
+      "title": "Pending Entities (Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.33,
+      "title_words": [
+        "pending",
+        "entities",
+        "(enterprise)"
+      ]
+    },
+    {
+      "file": "46 - Updating the Sales Export Utility and Retrieving Missing Sales ｜ Optimum Control [5FZQPkvGD9Y]_transcription_clean.txt",
+      "title": "Updating the Sales Export Utility and Retrieving Missing Sales ｜ Optimum Control",
+      "title_word_coverage": 0.43,
+      "title_words": [
+        "updating",
+        "sales",
+        "export",
+        "utility",
+        "retrieving",
+        "missing",
+        "sales"
+      ]
+    },
+    {
+      "file": "02 - Setup Creation ｜ Optimum Control [yviqGiHkVOk]_transcription_clean.txt",
+      "title": "Setup Creation ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "setup",
+        "creation"
+      ]
+    },
+    {
+      "file": "04 - How to Add or Edit employees in Optimum Control [BxDQ7cTldjI]_transcription_clean.txt",
+      "title": "How to Add or Edit employees in Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "edit",
+        "employees"
+      ]
+    },
+    {
+      "file": "06 - Creating Items ｜ Optimum Control [5Yyvas_y7i0]_transcription_clean.txt",
+      "title": "Creating Items ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "creating",
+        "items"
+      ]
+    },
+    {
+      "file": "07 - Item Costing ｜ Optimum Control [37YBHv8W_6M]_transcription_clean.txt",
+      "title": "Item Costing ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "item",
+        "costing"
+      ]
+    },
+    {
+      "file": "10 - How to Use the Case Size Overview Window ｜ Optimum Control [IDVZjuj_qSY]_transcription_clean.txt",
+      "title": "How to Use the Case Size Overview Window ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "case",
+        "size",
+        "overview",
+        "window"
+      ]
+    },
+    {
+      "file": "13 - Deactivating an Item ｜ Optimum Control [5ETAIJZPcRA]_transcription_clean.txt",
+      "title": "Deactivating an Item ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "deactivating",
+        "item"
+      ]
+    },
+    {
+      "file": "14 - Allergen Tracking ｜ Optimum Control [GzZvezOIFVw]_transcription_clean.txt",
+      "title": "Allergen Tracking ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "allergen",
+        "tracking"
+      ]
+    },
+    {
+      "file": "16 - Creating Preps ｜ Optimum Control [RNPrtlFMvp4]_transcription_clean.txt",
+      "title": "Creating Preps ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "creating",
+        "preps"
+      ]
+    },
+    {
+      "file": "18 - Recipe Costing ｜ Optimum Control [LEGriVpZRco]_transcription_clean.txt",
+      "title": "Recipe Costing ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "recipe",
+        "costing"
+      ]
+    },
+    {
+      "file": "20 - Product Overview ｜ Optimum Control [LrM3I_00N5w]_transcription_clean.txt",
+      "title": "Product Overview ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "product",
+        "overview"
+      ]
+    },
+    {
+      "file": "21 - Creating Products ｜ Optimum Control [dpMO4S_Ougw]_transcription_clean.txt",
+      "title": "Creating Products ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "creating",
+        "products"
+      ]
+    },
+    {
+      "file": "22 - Countsheet Setup ｜ Optimum Control [DJ0bPAlshjk]_transcription_clean.txt",
+      "title": "Countsheet Setup ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "countsheet",
+        "setup"
+      ]
+    },
+    {
+      "file": "23 - How to Print Countsheets ｜ Optimum Control [npTvmozY8ng]_transcription_clean.txt",
+      "title": "How to Print Countsheets ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "print",
+        "countsheets"
+      ]
+    },
+    {
+      "file": "25 - Entering Inventory ｜ Optimum Control [twjGI2cOw40]_transcription_clean.txt",
+      "title": "Entering Inventory ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "entering",
+        "inventory"
+      ]
+    },
+    {
+      "file": "27 - Revaluing Inventory ｜ Optimum Control [Frf-ktDxQMg]_transcription_clean.txt",
+      "title": "Revaluing Inventory ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "revaluing",
+        "inventory"
+      ]
+    },
+    {
+      "file": "32 - Creating an Order ｜ Optimum Control [nBxQxzhbIjw]_transcription_clean.txt",
+      "title": "Creating an Order ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "creating",
+        "order"
+      ]
+    },
+    {
+      "file": "33 - Order Approvals ｜ Optimum Control [GZUyYua4GCY]_transcription_clean.txt",
+      "title": "Order Approvals ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "order",
+        "approvals"
+      ]
+    },
+    {
+      "file": "38 - Importing Invoices ｜ Optimum Control [edeGrE-aia0]_transcription_clean.txt",
+      "title": "Importing Invoices ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "importing",
+        "invoices"
+      ]
+    },
+    {
+      "file": "42 - Importing Sales ｜ Optimum Control [lvGbR6Stjno]_transcription_clean.txt",
+      "title": "Importing Sales ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "importing",
+        "sales"
+      ]
+    },
+    {
+      "file": "43 - Creating and Entering Till Tapes ｜ Optimum Control [R0c9cbfNWDE]_transcription_clean.txt",
+      "title": "Creating and Entering Till Tapes ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "creating",
+        "entering",
+        "till",
+        "tapes"
+      ]
+    },
+    {
+      "file": "45 - Entering Waste ｜ Optimum Control [zoGzcwox1oQ]_transcription_clean.txt",
+      "title": "Entering Waste ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "entering",
+        "waste"
+      ]
+    },
+    {
+      "file": "58 - Prep Recipe Creation (Enterprise) ｜ Optimum Control [nSyed5U2HYY]_transcription_clean.txt",
+      "title": "Prep Recipe Creation (Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "prep",
+        "recipe",
+        "creation",
+        "(enterprise)"
+      ]
+    },
+    {
+      "file": "62 - Recipe Set Availability ｜ Optimum Control [a_QVb4KxTVo]_transcription_clean.txt",
+      "title": "Recipe Set Availability ｜ Optimum Control",
+      "title_word_coverage": 0.5,
+      "title_words": [
+        "recipe",
+        "availability"
+      ]
+    },
+    {
+      "file": "09 - Case Size Overview ｜ Optimum Control [OoRCGFYZ1W0]_transcription_clean.txt",
+      "title": "Case Size Overview ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "case",
+        "size",
+        "overview"
+      ]
+    },
+    {
+      "file": "24 - How to Custom Sort Your Countsheet ｜ Optimum Control [0fxdggQFpZU]_transcription_clean.txt",
+      "title": "How to Custom Sort Your Countsheet ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "custom",
+        "sort",
+        "countsheet"
+      ]
+    },
+    {
+      "file": "26 - How to Re-Date or Adjust Inventory ｜ Optimum Control [732lbKtDc_0]_transcription_clean.txt",
+      "title": "How to Re-Date or Adjust Inventory ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "re-date",
+        "adjust",
+        "inventory"
+      ]
+    },
+    {
+      "file": "31 - Setting Order Reminders ｜ Optimum Control [HiPGeY5K4SI]_transcription_clean.txt",
+      "title": "Setting Order Reminders ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "setting",
+        "order",
+        "reminders"
+      ]
+    },
+    {
+      "file": "37 - Entering Manual Invoices ｜ Optimum Control [2V39Wps0Pb0]_transcription_clean.txt",
+      "title": "Entering Manual Invoices ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "entering",
+        "manual",
+        "invoices"
+      ]
+    },
+    {
+      "file": "39 - How to Enter Beerstore Invoices ｜ Optimum Control [w2qr1iG-fDc]_transcription_clean.txt",
+      "title": "How to Enter Beerstore Invoices ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "enter",
+        "beerstore",
+        "invoices"
+      ]
+    },
+    {
+      "file": "40 - Sysco SFTP Update ｜ Optimum Control [pHX_k3numak]_transcription_clean.txt",
+      "title": "Sysco SFTP Update ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "sysco",
+        "sftp",
+        "update"
+      ]
+    },
+    {
+      "file": "48 - Usage Summary Overview ｜ Optimum Control [DC-CNmVgw1I]_transcription_clean.txt",
+      "title": "Usage Summary Overview ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "usage",
+        "summary",
+        "overview"
+      ]
+    },
+    {
+      "file": "65 - Pending Sales (OC Enterprise) ｜ Optimum Control [P-4-IaKjGqk]_transcription_clean.txt",
+      "title": "Pending Sales (OC Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.67,
+      "title_words": [
+        "pending",
+        "sales",
+        "enterprise)"
+      ]
+    },
+    {
+      "file": "30 - How to Print & Use Inventory Order Forms ｜ Optimum Control [FFs_y5Amgrg]_transcription_clean.txt",
+      "title": "How to Print & Use Inventory Order Forms ｜ Optimum Control",
+      "title_word_coverage": 0.75,
+      "title_words": [
+        "print",
+        "inventory",
+        "order",
+        "forms"
+      ]
+    },
+    {
+      "file": "60 - Item Classification Editor (Enterprise) ｜ Optimum Control [XxrFbJgjad4]_transcription_clean.txt",
+      "title": "Item Classification Editor (Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.75,
+      "title_words": [
+        "item",
+        "classification",
+        "editor",
+        "(enterprise)"
+      ]
+    },
+    {
+      "file": "63 - Recipe Set and Synchronize Configuration (Enterprise) ｜ Optimum Control [bNI5nJeevEk]_transcription_clean.txt",
+      "title": "Recipe Set and Synchronize Configuration (Enterprise) ｜ Optimum Control",
+      "title_word_coverage": 0.75,
+      "title_words": [
+        "recipe",
+        "synchronize",
+        "configuration",
+        "(enterprise)"
+      ]
+    },
+    {
+      "file": "28 - Item & Recipe Management： Advanced Features ｜ Optimum Control [M22H8HZZrQs]_transcription_clean.txt",
+      "title": "Item & Recipe Management： Advanced Features ｜ Optimum Control",
+      "title_word_coverage": 0.8,
+      "title_words": [
+        "item",
+        "recipe",
+        "management",
+        "advanced",
+        "features"
+      ]
+    },
+    {
+      "file": "03 - Taxes and Adjustments ｜ Optimum Control [V-FpLoKRPQ8]_transcription_clean.txt",
+      "title": "Taxes and Adjustments ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "taxes",
+        "adjustments"
+      ]
+    },
+    {
+      "file": "08 - Item Conversions ｜ Optimum Control [1hDMXW5bBLA]_transcription_clean.txt",
+      "title": "Item Conversions ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "item",
+        "conversions"
+      ]
+    },
+    {
+      "file": "11 - Item Par Levels ｜ Optimum Control [fxixHuXl6Uc]_transcription_clean.txt",
+      "title": "Item Par Levels ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "item",
+        "levels"
+      ]
+    },
+    {
+      "file": "12 - Setting Item Par Levels ｜ Optimum Control [SRpdcuFwdy4]_transcription_clean.txt",
+      "title": "Setting Item Par Levels ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "setting",
+        "item",
+        "levels"
+      ]
+    },
+    {
+      "file": "15 - Hot List ｜ Optimum Control [8HRigy7l0VY]_transcription_clean.txt",
+      "title": "Hot List ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "list"
+      ]
+    },
+    {
+      "file": "17 - Prep Par Levels ｜ Optimum Control [_fEarg4olkg]_transcription_clean.txt",
+      "title": "Prep Par Levels ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "prep",
+        "levels"
+      ]
+    },
+    {
+      "file": "19 - Recipe Book ｜ Optimum Control [F-3ybaXxYPU]_transcription_clean.txt",
+      "title": "Recipe Book ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "recipe",
+        "book"
+      ]
+    },
+    {
+      "file": "29 - Purchasing ｜ Optimum Control [hMBuyvdh_m8]_transcription_clean.txt",
+      "title": "Purchasing ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "purchasing"
+      ]
+    },
+    {
+      "file": "34 - Bids ｜ Optimum Control [ntIou_NPw0Y]_transcription_clean.txt",
+      "title": "Bids ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "bids"
+      ]
+    },
+    {
+      "file": "36 - Stock Transfers in OC Premier ｜ Optimum Control [GDp5o6h1q3Y]_transcription_clean.txt",
+      "title": "Stock Transfers in OC Premier ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "stock",
+        "transfers",
+        "premier"
+      ]
+    },
+    {
+      "file": "41 - Item Store Management ｜ Optimum Control [5e1C1IfglTY]_transcription_clean.txt",
+      "title": "Item Store Management ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "item",
+        "store",
+        "management"
+      ]
+    },
+    {
+      "file": "44 - Pending Sales ｜ Optimum Control [ts4DlTvSpUM]_transcription_clean.txt",
+      "title": "Pending Sales ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "pending",
+        "sales"
+      ]
+    },
+    {
+      "file": "47 - Item Classification Editor ｜ Optimum Control [4x3e_agvIdo]_transcription_clean.txt",
+      "title": "Item Classification Editor ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "item",
+        "classification",
+        "editor"
+      ]
+    },
+    {
+      "file": "49 - Accounting Export ｜ Optimum Control [FJ26p9Wa4-U]_transcription_clean.txt",
+      "title": "Accounting Export ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "accounting",
+        "export"
+      ]
+    },
+    {
+      "file": "52 - Catering ｜ Optimum Control [H7xZhD1Vivo]_transcription_clean.txt",
+      "title": "Catering ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "catering"
+      ]
+    },
+    {
+      "file": "53 - Buffets ｜ Optimum Control [EoqmhhQGzp0]_transcription_clean.txt",
+      "title": "Buffets ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "buffets"
+      ]
+    },
+    {
+      "file": "54 - OC Enterprise Setup ｜ Optimum Control [oyRZyGXLI0s]_transcription_clean.txt",
+      "title": "OC Enterprise Setup ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "setup"
+      ]
+    },
+    {
+      "file": "56 - Regions ｜ Optimum Control [vH97-_z6PIY]_transcription_clean.txt",
+      "title": "Regions ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "regions"
+      ]
+    },
+    {
+      "file": "61 - Recipe Sets ｜ Optimum Control [O1jts9hTXSs]_transcription_clean.txt",
+      "title": "Recipe Sets ｜ Optimum Control",
+      "title_word_coverage": 1.0,
+      "title_words": [
+        "recipe",
+        "sets"
+      ]
+    }
+  ]
+}

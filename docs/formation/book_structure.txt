@@ -1,0 +1,158 @@
+[POSSIBLE HEADING] COMPRENDRE
+[POSSIBLE HEADING] OPTIMUM CONTROL
+[Heading1] Table des matières
+[Heading1] Chapitre 1 — Vue d'ensemble
+[Heading2] Le triangle Items → Recettes → Ventes
+[Heading2] Vocabulaire essentiel
+[Heading2] Démarrage et activation
+[Heading3] Modules additionnels disponibles
+[Heading2] Support technique
+[Heading2] Navigation dans l'interface
+[Heading3] Raccourcis clavier utiles
+[Heading2] Ordre de configuration initiale recommandé
+[Heading1] Chapitre 2 — Magasins et fournisseurs
+[Heading2] Informations de magasin (Store)
+[Heading2] Multi-établissements — OCPremier
+[Heading3] Transfert de stock entre établissements
+[Heading2] Fournisseurs (Suppliers)
+[Heading3] Tri des commandes importées
+[Heading3] Groupes fournisseur
+[Heading3] UOM Alias
+[Heading3] Export de commandes — formats
+[Heading1] Chapitre 3 — Items d'inventaire
+[Heading2] Les trois sections de la fiche Item
+[Heading2] Le verrou central : « How is it used in recipes? »
+[Heading3] Changer une unité de mesure existante — attention au piège
+[Heading2] Key Inventory Item — alléger les comptages
+[Heading2] Actualize Usage Values — neutraliser les écarts inévitables
+[Heading2] Le Yield Factor (facteur de rendement / perte)
+[Heading2] Conversions d'unités spécifiques à un item
+[Heading2] Tables de conversion de référence
+[Heading3] Volume et poids courants
+[Heading3] Tailles de cuillères à portionner (Disher/Scoop sizes)
+[Heading2] Emplacements de stockage (Storage Locations)
+[Heading2] Lier la nutrition à un item
+[Heading2] Allergènes
+[Heading1] Chapitre 4 — Recettes : Preps et Products
+[Heading2] La distinction Prep vs Product
+[Heading2] Créer un Prep/Batch Recipe
+[Heading2] Calculateur de recette Prep
+[Heading2] Créer un Product (recette de menu)
+[Heading3] Champs clés d'un Product
+[Heading2] L'éditeur de fiche recette (Recipe Editor)
+[Heading1] Chapitre 5 — Gestion avancée : Item and Recipe Management
+[Heading2] Remplacer un ingrédient dans plusieurs recettes (Replace)
+[Heading2] Amalgamate Items — fusionner les doublons
+[Heading2] Associate Items — dupliquer vers un nouveau fournisseur
+[Heading2] Item Copy (OCPremier uniquement)
+[Heading1] Chapitre 6 — Comptage d'inventaire
+[Heading2] L'assistant de configuration d'inventaire
+[Heading2] Listes d'inventaire personnalisées
+[Heading2] Méthodes de tri des feuilles de comptage
+[Heading2] Saisir les comptages
+[Heading2] Ajuster un comptage après coup (Adjust)
+[Heading2] Supprimer un inventaire
+[Heading1] Chapitre 7 — Commandes et appels d'offres fournisseurs
+[Heading2] Feuilles de commande (Order Sheets)
+[Heading2] Créer une commande structurée
+[Heading2] Modèles de commande (Order Templates)
+[Heading2] Prévision de commande (Forecasting Orders)
+[Heading2] Appels d'offres fournisseurs (Bids)
+[Heading3] Configurer les items éligibles aux appels d'offres
+[Heading3] Demander des offres
+[Heading3] Utiliser les meilleures offres dans une commande
+[Heading1] Chapitre 8 — Facturation
+[Heading2] Saisir une facture
+[Heading3] Le mécanisme exact du Price Override
+[Heading2] Demander un crédit en cours de saisie de facture
+[Heading2] Rapprocher les crédits en attente (Credit Reconciliation)
+[Heading2] Import automatique de factures — EDI Invoice Import
+[Heading3] Configuration EDI — étapes générales
+[Heading3] Configuration spécifique au format CSV
+[Heading3] Importer et traiter les fichiers EDI
+[Heading3] Corriger les erreurs d'import EDI
+[Heading2] Modifier la date d'une facture
+[Heading1] Chapitre 9 — Ventes et Sales Mix
+[Heading2] Les quatre états d'une vente importée
+[Heading2] Configurer l'import POS
+[Heading2] Lier les produits POS aux Products Optimum Control
+[Heading2] Ignorer certains identifiants POS
+[Heading2] Importer depuis le POS
+[Heading2] Sales Mix en attente (Pending Sales Mix)
+[Heading2] Saisie manuelle — Till Tape
+[Heading2] Rerun Sales Mix — corriger une recette après coup
+[Heading2] Détailler les pertes (Waste Detailing)
+[Heading1] Chapitre 10 — Ventes et informations financières quotidiennes
+[Heading2] Saisir les ventes quotidiennes
+[Heading2] Coupons et spéciaux
+[Heading2] Le détail complet des ventes (Detail tab)
+[Heading3] Suivi de la main-d'œuvre (Labour)
+[Heading2] Détailler les versements en espèces (Payouts)
+[Heading2] Cartes de crédit additionnelles
+[Heading2] Le budget prévisionnel (Budget Worksheet)
+[Heading1] Chapitre 11 — Retail Sales, Catering et Buffets
+[Heading2] Retail Sales (module optionnel)
+[Heading2] Catering Wizard
+[Heading3] Trois façons de fixer le prix d'un événement
+[Heading2] Buffet Wizard
+[Heading2] Types de couverts (Cover Types)
+[Heading1] Chapitre 12 — Configuration du système
+[Heading2] Synchroniser les données (Synchronize Data)
+[Heading2] Plan comptable (Chart of Accounts)
+[Heading2] Catégories de vente (Sales Categories)
+[Heading2] Conversions d'unités (Unit Conversions)
+[Heading2] Éditeur de classification de masse (Item Classification Editor)
+[Heading1] Chapitre 13 — Rapports
+[Heading2] Les trois rapports hebdomadaires recommandés
+[Heading2] Usage Summary — le rapport central
+[Heading3] Modes d'affichage disponibles
+[Heading2] Analyse du coût de vente (Cost of Sales Analysis)
+[Heading2] Rapport d'activité par item (Item Activity Report)
+[Heading2] Ventes projetées (Projected Sales Report)
+[Heading2] Étiquettes code-barres (Barcode Labels)
+[Heading2] Export comptable (Export Accounting Data)
+[Heading1] Chapitre 14 — Tutoriel pas-à-pas : le Food Cost de Joe's Burger Palace
+[Heading2] Le problème de Joe
+[Heading2] Les achats de Joe
+[Heading2] Calcul du coût unitaire de chaque ingrédient
+[Heading2] Composition du hamburger
+[Heading2] Ajouter les coûts d'emballage
+[Heading2] Calculer le prix de vente cible
+[Heading1] Chapitre 15 — Sauvegarde, restauration et maintenance
+[Heading2] Sauvegarder la base de données
+[Heading2] Restaurer une sauvegarde
+[Heading2] Supprimer les anciennes données (Delete Data)
+[Heading1] Chapitre 16 — Module Nutrition
+[Heading2] Flux de travail nutritionnel
+[Heading2] Mettre à jour la base de référence
+[Heading2] Directives nutritionnelles (Nutritional Guidelines)
+[Heading2] Étiquettes nutritionnelles
+[Heading2] Allergènes
+[Heading1] Chapitre 17 — Enterprise : gestion multi-chaînes
+[Heading2] Le principe des Consolidation ID
+[Heading2] Deux types de base de données
+[Heading2] Démarrer un déploiement Enterprise
+[Heading2] Assigner et exporter les identifiants
+[Heading2] Régions et fournisseurs
+[Heading2] Réception côté établissement
+[Heading1] Chapitre 18 — Questions fréquentes
+[Heading2] Inventaire
+[Heading3] Des items n'apparaissent pas sur la feuille de comptage
+[Heading3] Le total après Summarize est plus élevé que prévu
+[Heading3] Des nombres négatifs apparaissent dans les rapports après sauvegarde
+[Heading3] Beaucoup de quantités en stock négatives
+[Heading2] Usage Summary
+[Heading3] Aucun pourcentage de coût ne s'affiche
+[Heading3] Le message « Sales not defined » apparaît à côté d'une catégorie
+[Heading3] Le coût idéal apparaît doublé
+[Heading3] Aucun usage idéal n'apparaît
+[Heading2] Sales Mix et import POS
+[Heading3] L'import POS échoue, aucune vente importée
+[Heading3] Comment voir le Sales Mix d'une seule journée précise
+[Heading2] Facturation
+[Heading3] Le total de la facture ne s'équilibre jamais, même quand les chiffres semblent identiques
+[Heading3] Un item n'apparaît pas dans la liste lors de la saisie d'une facture
+[Heading2] Ventes et totaux financiers
+[Heading3] Les montants de vente ne correspondent pas à ceux du point de vente
+[Heading1] Conclusion — Ce qu'il faut retenir d'Optimum Control
+[Heading2] Aide-mémoire opérationnel — la routine hebdomadaire type

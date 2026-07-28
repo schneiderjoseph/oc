@@ -1,0 +1,915 @@
+﻿
+=== Account ===
+  AccountId (smallint)
+  Type (char)
+  Name (nvarchar)
+  Reference (nvarchar)
+  Active (bit)
+  ContraAccount (smallint)
+
+=== AccountBalance ===
+  Transact (int)
+  Account (smallint)
+  Amount (decimal)
+
+=== Budget ===
+  BudgetId (int)
+  Store (smallint)
+  Period (int)
+  Descrip (nvarchar)
+  IsTemplate (bit)
+
+=== BudgetDetail ===
+  Budget (int)
+  Account (smallint)
+  Amount (decimal)
+  IsFixed (bit)
+  Actualize (bit)
+
+=== CaseSize ===
+  CaseSizeId (int)
+  Item (int)
+  Supplier (smallint)
+  OrderCode (nvarchar)
+  PurchaseUom (smallint)
+  CaseQty (decimal)
+  CaseUom (smallint)
+  PakQty (decimal)
+  PakUom (smallint)
+  YieldFactor (decimal)
+  PakConversionFactor (decimal)
+  PriceTaxed (bit)
+  ShouldCount (bit)
+  CanSplit (bit)
+  Descrip (nvarchar)
+  TaxGroup (smallint)
+  SupplierGroup (int)
+
+=== CaseSizeBid ===
+  CaseSize (int)
+  DateEntered (datetime2)
+  EndDate (date)
+  BidPrice (decimal)
+  BidUnitPrice (decimal)
+
+=== CaseSizeCost ===
+  Store (smallint)
+  CaseSize (int)
+  PurchasePrice (decimal)
+  CaseCost (decimal)
+  UnitCost (decimal)
+  FactoredUnitCost (decimal)
+  LastReceived (date)
+  IsDeleted (bit)
+
+=== Category ===
+  CategoryId (smallint)
+  Name (nvarchar)
+  IncomeAccount (smallint)
+
+=== Conversion ===
+  ConversionId (int)
+  Item (int)
+  FromUom (smallint)
+  FromQty (decimal)
+  ToUom (smallint)
+  ToQty (decimal)
+  FoodRef (int)
+  Multiplier (decimal)
+
+=== CountsheetItems ===
+  Countsheet (int)
+  Item (int)
+  Type (char)
+  Store (smallint)
+
+=== CustomField ===
+  CustomFieldId (uniqueidentifier)
+  Name (nvarchar)
+  Label (nvarchar)
+  Description (nvarchar)
+  FieldType (tinyint)
+
+=== CustomFieldOption ===
+  CustomField (uniqueidentifier)
+  Value (nvarchar)
+
+=== CustomFieldType ===
+  CustomField (uniqueidentifier)
+  EntityType (smallint)
+
+=== CustomFieldValue ===
+  CustomField (uniqueidentifier)
+  EntityType (smallint)
+  EntityId (int)
+  Value (nvarchar)
+
+=== DailySales ===
+  DailySalesId (int)
+  Store (smallint)
+  SalesDate (date)
+  CashInDrawer (decimal)
+  CashPayout (decimal)
+  NetSales (decimal)
+  CompTotal (decimal)
+  PromoTotal (decimal)
+  EmployeeDiscount (decimal)
+  OtherDiscount (decimal)
+  GrossSales (decimal)
+  Void (decimal)
+  CashDeposit (decimal)
+  CreditCardDeposit (decimal)
+  GiftCardDeposit (decimal)
+  HourlyLabour (decimal)
+  ManagementLabour (decimal)
+  TotalLabour (decimal)
+  CustomerCount (smallint)
+  Comments (nvarchar)
+  Transaction (int)
+
+=== DailySalesCategory ===
+  DailySales (int)
+  Category (smallint)
+  GrossSales (decimal)
+  NetSales (decimal)
+
+=== DailySalesTax ===
+  DailySales (int)
+  Tax (smallint)
+  Amount (decimal)
+
+=== DisabledEntity ===
+  EntityId (int)
+  EntityType (smallint)
+  DisabledOn (datetime)
+  DisabledBy (smallint)
+  Id (int)
+  Type (varchar)
+
+=== EntityAlertLevel ===
+  EntityId (int)
+  EntityType (smallint)
+  WarningLevel (decimal)
+
+=== EntityRevision ===
+  EntityId (int)
+  EntityType (smallint)
+  RevisedOn (datetime2)
+
+=== FileData ===
+  FileId (int)
+  Name (nvarchar)
+  Type (char)
+  Signature (char)
+  Data (varbinary)
+  Item (int)
+
+=== Group ===
+  GroupId (smallint)
+  Type (char)
+  Descrip (nvarchar)
+  Category (smallint)
+
+=== IgnoredPosId ===
+  Store (smallint)
+  Type (char)
+  PosId (nvarchar)
+  Descrip (nvarchar)
+
+=== Ingredient ===
+  Recipe (int)
+  Item (int)
+  Idx (int)
+  Qty (decimal)
+  Uom (smallint)
+  ConversionFactor (decimal)
+
+=== Inventory ===
+  InventoryId (int)
+  Store (smallint)
+  CloseDate (datetime2)
+  OpenDate (datetime2)
+  ListType (char)
+  Finalized (datetime2)
+  Transaction (int)
+  MobileExported (bit)
+
+=== InventoryAdjustment ===
+  InventoryAdjustmentId (int)
+  Inventory (int)
+  DateChanged (datetime2)
+  Reason (nvarchar)
+  ChangedBy (smallint)
+
+=== InventoryCount ===
+  Countsheet (int)
+  Item (int)
+  CaseSize (int)
+  Location (smallint)
+  PurchaseQty (decimal)
+  CaseQty (decimal)
+  PakQty (decimal)
+
+=== InventoryCountAdjustment ===
+  InventoryAdjustment (int)
+  Countsheet (int)
+  Item (int)
+  CaseSize (int)
+  Location (smallint)
+  OriginalPurchaseCount (decimal)
+  OriginalCaseCount (decimal)
+  OriginalPakCount (decimal)
+  CorrectedPurchaseCount (decimal)
+  CorrectedCaseCount (decimal)
+  CorrectedPakCount (decimal)
+
+=== InventoryCountsheet ===
+  CountsheetId (int)
+  Inventory (int)
+  LastModified (datetime2)
+  ListId (int)
+  Finalized (datetime2)
+
+=== InventoryCountsheetSummary ===
+  Countsheet (int)
+  Item (int)
+  WasCounted (bit)
+  QtyOnHand (decimal)
+  PreppedQty (decimal)
+  TotalValue (decimal)
+  Account (smallint)
+
+=== InventoryList ===
+  InventoryListId (int)
+  Store (smallint)
+  Name (nvarchar)
+
+=== InventoryListDetail ===
+  InventoryList (int)
+  Item (int)
+  Sort (int)
+
+=== InventoryPrepIngredientDetail ===
+  Countsheet (int)
+  Prep (int)
+  Ingred (int)
+  IngredQty (decimal)
+  PreppedQty (decimal)
+
+=== InventorySummary ===
+  Inventory (int)
+  Item (int)
+  WasCounted (bit)
+  QtyOnHand (decimal)
+  PreppedQty (decimal)
+  TotalValue (decimal)
+  Account (smallint)
+
+=== InventorySummaryAdjustment ===
+  InventoryAdjustment (int)
+  Item (int)
+  WasCounted (bit)
+  OriginalQtyOnHand (decimal)
+  OriginalQtyInPrep (decimal)
+  OriginalTotalValue (decimal)
+  OriginalAccount (smallint)
+  CorrectedQtyOnHand (decimal)
+  CorrectedQtyInPrep (decimal)
+  CorrectedTotalValue (decimal)
+  CorrectedAccount (smallint)
+
+=== Invoice ===
+  InvoiceId (int)
+  Store (smallint)
+  Supplier (smallint)
+  Type (char)
+  InvoiceNumber (varchar)
+  InvoiceDate (date)
+  DateReceived (date)
+  DueDate (date)
+  Terms (smallint)
+  Paid (bit)
+  Total (decimal)
+  ItemTotal (decimal)
+  ExpenseTotal (decimal)
+  AdjustmentTotal (decimal)
+  Comments (nvarchar)
+  AcctBalAdj (decimal)
+  AcctBalAccount (smallint)
+  PoNumber (nvarchar)
+  Transaction (int)
+
+=== InvoiceExpense ===
+  Invoice (int)
+  Account (smallint)
+  Descrip (nvarchar)
+  Amount (decimal)
+  Memo (nvarchar)
+
+=== InvoiceItem ===
+  InvoiceLineId (int)
+  Invoice (int)
+  Item (int)
+  CaseSize (int)
+  Idx (smallint)
+  Qty (decimal)
+  Uom (smallint)
+  UnitCost (decimal)
+  LineTotal (decimal)
+  StockQty (decimal)
+  CostOverridden (bit)
+  SplitCase (bit)
+  OrderCode (nvarchar)
+  Adjustment (decimal)
+  AdjustedTotal (decimal)
+
+=== InvoiceItemTax ===
+  InvoiceItem (int)
+  Tax (smallint)
+  Applicable (bit)
+  Amount (decimal)
+
+=== InvoicePurchaseOrder ===
+  Invoice (int)
+  PurchaseOrder (int)
+
+=== InvoiceRFC ===
+  InvoiceItem (int)
+  Qty (decimal)
+  Uom (smallint)
+  Amount (decimal)
+  Reconciled (bit)
+  StockQty (decimal)
+  Reason (nvarchar)
+
+=== InvoiceTax ===
+  Invoice (int)
+  Tax (smallint)
+  Amount (decimal)
+  Amendment (decimal)
+  Applicable (decimal)
+
+=== IOExportField ===
+  IOSpecification (smallint)
+  Section (int)
+  Line (int)
+  Value (varchar)
+  Name (varchar)
+  Title (varchar)
+  FieldType (char)
+  FormatString (nvarchar)
+
+=== IOImportField ===
+  IOSpecification (smallint)
+  Name (varchar)
+  Value (varchar)
+  FieldType (char)
+  FormatString (nvarchar)
+  Required (bit)
+
+=== IOProcessingField ===
+  IOSpecification (smallint)
+  Name (varchar)
+  Value (varchar)
+
+=== IOSpecification ===
+  IOSpecificationId (smallint)
+  Mode (smallint)
+  IOProviderType (varchar)
+  Description (nvarchar)
+  FileFormat (smallint)
+  DefaultFilePath (nvarchar)
+  DefaultFileExtension (nvarchar)
+  DefaultDateFormat (nvarchar)
+  IsDefault (bit)
+
+=== Item ===
+  ItemId (int)
+  Type (char)
+  Descrip (nvarchar)
+  ItemGroup (smallint)
+  RecipeUom (smallint)
+  Comments (nvarchar)
+
+=== ItemBarcode ===
+  Item (int)
+  CaseSize (int)
+  Barcode (varchar)
+
+=== ItemConversionFactor ===
+  Item (int)
+  UomType (char)
+  RecipeConversionFactor (decimal)
+  ReportingConversionFactor (decimal)
+  ReportingUom (smallint)
+
+=== ItemDetail ===
+  Store (smallint)
+  Item (int)
+  ActualizeUsage (bit)
+  CurrentCaseSize (int)
+  DefaultCaseSize (int)
+  MinReorderLevel (decimal)
+  MaxReorderLevel (decimal)
+  TrackInventory (bit)
+
+=== ItemLastReceived ===
+  Store (smallint)
+  Item (int)
+  LastReceived (date)
+
+=== ItemLocation ===
+  Store (smallint)
+  Item (int)
+  Location (smallint)
+  SortIdx (int)
+
+=== ItemQtyOnHand ===
+  Store (smallint)
+  Item (int)
+  Type (char)
+  QtyOnHand (decimal)
+
+=== ItemUnitCost ===
+  Store (smallint)
+  Item (int)
+  TrackingCost (decimal)
+  Active (bit)
+
+=== ItemUsage ===
+  ItemUsageId (int)
+  UsageSource (int)
+  Item (int)
+  StockQty (decimal)
+  TrackingCost (decimal)
+  Category (smallint)
+  Product (int)
+
+=== KeyItemDetail ===
+  Store (smallint)
+  Item (int)
+  PrimaryLocation (smallint)
+  KeyItem (bit)
+
+=== Location ===
+  LocationId (smallint)
+  Name (varchar)
+
+=== OrderGuide ===
+  OrderGuideId (smallint)
+  Type (char)
+  Name (nvarchar)
+  Store (smallint)
+
+=== OrderGuideDetailDynamic ===
+  OrderGuide (smallint)
+  Id (int)
+
+=== OrderGuideDetailStatic ===
+  OrderGuide (smallint)
+  CaseSize (int)
+  Item (int)
+  Idx (smallint)
+  Qty (decimal)
+  SplitCase (bit)
+
+=== Period ===
+  PeriodId (int)
+  Idx (smallint)
+  StartDate (date)
+  EndDate (date)
+  FiscalYear (smallint)
+  IsLocked (bit)
+
+=== Preference ===
+  Store (smallint)
+  Name (varchar)
+  Value (nvarchar)
+
+=== PrepDetail ===
+  Store (smallint)
+  Item (int)
+  ShowOnPrepSheets (bit)
+  PrepStation (smallint)
+  ShelfLifeMinutes (int)
+
+=== PrepParLevel ===
+  Prep (int)
+  WeekDay (tinyint)
+  Amount (decimal)
+  MaxAmount (decimal)
+  Store (smallint)
+
+=== PrepStation ===
+  PrepStationId (smallint)
+  Description (nvarchar)
+
+=== PrepYield ===
+  Item (int)
+  BatchUom (smallint)
+  CountQty (decimal)
+  CountUom (smallint)
+  RecipeQty (decimal)
+
+=== PriceBreak ===
+  PriceBreakId (smallint)
+  Descrip (nvarchar)
+  Type (char)
+  Amount (decimal)
+  Note (varchar)
+
+=== PriceBreakDetail ===
+  PriceBreak (smallint)
+  CaseSize (int)
+
+=== ProductPrice ===
+  Store (smallint)
+  Item (int)
+  Plu (nvarchar)
+  PluDescrip (nvarchar)
+  Price (decimal)
+  Active (bit)
+  TaxPrice (decimal)
+  TaxGroup (smallint)
+  PriceSource (char)
+
+=== ProductSale ===
+  ProductSaleId (int)
+  SalesSource (int)
+  Product (int)
+  Qty (decimal)
+  GrossSalesTotal (decimal)
+  TotalCost (decimal)
+  Category (smallint)
+  NetSalesTotal (decimal)
+
+=== PurchaseOrder ===
+  PurchaseOrderId (int)
+  Store (smallint)
+  Supplier (smallint)
+  PoNumber (nvarchar)
+  OrderDate (date)
+  DeliveryDate (date)
+  Received (bit)
+  Exported (bit)
+  TotalValue (decimal)
+  Employee (smallint)
+  Comments (nvarchar)
+  ApprovedBy (smallint)
+  ApprovedOn (datetime)
+
+=== PurchaseOrderItem ===
+  PurchaseOrder (int)
+  Item (int)
+  CaseSize (int)
+  Idx (smallint)
+  OrderCode (nvarchar)
+  Qty (decimal)
+  Uom (smallint)
+  UnitCost (decimal)
+  LineTotal (decimal)
+  StockQty (decimal)
+  CostOverridden (bit)
+  SplitCase (bit)
+  BidPrice (bit)
+
+=== PurchaseOrderRequisition ===
+  PurchaseOrder (int)
+  Requisition (int)
+  Item (int)
+
+=== PurchaseOrderSource ===
+  PurchaseOrder (int)
+  OrderSource (int)
+  EntityType (smallint)
+
+=== Reminder ===
+  ReminderId (int)
+  Store (smallint)
+  Descrip (nvarchar)
+  CreatedOn (datetime2)
+  CreatedBy (smallint)
+  DueDate (datetime2)
+  NotifyAt (datetime2)
+  EntityType (smallint)
+  EntityId (int)
+  Comments (nvarchar)
+  Status (char)
+  DismissedOn (datetime2)
+  DismissedBy (smallint)
+  AssignedTo (smallint)
+
+=== Requisition ===
+  RequisitionId (int)
+  SendingStore (smallint)
+  ReceivingStore (smallint)
+  Description (nvarchar)
+  DateRequired (date)
+  ReferenceNumber (nvarchar)
+  Notes (nvarchar)
+
+=== RequisitionImportSource ===
+  Requisition (int)
+  ImportSource (int)
+  EntityType (smallint)
+
+=== RequisitionItem ===
+  RequisitionItemId (int)
+  Requisition (int)
+  Item (int)
+  Idx (smallint)
+  CurrentStatus (int)
+
+=== RequisitionItemStatus ===
+  RequisitionItemStatusId (int)
+  RequisitionItem (int)
+  RequisitionStatus (int)
+  Qty (decimal)
+  Uom (smallint)
+  UnitCost (decimal)
+  StockQty (decimal)
+
+=== RequisitionStatus ===
+  RequisitionStatusId (int)
+  Requisition (int)
+  Employee (smallint)
+  EffectiveDate (datetime2)
+  Status (char)
+
+=== RetailSale ===
+  RetailSaleId (int)
+  Store (smallint)
+  SalesDate (date)
+  Status (char)
+  SalesGroup (smallint)
+  Customer (int)
+  InvoiceNumber (varchar)
+  BillAddress (nvarchar)
+  ShipAddress (nvarchar)
+  UsageSource (int)
+
+=== RetailSaleItem ===
+  RetailSale (int)
+  Item (int)
+  Idx (smallint)
+  Uom (smallint)
+  ConversionFactor (decimal)
+  Qty (decimal)
+  Price (decimal)
+  UnitCost (decimal)
+  TaxGroup (smallint)
+
+=== RetailSaleItemTax ===
+  RetailSale (int)
+  Item (int)
+  Tax (smallint)
+  Amount (decimal)
+
+=== SalesCheck ===
+  SalesSource (int)
+  ExternalId (nvarchar)
+  Department (nvarchar)
+
+=== SalesImport ===
+  SalesSource (int)
+  ImportDate (date)
+  Idx (int)
+  DbDirect (bit)
+  FileName (nvarchar)
+
+=== SalesItem ===
+  SalesItemId (int)
+  SalesSource (int)
+  PluNumber (nvarchar)
+  Descrip (nvarchar)
+  SalesGroup (nvarchar)
+  QtySold (decimal)
+  Price (decimal)
+  GrossSales (decimal)
+  Status (tinyint)
+  Department (nvarchar)
+  ProductSale (int)
+  NetSales (decimal)
+
+=== SalesSource ===
+  SalesSourceId (int)
+  Store (smallint)
+  SalesDate (datetime2)
+  UsageSource (int)
+
+=== Store ===
+  StoreId (smallint)
+  Identifier (nvarchar)
+  Name (nvarchar)
+  LocationDescrip (nvarchar)
+  BusinessName (nvarchar)
+  Address (nvarchar)
+  City (nvarchar)
+  Province (nvarchar)
+  PostalCode (nvarchar)
+  Country (nvarchar)
+  Phone (nvarchar)
+  Fax (nvarchar)
+  ContactFirstName (nvarchar)
+  ContactLastName (nvarchar)
+  ContactEmail (nvarchar)
+  Comments (nvarchar)
+
+=== StoreGroup ===
+  Store (smallint)
+  Group (smallint)
+  Account (smallint)
+
+=== StoreLocation ===
+  Store (smallint)
+  Location (smallint)
+
+=== StorePosDepartment ===
+  Store (smallint)
+  Department (nvarchar)
+
+=== StorePrepStation ===
+  Store (smallint)
+  PrepStation (smallint)
+
+=== Supplier ===
+  SupplierId (smallint)
+  Name (nvarchar)
+  Terms (smallint)
+  Active (bit)
+  Address (nvarchar)
+  City (nvarchar)
+  Province (nvarchar)
+  PostalCode (nvarchar)
+  Country (nvarchar)
+  ContactFirstName (nvarchar)
+  ContactLastName (nvarchar)
+  ContactEmail (nvarchar)
+  Phone (nvarchar)
+  Fax (nvarchar)
+
+=== SupplierAccount ===
+  Store (smallint)
+  Supplier (smallint)
+  Active (bit)
+  AccountNumber (nvarchar)
+  AccountReference (nvarchar)
+
+=== SupplierExpenseCodeAccount ===
+  Supplier (smallint)
+  Type (char)
+  Code (nvarchar)
+  Account (smallint)
+  SupplierDescription (nvarchar)
+
+=== SupplierImportConfig ===
+  Store (smallint)
+  Supplier (smallint)
+  IOSpecification (smallint)
+  ImportPath (varchar)
+  Username (varchar)
+  Password (varchar)
+  Url (varchar)
+  FileExtension (varchar)
+
+=== SupplierOrderExport ===
+  Store (smallint)
+  Supplier (smallint)
+  IOSpecification (smallint)
+  FilePath (nvarchar)
+  Url (nvarchar)
+  UserName (nvarchar)
+  Password (nvarchar)
+
+=== SupplierUomAlias ===
+  Supplier (smallint)
+  Alias (nvarchar)
+  Uom (smallint)
+
+=== Tax ===
+  TaxId (smallint)
+  Code (nvarchar)
+  Descrip (nvarchar)
+  Type (char)
+  Amount (decimal)
+  Recoverable (bit)
+  Disperse (bit)
+  Account (smallint)
+
+=== TaxGroup ===
+  TaxGroupId (smallint)
+  Code (nvarchar)
+  Descrip (nvarchar)
+
+=== TaxGroupDetail ===
+  TaxGroup (smallint)
+  Tax (smallint)
+
+=== Template ===
+  TemplateId (int)
+  Store (smallint)
+  Type (char)
+  Name (nvarchar)
+  LastModified (datetime2)
+  Supplier (smallint)
+
+=== TemplateItem ===
+  Template (int)
+  Item (int)
+  CaseSize (int)
+  Idx (int)
+  SplitCase (bit)
+  Qty (decimal)
+
+=== TillTape ===
+  TillTapeId (smallint)
+  Store (smallint)
+  Descrip (nvarchar)
+
+=== TillTapeProduct ===
+  TillTape (smallint)
+  Item (int)
+  Idx (smallint)
+
+=== TillTapeSale ===
+  TillTape (smallint)
+  SalesSource (int)
+
+=== Transaction ===
+  TransactionId (int)
+  Store (smallint)
+  TransactionDate (date)
+  ExportDate (datetime2)
+
+=== Transfer ===
+  TransferId (int)
+  Sender (int)
+  Receiver (int)
+  TransferDate (date)
+  Employee (smallint)
+  TotalValue (decimal)
+  ReferenceNumber (varchar)
+  Comments (nvarchar)
+
+=== TransferContext ===
+  TransferContextId (int)
+  Store (smallint)
+  Direction (char)
+  UsageSource (int)
+  Transaction (int)
+
+=== TransferItem ===
+  Transfer (int)
+  Item (int)
+  Idx (smallint)
+  Qty (decimal)
+  Uom (smallint)
+  ConversionFactor (decimal)
+  UnitCost (decimal)
+
+=== TransferRequisitionStatus ===
+  Transfer (int)
+  RequisitionStatus (int)
+
+=== TypeMap ===
+  TypeId (smallint)
+  TypeName (varchar)
+
+=== UnitSystem ===
+  UnitSystemId (smallint)
+  Description (varchar)
+  CaseUom (smallint)
+  BatchUom (smallint)
+
+=== UnitSystemDetail ===
+  UnitSystem (smallint)
+  UomType (char)
+  RecipeUom (smallint)
+  ReportingUom (smallint)
+  TrackingUom (smallint)
+
+=== Uom ===
+  UomId (smallint)
+  Uom (nvarchar)
+  Descrip (nvarchar)
+  UomType (char)
+
+=== UsageSource ===
+  UsageSourceId (int)
+  Store (smallint)
+  UsageDate (datetime2)
+
+=== Waste ===
+  WasteId (int)
+  Store (smallint)
+  WasteDate (date)
+  UsageSource (int)
+
+=== WasteItem ===
+  Waste (int)
+  Item (int)
+  Qty (decimal)
+  Uom (smallint)
+  UnitCost (decimal)
+  ConversionFactor (decimal)
+  Reason (nvarchar)

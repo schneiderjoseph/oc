@@ -1,0 +1,12 @@
+[00:03 -> 00:09] In this video, we're going to go over how to print off the Invitory Order form for ordering Invitory.
+[00:09 -> 00:19] So, to generate the actual form, you're going to go to the top two reports, and this report is actually under Purchasing.
+[00:19 -> 00:32] So, you're going to select the Invitory Order form, and the choice is yours. You could filter by either group, category, or supplier. So, if you're only ordering for one of your suppliers,
+[00:32 -> 00:46] here's the chance where you could filter off to just see that one supplier on here. If you'd like to see all suppliers, just leave it as it is and click Run Report, and that generates the report.
+[00:46 -> 00:58] So, what this is meant for is you could print it off, walk around, and by area you could see all the items on your shelf, who you buy them from, the order code, how you receive it.
+[00:58 -> 01:15] So, in this case here, we get almonds by the case. They are received by a five pound case. We pay $3109. Right now, on hand, we should have $3.9, and our average use per day based on our sales is $1.7.
+[01:15 -> 01:20] So, in a couple days, we're going to be totally out of almonds, so we better order that item.
+[01:20 -> 01:26] The other thing that we have on here is par levels, which you could actually see one of my previous videos for that.
+[01:26 -> 01:36] But basically, you could set a min and max on here, and there's another way where you could actually run the order reminder to tell us, hey, this on hand is less than your min.
+[01:36 -> 01:44] Here's what you need to order for your max. So, it's just on here for reference, but there is another way to order using it.
+[01:44 -> 01:54] So, using this knowledge, you'd write down what you want to buy, and then from there you would either go online and order it, or call your suppliers, or whatever you do to order your goods.
+[01:54 -> 02:04] But that's how you can print off the order form. If you have any questions on this, please call us at support at 1-88-798-5555.

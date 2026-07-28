@@ -1,0 +1,47 @@
+# Référence Till Tape — Sales → New → Till Tape
+# 1re vente = MARDI 30/06/2026 (voir ventes_mardi_2026-06-30.csv pour import)
+
+## Mardi (2026-06-30)
+POS 101: 25
+POS 102: 10
+POS 201: 30
+POS 301: 8
+POS 401: 15
+POS 501: 40
+POS 502: 12
+
+## Mercredi (2026-07-01)
+POS 101: 28
+POS 102: 12
+POS 201: 35
+POS 301: 10
+POS 401: 18
+POS 501: 45
+POS 502: 15
+
+## Jeudi (2026-07-02)
+POS 101: 22
+POS 102: 8
+POS 201: 28
+POS 301: 12
+POS 401: 20
+POS 501: 38
+POS 502: 10
+
+## Vendredi (2026-07-03)
+POS 101: 30
+POS 102: 15
+POS 201: 40
+POS 301: 9
+POS 401: 16
+POS 501: 50
+POS 502: 18
+
+## Samedi (2026-07-04)
+POS 101: 35
+POS 102: 18
+POS 201: 45
+POS 301: 14
+POS 401: 22
+POS 501: 55
+POS 502: 20

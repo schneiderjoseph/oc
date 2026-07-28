@@ -1,0 +1,5 @@
+[00:00 -> 00:27] In this video, we're going to go over the product overview window to open it, select product overview from the toolbar at the top, and it should open with all the things that you have programmed in its products.
+[00:43 -> 00:55] So if you want to make bulk changes of how much you're selling each of your products for, you would actually just go in, select the product, and change the price.
+[00:55 -> 01:01] Once you've made all your changes, you would click save, and that would take place in the database.
+[01:01 -> 01:07] If you have any questions on this window, please call support at 1-88-798-5555.
+[01:07 -> 01:09] Thank you.

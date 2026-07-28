@@ -1,0 +1,13 @@
+[00:02 -> 00:08] Today we're going to go over how to count inventory and optimal control. To start, select
+[00:08 -> 00:14] count inventory from the toolbar at the top, choose your day you're counting, select
+[00:14 -> 00:19] new, and then what you're going to do is select what type of inventory you're going to
+[00:19 -> 00:26] take. All items would be everything. Key items would be items that you set as key inventory
+[00:26 -> 00:33] items. Categories would be whichever categories you have set up in your database. Groups
+[00:33 -> 00:38] are broken down by individual groups, inventory groups, and a hot list is a custom list that
+[00:38 -> 00:43] you could pre-load that you might want to count more frequently. We're going to select
+[00:43 -> 00:53] all items and finish, and that prepares our count sheet. When actually printing the count sheet,
+[00:53 -> 00:59] you could select to sort by a location, group, category, or even a custom, so it's sheet
+[00:59 -> 01:04] to shelf. Now to actually print your count sheet, you're going to go to the top, select
+[01:04 -> 01:17] print and choose which style you would like. From here, you could simply just click print
+[01:17 -> 01:22] and print to your printer. If you have any questions on this, please call technical support
+[01:22 -> 01:27] at 1-Triple 8-798-5555. Thank you.

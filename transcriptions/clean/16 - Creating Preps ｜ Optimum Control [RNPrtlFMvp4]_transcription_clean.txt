@@ -1,0 +1,58 @@
+[00:10 -> 00:41] In today's video, we'll be going over the prep recipe entry process in Optimum Control. Your prep recipes are your batch or prepared type recipes, such as your sauces, dressings, burger patties if you make your own in-house burger patties. So, to access the prep recipe window here, we're going to go into the main menu, and we're going to go into the recipe section here, and we're going to click on prep. When we go into the prep recipe window, it'll load up a listing of all of your prepared recipes that you've entered in the system so far, and by default, it'll load up a blank
+[00:41 -> 01:14] recipe card for you. So, the prep recipe window here is broken down into different sections. On the left-hand side of the recipe card, we have all of your core information, and it came in the name of the recipe if we wanted to include as part inventory, or if we wanted part of the prep sheets. And then on the right-hand side, we have the ingredient portion. And when it comes to the ingredients that can go into a recipe, you can select from any item that you've entered into the system, or you can select from any other prep recipe as an ingredient that as well. So, here we're going to look at one of the prep
+[01:14 -> 01:38] recipes that have been entered into the system, so we're going to load up here the chili prep. And you'll see here, when in a prep recipe, the first field is the description of the recipe. The second field here is the inventory group we want to associate the recipe with. By default, we have a prep grouping in the system, but of course, you can add in additional groups as required.
+[01:38 -> 01:53] The next field after that here is asking us how we pawn on using the recipe, and just like with items you get three options, you can either set it up by weight, by volume, or by unit type, and once the recipe has been saved, the respective type is then locked.
+[01:53 -> 02:06] After asking us how it's used, the next field here is the batch unit measure. So, by default, the batch unit measure is just set to batch, but if you want to, you can specify the specific container size that the recipe gets produced.
+[02:06 -> 02:29] So, you can say, bottle, insert, bin, depending on the prep recipe. After the batch unit measure here, we have the batch yield. So, the batch yield is the indication of how much this prepared recipe produces us based off the ingredients that we entered into the recipe card. So, in this example here, I'm indicating that I'm producing 12.5 pounds worth of chili.
+[02:29 -> 02:39] The next field after that here is asking what the recipe unit is going to be, and then the quantity will be based off of the batch yield. So, in this example here, I'm indicating I'm using it by the ounce.
+[02:39 -> 02:54] So, it shows that there is going to be 16 ounces per pound, 12.5 pounds per batch, and then show us the cost per recipe unit. So, in this example here, it shows us the cost per ounce to be around 14 cents to serve to the customer.
+[02:54 -> 03:15] So, once we have the core information entered in here, the next section here is the inventory information. So, by default, all of the prepared recipes that are created are generally not included on the couch sheet, but if the prep recipe that you're creating, you want it to be on your couch sheets for inventory counting purposes, you can include it on the couch sheet, which will then allow you to select a storage location for it.
+[03:15 -> 03:22] And if you want to as well, you can also enter a barcode into there for the purpose of scanning barcodes with the OC mobile.
+[03:22 -> 03:33] Once we have the inventory information completed, the next section here is the prep sheet information. So, the prep sheet information here is used for the prep par levels and optimum control.
+[03:33 -> 03:44] And the prep par levels is a system that has been implemented to help us calculate how much of a prepared recipe we need for a given day of sales based off of the sales that have been imported into the system so far.
+[03:44 -> 03:55] So, if we want the system to tell us how much of a prepared recipe we need, we need to include it on the couch sheet, select a prep station for it, and then indicate how long the recipe is good for it.
+[03:55 -> 04:02] So, once we have all the information of the prep recipe entered into the system, the next step is to indicate the ingredients that go into the recipe.
+[04:02 -> 04:12] So, to indicate a ingredient to go into the recipe, at the top of the screen here, there's an option to first add an item as an ingredient or add a different prep recipe as an ingredient.
+[04:12 -> 04:18] When selecting the respective type, it will pop up a listing of the available ingredients for us to enter into the recipe card.
+[04:18 -> 04:29] When we select an ingredient to put into the recipe card, it's going to ask us how much we want to put in, and then it's going to give us a unit measure to indicate as well.
+[04:29 -> 04:37] It will always show the default ingredient unit, but you can always hit the drop down and it will give you all convertible units measures available for that ingredient.
+[04:37 -> 04:44] And when you enter the quantity along the unit measure, it will then display the cost of that respective ingredient here.
+[04:44 -> 04:50] And on the very bottom of the screen here, it will show us the total cost to produce this recipe.
+[04:50 -> 04:54] And with all the ingredients, you'll see there's an icon next to each one.
+[04:54 -> 04:59] If you click on the icon next to the name of the ingredient, it will open up that respective ingredient.
+[04:59 -> 05:06] So, if I click on the description here for the item, it'll open up the item in the item window.
+[05:06 -> 05:11] If I select the prep recipe, it'll open up the prep recipe in its own window as well.
+[05:11 -> 05:22] Once you have all of the ingredients entered into the recipe card here, you'll see at the top of the screen here, we have some additional tabs available.
+[05:23 -> 05:36] There's a tab here for your recipe instruction, there's a tab here to indicate additional locations, the conversions, and the nutritional information for your recipe.
+[05:36 -> 05:42] So, the recipe instruction tab here is where you can indicate all the instructions on required to prepare the recipe.
+[05:42 -> 05:48] And when it comes to the recipe instruction, you do have an option to import a word document to populate the instructions as well.
+[05:48 -> 05:52] And you can do so by using the import document option at the top of the screen.
+[05:53 -> 06:00] And if you want to attach an image to your recipe card, you can use the browse image to attach a picture to your recipe card.
+[06:00 -> 06:06] Once the information is entered in here, we can then print off the recipe card at the top of the screen here.
+[06:06 -> 06:17] And here it'll display the shelf life of the recipe, it'll show us the ingredients that are going to go into the recipe, shows us how much it produces us, the pictorial populate on the right hand side here,
+[06:17 -> 06:22] and then all of our instructions will follow below.
+[06:22 -> 06:29] You can also generate a full recipe book as well by going into the report section.
+[06:29 -> 06:37] And under the recipe section here, there is an option for the prep recipe booklet.
+[06:37 -> 06:48] And this will simply generate a booklet of all of our prep recipes here that we've entered into the system.
+[06:48 -> 06:52] After the recipe instruction tab here, there is a tab for your storage locations.
+[06:52 -> 06:59] So, just like with the items, if a prep recipe is stored in more than one location, you can sign with all the additional locations as well.
+[06:59 -> 07:07] So when you're doing an inventory count, the recipe will show up once under each of its assigned locations.
+[07:07 -> 07:11] After the location tab at the top of the screen here, we have your conversion tab.
+[07:11 -> 07:19] So the conversion tab is available for your prep recipes, but are generally not needed because your prep recipes are generally set up the way you plan on using it.
+[07:19 -> 07:25] But if you did want to be able to convert your recipe to a different type, you do have the ability to add in your respective conversions.
+[07:25 -> 07:29] After the conversion tab, we have the ingredient nutrition tab.
+[07:29 -> 07:37] The ingredient nutrition tab here will display all the ingredients that are part of the recipe, and it will display all the nutritional links that associated with it.
+[07:37 -> 07:44] If it was something that was linked up to the USDA, if it was something that was calculated, or if it was a manual entry.
+[07:44 -> 07:52] And based off the ingredient nutritional information here, there is an option of the top of the screen here to calculate the nutrition for this recipe.
+[07:52 -> 07:56] And this will now display my nutritional values for this recipe here.
+[07:58 -> 08:05] There is an option to manually enter in the nutritional information for the recipes as well with the from label option at the top of the screen.
+[08:05 -> 08:15] So if you have obtained nutritional information in the past through a different inventory program or nutritional program, you can manually enter it into the program as well.
+[08:15 -> 08:30] So once you have your prep recipe entered in the system and it's now complete, you also have the ability to enter in batch scaling for your recipes as well.
+[08:30 -> 08:37] So if we take a look at the recipe section in the main menu here, we have the ability for you to scale your batch recipes.
+[08:37 -> 08:50] So if we search for the chili recipe here as an example, I can indicate my desired yield amount so I can indicate the desired batch or a specific amount of how much I wanted to produce.
+[08:50 -> 08:56] So here, if I indicate that I want the system to tell me how much I need to produce 70 pounds worth of chili.
+[08:56 -> 09:02] It will show me the ingredients required for it and then I can print off the modified recipe here as well.
+[09:02 -> 09:23] And the last thing we'll talk about regarding the prep recipes is if there is a recipe you guys no longer use or a prep recipe that has been entered into the system incorrectly and you want to get rid of it, you can do so by going back to the main menu here and going into the item and recipe management.
+[09:24 -> 09:32] There is a tab in here specifically for our prep recipes and then in here we can deactivate any recipes we no longer use.
+[09:32 -> 09:49] But do take note that if a prep recipe is associated with a different prep or another product recipe, it will prevent us from deactivating it until we remove that ingredient from all of its associated recipes or all the associated recipes are deactivated first.
+[09:49 -> 10:06] Once your prep recipes have been deactivated, they will no longer be available for recipe costing in other recipes but there is an option to show the inactive recipes here and you can always react to any recipes that have been deactivated as well if needed.

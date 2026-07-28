@@ -1,0 +1,114 @@
+[00:05 -> 00:20] We are excited to announce the release of Optimum Control version 5. In this video, I will
+[00:20 -> 00:26] take you through some of the new features and changes. The user interface has been updated
+[00:26 -> 00:34] to give it even more ease of use. One of the newest changes is the dashboard. In the
+[00:34 -> 00:39] previous version, when you logged into Optimum Control, it would bring you to a great background
+[00:39 -> 00:45] that wasn't used. Now with the system, it brings you to a dashboard that's fully customizable.
+[00:45 -> 00:51] Each login will have a different dashboard, and on your dashboard you'll be able to turn
+[00:51 -> 00:57] on any of these widgets you like. There's everything in here from reminders to top 10 price
+[00:57 -> 01:03] changes all the way to general activity that's going on in the system. Because in version
+[01:03 -> 01:09] 5, it's going to be more updated, more frequently by our team. You may have more of these
+[01:09 -> 01:16] coming. So this is one of my favorite features. Some of the widgets I have open are top 10
+[01:16 -> 01:23] price changes, period purchases by supplier or group, order reminder. So if you have any
+[01:23 -> 01:27] of your par level set up, it'll actually just tell you right on your dashboard, here are
+[01:27 -> 01:32] some of the items you're running low on, and it even has a button to create a PO right
+[01:32 -> 01:38] from here. The general activity shows you if you've put in any invoices, sales, pretty
+[01:38 -> 01:45] much everyday activity. So again, this is a great way to keep on top of the system, and
+[01:45 -> 01:51] it's bringing a new window that was just not used in the previous version. So this is one
+[01:51 -> 02:07] of my favorite changes that we've made recently. Another big change we made is in the item,
+[02:07 -> 02:12] prep, and product window. Now we've made it, so you could actually see all the
+[02:12 -> 02:19] current live item prep or products on the left. So you get a selection window right in
+[02:19 -> 02:28] the item window. You can also have multiple items open at the same time. So again, this
+[02:28 -> 02:33] gives you a lot more ease of use if you have to look at multiple things at the same time.
+[02:33 -> 02:38] The other thing that we've incorporated into the system is symbols to tell you if something
+[02:38 -> 02:43] is an item, prep, or product. A good example of this is in the previous version, if you are
+[02:43 -> 02:49] looking at a prep and you're looking at the ingredients in the prep, you wouldn't know
+[02:49 -> 02:56] if it was an item or a prep or a product inside itself. So for example, here you could see
+[02:56 -> 03:01] that this symbol represents an item versus this symbol represents a prep. And then when
+[03:01 -> 03:05] we get to a product, you'll have another symbol that represents the product. The other
+[03:05 -> 03:10] thing we could do with those is no matter which window you're currently in the system,
+[03:10 -> 03:16] by clicking this symbol, it'll actually pull up that item, prep, or product. So again,
+[03:16 -> 03:21] for troubleshooting, that saves a lot of time. You're not going to have to find what you're
+[03:21 -> 03:40] currently looking at. So there's a prep inside of a prep, which will open it up for you.
+[03:40 -> 03:45] Par levels is another great feature that we've added. The purpose of a prep par level
+[03:45 -> 03:51] is to determine how much of a prep is needed to be prepared on a certain day during the week.
+[03:51 -> 03:55] The prep par levels are determined by the sales that have been imported into optimal, and
+[03:55 -> 04:01] it also takes into consideration the shelf life that you program into your prep. So you
+[04:01 -> 04:09] could actually just, on any of your prep recipes, now in a section on the bottom, fill
+[04:09 -> 04:14] out anything you need. So in the case of my chili here, you could see that it's included
+[04:14 -> 04:20] on the prep par sheet, the prep stations, the back table, and it's good enough for six days.
+[04:20 -> 04:27] Now, with all this information, we could actually go right to the main menu, select prep
+[04:27 -> 04:35] par levels from the top, and any existing prep par levels will show up, or we could calculate
+[04:35 -> 04:40] the required amount, and that's based off of whatever date range you want. Once everything's
+[04:40 -> 04:46] programmed in, day to day, you may want to print a prep sheet. So to do that, that's under
+[04:46 -> 04:52] the reports, and we have some in-depth sheets you could print off. You could do it based on a day
+[04:52 -> 05:02] or you could do a week, both are available from here, right from the report, and then you could print
+[05:02 -> 05:18] it. In any of our reports, now we've also added a feature at the top you'll see with the little
+[05:18 -> 05:24] Excel symbol. It used to be that when you would pull any of our old reports into Excel, sometimes
+[05:24 -> 05:30] they were messy just because of the formatting and the limitation we had on the database, but now,
+[05:30 -> 05:35] it's just as simple as clicking the symbol, and what it will do is it will actually open up your
+[05:35 -> 05:40] Excel on your computer if you haven't installed, and it will put the report right in their format
+[05:40 -> 05:46] and nicely. So now you could actually manipulate the data all you like. This function is also great
+[05:46 -> 05:51] for the usage summary or any of your purchase records, because now you can manipulate the data into
+[05:52 -> 05:58] customized report if you want it. In this new version, a lot of the reports have been updated as well
+[05:59 -> 06:05] in the fact that there's even more drill downs now. So if you remember back in the usage summary
+[06:05 -> 06:13] in any of our previous versions, we had drill downs, but they were somewhat limited. So in this version
+[06:13 -> 06:20] now, when you generate your usage summary, you have even more drill downs built in. So you could see
+[06:20 -> 06:26] right from the get go, we have the little symbols. So if you notice an anomaly, you could actually
+[06:26 -> 06:32] click the symbol to drag you back over to the item to see how it was set up. We have the item
+[06:32 -> 06:39] activity report if you click the name. Now if you click the inventory total, you could actually see
+[06:40 -> 06:46] how much you counted and which count sheets you counted on. So that way we could say, well hey,
+[06:46 -> 06:52] we counted 320 here, but we didn't count any there. Maybe we missed some. So it's a great way to
+[06:52 -> 07:00] kind of troubleshoot if your actual inventory counts are valid. The other drill downs we have
+[07:00 -> 07:05] are in the purchases. So we have this in the previous version, but we took it a step further.
+[07:05 -> 07:11] So now if you take any of your items that you purchased, it'll give you a purchase detail,
+[07:11 -> 07:17] but now we took it a step further with the actual invoice. So if you click on the invoice,
+[07:18 -> 07:23] now you'll get the invoice you entered with that item on it. So you could see what happened there.
+[07:23 -> 07:28] Now when you want to go back to what you're just looking at, you don't have to reopen the report.
+[07:28 -> 07:34] You simply just go to the top, click Reports, and there you are. Changes like this is really what
+[07:34 -> 07:41] cuts back the time it takes to troubleshoot and get an actual number that you're comfortable with.
+[07:41 -> 07:46] So that's that's some of the changes we made on the reports. Of course there are other drill downs
+[07:46 -> 07:52] here. You can also click the ideal usage. That'll give you what items these are currently in,
+[07:52 -> 07:58] or I should say products, and how many you sold for the quantity total. At the bottom you'll get
+[07:58 -> 08:09] your daily consumption as well. Then you just click at the top and we're right back to the usage
+[08:09 -> 08:15] summary. The other thing we've added is the ability to pick and choose which reports you like.
+[08:15 -> 08:20] So that way you can have a list of favorite reports that you could just access from here. You don't
+[08:20 -> 08:25] have to find them. Everybody could have different favorite reports underneath their user profile.
+[08:26 -> 08:31] Another new report that we've added is now a log file that you'll be able to access.
+[08:31 -> 08:37] The log file will show you what each employee did in the system. So it's a great way to keep tabs on
+[08:37 -> 08:42] everybody. And if you need extra training on certain functions, you could find out really quick.
+[08:54 -> 08:59] The security is a big feature that we've changed as well. Underneath the settings,
+[09:00 -> 09:05] we've always had access levels and employees. So each person logs in with their own employee
+[09:05 -> 09:11] credentials. That access is the access level to show them what they get in the system.
+[09:11 -> 09:17] But now, instead of a simple on or off for everything, we've actually added four different levels.
+[09:18 -> 09:26] So under each bell or whistle of optimum control, you could either have full access, read only,
+[09:26 -> 09:35] no access or update, not create. So that really gives you a customized profile for each of your
+[09:35 -> 09:40] employees. Some people could change things. Some people can't. Some people might just simply want to
+[09:40 -> 09:46] print off a report. So this gives you that functionality of letting them do anything they want,
+[09:46 -> 10:04] but not damaging your data. With the new platform, we have a lot more flexibility with the way we
+[10:04 -> 10:10] present data. One of the things that we've changed that we've been looking at changing for years
+[10:10 -> 10:16] is lists. So now when you're in the invoice window, the sales window or any of those other
+[10:16 -> 10:22] windows that have lists, you're going to see an actual calendar instead of a list.
+[10:22 -> 10:27] This is a better way to approach it because now it's more graphical and you could actually see
+[10:28 -> 10:35] a day-by-day usage of whatever you're looking at. My favorite thing to do is to look at the invoice
+[10:35 -> 10:41] window. And if you have a produce supplier, let's say, that comes in every Tuesday, well,
+[10:41 -> 10:47] you could quickly look and see did I miss any of those Tuesday orders, or I could put the invoice in.
+[10:47 -> 10:53] So I find it's a great way to get a bird's eye view of what's going on in whatever respect.
+[10:53 -> 10:58] Invoice, sales, waste, all the lists are built this way now.
+[11:10 -> 11:16] The inventory window has been updated as well. So now when you want to customize your count sheets,
+[11:16 -> 11:21] you could do it right from the inventory window. You don't have to have a live inventory open to
+[11:21 -> 11:30] adjust this. So as I click inventory, I could go to the custom sort option. And right from this
+[11:30 -> 11:35] window now, I could pick the location and the order I wanted to show up. So this is how you could
+[11:35 -> 11:42] do the sheet-to-shelf inventory lists. Built into the inventory window now, we've added in the
+[11:42 -> 11:50] export, well, the import and export to OCMobile. OCMobile is an add-on app that would work with an iOS
+[11:50 -> 11:58] device. So you'll be able to export your count sheets from OC to your iPad or iPhone,
+[11:59 -> 12:04] walk around and count. You could actually access the camera as a scanner so we could pick up barcodes.
+[12:05 -> 12:11] At the end of inventory, you could quickly just click upload, come back into optimum and click
+[12:11 -> 12:17] import. Your numbers are imported right back in here. So it saves a lot of labor of obviously
+[12:17 -> 12:24] manually typing and human entry errors. But it isn't add-on and I encourage you to call for pricing.
+[12:24 -> 12:27] Now these are only some of the changes that we've made to the new system.
+[12:29 -> 12:34] Moving to a monthly subscription platform, we now have the ability to update our software
+[12:35 -> 12:41] more frequently. If you like what you see in this video and you want more information,
+[12:41 -> 12:46] a presentation can be set up to answer any questions, take you through any of these windows in
+[12:46 -> 12:52] more detail, and then I could leave you with a quote. The cost of the upgrade varies depending
+[12:52 -> 12:57] on what you had before you upgrade. So if you're on an older version, it may cost more than if
+[12:57 -> 13:07] you're on the last version. So I encourage you to call us to get pricing. 1-88-798-5555

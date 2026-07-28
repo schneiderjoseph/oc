@@ -1,0 +1,36 @@
+[00:10 -> 00:40] Hi, everyone. Today, I'm going to go over how to enter preps on the enterprise website. In Optimum Control, the recipes are broken into two different types. The first are your prep or batch recipes, and the second are your product recipes. The prep or batch recipes are going to be all your prepared recipes such as your sauces, dressing, burger patties, if you make your own in-house patties, whereas the products are going to be your plated recipes, so that will be everything on your menu. The product recipes are what will be linked up between Optimum Control and your POS system. The first step in creating a prep
+[00:40 -> 01:11] will be to go to the prep window, so we're going to go into the recipe section, and then into preps. Normally, what you do to create a new prep is you'd click new prep and then it would bring you to a new prep window. For today's example, I'm just going to go over a prep that we already have created, so I'm going to go into chili prep. Next, I'm going to click edit, just so it brings it into the same view you would have if you were creating a brand new prep. Now, the prep recipe is broken into different sections. On the left hand side, we have your corn formation, and on the right hand side, do your ingredient section.
+[01:11 -> 01:41] First, we're going to go over the left hand side or the corn formation. The first field there is description, so what is the name of the prep going to be? In this case, it's going to be chili prep. The next field is going to be inventory group. Now, by default, there is a group set up for preps called prep, but if you want to separate them into separate groups themselves or include them in other inventory groups, you can do that. The next thing it's going to ask is how is it used? So this is already a save prep, so it's already been locked in as weight. However, if this was a brand new prep, you'd have the same three options.
+[01:41 -> 02:11] You did with your items where you can create it by the unit, the volume, or the weight type of item. The next field is going to be the batch unit of measure. The batch unit of measure will generally represent the container that the batch or prep will be stored it. Depending on the prep recipe, you can indicate the batch unit of measure to be a bin, bottle, insert, or bag. But most customers will just leave that as batch after the batch unit of measure. We have the batch yield. The batch yield is going to be how much the recipe is going to produce based on the ingredients that are in that recipe.
+[02:11 -> 02:22] For this chili, we're indicating that it's going to make us five pounds based off of these ingredients. The next field is the recipe unit. This will be the default unit that populates when you use the prep recipe and another recipe.
+[02:22 -> 02:30] It's also going to be a breakdown of what's in the batch unit. So in this case, because we said we had five pounds of batch yield, we're saying there's 16 ounces in a pound.
+[02:30 -> 02:39] After we have all of the units selected, so we have one batch with five pounds in a batch and then 16 ounces in a pound, it's going to break down with the actual cost per recipe unit is.
+[02:39 -> 02:45] So in this case, the breakdown of cost per ounce, in this case, it's about 19 cents or so.
+[02:45 -> 02:51] After that, we're going to jump into the additional information and the first option is going to be the include on count sheets.
+[02:51 -> 03:00] If you make a large amount of the prep recipe and you want to be able to count for its value as part of your inventory, you can add it to your count sheet by checking off the box for include on count sheet.
+[03:00 -> 03:05] This will make it so that the stores will have it available to them on their count sheets when they're doing their inventory.
+[03:06 -> 03:12] After that, we have the barcode field. The barcode field is going to be used for inventory counting purposes with our OC mobile app.
+[03:12 -> 03:16] OC Mobile is an extension of control for conducting inventory counts.
+[03:16 -> 03:23] The app will allow you to export the count sheets from the program to an iOS device and then import that count sheet back into the program.
+[03:23 -> 03:29] While you're using the device, you'd be able to use the camera to scan a barcode so that they'd be able to find this prep.
+[03:30 -> 03:36] The next field is the shelf life. Here you'd be able to indicate how long the prep will last for before it goes bad.
+[03:36 -> 03:45] This is used when using the prep par levels that will help you calculate how much of the prep you'd have on a given day based off of sales as well as how long the prep will last.
+[03:45 -> 03:50] Once you have all the core information filled out, we can move over to the ingredients section on the right-hand side.
+[03:50 -> 03:57] When creating a prep recipe, you can select from any item or any prep recipe they've entered into optimal control to use as an ingredient.
+[03:58 -> 04:03] To add an ingredient into the recipe, there are two buttons at the top here. There's add item and add prep.
+[04:03 -> 04:08] In this case, let's add an item to this recipe so we're just going to add tomatoes.
+[04:08 -> 04:13] Once we search it and click on it there, it's going to add it to the bottom of the recipe.
+[04:13 -> 04:18] From here, we can indicate how much we're wanting to add by the quantity as well as the unit of measure.
+[04:18 -> 04:24] Once we do that, it's going to indicate the cost of the item as well as add that to the total cost.
+[04:24 -> 04:30] Let's say you want to remove an item from the recipe. We would just need to click the X on the right-hand side to remove it.
+[04:30 -> 04:37] Now that the ingredients and core information is filled out, that would be all the required information you need to create the prep from there you could save it.
+[04:37 -> 04:42] There are some additional tabs at the top here if you want to fill some more information about the prep though.
+[04:42 -> 04:48] The first tab is the ingredients tab. That's the one that we were just filling out the ingredients of this recipe.
+[04:48 -> 04:54] After that, we have the conversions tab, which allow you to add any conversion so that the recipe can be used in different ways.
+[04:54 -> 05:01] Generally speaking, people don't add too many conversions to their prep recipes as they'll set it up in the way they want to use it, but it is there if needed.
+[05:01 -> 05:05] The last tab will go over is the instructions tab.
+[05:05 -> 05:12] In here, you can enter your recipe instructions, so step one might be cooked brown beef, etc.
+[05:12 -> 05:18] You can also add a picture to show on the recipe card. To do that, we can choose file at the bottom here.
+[05:18 -> 05:22] Navigate to the picture you want to add, double-click it, and it'll be added.
+[05:22 -> 05:29] From there, we can save it, and you'll be able to look at that on your recipe card.
+[05:29 -> 05:34] That is how you fill out all the information to create a prep recipe and optimum control. Thanks for watching.

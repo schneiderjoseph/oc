@@ -1,0 +1,17 @@
+[00:04 -> 00:10] In this video, we're going to go over how to add and adjust employee logins. To start, we're
+[00:10 -> 00:17] going to select the gear at the top left corner, and then we'll select security, and then
+[00:17 -> 00:24] we'll select employees. You'll see a list of all the current employee logins you have.
+[00:24 -> 00:28] So if you want to change any of them, you could select them and change any of the data
+[00:28 -> 00:34] in this window. To create a new one, you'll select new, and then you'll get a blank one.
+[00:34 -> 00:57] So we'll put in one of the users with their phone number, their email address. Now with
+[00:57 -> 01:02] active, obviously, this is a new employee, so they're going to be active. But with any
+[01:02 -> 01:07] older employees that you may want to get rid of, you would select active and uncheck it.
+[01:07 -> 01:11] They're logging will not work from the system anymore from that point on. However, their
+[01:11 -> 01:21] name will still be in the list. The user name, and then the password you want them to
+[01:21 -> 01:28] log in with. You'll also repeat that password to make sure it's correct. Now with access
+[01:28 -> 01:33] levels, that will determine what the person is going to be able to do in the system. If
+[01:33 -> 01:39] you're currently logged in as a full administrator, you'll be able to create other administrators.
+[01:39 -> 01:44] But if you're logged in with a lesser access level like an employee, you'll only be able
+[01:44 -> 01:49] to create other employees or anything less. You won't be able to adjust to make somebody
+[01:49 -> 01:54] get administrator. Now you can click save. And that person could log into the system
+[01:54 -> 02:04] like everybody else. If you need any help on this, please call our support line at 1-88-798-5555-extension-1.

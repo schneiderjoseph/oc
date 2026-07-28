@@ -1,0 +1,38 @@
+[00:10 -> 00:40] Hi, everyone. Today, I'm going to go over how to do transfers in Optimum Control Premier. There are two ways to process transfers in the program. The first is using stock requisitions where store A or request stock from store B, and then store B with either approve or deny the request depending on stock levels. The second way to put in a transfer will bypass the request and will move stock directly from store A to store B. The first one we're going to go over is using stock requisitions. If we look in the stock transfer section of the main menu,
+[00:40 -> 00:58] we're going to see there's four options, request stock, approve request, fulfill requisitions, and transfers. We're going to use the first three to go over how to create and fulfill requisitions. The first step will be store A or the store we're in, requesting stock from store B or the warehouses it will be in this example.
+[00:58 -> 01:08] To do that, we're going to go into the request stock window here. In here, it's going to show any request that we've made in the past. You can go in and view those if you want to see any requests that have been made.
+[01:08 -> 01:26] If you want to create a new one, we'd click new at the top left. And then from here, you'd select the store you want to request the stock from. In this case, it's going to be from the warehouse. Once you select that, it's going to populate all common items, preps and products between the two stores here, and you can select whichever ones you want to request.
+[01:26 -> 01:33] Next, put in the quantity of each item that you're wanting. So I'm just going to put in some random amounts here.
+[01:33 -> 01:42] And once you have all the items that you want selected, you can click save the top, and it'll send it to the warehouse to see if they can fulfill the request and send it the stock needed.
+[01:42 -> 01:54] We're going to switch over to the warehouse store so we can see what that looks like. So we'll close out of the stock request window here, and then we're going to change store into the warehouse.
+[01:54 -> 01:59] Then we'll go into the stock transfer section of the main menu again and select approve requests.
+[01:59 -> 02:03] Here it's going to display any request that been made to this store.
+[02:03 -> 02:10] It's also going to let you know the status of each of the requests, whether the items have been approved on order or they've been fulfilled.
+[02:10 -> 02:14] Let's go into the stock request that we just made.
+[02:14 -> 02:18] And in here, we can see we have the option to approve and fulfill it.
+[02:18 -> 02:23] So if we click approve, this is just going to move it to the approve section. We won't actually move the stock over yet.
+[02:23 -> 02:25] In order to do that, we need to fulfill it.
+[02:25 -> 02:32] To do that, we can do it in one of two places. Either in this window here, we can click fulfill and it'll move that stock right over.
+[02:32 -> 02:40] Or we can go into the fulfill window and see all of the transfers that have been approved have not yet been transferred over.
+[02:40 -> 02:46] Let's go over to the fulfill requisitions window. So we're going to go into the main menu and then select fulfill requisitions.
+[02:46 -> 02:52] From here, you can see any requests that have been approved as well as the quantity that's required.
+[02:53 -> 03:02] So if we want to just fulfill the request, we can click fulfill and it's going to enter in the total amount of quantity that was requested.
+[03:02 -> 03:07] It's also going to let us know the quantity on hand and how much will be left afterwards.
+[03:07 -> 03:13] So say we want to fulfill this request, we can check that off, click save and it'll be transferred over.
+[03:13 -> 03:18] In this example here, we can see five pounds of stock was requested for both carrots and cauliflower.
+[03:18 -> 03:25] When you click fulfill, it'll populate what was requested, but if we look over here, we can see that this would put us into a negative amount.
+[03:25 -> 03:31] So we should only transfer over 3.25 pounds of the cauliflower at most.
+[03:31 -> 03:40] Once we see that this is correct now, we can click save and it'll ask us if we want to create a backwarder requisition for the remaining 1.75 pounds.
+[03:40 -> 03:46] Once we click create, it'll go back into here as an approved transfer.
+[03:46 -> 03:53] If you don't want to do the requesting process and just want to transfer stock from store A to store B, you can do that as well.
+[03:53 -> 04:00] We can go to the main menu and we're going to want to do this from the store transferring out and then go into the transfer window here.
+[04:00 -> 04:08] Here it's going to display any transfers that have been made, whether they've been made through the requisitions or through the way I'm about to show you.
+[04:08 -> 04:12] To create a new transfer, we would just click new at the top.
+[04:12 -> 04:15] Choose the store we're transferring to.
+[04:15 -> 04:19] Select the items that are being transferred over.
+[04:19 -> 04:25] Put in the quantities just like the requisition.
+[04:25 -> 04:30] And then from here, you would just click save and extract.
+[04:30 -> 04:33] And it'll move the stock over without using the requisitions.
+[04:33 -> 04:39] That is how you transfer items, preps, or products using both the stock request feature as well as the manual transfer.
+[04:39 -> 04:44] If you have any questions, you can contact our support team through the form which is linked in the description below.
+[04:44 -> 04:46] Thanks for watching.

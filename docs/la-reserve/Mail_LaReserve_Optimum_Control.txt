@@ -1,0 +1,103 @@
+Objet : Optimum Control — audit préliminaire & cadre d'accompagnement proposé (10 mois)
+
+---
+
+Bonjour [Prénom / équipe direction La Réserve],
+
+Suite à notre échange sur l'accompagnement Optimum Control, j'ai réalisé un audit préliminaire de votre base de données afin de cadrer une collaboration réaliste avant votre proposition formelle.
+
+Contexte
+Lors de la consultation sur site du système Optimum Control avec M. Ricardo et Mme Jeannine, j'ai pu consulter et extraire les données inventaire (items, emplacements, unités de mesure, conversions et valorisations) afin d'en analyser la cohérence et la gravité des problèmes constatés. Le fichier Excel joint en est la synthèse factuelle.
+
+Pièce jointe
+- LaReserve_Audit_OC_Critique.xlsx
+  (onglets « Résumé exécutif » et « P1 — CRITIQUE » à lire en priorité)
+
+En bref, ce que l'audit montre
+- Environ 1 285 fiches réparties sur 9 emplacements et ~1 200 items
+- 31 anomalies critiques (P1) qui compromettent la fiabilité des coûts, du bar et des inventaires
+- 167 anomalies importantes (P2) — notamment bar / alcools / vins et doublons multi-emplacements
+- Tant que les P1 ne sont pas traités, les rapports Usage Summary, les % food cost et les coûts bar ne peuvent pas servir de base solide aux décisions de gestion (prix, achats, pertes)
+
+Ce n'est pas un simple « dépannage » ponctuel : le volume et la nature des anomalies justifient un plan structuré sur la durée.
+
+---
+
+Ce que je propose (cadre de mission — pour aligner votre offre)
+
+Durée
+- Dix (10) mois à compter de la date de démarrage convenue
+
+Présence
+- Quatre (4) jours par semaine, environ six à huit (6–8) heures par jour
+- Deux (2) jours sur site minimum (audit, inventaire, formation, validation avec l'équipe)
+- Deux (2) jours à distance, à mon appréciation, lorsque le travail (données, rapport, paramétrage) ne nécessite pas d'être physiquement sur place
+- Accès distant sécurisé (TeamViewer / AnyDesk) aux horaires convenus
+
+Charge mensuelle indicative
+- Jusqu'à cent dix (110) heures par mois incluses dans le forfait
+- Toute heure au-delà ferait l'objet d'un accord écrit préalable (taux horaire à convenir)
+
+Périmètre par phases
+- Phase 1 (mois 1–2) : audit approfondi, sauvegardes, rapport écrit des anomalies P1/P2, plan de correction validé par La Réserve
+- Phase 2 (mois 3–4) : corrections prioritaires bar / alcools / vins, unités et conversions bouteille
+- Phase 3 (mois 5–7) : amalgamation des doublons — uniquement sur une liste validée par écrit par La Réserve avant toute fusion — et réorganisation des emplacements
+- Phase 4 (mois 7–8) : ventes POS (Pending Sales, Sales Mix, Daily Sales)
+- Phase 5 (mois 9–10) : inventaire, Usage Summary, formation et guide utilisateur
+
+Livrables obligatoires
+- Rapport d'audit écrit (complément au Excel préliminaire)
+- Plan de correction sur 10 mois validé
+- Guide utilisateur personnalisé (procédures de saisie et contrôle)
+- Deux (2) sessions de formation pratiques minimum (saisie quotidienne + inventaire / rapports)
+
+Conditions techniques (non négociables de mon côté)
+- Interventions exclusivement via l'interface Optimum Control et les outils d'import standard — pas de modification du code source ni du schéma de base de données (pas de SQL structurel)
+- Sauvegarde complète (File → Backup Data) par La Réserve avant toute intervention, confirmée par écrit (e-mail)
+- Seconde sauvegarde obligatoire avant toute vague d'amalgamation d'items (phase 3)
+- Liste des fusions d'items validée par La Réserve avant exécution
+
+Hors périmètre (sauf avenant séparé)
+- Re-saisie complète de toutes les recettes par mes soins
+- Inventaire physique à la place du personnel
+- Développement logiciel ou correctifs sur Optimum Control
+
+Critères de fin de mission (acceptation)
+- Anomalies P1 du rapport initial corrigées ou documentées avec accord écrit
+- Spiritueux bar : configuration bottle + oz/ml sur les items prioritaires
+- Amalgamations réalisées selon liste validée
+- Ventes : Pending Sales traités (objectif 0 Unlinked sur période test)
+- Deux sessions de formation réalisées + guide remis
+- Usage Summary généré sur une période test sans blocage majeur
+
+Confidentialité
+- Engagement strict sur les données commerciales, prix, recettes et marges consultés
+
+---
+
+Tarification — votre proposition attendue
+
+Je vous laisse formuler une proposition de forfait mensuel sur 10 mois, couvrant :
+- présence sur site et à distance
+- audit, corrections, formation et déplacements locaux
+- les livrables listés ci-dessus
+
+Modalités de paiement souhaitées
+- Facturation mensuelle, paiement dans les quinze (15) jours suivant réception de facture
+- Premier versement : à convenir (signature ou remise du rapport d'audit de phase 1)
+
+Je reste ouvert à votre proposition tarifaire à condition qu'elle reflète ce périmètre et ce calendrier — et non une mission ponctuelle de quelques jours.
+
+---
+
+Prochaine étape
+
+Je propose une réunion de trente (30) minutes pour vous présenter l'onglet P1 du rapport Excel et valider les priorités des deux premiers mois. Ensuite, vous pourrez me transmettre votre proposition écrite (durée, montant, modalités).
+
+Dans l'attente de votre retour, je reste disponible.
+
+Bien cordialement,
+
+[Prénom Nom]
+[Téléphone / WhatsApp]
+[E-mail]

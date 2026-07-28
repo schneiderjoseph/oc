@@ -1,0 +1,461 @@
+{
+  "missing": [
+    {
+      "video": "How to Add or Edit employees in Optimum Control",
+      "book_section": "?",
+      "unique_gaps": [
+        "Employee management in OC - not in book TOC"
+      ]
+    },
+    {
+      "video": "Local User Creation",
+      "book_section": "?",
+      "unique_gaps": [
+        "Local user creation",
+        "Access levels/permissions"
+      ]
+    },
+    {
+      "video": "Deactivating an Item",
+      "book_section": "?",
+      "unique_gaps": [
+        "Deactivate item/prep/product",
+        "Hidden from search after deactivation",
+        "Reactivate recipes"
+      ]
+    },
+    {
+      "video": "Hot List",
+      "book_section": "?",
+      "unique_gaps": [
+        "Hot list creation",
+        "Use hot list for inventory counts",
+        "Filter Usage Summary by hot list"
+      ]
+    },
+    {
+      "video": "Prep Par Levels",
+      "book_section": "?",
+      "unique_gaps": [
+        "Prep par levels window in recipe section",
+        "Prep par report with extra columns",
+        "Calculate prep needed based on sales"
+      ]
+    },
+    {
+      "video": "Recipe Book",
+      "book_section": "?",
+      "unique_gaps": [
+        "Recipe Book feature/window"
+      ]
+    },
+    {
+      "video": "Revaluing Inventory",
+      "book_section": "?",
+      "unique_gaps": [
+        "Re-value inventory procedure",
+        "Preferences > Inventory > Last cost",
+        "Trick: change count to 0 and back to re-summarize"
+      ]
+    },
+    {
+      "video": "Setting Order Reminders",
+      "book_section": "?",
+      "unique_gaps": [
+        "Order reminder function",
+        "Requires par levels first",
+        "Dashboard integration"
+      ]
+    },
+    {
+      "video": "OC Mobile",
+      "book_section": "?",
+      "unique_gaps": [
+        "Full OC Mobile workflow",
+        "Apple devices only",
+        "Preferences login",
+        "Export/import merge vs overwrite",
+        "Multi-device merge sequence"
+      ]
+    },
+    {
+      "video": "How to Enter Beerstore Invoices",
+      "book_section": "?",
+      "unique_gaps": [
+        "Beer Store specific invoice workflow",
+        "Deposit handling for beer"
+      ]
+    },
+    {
+      "video": "Sysco SFTP Update",
+      "book_section": "Ch.8 EDI",
+      "unique_gaps": [
+        "FTP to SFTP migration for Sysco import config"
+      ]
+    },
+    {
+      "video": "Updating the Sales Export Utility and Retrieving Missing Sales",
+      "book_section": "Ch.9",
+      "unique_gaps": [
+        "Sales export utility auto-update",
+        "Retrieve missing sales"
+      ]
+    },
+    {
+      "video": "Enterprise User Creation",
+      "book_section": "Ch.17",
+      "unique_gaps": [
+        "Enterprise website user creation",
+        "Utility > Users",
+        "Temporary password email",
+        "Custom access levels on website"
+      ]
+    },
+    {
+      "video": "Pending Entities (Enterprise)",
+      "book_section": "Ch.17",
+      "unique_gaps": [
+        "Pending entities approval page",
+        "Company > Preferences > require approval",
+        "Approve vs ignore entities",
+        "Reports show unapproved pending entities"
+      ]
+    }
+  ],
+  "partial": [
+    {
+      "video": "An Introduction to OC Pro",
+      "book_section": "Ch.1",
+      "unique_gaps": [
+        "Dashboard widgets",
+        "Order reminder tile",
+        "OC Mobile export from inventory",
+        "Prep par levels overview"
+      ]
+    },
+    {
+      "video": "Taxes and Adjustments",
+      "book_section": "Ch.1 setup",
+      "unique_gaps": [
+        "Tax groups window",
+        "Price including tax checkbox",
+        "Show advanced tax adjustment fields preference",
+        "Recoverable vs non-recoverable tax",
+        "Apply purchase amount to items",
+        "Recalculate existing invoices after tax group change"
+      ]
+    },
+    {
+      "video": "Creating Items",
+      "book_section": "Ch.3",
+      "unique_gaps": [
+        "Barcode for OC Mobile",
+        "Tax group on item",
+        "OR code for EDI import only vs OR code+description"
+      ]
+    },
+    {
+      "video": "Case Size Overview",
+      "book_section": "Ch.3",
+      "unique_gaps": []
+    },
+    {
+      "video": "How to Use the Case Size Overview Window",
+      "book_section": "Ch.3",
+      "unique_gaps": []
+    },
+    {
+      "video": "Item Par Levels",
+      "book_section": "Ch.7?",
+      "unique_gaps": [
+        "Item par levels window",
+        "Dashboard order reminder tile",
+        "Create order from par level",
+        "Include items below par level checkbox"
+      ]
+    },
+    {
+      "video": "Setting Item Par Levels",
+      "book_section": "Ch.7?",
+      "unique_gaps": [
+        "Min/max par setup",
+        "Dashboard tile for items under minimum"
+      ]
+    },
+    {
+      "video": "Creating Preps",
+      "book_section": "Ch.4",
+      "unique_gaps": [
+        "Prep sheet info for prep par levels",
+        "Barcode on prep for OC Mobile",
+        "Deactivate prep recipes tab"
+      ]
+    },
+    {
+      "video": "Recipe Costing",
+      "book_section": "Ch.4+13",
+      "unique_gaps": [
+        "Menu product detail problems report at threshold %"
+      ]
+    },
+    {
+      "video": "Creating Products",
+      "book_section": "Ch.4",
+      "unique_gaps": [
+        "Menu product detail problems report",
+        "Calculate nutrition button",
+        "Deactivate/reactivate products"
+      ]
+    },
+    {
+      "video": "How to Print Countsheets",
+      "book_section": "Ch.6",
+      "unique_gaps": [
+        "Hot list as count group type"
+      ]
+    },
+    {
+      "video": "Entering Inventory",
+      "book_section": "Ch.6",
+      "unique_gaps": [
+        "Export to OC Mobile",
+        "Multiple count sheets for hot lists",
+        "Hot list counting"
+      ]
+    },
+    {
+      "video": "Purchasing",
+      "book_section": "Ch.8",
+      "unique_gaps": [
+        "Split case on invoice",
+        "Menu product detail problems report"
+      ]
+    },
+    {
+      "video": "How to Print & Use Inventory Order Forms",
+      "book_section": "Ch.7",
+      "unique_gaps": [
+        "Par levels on order forms",
+        "Order reminder alternative"
+      ]
+    },
+    {
+      "video": "Creating an Order",
+      "book_section": "Ch.7",
+      "unique_gaps": [
+        "Order guide window",
+        "Export file path setup",
+        "Split case on orders",
+        "Include items below par level",
+        "Forecasted order integration"
+      ]
+    },
+    {
+      "video": "Order Approvals",
+      "book_section": "Ch.7",
+      "unique_gaps": [
+        "Order approval workflow",
+        "Export blocked until approved"
+      ]
+    },
+    {
+      "video": "Stock Transfers in OC Premier",
+      "book_section": "Ch.2",
+      "unique_gaps": []
+    },
+    {
+      "video": "Item Store Management",
+      "book_section": "Ch.2",
+      "unique_gaps": []
+    },
+    {
+      "video": "Importing Sales",
+      "book_section": "Ch.9",
+      "unique_gaps": [
+        "Sales export utility as import method"
+      ]
+    },
+    {
+      "video": "Item Classification Editor",
+      "book_section": "Ch.12",
+      "unique_gaps": [
+        "Mass move to tax groups",
+        "Mass move case sizes"
+      ]
+    },
+    {
+      "video": "Usage Summary Overview",
+      "book_section": "Ch.13",
+      "unique_gaps": [
+        "Hot list filter on Usage Summary"
+      ]
+    },
+    {
+      "video": "Accounting Export",
+      "book_section": "Ch.13",
+      "unique_gaps": [
+        "Accounting Export selection steps"
+      ]
+    },
+    {
+      "video": "OC Enterprise Setup",
+      "book_section": "Ch.17",
+      "unique_gaps": []
+    },
+    {
+      "video": "Regions",
+      "book_section": "Ch.17",
+      "unique_gaps": []
+    },
+    {
+      "video": "Item Creation (Enterprise)",
+      "book_section": "Ch.3+17",
+      "unique_gaps": [
+        "Consolidation ID workflow details",
+        "Barcode OC Mobile"
+      ]
+    },
+    {
+      "video": "Prep Recipe Creation (Enterprise)",
+      "book_section": "Ch.4+17",
+      "unique_gaps": [
+        "Prep par levels duration/shelf life"
+      ]
+    },
+    {
+      "video": "Creating Products (Enterprise)",
+      "book_section": "Ch.4+17",
+      "unique_gaps": []
+    },
+    {
+      "video": "Item Classification Editor (Enterprise)",
+      "book_section": "Ch.12+17",
+      "unique_gaps": []
+    },
+    {
+      "video": "Recipe Sets",
+      "book_section": "Ch.17",
+      "unique_gaps": [
+        "Recipe sets window",
+        "New recipe set workflow",
+        "Recipe set installer tile",
+        "Schedule install date"
+      ]
+    },
+    {
+      "video": "Recipe Set Availability",
+      "book_section": "Ch.17",
+      "unique_gaps": [
+        "Store-level recipe set availability control"
+      ]
+    },
+    {
+      "video": "Recipe Set and Synchronize Configuration (Enterprise)",
+      "book_section": "Ch.17",
+      "unique_gaps": [
+        "Synchronize configuration with recipe sets"
+      ]
+    },
+    {
+      "video": "Pending Sales (OC Enterprise)",
+      "book_section": "Ch.9+17",
+      "unique_gaps": []
+    }
+  ],
+  "covered": [
+    {
+      "video": "Setup Creation",
+      "book_section": "Ch.1-2",
+      "unique_gaps": []
+    },
+    {
+      "video": "Item Costing",
+      "book_section": "Ch.3",
+      "unique_gaps": []
+    },
+    {
+      "video": "Item Conversions",
+      "book_section": "Ch.3",
+      "unique_gaps": []
+    },
+    {
+      "video": "Allergen Tracking",
+      "book_section": "Ch.16",
+      "unique_gaps": []
+    },
+    {
+      "video": "Product Overview",
+      "book_section": "Ch.4",
+      "unique_gaps": []
+    },
+    {
+      "video": "Countsheet Setup",
+      "book_section": "Ch.6",
+      "unique_gaps": []
+    },
+    {
+      "video": "How to Custom Sort Your Countsheet",
+      "book_section": "Ch.6",
+      "unique_gaps": []
+    },
+    {
+      "video": "How to Re-Date or Adjust Inventory",
+      "book_section": "Ch.6",
+      "unique_gaps": []
+    },
+    {
+      "video": "Bids",
+      "book_section": "Ch.7",
+      "unique_gaps": []
+    },
+    {
+      "video": "Entering Manual Invoices",
+      "book_section": "Ch.8",
+      "unique_gaps": []
+    },
+    {
+      "video": "Importing Invoices",
+      "book_section": "Ch.8",
+      "unique_gaps": []
+    },
+    {
+      "video": "Creating and Entering Till Tapes",
+      "book_section": "Ch.9-10",
+      "unique_gaps": []
+    },
+    {
+      "video": "Pending Sales",
+      "book_section": "Ch.9",
+      "unique_gaps": []
+    },
+    {
+      "video": "Entering Waste",
+      "book_section": "Ch.9",
+      "unique_gaps": []
+    },
+    {
+      "video": "Creating Budget Worksheets",
+      "book_section": "Ch.10",
+      "unique_gaps": []
+    },
+    {
+      "video": "Backups",
+      "book_section": "Ch.15",
+      "unique_gaps": []
+    },
+    {
+      "video": "Catering",
+      "book_section": "Ch.11",
+      "unique_gaps": []
+    },
+    {
+      "video": "Buffets",
+      "book_section": "Ch.11",
+      "unique_gaps": []
+    }
+  ],
+  "not_in_map": [
+    "What is Optimum Control？",
+    "Item & Recipe Management： Advanced Features"
+  ]
+}

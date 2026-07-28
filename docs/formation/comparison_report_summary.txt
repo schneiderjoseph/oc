@@ -1,0 +1,181 @@
+=== RAPPORT DE COMPARAISON ===
+
+Livre: Comprendre_Optimum_Control.docx (11166 mots)
+Transcriptions: 66 fichiers
+
+--- SUJETS VIDÉO PEU/ PAS COUVERTS DANS LE LIVRE ---
+  [0%] Enterprise User Creation ｜ Optimum Control
+
+--- CONTENU IMPORTANT DANS TRANSCRIPTIONS ABSENT DU LIVRE (TOP) ---
+
+[Taxes and Adjustments ｜ Optimum Control] (score 7)
+  [05:47 -> 05:54] It is important to set up the tax groups for tax inclusive items do sure the costs and accounting is correct for these items in order to get accurate reporting.
+
+[Taxes and Adjustments ｜ Optimum Control] (score 6)
+  [04:38 -> 04:43] And from here there's a check box for show advanced tax adjustment fields and invoice window.
+
+[Taxes and Adjustments ｜ Optimum Control] (score 6)
+  [06:00 -> 06:07] You can do that as well by just going into the tax and adjustments tab, clicking add and then selecting whichever tax you want to add.
+
+[Creating Items ｜ Optimum Control] (score 5)
+  [05:17 -> 05:30] The barcode field is used for inventory counting purposes with our OC mobile program, which allows you to export your count sheets out of volume control to a mobile device, Apple devices only such as iPhones, iPods or iPads.
+
+[Item Par Levels ｜ Optimum Control] (score 5)
+  [02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add.
+
+[Prep Par Levels ｜ Optimum Control] (score 5)
+  [00:39 -> 01:09] We're going to navigate to the prep par level window, which is in the recipe section of the main menu.
+
+[Importing Invoices ｜ Optimum Control] (score 5)
+  The first step is to go into the invoices window, from here, invoice import, and then we're going to select the supplier importing from the dropdown.
+
+[Pending Entities (Enterprise) ｜ Optimum Control] (score 5)
+  [02:18 -> 02:27] If you do have a setup where you must approve the pending entities, and if no one is checking on whether they should be added or not to Enterprise, the pending entities will still display on your reports.
+
+[An Introduction to OC Pro ｜ Optimum Control] (score 4)
+  [11:42 -> 11:50] export, well, the import and export to OCMobile.
+
+[Taxes and Adjustments ｜ Optimum Control] (score 4)
+  For taxes it's likely going to be a percentage, whereas for a deposit it's going to be value, and this is going to be whatever the cost of that adjustment or taxes, so in the case of a tax we have 6% for GST, in the case for the bottle deposit we have $2.00
+
+[Taxes and Adjustments ｜ Optimum Control] (score 4)
+  If your items don't have that, then generally speaking you can just add the tax to an invoice you don't need to worry about tax groups, but for those tax inclusive items we're going to create a tax group, so to do that we're going to go into the tax groups window, and then we're going to click add.
+
+[Taxes and Adjustments ｜ Optimum Control] (score 4)
+  [03:29 -> 03:36] The next thing we must do is assign this to an item, so from the main menu we're going to go into the items window and then find the items we want to assign it to.
+
+[Taxes and Adjustments ｜ Optimum Control] (score 4)
+  [03:52 -> 04:06] This is something you're going to want to check off seeing as this is for a price inclusive item, so when we check that off it's going to say the purchase price is 4855, but once we factor in the tax and adjustments it's going to go down to 4615 as the actual cost.
+
+[Taxes and Adjustments ｜ Optimum Control] (score 4)
+  [05:09 -> 05:16] Now if we go to the taxes and adjustments tab it's going to have it calculated out for what the PST is as well as the 24 bottle deposit.
+
+[Creating Items ｜ Optimum Control] (score 4)
+  [00:39 -> 00:58] to appear in the system, so that's your naming method, the inventory group, and how you plan on using it when it comes to your reporting and recipes.
+
+[Creating Items ｜ Optimum Control] (score 4)
+  [01:05 -> 01:16] The next field after the description here is the inventory group you want to associate this item with for reporting.
+
+[Creating Items ｜ Optimum Control] (score 4)
+  [04:32 -> 04:38] This field is used when importing electronic invoices into often control from the suppliers that do integrate with us.
+
+[Creating Items ｜ Optimum Control] (score 4)
+  [04:56 -> 05:05] So whatever you see on their invoice, this field is used as part of the electronic invoice importing functionality if both the or code and description is used.
+
+[Creating Items ｜ Optimum Control] (score 4)
+  [05:08 -> 05:13] So when importing the electronic invoices, it only references the or code field.
+
+[Item Par Levels ｜ Optimum Control] (score 4)
+  [02:48 -> 02:59] From this tile, we can click create order to create an order with those items, with the quantities filled out to get us to that maximum par level.
+
+[Item Par Levels ｜ Optimum Control] (score 4)
+  [03:14 -> 03:22] So if we click new at the top, we won't save these changes, and if we create an order by any other way, there's this check box for include items below par level.
+
+[Item Par Levels ｜ Optimum Control] (score 4)
+  [03:22 -> 03:32] If we check this off, regardless of which option we choose, once we click continue, it's going to keep those same items, bringing us up to the maximum par level, included in the order.
+
+[Hot List ｜ Optimum Control] (score 4)
+  [01:14 -> 01:27] Now that we have the hot list saved we can close out of this window and to create an inventory with that hot list we would just click new inventory at the top left here.
+
+[Creating Preps ｜ Optimum Control] (score 4)
+  So, to access the prep recipe window here, we're going to go into the main menu, and we're going to go into the recipe section here, and we're going to click on prep.
+
+[Creating Preps ｜ Optimum Control] (score 4)
+  [03:33 -> 03:44] And the prep par levels is a system that has been implemented to help us calculate how much of a prepared recipe we need for a given day of sales based off of the sales that have been imported into the system so far.
+
+[Creating Preps ｜ Optimum Control] (score 4)
+  [05:06 -> 05:11] If I select the prep recipe, it'll open up the prep recipe in its own window as well.
+
+[Prep Par Levels ｜ Optimum Control] (score 4)
+  [02:47 -> 02:57] This report is going to display very similarly to the prep par levels window with two added columns.
+
+[Recipe Costing ｜ Optimum Control] (score 4)
+  Food and beverage costs are some of the most important elements to watch in any operation, as they dictate how profitable your operation will be.
+
+[Recipe Costing ｜ Optimum Control] (score 4)
+  [00:41 -> 01:11] it's important to have your food cost reflect this.
+
+[Recipe Costing ｜ Optimum Control] (score 4)
+  [02:33 -> 02:39] Running the menu product detail problems report will allow you to target any recipes over a certain desired percentage.
+
+[Recipe Costing ｜ Optimum Control] (score 4)
+  [02:39 -> 02:46] When I run this report at 30%, you'll see several recipes that require attention as they have a higher cost than the desired percentage.
+
+[Creating Products ｜ Optimum Control] (score 4)
+  [02:22 -> 02:32] The POS ID and POS description are the fields that are going to be used to link up a recipe you've entered into Optimum Control with the buttons that are pressed in the POS system.
+
+[Creating Products ｜ Optimum Control] (score 4)
+  [03:24 -> 03:37] And then I'm indicating that on my menu, this recipe costs $5.50 and then based off of my ingredients here, it shows me my margin is $4.60 and my cost on this recipe is running around 16%.
+
+[Creating Products ｜ Optimum Control] (score 4)
+  [05:59 -> 06:09] And based off this information here, we can click the calculate nutrition button at the top of the screen here, and this will then calculate the nutritional values for your recipe.
+
+[Creating Products ｜ Optimum Control] (score 4)
+  [06:42 -> 06:47] This will have a tab here for your product recipes and have a listing of all your menu recipes.
+
+[Creating Products ｜ Optimum Control] (score 4)
+  [07:39 -> 07:46] Another useful report that's available under the recipe option here is the menu product detail problems report.
+
+[Creating Products ｜ Optimum Control] (score 4)
+  [08:13 -> 08:22] And this report can help you determine which recipes are affected the most, free to revisit and correct those values of your recipes to get better food costing.
+
+[Item & Recipe Management： Advanced Features ｜ Optimum Control] (score 4)
+  After you have your backup created, you can click the amalgamate button to bring up the amalgamate window.
+
+[Purchasing ｜ Optimum Control] (score 4)
+  For any taxes, you can select the taxes and adjustment tab.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  Depending on your supplier, you can create an order and then export it to a file to either import it into your supplier's ordering system, or in other cases, you can export a PDF file and send it to the supplier directly.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  [01:09 -> 01:32] This is where you can set up the file path that we exporting the file to so you can easily find it when you're importing it into the ordering system from the supplier.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  [01:55 -> 02:08] From here to create a new one, we're going to click new and it will bring up our order guide window.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  [04:29 -> 04:35] The last checkbox is going to be an option for any type of order, and that is to include items below par level.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  [04:48 -> 04:52] So, we're going to select that as an option, select the order guide and click continue.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  [05:08 -> 05:19] One thing to note is if you do want to order a split case for an item, there is a checkbox for that if it's available, and we check it it's going to shift to the secondary unit, and you can put in what you want to order of that.
+
+[Creating an Order ｜ Optimum Control] (score 4)
+  [05:56 -> 06:03] The next thing to do is to export the order to a file so that we can send it to our supplier so we can highlight it and click export.
+
+[Order Approvals ｜ Optimum Control] (score 4)
+  [02:22 -> 02:31] And then if we go back to the Orders window, we can see if we highlight the orders, export is still unavailable because it hasn't been approved, but the set approved option is there.
+
+[OC Mobile ｜ Optimum Control] (score 4)
+  [00:09 -> 00:39] Hi everyone, today we're going to go over and export an import into OCMobile.
+
+[OC Mobile ｜ Optimum Control] (score 4)
+  Once the inventory is brought up, we can click export at the top, 20CMobile, it doesn't say it's exporting and complete, and the bottom right it'll let us know when it's available for download on the device.
+
+[OC Mobile ｜ Optimum Control] (score 4)
+  [02:33 -> 02:43] When it is, you can click import at the top, from OCMobile.
+
+--- VIDÉOS AVEC LE PLUS DE LACUNES ---
+  Creating Items ｜ Optimum Control: 71 phrases importantes absentes
+  Creating Preps ｜ Optimum Control: 61 phrases importantes absentes
+  Creating Products ｜ Optimum Control: 54 phrases importantes absentes
+  An Introduction to OC Pro ｜ Optimum Control: 44 phrases importantes absentes
+  How to Enter Beerstore Invoices ｜ Optimum Control: 43 phrases importantes absentes
+  Taxes and Adjustments ｜ Optimum Control: 41 phrases importantes absentes
+  Creating an Order ｜ Optimum Control: 40 phrases importantes absentes
+  Item Creation (Enterprise) ｜ Optimum Control: 40 phrases importantes absentes
+  Importing Invoices ｜ Optimum Control: 31 phrases importantes absentes
+  Prep Recipe Creation (Enterprise) ｜ Optimum Control: 31 phrases importantes absentes
+  Stock Transfers in OC Premier ｜ Optimum Control: 27 phrases importantes absentes
+  Usage Summary Overview ｜ Optimum Control: 23 phrases importantes absentes
+  Item Par Levels ｜ Optimum Control: 21 phrases importantes absentes
+  Recipe Costing ｜ Optimum Control: 21 phrases importantes absentes
+  OC Mobile ｜ Optimum Control: 19 phrases importantes absentes
+  Purchasing ｜ Optimum Control: 18 phrases importantes absentes
+  Order Approvals ｜ Optimum Control: 18 phrases importantes absentes
+  Entering Manual Invoices ｜ Optimum Control: 16 phrases importantes absentes
+  Entering Inventory ｜ Optimum Control: 14 phrases importantes absentes
+  Item & Recipe Management： Advanced Features ｜ Optimum Control: 13 phrases importantes absentes

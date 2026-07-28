@@ -1,0 +1,22 @@
+[00:09 -> 00:39] Hi everyone. Today I'm going to go over the item par levels window and optum control. In Optum Control you can set par levels for your items. This will allow you to have an order reminder when the item you set goes below a certain quantity on hand. It will also allow you to set a quantity to order to when you're ordering that specific item. This provides you with a piece of mind knowing the orders are set to attain specific quantities of items and saves you the labor of checking the manually. To set up the item par levels we're going to navigate to the item par level window from the main menu. We can navigate it in the inventory section here
+[00:39 -> 00:54] and click into it. Once the window loads up we're going to have all of our items displaying in this main area here, broken down by group. At the top we're going to have the ability to search for an item, as well as the ability to filter for a specific group if you're just wanting to look at that.
+[00:55 -> 01:16] The main section of this window is going to display each of your items. On each item line are going to get some basic information, so you're going to get the name of the item, and then the main feature of this window, the minimum reorder level, maximum reorder level. There's a couple checkboxes you can use as well. As an example, if you look at these buttons here there's a minimum reorder level of 30 and a maximum of 50.
+[01:16 -> 01:28] So what this means is as soon as we get to 29 quantity on hand for this item, it'll prompt us to order, and if we create an order using that it'll create one with getting us to at least 50 on hand for this item.
+[01:28 -> 01:35] In this window there's also a couple checkboxes available as well, there's key items, and then a checkbox if you want to actualize the item.
+[01:35 -> 01:44] Key items are used when creating an inventory or in some of your reports, so in an inventory you can create a key item count which will only include the items that are checked off here.
+[01:44 -> 01:49] There are also some reports that you can filter for key items only that would only display anything with the checkbox.
+[01:49 -> 01:58] What the actualized checkbox does is it removes variants from your report for the specified item by setting a theoretical values to equal what you said was used.
+[01:58 -> 02:02] A common example of an item you might want to actualize would be something like your fryer oil.
+[02:02 -> 02:08] The oil is purchased and counted, but it is usually not part of recipes, so the system would think that you're missing oil.
+[02:08 -> 02:12] But if you have a set to actualize, it will show no variants.
+[02:12 -> 02:22] Other examples of items you might want to actualize would be things like ketchup, mustard, salt, and pepper, as these are things that you put out for your customer to use, and there's no way of tracking how much each customer is using.
+[02:22 -> 02:29] Once we set up your par levels for your items, there's a couple places where they're going to come into play.
+[02:29 -> 02:39] If we go back into the main menu, we can add a dashboard tile for order reminders, so we'll click the green plus icon here, select order reminder, and select add.
+[02:40 -> 02:48] Once this is here, we're going to see any items that are under the minimum par level, as well as the suggested order to get us to the maximum par level.
+[02:48 -> 02:59] From this tile, we can click create order to create an order with those items, with the quantities filled out to get us to that maximum par level.
+[02:59 -> 03:03] As you can see here, a lot of these quantities aren't full cases.
+[03:03 -> 03:11] What we can do to get it to a full case is click round to case, and that will put everything up to the nearest case.
+[03:11 -> 03:14] The other way you can order using your par levels is when you're creating a new order.
+[03:14 -> 03:22] So if we click new at the top, we won't save these changes, and if we create an order by any other way, there's this check box for include items below par level.
+[03:22 -> 03:32] If we check this off, regardless of which option we choose, once we click continue, it's going to keep those same items, bringing us up to the maximum par level, included in the order.
+[03:32 -> 03:36] That is how you use the item par levels in Optum Control. Thanks for watching.

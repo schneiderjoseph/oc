@@ -1,0 +1,20 @@
+[00:09 -> 00:39] Hi, everyone. Today, I'm going to go over the pending entities on the Enterprise website. In OC Enterprise, you might run into a situation where the store level creates a new entity, such as a case size, group, or account. When this happens, if the entity gets saved in usage, it would be pushed up to Enterprise. As an example, you could have a new or substitute case size of tomatoes at a particular store. It is then entered at the store level and then put into an invoice. Once that happens, it would load into Enterprise, and it would then populate that new case size for tomatoes.
+[00:39 -> 00:53] For every store, if that item is included in a recipe set at any point. To control this, and make sure that everything that is getting created does not populate to the other stores, there is a setting for you to approve it before it gets officially added to the website.
+[00:53 -> 01:01] If we navigate under company and preferences, we can find it there. It's going to be this option here, new items from store level, or require approval.
+[01:01 -> 01:10] If this is checked off, then you'll have to approve each entity before it gets added to the website and being able to be sent down to the other stores.
+[01:10 -> 01:17] If it is left unchecked, any new entity that is being sent up would automatically be added to the Enterprise website without a formal review.
+[01:17 -> 01:28] Once that is checked off, anything new that goes onto the Enterprise website would go into the approved pending entities page, which can be found under utility.
+[01:28 -> 01:35] In here, it's going to list anything that's been pushed up. In this scenario, we have a couple case sizes that were pushed up from store 1.
+[01:35 -> 01:43] So along here, it's going to give all the information, so description, where it was uploaded and that they created, and then it'll give you the ability to have an action on it.
+[01:43 -> 01:46] The action that's either going to be approved or ignored.
+[01:46 -> 01:52] So what approval do is if you do that and save, it'll add that case size in this case to the item.
+[01:52 -> 02:02] If you don't want that case size going into your item and to be sent to your other stores, you could ignore it and save, and that'll just make it so that this case size doesn't get added to the Enterprise level.
+[02:02 -> 02:06] It will not remove it from the store level.
+[02:06 -> 02:13] In this case, I want both of these case sizes added, so I'm going to approve both of them and then save.
+[02:13 -> 02:18] Now that we've gone through all the pending entities, we can see that this page is blank and there's nothing left for us to approve.
+[02:18 -> 02:27] If you do have a setup where you must approve the pending entities, and if no one is checking on whether they should be added or not to Enterprise, the pending entities will still display on your reports.
+[02:27 -> 02:34] But if you try to enter information that would replicate the case size, you may run into an issue where it says the entity already exists.
+[02:34 -> 02:41] An example of this would be a full location adds a case size for a supplier with an order code, and you try to add that same case size.
+[02:41 -> 02:44] It would save the order code is already in use for the supplier.
+[02:44 -> 02:48] You would then either need to approve or ignore to save that case size.
+[02:48 -> 02:51] That is how you use the approved pending items. Thanks for watching.

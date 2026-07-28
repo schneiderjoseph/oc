@@ -1,0 +1,93 @@
+[00:03 -> 00:33] In this video, we're going to go over how to enter a beer store invoice into Optimum Control. Before you actually attempt to do what I'm doing in this video, you probably should watch the other videos I made on taxes and tax groups, because that'll show you how to handle the tax and the deposit of these invoices. So, make sure you watch that video before you start this one. So, first what we're going to do is go over the actual layout of the invoice and what's on there.
+[00:33 -> 01:03] This tends to be a little bit more complicated than normal invoices, just because there's a lot of handwritten notes, and the general layout of the invoice itself is pretty confusing. So, we're going to start by going over the invoice itself. So, I have a beer store invoice. You can see all the customer information on the top. There is some crucial information you'll need for entering this invoice. The first thing you're going to need is the order number, which is just right up here.
+[01:03 -> 01:22] And that order number is the same as an invoice number. So, when you're entering this invoice into Optimum, you're going to want to put this as the invoice number. Below, you'll see the delivery date. So, the delivery date is the date that you're going to enter the invoice for. So, that's just right here.
+[01:22 -> 01:40] And then below, you'll see all the items that you bought on the invoice, just like this. The way it works is you'll see the original quantity shipped. The shipped quantity. So, if something's back ordered or they just don't ship it, you'll see those two numbers are different, and you'll see a short.
+[01:40 -> 01:55] The per unit price, and then the total. So, the total is actually a deposit, a tax, and the total cost for the item. So, when you're looking at totals, just keep that in mind.
+[01:55 -> 02:06] So, if you add up all the things that were purchased under this section, you'll see the total is 507 and 22 cents. Of that, you'll see down here,
+[02:06 -> 02:25] the total GST is 5560 and the deposit is $24. And then below that, you'll see some of the other stuff we've purchased. So, that's the draft totals. Same idea, original quantity, quantity shipped. It'll add it up.
+[02:25 -> 02:43] The total is $3,054.55, of which $299.63 is the HST total, and $450 is the deposit. So, that's kind of the breakdown of the items on the invoice.
+[02:43 -> 03:01] Now, if you add up the total HST from this section, the total HST from that section, that's where you get the total down here. So, the 355.23, that's the actual total of all HST on here, just like the deposit as well.
+[03:01 -> 03:27] So, total deposit, $24 plus 45, that's where we get the 474. So, all that information is laid out here. Then, if we go down to the next page of the invoice, actually, before we get to the next page, you'll see down here, we have a fuel surge charge and a service summary.
+[03:27 -> 03:34] So, that's just the summary of all the different charges. So, this number is important because that's what you're paying in fuel charge.
+[03:34 -> 03:52] So, the $2.89 will be entered onto the invoice. So, we scroll to the next page. On this page here, you're going to get a summary of all the different kinds of deposits and returns.
+[03:52 -> 04:10] So, you'll see it by section. So, it's broken up by glass, these are bottles, you'll see the bigger size glass bottles, there's cans, tetra, it's all broken down here. But, that's where you get into the handwritten notes.
+[04:10 -> 04:28] So, you can see here, there was 16 returned and at $2.40, that gives us the $38. Of the Kigs, 16 of them were returned. So, that's negative $800 because you're getting the money back.
+[04:28 -> 04:38] So, one of them could be a deposit, let's forget your $38 and one of them could be a refund because you're returning. So, that's $800.
+[04:39 -> 04:51] Down here, we have 3 at $2.40 for the glass empty containers. So, that's where $7.20. When you add up those three numbers, we get the total deposit of $845.60.
+[04:51 -> 04:57] Again, that could be handwritten on the invoice. So, just keep an eye out for that.
+[04:57 -> 05:15] Now, we go to the last page of the invoice and that's just the summary of everything we just talked about. So, you'll see here, we have the total purchase with everything added in, that's $3,561.77.
+[05:15 -> 05:29] Then you got your service charge, which was that field charge for $289, and then we have the returns coming off. So, that gives us the grand total of $2,719.66.
+[05:29 -> 05:37] That's what's going to go on the invoice total when we enter this invoice, and that's what we're trying to balance to.
+[05:37 -> 05:42] So, that's the actual layout of the beer store invoice.
+[05:43 -> 05:51] So, with all that information, now we're going to skip over to optimal control. We're actually going to enter this invoice in.
+[05:51 -> 05:59] Once in optimal, select invoices at the top, and we're going to make a new invoice.
+[05:59 -> 06:05] So, now we'll select the supplier. In this case, we're going to select the brewer's retail.
+[06:05 -> 06:16] We're going to put the invoice date. For now, I'm going to keep it as today's date, but again, check out the invoice under the delivery date. That's going to be the proper date to use.
+[06:16 -> 06:31] The invoice number, which again will be the ordered number at the top, and the invoice total, which will be the very last page of the invoice to sum.
+[06:31 -> 06:39] So, in this case, here, it was $2,719.66.
+[06:39 -> 06:44] So, that's the first thing you're going to fill out is the invoice information at the top.
+[06:44 -> 06:50] Now, what you're going to do is just drop in everything that you purchased on the invoice.
+[06:50 -> 06:57] There's several different ways to add the items to the invoice. My personal favorite is just to search by name.
+[06:57 -> 07:07] So, on the search bar to the left, you could type in any kind of item you want to add to the invoice.
+[07:07 -> 07:13] I like to add in everything to the invoice and then put the quantities after.
+[07:13 -> 07:32] So, we're going to start with the actual bottles of beer, and add those on.
+[07:32 -> 07:41] And then we're going to get into some cans and now the cakes.
+[07:41 -> 08:09] So, once we have all these things entered to the invoice, we're actually able to then put in all the other different fees.
+[08:09 -> 08:14] Like I said before, these ones tend to be a little bit more complicated than other invoices,
+[08:14 -> 08:22] because there's so many different handwritten notes and all kinds of deposits and things to watch out for.
+[08:22 -> 08:28] So, it's good to be very careful when entering these invoices.
+[08:28 -> 08:32] All right. So, that's everything that was purchased on this invoice.
+[08:32 -> 08:36] So, now what I like to do is go down the list and just put in the quantities.
+[08:36 -> 08:44] The best way to do that is to use your number keypad on your keyboard followed by Enter,
+[08:44 -> 08:46] because then it'll shift down to the next.
+[08:46 -> 08:53] So, if I enter two cases of Bud Light, Enter, it'll shift down to the next number.
+[08:53 -> 09:14] So, it's very quick to enter in the quantities this way.
+[09:14 -> 09:19] All right. Now, the next thing you're going to do is check all the unit costs.
+[09:19 -> 09:23] So, if a price goes up or down, you'll notice that on the invoice itself.
+[09:23 -> 09:30] So, it's always important to double check your unit costs to make sure nothing's different from the last time you purchased it.
+[09:30 -> 09:38] If there is something that is different in price, you're just going to simply check off the override box and put the new price in.
+[09:38 -> 09:44] But it looks like this invoice actually is, it's all the same prices. So, nothing went up or down.
+[09:44 -> 09:46] So, that makes it easy.
+[09:46 -> 09:50] So, now that we have that entered, the next thing you're going to enter is the expenses.
+[09:50 -> 09:54] So, there's two different kinds of expenses on this invoice.
+[09:54 -> 09:57] There's the fuel surge charge we've seen.
+[09:57 -> 10:03] And then there's also the return for glass.
+[10:03 -> 10:06] So, the first one, I'm just going to go add at the top.
+[10:06 -> 10:12] And I'm going to put this towards alcoholic beverage.
+[10:12 -> 10:14] Now, you could have different GL accounts.
+[10:14 -> 10:16] Every company is a little bit different.
+[10:16 -> 10:23] So, it's up to you to determine which account that this deposits and fuel charges should go to.
+[10:23 -> 10:32] We've got the fuel charge entered.
+[10:32 -> 10:36] And then the next thing would be the returns for the glass.
+[10:36 -> 10:42] So, on this invoice, specifically, the glass return was $7.20.
+[10:42 -> 10:45] So, we're going to add.
+[10:45 -> 10:50] And I'm going to put that towards liquor purchases.
+[10:50 -> 11:02] Actually, I made a mistake there.
+[11:02 -> 11:06] The dollar amount goes to the amount on the right.
+[11:06 -> 11:13] So, instead of description, so that was glass return.
+[11:13 -> 11:15] So, now we'll put in the amounts.
+[11:15 -> 11:24] So, the fuel charge on this invoice was $2.89.
+[11:24 -> 11:32] The glass return was negative because we're getting money back $7.20.
+[11:32 -> 11:37] So, now what you want to do is select taxes and adjustments.
+[11:37 -> 11:44] Taxes and adjustments are going to be the balance of all your deposits and the HSD total.
+[11:44 -> 11:49] So, to do this properly, you're going to actually start with the tax.
+[11:49 -> 11:57] So, we see that the amount of tax on the invoice is a total of $355.23.
+[11:57 -> 12:01] So, we put $355.23 as I did there.
+[12:01 -> 12:10] And then you're going to match that total.
+[12:10 -> 12:15] Now, the $24 depot or deposit is for the bottles.
+[12:15 -> 12:21] And looking at the invoice, we have a total deposit of $38.40.
+[12:21 -> 12:25] So, to get our $38.40, we had the calculated $21.60.
+[12:25 -> 12:29] We added the amount on the invoice of negative $16.80.
+[12:29 -> 12:32] And together, that balances to the $38.40.
+[12:32 -> 12:36] So, you have to do a little bit of math just to make sure this number of balances
+[12:36 -> 12:41] is what you have for your total deposits on the bottles.
+[12:41 -> 12:44] The one below it is your Keg Deposit.
+[12:44 -> 12:50] So, it had the calculated $450 by adding negative $350 to that total.
+[12:50 -> 12:55] We get our total of negative $800, which we have on the invoice as a return.
+[12:55 -> 13:00] So, after you put in all your taxes and adjustments, your expenses,
+[13:00 -> 13:05] and all your items with the appropriate costs, everything should balance.
+[13:05 -> 13:16] You see the invoice total of $2,719.06 matches the $2,719.06 we have on the right under the invoice total.
+[13:16 -> 13:20] Now, we could click Save.
+[13:20 -> 13:23] And in that case, because it all belts, it's saved.
+[13:23 -> 13:27] So, that's how you enter an invoice for the beer store.
+[13:27 -> 13:36] If you have any questions on this, please give us a call at technical support at 1-88-7998-5555.

@@ -1,0 +1,33 @@
+[00:10 -> 00:40] Hi everyone, today we're going to go over how to import invoices into Optimum Control. The first step is to go into the invoices window, from here, invoice import, and then we're going to select the supplier importing from the dropdown. Once we do that, if the supplier has it enabled, we can click get invoices to download files from the FTP site, then they'll display in the window. Once the invoices are downloaded and displaying, on the right hand side they're going to have one of three statuses. Invoice valid means that you can click on the
+[00:40 -> 01:10] checkbox, hit process at the top, and it'll process that invoice. Mis-match total means the invoice total doesn't match the item total. This normally indicates that there are taxes in the invoice that need to be added. To do this, we can click on the status. It will then let you know what the difference is. From there you can check your invoice to make sure that is the taxes, and if it is, we can click OK. Go to the Taxes and Adjustments tab, click Add, put in our taxes,
+[01:10 -> 01:45] we can then save, and when we go back to this window here we see invoice saved. The last status is X number of invalid lines. This means that there are lines on the invoice that cannot be imported due to one of several reasons. We can click on the invalid lines for a list of items and reasons they did not go in. The most common reason is going to be order code not found. This means the order code is not in Optimum Control. To fix this, we can click the dropdown menu, and I'll have a number of different ways to resolve this.
+[01:45 -> 01:54] If it is a new item, you can click Create Item item and it will bring you to the item screen, where you'll be greeted with a new item that you can fill out the information for.
+[01:54 -> 02:00] This is assuming you aren't at the store level enterprise where head office will need to create the item for you.
+[02:00 -> 02:08] If it is not a new item but a new case size, you can click Add Case Size. This will allow you to add a new case size to an existing item.
+[02:08 -> 02:13] If you already have the item and case size in the system, you likely need to add the order code to the item.
+[02:13 -> 02:27] To do that, we can select Modify Case Size, click Go, search up the item. Once we're in here, we can confirm that the case size is correct.
+[02:27 -> 02:37] Once we do that, we can just add in the order code, copy, paste, once we save it, that will be fixed.
+[02:37 -> 02:42] We can click Reprocess to confirm that we have fixed that issue.
+[02:42 -> 02:47] The other options available are General Expense One Time or General Expense.
+[02:47 -> 02:53] If you choose General Expense, you can choose an account for the order code to go towards each time you purchase that order code.
+[02:53 -> 02:58] You can use this for anything you don't want to track, such as expenses for fuel charges or deposits.
+[02:58 -> 03:05] If you choose General Expense One Time, you can choose the account for the order code to go towards for this particular invoice.
+[03:06 -> 03:10] The next most common reason for an item not coming in is a mismatch description.
+[03:10 -> 03:17] This means that the order code is an optimum, but the item it is assigned to has a different case description than what's coming in.
+[03:17 -> 03:22] The options are going to be to be able to modify the case size.
+[03:22 -> 03:27] From there, you can click Go, and it will bring you to the item, and you can do one of two things.
+[03:27 -> 03:33] Either match up the case description with what is coming in, or leave the case description blank so it just goes by the order code.
+[03:34 -> 03:38] In this case, I'm going to take out the case description and save.
+[03:38 -> 03:46] We can then, again, go back to the invoice, reprocess, and we can confirm that that item is no longer an issue.
+[03:46 -> 03:50] The last reason for an item not coming in is because of a mismatched UOM.
+[03:50 -> 03:54] This means that the unit of measure coming in does not match the unit of measure on your item.
+[03:54 -> 03:58] The unit coming in must match either your purchase unit or your split unit.
+[03:58 -> 04:03] You'll normally see this if you buy something by the catch weight, but pounds or kilogram is not to purchase their split unit.
+[04:03 -> 04:09] To fix this, we can modify the case size, click Go, and then bring us to the item.
+[04:09 -> 04:16] In here, we can see that the purchase unit is the case and the split unit is package, where one of them needs to be pounds as that's how we're receiving it.
+[04:16 -> 04:27] So I'm just going to update this to say five pounds, save the item, go back, reprocess, that one is now done.
+[04:28 -> 04:32] This invoice still has a mismatched total, so we can click into there.
+[04:32 -> 04:46] It'll let us know what the difference is, 386, add the tax, save.
+[04:46 -> 04:50] There is a price change, click Continue.
+[04:50 -> 04:56] And then if we go back to the invoice import, we can refresh, and all of the invoices are now done.
+[04:56 -> 04:59] And that's how you import an invoice. Thanks for watching.
