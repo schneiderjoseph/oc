@@ -1,0 +1,24 @@
+# Config audit OC — exemple La Réserve
+client_name: "La Réserve"
+store_id: null
+
+thresholds:
+  stock_value_alert: 15000
+  fuzzy_duplicate_min_score: 0.82
+
+exclude_name_patterns:
+  - "^\\.\\.\\."
+  - "^\\?+$"
+
+spirit_keywords:
+  - GIN
+  - WHISK
+  - RUM
+  - VODKA
+  - TEQUILA
+  - COGNAC
+  - HENNESSY
+
+locations_bar:
+  - Bar
+  - bar

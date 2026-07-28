@@ -2,23 +2,23 @@
 """
 Audit complet base Optimum Control (schéma oc.*) → fichier Excel.
 
+V2 : qualité fiches, doublons flous, amalgames proposés, plan d'action, factures POS enrichies.
+
 Usage typique (accès direct SQL Server sur le poste La Réserve) :
   python oc_db_full_audit.py --server "NOM_SERVEUR\\INSTANCE" --database "NomBaseOC" --trusted
 
 LocalDB (exercice) :
-  python oc_db_full_audit.py --server "(localdb)\\mssqllocaldb" --database ocdata --trusted
-
-Connexion complète :
-  python oc_db_full_audit.py --connection-string "Driver={SQL Server};Server=...;Database=...;Trusted_Connection=yes;"
+  python oc_db_full_audit.py --server "(localdb)\\mssqllocaldb" --database ocdata --trusted --config config.example.yaml
 """
 from __future__ import annotations
 
 import argparse
 import re
-import sys
+import time
 from collections import Counter, defaultdict
 from datetime import date, datetime
 from decimal import Decimal
+from difflib import SequenceMatcher
 from pathlib import Path
 
 import pyodbc
@@ -28,7 +28,24 @@ from openpyxl.utils import get_column_letter
 
 BASE = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE.parents[1]
+VERSION = "2.0.0"
 DEFAULT_OUT = PROJECT_ROOT / "output" / f"OC_Audit_Complet_{date.today():%Y%m%d}.xlsx"
+
+POS_STATUS = {
+    0: "Valid (liee)",
+    1: "Unlinked",
+    2: "Mismatched",
+    3: "Pending",
+    4: "Ignored",
+}
+
+DEFAULT_CONFIG = {
+    "client_name": "",
+    "thresholds": {"stock_value_alert": 15_000, "fuzzy_duplicate_min_score": 0.82},
+    "exclude_name_patterns": [],
+    "spirit_keywords": ["GIN", "WHISK", "RUM", "VODKA", "TEQUILA", "COGNAC", "HENNESSY"],
+    "locations_bar": ["Bar", "bar"],
+}
 
 ODBC_DRIVERS = [
     "ODBC Driver 18 for SQL Server",
@@ -57,8 +74,30 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--connection-string", help="Chaîne ODBC complète (prioritaire)")
     p.add_argument("--output", "-o", type=Path, default=DEFAULT_OUT, help="Fichier .xlsx de sortie")
     p.add_argument("--store-id", type=int, default=None, help="Filtrer sur un magasin (StoreId)")
+    p.add_argument("--config", type=Path, default=None, help="Fichier YAML client (optionnel)")
     p.add_argument("--list-drivers", action="store_true", help="Afficher les drivers ODBC installés")
     return p.parse_args()
+
+
+def load_config(path: Path | None) -> dict:
+    cfg = {**DEFAULT_CONFIG, "thresholds": dict(DEFAULT_CONFIG["thresholds"])}
+    if not path:
+        return cfg
+    try:
+        import yaml
+    except ImportError as exc:
+        raise SystemExit("PyYAML requis pour --config : pip install pyyaml") from exc
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if data.get("client_name"):
+        cfg["client_name"] = data["client_name"]
+    if data.get("thresholds"):
+        cfg["thresholds"].update(data["thresholds"])
+    for k in ("exclude_name_patterns", "spirit_keywords", "locations_bar"):
+        if data.get(k):
+            cfg[k] = data[k]
+    if data.get("store_id") is not None:
+        cfg["store_id"] = data["store_id"]
+    return cfg
 
 
 def build_connection_string(args: argparse.Namespace) -> str:
@@ -270,9 +309,138 @@ def classify_anomalies(item_rows: list[dict]) -> list[dict]:
     return sorted(uniq.values(), key=lambda x: (x["Priorité"], -x["Valeur $"], x["Item"]))
 
 
-# ---------------------------------------------------------------------------
-# Requêtes SQL
-# ---------------------------------------------------------------------------
+def fuzzy_duplicate_groups(item_rows: list[dict], min_score: float = 0.82) -> list[dict]:
+    """Doublons probables par similarite de nom (difflib, sans dependance externe)."""
+    entries = [(r["ItemId"], r.get("Descrip", ""), norm_name(r.get("Descrip", ""))) for r in item_rows]
+    entries = [e for e in entries if e[2] and len(e[2]) >= 4]
+    blocks: dict[str, list] = defaultdict(list)
+    for e in entries:
+        blocks[e[2][:4]].append(e)
+
+    groups: list[dict] = []
+    seen_pairs: set[tuple[int, int]] = set()
+    for block in blocks.values():
+        if len(block) < 2:
+            continue
+        for i in range(len(block)):
+            for j in range(i + 1, len(block)):
+                id_a, name_a, norm_a = block[i]
+                id_b, name_b, norm_b = block[j]
+                if norm_a == norm_b:
+                    continue
+                ratio = SequenceMatcher(None, norm_a, norm_b).ratio()
+                if ratio < min_score:
+                    continue
+                pair = tuple(sorted((id_a, id_b)))
+                if pair in seen_pairs:
+                    continue
+                seen_pairs.add(pair)
+                keep_id = min(id_a, id_b)
+                merge_ids = [x for x in (id_a, id_b) if x != keep_id]
+                groups.append({
+                    "Score": round(ratio, 3),
+                    "Item garder": keep_id,
+                    "Items fusionner": ", ".join(str(x) for x in merge_ids),
+                    "Nom A": name_a,
+                    "Nom B": name_b,
+                    "Action": f"Valider amalgame -> garder ID {keep_id}",
+                })
+    return sorted(groups, key=lambda x: (-x["Score"], x["Nom A"]))
+
+
+def build_quality_issues(item_rows: list[dict], product_rows: list[dict], prep_rows: list[dict]) -> list[dict]:
+    issues = []
+    product_ids = {r["ItemId"] for r in product_rows}
+    prep_ids = {r["ItemId"] for r in prep_rows}
+    products_by_id = {r["ItemId"]: r for r in product_rows}
+    preps_by_id = {r["ItemId"]: r for r in prep_rows}
+
+    for r in item_rows:
+        iid = r.get("ItemId")
+        name = r.get("Descrip", "")
+        typ = r.get("Type", "")
+        if typ == "I":
+            if not r.get("Supplier"):
+                issues.append({"Priorite": "P2", "Type": "Item sans fournisseur", "ItemId": iid, "Item": name,
+                               "Detail": "Aucun CaseSize / fournisseur par defaut"})
+            if not r.get("RecipeUom"):
+                issues.append({"Priorite": "P2", "Type": "Item sans UOM recette", "ItemId": iid, "Item": name, "Detail": ""})
+            if not r.get("PrimaryLocation") and not r.get("SecondaryLocations"):
+                issues.append({"Priorite": "P3", "Type": "Item sans emplacement", "ItemId": iid, "Item": name, "Detail": ""})
+        if r.get("IsDisabled") and typ in ("I", "P"):
+            issues.append({"Priorite": "P3", "Type": "Fiche desactivee", "ItemId": iid, "Item": name, "Detail": typ})
+
+    for r in product_rows:
+        if not r.get("PosId"):
+            issues.append({"Priorite": "P1", "Type": "Product sans POS ID", "ItemId": r["ItemId"],
+                           "Item": r.get("Descrip", ""), "Detail": "Import POS -> Unlinked"})
+        if int(r.get("IngredientCount") or 0) == 0:
+            issues.append({"Priorite": "P1", "Type": "Product sans ingredients", "ItemId": r["ItemId"],
+                           "Item": r.get("Descrip", ""), "Detail": ""})
+
+    for r in prep_rows:
+        if int(r.get("IngredientCount") or 0) == 0:
+            issues.append({"Priorite": "P1", "Type": "Prep sans ingredients", "ItemId": r["ItemId"],
+                           "Item": r.get("Descrip", ""), "Detail": ""})
+        if not r.get("BatchUom"):
+            issues.append({"Priorite": "P2", "Type": "Prep sans batch UOM", "ItemId": r["ItemId"],
+                           "Item": r.get("Descrip", ""), "Detail": ""})
+
+    return issues
+
+
+def build_amalgamation_proposals(dup_rows: list[dict], fuzzy_rows: list[dict]) -> list[dict]:
+    proposals = []
+    for d in dup_rows:
+        ids = [int(x.strip()) for x in str(d.get("ItemIds", "")).split(",") if x.strip().isdigit()]
+        if not ids:
+            continue
+        keep = min(ids)
+        merge = [x for x in ids if x != keep]
+        proposals.append({
+            "Source": "Nom exact",
+            "Garder ItemId": keep,
+            "Fusionner ItemIds": ", ".join(str(x) for x in merge),
+            "Nom": d.get("NomNormalise", d.get("Variantes", "")),
+            "Nb fiches": d.get("NbFiches", len(ids)),
+            "Statut": "A valider par client",
+        })
+    for f in fuzzy_rows[:200]:
+        proposals.append({
+            "Source": f"Similarite {f['Score']}",
+            "Garder ItemId": f["Item garder"],
+            "Fusionner ItemIds": f["Items fusionner"],
+            "Nom": f"{f['Nom A']} / {f['Nom B']}",
+            "Nb fiches": 2,
+            "Statut": "A valider par client",
+        })
+    return proposals
+
+
+def build_action_plan(p1_count: int, p2_count: int, unlinked_count: int, dup_count: int) -> list[dict]:
+    return [
+        {"Semaine": "1", "Phase": "Audit + sauvegarde", "Actions": "Backup OC. Corriger P1 (" + str(p1_count) + "). Valider liste amalgames.",
+         "Livrable": "Rapport P1 + liste fusions"},
+        {"Semaine": "2", "Phase": "Bar / alcools", "Actions": "Unités bottle/oz/ml sur spiritueux. Corriger P2 bar (" + str(p2_count) + ").",
+         "Livrable": "Bar prioritaire OK"},
+        {"Semaine": "3", "Phase": "Amalgamations", "Actions": "Fusionner " + str(dup_count) + " groupes de doublons validés. 2e backup avant fusion.",
+         "Livrable": "Doublons réduits"},
+        {"Semaine": "4", "Phase": "POS + formation", "Actions": "Traiter ventes non liees (" + str(unlinked_count) + "). Daily Sales. Formation equipe.",
+         "Livrable": "0 Unlinked test + guide"},
+    ]
+
+
+def label_sales_status(rows: list[dict]) -> list[dict]:
+    out = []
+    for r in rows:
+        code = r.get("Status", "")
+        try:
+            label = POS_STATUS.get(int(code), f"Inconnu ({code})")
+        except (TypeError, ValueError):
+            label = str(code)
+        out.append({**r, "Statut libelle": label})
+    return out
+
 
 SQL_STORE = """
 SELECT StoreId, Identifier, Name, BusinessName, Address, City, Province, PostalCode,
@@ -519,6 +687,54 @@ GROUP BY t.name
 ORDER BY SUM(p.rows) DESC, t.name
 """
 
+SQL_INVOICE_IMBALANCE = """
+SELECT TOP 200 inv.InvoiceNumber, inv.InvoiceDate, sup.Name AS Fournisseur,
+       inv.Total, inv.ItemTotal, inv.AdjustmentTotal, inv.ExpenseTotal,
+       inv.Total - inv.ItemTotal - inv.AdjustmentTotal - inv.ExpenseTotal AS Balance
+FROM oc.Invoice inv
+LEFT JOIN oc.Supplier sup ON sup.SupplierId = inv.Supplier
+WHERE ABS(inv.Total - inv.ItemTotal - inv.AdjustmentTotal - inv.ExpenseTotal) > 0.02
+ORDER BY inv.InvoiceDate DESC
+"""
+
+SQL_INVOICE_ZERO_COST = """
+SELECT TOP 200 inv.InvoiceNumber, inv.InvoiceDate, i.Descrip, ii.Qty, ii.UnitCost, ii.LineTotal
+FROM oc.InvoiceItem ii
+JOIN oc.Invoice inv ON inv.InvoiceId = ii.Invoice
+JOIN oc.Item i ON i.ItemId = ii.Item
+WHERE ii.UnitCost = 0 OR ii.LineTotal = 0
+ORDER BY inv.InvoiceDate DESC
+"""
+
+SQL_ORDER_CODE_DUPES = """
+SELECT sup.Name AS Fournisseur, cs.OrderCode,
+       COUNT(DISTINCT cs.Item) AS NbItems,
+       STRING_AGG(CAST(i.ItemId AS VARCHAR(12)), ', ') WITHIN GROUP (ORDER BY i.ItemId) AS ItemIds,
+       STRING_AGG(i.Descrip, ' | ') WITHIN GROUP (ORDER BY i.ItemId) AS Items
+FROM oc.CaseSize cs
+JOIN oc.Supplier sup ON sup.SupplierId = cs.Supplier
+JOIN oc.Item i ON i.ItemId = cs.Item
+WHERE cs.OrderCode IS NOT NULL AND LTRIM(RTRIM(cs.OrderCode)) <> ''
+GROUP BY sup.Name, cs.OrderCode
+HAVING COUNT(DISTINCT cs.Item) > 1
+ORDER BY COUNT(DISTINCT cs.Item) DESC
+"""
+
+SQL_SALES_DAILY = """
+SELECT CAST(ss.SalesDate AS date) AS Jour,
+       SUM(CASE WHEN si.Status <> 0 THEN 1 ELSE 0 END) AS NonLiees,
+       COUNT(*) AS TotalLignes
+FROM oc.SalesItem si
+JOIN oc.SalesSource ss ON ss.SalesSourceId = si.SalesSource
+GROUP BY CAST(ss.SalesDate AS date)
+ORDER BY CAST(ss.SalesDate AS date) DESC
+"""
+
+
+# ---------------------------------------------------------------------------
+# Requêtes SQL (suite V1)
+# ---------------------------------------------------------------------------
+
 
 def enrich_items(rows: list[dict]) -> list[dict]:
     for r in rows:
@@ -536,26 +752,34 @@ def enrich_items(rows: list[dict]) -> list[dict]:
     return rows
 
 
-def build_resume(store_rows, item_rows, anomaly_rows, supplier_rows, dup_rows, sales_status) -> list[dict]:
+def build_resume(store_rows, item_rows, anomaly_rows, supplier_rows, dup_rows, sales_status,
+                 quality_rows, fuzzy_rows, meta: dict) -> list[dict]:
     types = Counter(r.get("TypeLabel", r.get("Type", "")) for r in item_rows)
     p_counts = Counter(a["Priorité"] for a in anomaly_rows)
+    q_p1 = sum(1 for q in quality_rows if q.get("Priorite") == "P1")
+    labeled = label_sales_status(sales_status)
     return [
+        {"Indicateur": "Version script", "Valeur": VERSION},
+        {"Indicateur": "Client", "Valeur": meta.get("client_name") or "—"},
         {"Indicateur": "Date audit", "Valeur": date.today().isoformat()},
-        {"Indicateur": "Établissement(s)", "Valeur": ", ".join(r.get("Name", "") for r in store_rows)},
+        {"Indicateur": "Duree (sec)", "Valeur": meta.get("duration_sec", "")},
+        {"Indicateur": "Etablissement(s)", "Valeur": ", ".join(r.get("Name", "") for r in store_rows)},
         {"Indicateur": "Fournisseurs actifs", "Valeur": sum(1 for r in supplier_rows if r.get("Active"))},
         {"Indicateur": "Items (I)", "Valeur": types.get("Item", 0)},
         {"Indicateur": "Preps (P)", "Valeur": types.get("Prep", 0)},
         {"Indicateur": "Products (M)", "Valeur": types.get("Product", 0)},
         {"Indicateur": "Total fiches Item", "Valeur": len(item_rows)},
-        {"Indicateur": "Doublons de noms", "Valeur": len(dup_rows)},
+        {"Indicateur": "Doublons noms exacts", "Valeur": len(dup_rows)},
+        {"Indicateur": "Doublons flous", "Valeur": len(fuzzy_rows)},
         {"Indicateur": "Anomalies P1", "Valeur": p_counts.get("P1", 0)},
         {"Indicateur": "Anomalies P2", "Valeur": p_counts.get("P2", 0)},
         {"Indicateur": "Anomalies P3", "Valeur": p_counts.get("P3", 0)},
+        {"Indicateur": "Qualite P1", "Valeur": q_p1},
         {
-            "Indicateur": "Lignes ventes POS (par statut)",
+            "Indicateur": "Ventes POS (statut)",
             "Valeur": ", ".join(
-                f"{r.get('Status')}={r.get('NbLignes')}" for r in sales_status
-            ) if sales_status else "—",
+                f"{r.get('Statut libelle')}={r.get('NbLignes')}" for r in labeled
+            ) if labeled else "—",
         },
     ]
 
@@ -582,12 +806,22 @@ def build_readme() -> list[dict]:
         {"Section": "Ventes à traiter", "Description": "Lignes non liées (Status ≠ 0)"},
         {"Section": "Inventaires", "Description": "Cycles d'inventaire"},
         {"Section": "Tables (volumes)", "Description": "Nombre de lignes par table oc.*"},
-        {"Section": "Statut POS", "Description": "0 = lié/valid — autres = à vérifier dans OC"},
+        {"Section": "Plan action", "Description": "Semaines 1-4 auto-generees"},
+        {"Section": "Amalgames proposes", "Description": "Fusions a valider par le client"},
+        {"Section": "Qualite fiches", "Description": "Items/preps/products incomplets"},
+        {"Section": "Doublons flous", "Description": "Noms similaires (score >= seuil config)"},
+        {"Section": "Order codes dupes", "Description": "Meme code fournisseur sur 2+ items"},
+        {"Section": "Factures desequilibrees", "Description": "Total != lignes + ajustements"},
+        {"Section": "Factures cout zero", "Description": "Lignes a 0 $"},
+        {"Section": "Ventes par jour", "Description": "Unlinked par jour"},
+        {"Section": "Metadonnees", "Description": "Version, duree, serveur"},
     ]
 
 
-def run_audit(conn: pyodbc.Connection, out_path: Path) -> None:
-    print("Lecture base OC…")
+def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) -> None:
+    cfg = cfg or DEFAULT_CONFIG
+    t0 = time.time()
+    print("Lecture base OC (V2)…")
     store_rows = fetch(conn, SQL_STORE)
     pref_rows = fetch(conn, SQL_PREFERENCES)
     supplier_rows = fetch(conn, SQL_SUPPLIERS)
@@ -603,7 +837,6 @@ def run_audit(conn: pyodbc.Connection, out_path: Path) -> None:
     try:
         dup_rows = fetch(conn, SQL_DUPLICATE_NAMES)
     except pyodbc.Error:
-        # SQL Server < 2017 sans STRING_AGG
         dup_rows = []
         by_n = defaultdict(list)
         for r in item_rows:
@@ -617,23 +850,62 @@ def run_audit(conn: pyodbc.Connection, out_path: Path) -> None:
                     "Variantes": " | ".join(x["Descrip"] for x in grp[:5]),
                 })
 
+    min_fuzzy = float(cfg["thresholds"].get("fuzzy_duplicate_min_score", 0.82))
+    fuzzy_rows = fuzzy_duplicate_groups(item_rows, min_fuzzy)
+    quality_rows = build_quality_issues(item_rows, product_rows, prep_rows)
+    amalgam_rows = build_amalgamation_proposals(dup_rows, fuzzy_rows)
     anomaly_rows = classify_anomalies(item_rows)
     inv_sum = fetch(conn, SQL_INVOICES_SUMMARY)
     inv_recent = fetch(conn, SQL_INVOICES_RECENT)
     sales_status = fetch(conn, SQL_SALES_STATUS)
+    sales_status_l = label_sales_status(sales_status)
     sales_open = fetch(conn, SQL_SALES_UNLINKED)
+    sales_daily = fetch(conn, SQL_SALES_DAILY)
     inventories = fetch(conn, SQL_INVENTORIES)
     table_counts = fetch(conn, SQL_TABLE_COUNTS)
+
+    try:
+        inv_imbalance = fetch(conn, SQL_INVOICE_IMBALANCE)
+    except pyodbc.Error:
+        inv_imbalance = []
+    try:
+        inv_zero = fetch(conn, SQL_INVOICE_ZERO_COST)
+    except pyodbc.Error:
+        inv_zero = []
+    try:
+        order_dupes = fetch(conn, SQL_ORDER_CODE_DUPES)
+    except pyodbc.Error:
+        order_dupes = []
+
+    p1 = sum(1 for a in anomaly_rows if a["Priorité"] == "P1") + sum(1 for q in quality_rows if q.get("Priorite") == "P1")
+    p2 = sum(1 for a in anomaly_rows if a["Priorité"] == "P2") + sum(1 for q in quality_rows if q.get("Priorite") == "P2")
+    unlinked = sum(int(r.get("NbLignes") or 0) for r in sales_status_l if r.get("Status") not in (0, "0"))
+    action_plan = build_action_plan(p1, p2, unlinked, len(dup_rows) + len(fuzzy_rows))
+
+    duration = round(time.time() - t0, 1)
+    meta = {
+        "client_name": cfg.get("client_name", ""),
+        "duration_sec": duration,
+        "version": VERSION,
+        "generated": datetime.now().isoformat(timespec="seconds"),
+    }
+    meta_rows = [{"Cle": k, "Valeur": v} for k, v in meta.items()]
 
     wb = Workbook()
     wb.remove(wb.active)
 
     sheets = [
         ("README", ["Section", "Description"], build_readme()),
-        ("Résumé", ["Indicateur", "Valeur"], build_resume(
-            store_rows, item_rows, anomaly_rows, supplier_rows, dup_rows, sales_status)),
-        ("Établissement", list(store_rows[0].keys()) if store_rows else ["Info"], store_rows),
-        ("Préférences", list(pref_rows[0].keys()) if pref_rows else ["Name", "Value"], pref_rows),
+        ("Resume", ["Indicateur", "Valeur"], build_resume(
+            store_rows, item_rows, anomaly_rows, supplier_rows, dup_rows, sales_status,
+            quality_rows, fuzzy_rows, meta)),
+        ("Plan action", ["Semaine", "Phase", "Actions", "Livrable"], action_plan),
+        ("Amalgames proposes", list(amalgam_rows[0].keys()) if amalgam_rows else ["Garder ItemId"], amalgam_rows),
+        ("Metadonnees", ["Cle", "Valeur"], meta_rows),
+        ("Qualite fiches", list(quality_rows[0].keys()) if quality_rows else ["Priorite", "Type", "Item"], quality_rows),
+        ("Doublons flous", list(fuzzy_rows[0].keys()) if fuzzy_rows else ["Score", "Nom A"], fuzzy_rows),
+        ("Etablissement", list(store_rows[0].keys()) if store_rows else ["Info"], store_rows),
+        ("Preferences", list(pref_rows[0].keys()) if pref_rows else ["Name", "Value"], pref_rows),
         ("Fournisseurs", list(supplier_rows[0].keys()) if supplier_rows else ["SupplierId"], supplier_rows),
         ("Fournisseur-Items", list(supplier_items[0].keys()) if supplier_items else ["Fournisseur"], supplier_items),
         ("Emplacements", list(location_rows[0].keys()) if location_rows else ["Location"], location_rows),
@@ -641,29 +913,33 @@ def run_audit(conn: pyodbc.Connection, out_path: Path) -> None:
         ("Case Sizes", list(case_rows[0].keys()) if case_rows else ["CaseSizeId"], case_rows),
         ("Conversions", list(conv_rows[0].keys()) if conv_rows else ["ItemId"], conv_rows),
         ("Preps", list(prep_rows[0].keys()) if prep_rows else ["ItemId"], prep_rows),
-        ("Ingrédients", list(ing_rows[0].keys()) if ing_rows else ["Recipe"], ing_rows),
+        ("Ingredients", list(ing_rows[0].keys()) if ing_rows else ["Recipe"], ing_rows),
         ("Products", list(product_rows[0].keys()) if product_rows else ["ItemId"], product_rows),
         ("Doublons noms", list(dup_rows[0].keys()) if dup_rows else ["NomNormalise"], dup_rows),
+        ("Order codes dupes", list(order_dupes[0].keys()) if order_dupes else ["Fournisseur"], order_dupes),
         ("Anomalies", list(anomaly_rows[0].keys()) if anomaly_rows else [
             "Priorité", "Type", "ItemId", "Item", "Emplacement", "Impact métier"
         ], anomaly_rows),
-        ("Factures résumé", list(inv_sum[0].keys()) if inv_sum else ["Fournisseur"], inv_sum),
-        ("Factures récentes", list(inv_recent[0].keys()) if inv_recent else ["InvoiceNumber"], inv_recent),
-        ("Ventes statut", list(sales_status[0].keys()) if sales_status else ["Status"], sales_status),
-        ("Ventes à traiter", list(sales_open[0].keys()) if sales_open else ["PluNumber"], sales_open),
+        ("Factures resume", list(inv_sum[0].keys()) if inv_sum else ["Fournisseur"], inv_sum),
+        ("Factures recentes", list(inv_recent[0].keys()) if inv_recent else ["InvoiceNumber"], inv_recent),
+        ("Factures desequilibrees", list(inv_imbalance[0].keys()) if inv_imbalance else ["InvoiceNumber"], inv_imbalance),
+        ("Factures cout zero", list(inv_zero[0].keys()) if inv_zero else ["InvoiceNumber"], inv_zero),
+        ("Ventes statut", list(sales_status_l[0].keys()) if sales_status_l else ["Status"], sales_status_l),
+        ("Ventes a traiter", list(sales_open[0].keys()) if sales_open else ["PluNumber"], sales_open),
+        ("Ventes par jour", list(sales_daily[0].keys()) if sales_daily else ["Jour"], sales_daily),
         ("Inventaires", list(inventories[0].keys()) if inventories else ["InventoryId"], inventories),
-        ("Tables (volumes)", list(table_counts[0].keys()) if table_counts else ["TableName"], table_counts),
+        ("Tables volumes", list(table_counts[0].keys()) if table_counts else ["TableName"], table_counts),
     ]
 
     for title, headers, rows in sheets:
         print(f"  -> {title} ({len(rows)} lignes)")
         ws = write_sheet(wb, title, headers, rows)
-        if title == "Anomalies":
-            color_priority_sheet(ws, headers)
+        if title in ("Anomalies", "Qualite fiches"):
+            color_priority_sheet(ws, headers, prio_col="Priorité" if title == "Anomalies" else "Priorite")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(out_path)
-    print(f"\nFichier créé : {out_path}")
+    print(f"\nFichier cree : {out_path} ({duration}s)")
 
 
 def main() -> None:
@@ -674,10 +950,13 @@ def main() -> None:
             print(f"  - {d}")
         return
     cs = build_connection_string(args)
+    cfg = load_config(args.config)
+    if args.store_id is not None:
+        cfg["store_id"] = args.store_id
     print(f"Connexion : {cs.split('PWD=')[0]}…")
     conn = connect(cs)
     try:
-        run_audit(conn, args.output)
+        run_audit(conn, args.output, cfg)
     finally:
         conn.close()
 
