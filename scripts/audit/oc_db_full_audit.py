@@ -29,7 +29,7 @@ from openpyxl.utils import get_column_letter
 
 BASE = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE.parents[1]
-VERSION = "2.0.0"
+VERSION = "2.0.1"
 DEFAULT_OUT = PROJECT_ROOT / "output" / f"OC_Audit_Complet_{date.today():%Y%m%d}.xlsx"
 
 POS_STATUS = {
@@ -605,7 +605,11 @@ SELECT
     id.TrackInventory,
     id.ActualizeUsage,
     cs.YieldFactor,
-    CASE WHEN de.EntityId IS NOT NULL THEN 1 ELSE 0 END AS IsDisabled
+    CASE WHEN de.EntityId IS NOT NULL THEN 1 ELSE 0 END AS IsDisabled,
+    CASE WHEN de.EntityId IS NOT NULL THEN 'Inactif' ELSE 'Actif' END AS Statut,
+    de.DisabledOn,
+    de.EntityType AS DisabledEntityType,
+    de.Type AS DisabledType
 FROM oc.Item i
 LEFT JOIN oc.[Group] g ON g.GroupId = i.ItemGroup
 LEFT JOIN oc.Category cat ON cat.CategoryId = g.Category
@@ -653,8 +657,35 @@ LEFT JOIN oc.Supplier sup ON sup.SupplierId = cs.Supplier
 LEFT JOIN oc.Uom pu ON pu.UomId = cs.PurchaseUom
 LEFT JOIN oc.Uom cu ON cu.UomId = cs.CaseUom
 LEFT JOIN oc.Uom pku ON pku.UomId = cs.PakUom
-LEFT JOIN oc.DisabledEntity de ON de.EntityId = i.ItemId AND de.EntityType = 1
+-- Inactive OC = ligne dans DisabledEntity (pas de bit Active sur oc.Item).
+-- Ne pas filtrer EntityType=1 seul : certaines bases utilisent d'autres Type/EntityType.
+OUTER APPLY (
+    SELECT TOP 1 de0.EntityId, de0.EntityType, de0.Type, de0.DisabledOn, de0.DisabledBy
+    FROM oc.DisabledEntity de0
+    WHERE de0.EntityId = i.ItemId
+    ORDER BY de0.DisabledOn DESC
+) de
 ORDER BY i.Type, i.Descrip
+"""
+
+SQL_DISABLED_ENTITIES = """
+SELECT
+    de.EntityId,
+    de.EntityType,
+    de.Type AS DisabledType,
+    de.DisabledOn,
+    de.DisabledBy,
+    i.Descrip AS ItemDescrip,
+    i.Type AS ItemType,
+    CASE i.Type
+        WHEN 'I' THEN 'Item' WHEN 'P' THEN 'Prep'
+        WHEN 'M' THEN 'Product' WHEN 'R' THEN 'Product'
+        ELSE i.Type END AS TypeLabel,
+    sup.Name AS SupplierName
+FROM oc.DisabledEntity de
+LEFT JOIN oc.Item i ON i.ItemId = de.EntityId
+LEFT JOIN oc.Supplier sup ON sup.SupplierId = de.EntityId
+ORDER BY de.DisabledOn DESC, de.EntityId
 """
 
 SQL_ITEM_LOCATIONS = """
@@ -888,6 +919,8 @@ def build_resume(store_rows, item_rows, anomaly_rows, supplier_rows, dup_rows, s
         {"Indicateur": "Preps (P)", "Valeur": types.get("Prep", 0)},
         {"Indicateur": "Products (M/R)", "Valeur": types.get("Product", 0)},
         {"Indicateur": "Total fiches Item", "Valeur": len(item_rows)},
+        {"Indicateur": "Fiches actives", "Valeur": sum(1 for r in item_rows if not r.get("IsDisabled"))},
+        {"Indicateur": "Fiches inactives (UI cache)", "Valeur": sum(1 for r in item_rows if r.get("IsDisabled"))},
         {"Indicateur": "Doublons noms exacts", "Valeur": len(dup_rows)},
         {"Indicateur": "Doublons flous", "Valeur": len(fuzzy_rows)},
         {"Indicateur": "Anomalies P1", "Valeur": p_counts.get("P1", 0)},
@@ -913,7 +946,8 @@ def build_readme() -> list[dict]:
         {"Section": "Fournisseur-Items", "Description": "Qui fournit quoi (CaseSize, prix magasin 1)"},
         {"Section": "Emplacements", "Description": "Locations uniques + liste magasins"},
         {"Section": "Item-Locations", "Description": "Item x Location unique + NbMagasins (pas x5)"},
-        {"Section": "Items complet", "Description": "Toutes les fiches avec UOM, stock, emplacement"},
+        {"Section": "Items complet", "Description": "TOUTES les fiches (actifs+inactifs). Colonne Statut. UI OC masque les inactifs sauf Show Inactive"},
+        {"Section": "Desactives", "Description": "Table oc.DisabledEntity + nom item/fournisseur si match EntityId"},
         {"Section": "Case Sizes", "Description": "Tous les conditionnements / prix"},
         {"Section": "Conversions", "Description": "Conversions unités par item"},
         {"Section": "Preps", "Description": "Préparations batch"},
@@ -999,6 +1033,10 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
         store_name_key="StoreName",
         store_id_key="Store",
     )
+    try:
+        disabled_rows = fetch(conn, SQL_DISABLED_ENTITIES)
+    except pyodbc.Error:
+        disabled_rows = []
     case_rows = fetch(conn, SQL_CASE_SIZES)
     conv_rows = fetch(conn, SQL_CONVERSIONS)
     prep_rows = fetch(conn, SQL_PREPS)
@@ -1083,6 +1121,7 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
         ("Emplacements", list(location_rows[0].keys()) if location_rows else ["Location"], location_rows),
         ("Item-Locations", list(item_loc_rows[0].keys()) if item_loc_rows else ["Item"], item_loc_rows),
         ("Items complet", list(item_rows[0].keys()) if item_rows else ["ItemId"], item_rows),
+        ("Desactives", list(disabled_rows[0].keys()) if disabled_rows else ["EntityId"], disabled_rows),
         ("Case Sizes", list(case_rows[0].keys()) if case_rows else ["CaseSizeId"], case_rows),
         ("Conversions", list(conv_rows[0].keys()) if conv_rows else ["ItemId"], conv_rows),
         ("Preps", list(prep_rows[0].keys()) if prep_rows else ["ItemId"], prep_rows),
