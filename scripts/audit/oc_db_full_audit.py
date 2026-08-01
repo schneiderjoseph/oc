@@ -450,6 +450,52 @@ def label_sales_status(rows: list[dict]) -> list[dict]:
     return out
 
 
+def collapse_across_stores(
+    rows: list[dict],
+    *,
+    identity_keys: list[str],
+    store_name_key: str = "Magasin",
+    store_id_key: str = "StoreId",
+    drop_keys: tuple[str, ...] = (),
+) -> list[dict]:
+    """Regroupe les lignes identiques sur plusieurs magasins en 1 ligne + liste Magasins.
+
+    Les cles identity_keys determinent l'egalite : si AccountNumber/Active different
+    entre magasins, les lignes restent separees.
+    """
+    if not rows:
+        return rows
+
+    def _norm(v):
+        if v is None:
+            return ""
+        if isinstance(v, str):
+            return v.strip()
+        return v
+
+    groups: dict[tuple, list[dict]] = defaultdict(list)
+    for r in rows:
+        key = tuple(_norm(r.get(k)) for k in identity_keys)
+        groups[key].append(r)
+
+    out: list[dict] = []
+    for _key, grp in groups.items():
+        skip = set(drop_keys) | {store_name_key, store_id_key, "Store", "StoreName"}
+        base = {k: v for k, v in grp[0].items() if k not in skip}
+        stores = []
+        for g in sorted(grp, key=lambda x: (x.get(store_id_key) or x.get("Store") or 0)):
+            name = g.get(store_name_key) or g.get("StoreName") or g.get(store_id_key) or g.get("Store")
+            if name is not None and str(name) not in stores:
+                stores.append(str(name))
+        base["NbMagasins"] = len(grp)
+        base["Magasins"] = ", ".join(stores)
+        out.append(base)
+    first = identity_keys[0] if identity_keys else None
+    if first:
+        out.sort(key=lambda r: (str(r.get(first) or ""), str(r.get("Magasins") or "")))
+    return out
+
+
 SQL_STORE = """
 SELECT StoreId, Identifier, Name, BusinessName, Address, City, Province, PostalCode,
        Country, Phone, ContactFirstName, ContactLastName, ContactEmail, Comments
@@ -860,9 +906,10 @@ def build_readme() -> list[dict]:
         {"Section": "Établissement", "Description": "Infos magasin / La Réserve (oc.Store)"},
         {"Section": "Préférences", "Description": "Paramètres système OC"},
         {"Section": "Fournisseurs", "Description": "1 ligne par fournisseur (pas de doublon magasin)"},
-        {"Section": "Fournisseur-Comptes", "Description": "Comptes fournisseur par magasin (5 stores)"},
+        {"Section": "Fournisseur-Comptes", "Description": "1 ligne si compte identique multi-magasins ; lignes separees si AccountNumber/Active differents"},
         {"Section": "Fournisseur-Items", "Description": "Qui fournit quoi (CaseSize, prix magasin 1)"},
-        {"Section": "Emplacements", "Description": "Storage locations"},
+        {"Section": "Emplacements", "Description": "Locations uniques + liste magasins"},
+        {"Section": "Item-Locations", "Description": "Item x Location unique + NbMagasins (pas x5)"},
         {"Section": "Items complet", "Description": "Toutes les fiches avec UOM, stock, emplacement"},
         {"Section": "Case Sizes", "Description": "Tous les conditionnements / prix"},
         {"Section": "Conversions", "Description": "Conversions unités par item"},
@@ -886,6 +933,7 @@ def build_readme() -> list[dict]:
         {"Section": "Factures cout zero", "Description": "Lignes a 0 $"},
         {"Section": "Ventes par jour", "Description": "Unlinked par jour"},
         {"Section": "Metadonnees", "Description": "Version, duree, serveur"},
+        {"Section": "Preferences", "Description": "Prefs regroupees si Name+Value identiques multi-magasins"},
     ]
 
 
@@ -898,26 +946,56 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
     supplier_rows = fetch(conn, SQL_SUPPLIERS)
     try:
         supplier_acct_rows = fetch(conn, SQL_SUPPLIER_ACCOUNTS)
+        supplier_acct_rows = collapse_across_stores(
+            supplier_acct_rows,
+            identity_keys=["SupplierId", "Fournisseur", "Active", "AccountNumber", "AccountReference"],
+            store_name_key="Magasin",
+            store_id_key="StoreId",
+        )
     except pyodbc.Error:
         supplier_acct_rows = []
     supplier_items = fetch(conn, SQL_SUPPLIER_ITEMS)
     location_rows = fetch(conn, SQL_LOCATIONS)
+    location_rows = collapse_across_stores(
+        location_rows,
+        identity_keys=["LocationId", "Location"],
+        store_name_key="StoreName",
+        store_id_key="StoreId",
+    )
     item_rows = enrich_items(fetch(conn, SQL_ITEMS_MASTER))
     print(f"  items charges: {len(item_rows)}")
     try:
         item_loc_rows = fetch(conn, SQL_ITEM_LOCATIONS)
+        # enrich emplacements secondaires AVANT collapse (besoin de toutes les lignes)
+        locs_by_item: dict = defaultdict(list)
+        for lr in item_loc_rows:
+            locs_by_item[lr.get("Item")].append(str(lr.get("Location", "")))
+        for r in item_rows:
+            all_locs = [x for x in locs_by_item.get(r.get("ItemId"), []) if x]
+            prim = str(r.get("PrimaryLocation") or "")
+            secs = [x for x in all_locs if x != prim]
+            r["SecondaryLocations"] = ", ".join(dict.fromkeys(secs))
+            r["Emplacement"] = ", ".join(x for x in [prim, r["SecondaryLocations"]] if x)
+        item_loc_rows = collapse_across_stores(
+            item_loc_rows,
+            identity_keys=["Item", "Descrip", "Location"],
+            store_name_key="StoreName",
+            store_id_key="Store",
+            drop_keys=("SortIdx",),
+        )
     except pyodbc.Error:
         item_loc_rows = []
-    # enrich emplacements secondaires depuis ItemLocation
-    locs_by_item: dict = defaultdict(list)
-    for lr in item_loc_rows:
-        locs_by_item[lr.get("Item")].append(str(lr.get("Location", "")))
-    for r in item_rows:
-        all_locs = [x for x in locs_by_item.get(r.get("ItemId"), []) if x]
-        prim = str(r.get("PrimaryLocation") or "")
-        secs = [x for x in all_locs if x != prim]
-        r["SecondaryLocations"] = ", ".join(dict.fromkeys(secs))
-        r["Emplacement"] = ", ".join(x for x in [prim, r["SecondaryLocations"]] if x)
+        for r in item_rows:
+            prim = str(r.get("PrimaryLocation") or "")
+            r["SecondaryLocations"] = ""
+            r["Emplacement"] = prim
+    # Preferences : 1 ligne si Name+Value identiques sur tous les magasins
+    pref_rows = collapse_across_stores(
+        pref_rows,
+        identity_keys=["Name", "Value"],
+        store_name_key="StoreName",
+        store_id_key="Store",
+    )
     case_rows = fetch(conn, SQL_CASE_SIZES)
     conv_rows = fetch(conn, SQL_CONVERSIONS)
     prep_rows = fetch(conn, SQL_PREPS)
