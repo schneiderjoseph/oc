@@ -119,6 +119,9 @@ def build_connection_string(args: argparse.Namespace) -> str:
     else:
         parts.append(f"UID={args.user}")
         parts.append(f"PWD={args.password}")
+    # ODBC Driver 18+ chiffre par defaut ; bases OC locales n'ont souvent pas de cert fiable
+    parts.append("Encrypt=no")
+    parts.append("TrustServerCertificate=yes")
     return ";".join(parts) + ";"
 
 
