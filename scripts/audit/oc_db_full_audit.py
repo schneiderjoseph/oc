@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
 import time
 from collections import Counter, defaultdict
 from datetime import date, datetime
@@ -311,16 +312,20 @@ def classify_anomalies(item_rows: list[dict]) -> list[dict]:
 
 def fuzzy_duplicate_groups(item_rows: list[dict], min_score: float = 0.82) -> list[dict]:
     """Doublons probables par similarite de nom (difflib, sans dependance externe)."""
-    entries = [(r["ItemId"], r.get("Descrip", ""), norm_name(r.get("Descrip", ""))) for r in item_rows]
+    entries = [
+        (r["ItemId"], r.get("Descrip", ""), norm_name(r.get("Descrip", "")))
+        for r in item_rows
+        if r.get("Type") in ("I", "P", "")  # skip products pour perfs
+    ]
     entries = [e for e in entries if e[2] and len(e[2]) >= 4]
     blocks: dict[str, list] = defaultdict(list)
     for e in entries:
-        blocks[e[2][:4]].append(e)
+        blocks[e[2][:5]].append(e)
 
     groups: list[dict] = []
     seen_pairs: set[tuple[int, int]] = set()
     for block in blocks.values():
-        if len(block) < 2:
+        if len(block) < 2 or len(block) > 60:
             continue
         for i in range(len(block)):
             for j in range(i + 1, len(block)):
@@ -345,7 +350,7 @@ def fuzzy_duplicate_groups(item_rows: list[dict], min_score: float = 0.82) -> li
                     "Nom B": name_b,
                     "Action": f"Valider amalgame -> garder ID {keep_id}",
                 })
-    return sorted(groups, key=lambda x: (-x["Score"], x["Nom A"]))
+    return sorted(groups, key=lambda x: (-x["Score"], x["Nom A"]))[:500]
 
 
 def build_quality_issues(item_rows: list[dict], product_rows: list[dict], prep_rows: list[dict]) -> list[dict]:
@@ -457,17 +462,43 @@ ORDER BY p.Store, p.Name
 """
 
 SQL_SUPPLIERS = """
-SELECT sup.SupplierId, sup.Name, sup.Active, sup.Address, sup.City, sup.Province,
-       sup.PostalCode, sup.Country, sup.Phone,
-       sup.ContactFirstName, sup.ContactLastName, sup.ContactEmail,
-       sa.AccountNumber, sa.AccountReference
+SELECT
+    sup.SupplierId,
+    sup.Name,
+    sup.Active,
+    sup.Address,
+    sup.City,
+    sup.Province,
+    sup.PostalCode,
+    sup.Country,
+    sup.Phone,
+    sup.ContactFirstName,
+    sup.ContactLastName,
+    sup.ContactEmail,
+    (SELECT COUNT(*) FROM oc.SupplierAccount sa0 WHERE sa0.Supplier = sup.SupplierId) AS NbComptesMagasin,
+    (SELECT COUNT(*) FROM oc.CaseSize cs0 WHERE cs0.Supplier = sup.SupplierId) AS NbCaseSizes
 FROM oc.Supplier sup
-LEFT JOIN oc.SupplierAccount sa ON sa.Supplier = sup.SupplierId
 ORDER BY sup.Name
 """
 
+SQL_SUPPLIER_ACCOUNTS = """
+SELECT
+    sa.Supplier AS SupplierId,
+    sup.Name AS Fournisseur,
+    sa.Store AS StoreId,
+    st.Name AS Magasin,
+    sa.Active,
+    sa.AccountNumber,
+    sa.AccountReference
+FROM oc.SupplierAccount sa
+JOIN oc.Supplier sup ON sup.SupplierId = sa.Supplier
+LEFT JOIN oc.Store st ON st.StoreId = sa.Store
+ORDER BY sup.Name, sa.Store
+"""
+
 SQL_SUPPLIER_ITEMS = """
-SELECT sup.Name AS Fournisseur,
+SELECT DISTINCT
+       sup.Name AS Fournisseur,
        i.ItemId, i.Type, i.Descrip,
        cs.OrderCode,
        cs.Descrip AS CaseSizeDescrip,
@@ -480,7 +511,12 @@ JOIN oc.Supplier sup ON sup.SupplierId = cs.Supplier
 LEFT JOIN oc.Uom pu ON pu.UomId = cs.PurchaseUom
 LEFT JOIN oc.Uom cu ON cu.UomId = cs.CaseUom
 LEFT JOIN oc.Uom pku ON pku.UomId = cs.PakUom
-LEFT JOIN oc.CaseSizeCost csc ON csc.CaseSize = cs.CaseSizeId AND csc.IsDeleted = 0
+OUTER APPLY (
+    SELECT TOP 1 csc0.*
+    FROM oc.CaseSizeCost csc0
+    WHERE csc0.CaseSize = cs.CaseSizeId AND csc0.IsDeleted = 0
+    ORDER BY CASE WHEN csc0.Store = 1 THEN 0 ELSE 1 END, csc0.Store
+) csc
 ORDER BY sup.Name, i.Descrip
 """
 
@@ -515,15 +551,7 @@ SELECT
     COALESCE(iuc.TrackingCost, csc.UnitCost, 0) AS UnitCostUsed,
     q.QtyOnHand * COALESCE(iuc.TrackingCost, csc.UnitCost, 0) AS StockValue,
     ploc.Name AS PrimaryLocation,
-    STUFF((
-        SELECT ', ' + l2.Name
-        FROM oc.ItemLocation il2
-        JOIN oc.Location l2 ON l2.LocationId = il2.Location
-        WHERE il2.Item = i.ItemId
-          AND (kid.PrimaryLocation IS NULL OR il2.Location <> kid.PrimaryLocation)
-        ORDER BY il2.SortIdx
-        FOR XML PATH(''), TYPE
-    ).value('.', 'NVARCHAR(MAX)'), 1, 2, '') AS SecondaryLocations,
+    CAST('' AS nvarchar(200)) AS SecondaryLocations,
     id.TrackInventory,
     id.ActualizeUsage,
     cs.YieldFactor,
@@ -532,26 +560,60 @@ FROM oc.Item i
 LEFT JOIN oc.[Group] g ON g.GroupId = i.ItemGroup
 LEFT JOIN oc.Category cat ON cat.CategoryId = g.Category
 LEFT JOIN oc.Uom ru ON ru.UomId = i.RecipeUom
-LEFT JOIN oc.ItemDetail id ON id.Item = i.ItemId
-LEFT JOIN oc.KeyItemDetail kid ON kid.Item = i.ItemId
-LEFT JOIN oc.Location ploc ON ploc.LocationId = kid.PrimaryLocation
-LEFT JOIN oc.ItemQtyOnHand q ON q.Item = i.ItemId
-LEFT JOIN oc.ItemUnitCost iuc ON iuc.Item = i.ItemId AND iuc.Active = 1
 OUTER APPLY (
-    SELECT TOP 1 cs.*
-    FROM oc.CaseSize cs
-    WHERE cs.Item = i.ItemId
-    ORDER BY CASE WHEN cs.CaseSizeId = id.DefaultCaseSize THEN 0
-                  WHEN cs.CaseSizeId = id.CurrentCaseSize THEN 1 ELSE 2 END,
-             cs.CaseSizeId
+    SELECT TOP 1 id0.*
+    FROM oc.ItemDetail id0
+    WHERE id0.Item = i.ItemId
+    ORDER BY CASE WHEN id0.Store = 1 THEN 0 ELSE 1 END, id0.Store
+) id
+OUTER APPLY (
+    SELECT TOP 1 kid0.*
+    FROM oc.KeyItemDetail kid0
+    WHERE kid0.Item = i.ItemId
+    ORDER BY CASE WHEN kid0.Store = 1 THEN 0 ELSE 1 END, kid0.Store
+) kid
+LEFT JOIN oc.Location ploc ON ploc.LocationId = kid.PrimaryLocation
+OUTER APPLY (
+    SELECT TOP 1 q0.*
+    FROM oc.ItemQtyOnHand q0
+    WHERE q0.Item = i.ItemId
+    ORDER BY CASE WHEN q0.Store = 1 THEN 0 ELSE 1 END, q0.Store
+) q
+OUTER APPLY (
+    SELECT TOP 1 iuc0.*
+    FROM oc.ItemUnitCost iuc0
+    WHERE iuc0.Item = i.ItemId AND iuc0.Active = 1
+    ORDER BY CASE WHEN iuc0.Store = 1 THEN 0 ELSE 1 END, iuc0.Store
+) iuc
+OUTER APPLY (
+    SELECT TOP 1 cs0.*
+    FROM oc.CaseSize cs0
+    WHERE cs0.Item = i.ItemId
+    ORDER BY CASE WHEN cs0.CaseSizeId = id.DefaultCaseSize THEN 0
+                  WHEN cs0.CaseSizeId = id.CurrentCaseSize THEN 1 ELSE 2 END,
+             cs0.CaseSizeId
 ) cs
-LEFT JOIN oc.CaseSizeCost csc ON csc.CaseSize = cs.CaseSizeId AND csc.IsDeleted = 0
+OUTER APPLY (
+    SELECT TOP 1 csc0.*
+    FROM oc.CaseSizeCost csc0
+    WHERE csc0.CaseSize = cs.CaseSizeId AND csc0.IsDeleted = 0
+    ORDER BY CASE WHEN csc0.Store = 1 THEN 0 ELSE 1 END, csc0.Store
+) csc
 LEFT JOIN oc.Supplier sup ON sup.SupplierId = cs.Supplier
 LEFT JOIN oc.Uom pu ON pu.UomId = cs.PurchaseUom
 LEFT JOIN oc.Uom cu ON cu.UomId = cs.CaseUom
 LEFT JOIN oc.Uom pku ON pku.UomId = cs.PakUom
 LEFT JOIN oc.DisabledEntity de ON de.EntityId = i.ItemId AND de.EntityType = 1
 ORDER BY i.Type, i.Descrip
+"""
+
+SQL_ITEM_LOCATIONS = """
+SELECT il.Item, i.Descrip, l.Name AS Location, il.Store, s.Name AS StoreName, il.SortIdx
+FROM oc.ItemLocation il
+JOIN oc.Item i ON i.ItemId = il.Item
+JOIN oc.Location l ON l.LocationId = il.Location
+LEFT JOIN oc.Store s ON s.StoreId = il.Store
+ORDER BY i.Descrip, il.Store, il.SortIdx
 """
 
 SQL_CASE_SIZES = """
@@ -566,7 +628,12 @@ LEFT JOIN oc.Supplier sup ON sup.SupplierId = cs.Supplier
 LEFT JOIN oc.Uom pu ON pu.UomId = cs.PurchaseUom
 LEFT JOIN oc.Uom cu ON cu.UomId = cs.CaseUom
 LEFT JOIN oc.Uom pku ON pku.UomId = cs.PakUom
-LEFT JOIN oc.CaseSizeCost csc ON csc.CaseSize = cs.CaseSizeId AND csc.IsDeleted = 0
+OUTER APPLY (
+    SELECT TOP 1 csc0.*
+    FROM oc.CaseSizeCost csc0
+    WHERE csc0.CaseSize = cs.CaseSizeId AND csc0.IsDeleted = 0
+    ORDER BY CASE WHEN csc0.Store = 1 THEN 0 ELSE 1 END, csc0.Store
+) csc
 ORDER BY i.Descrip, cs.CaseSizeId
 """
 
@@ -789,8 +856,9 @@ def build_readme() -> list[dict]:
         {"Section": "Résumé", "Description": "Vue d'ensemble chiffrée"},
         {"Section": "Établissement", "Description": "Infos magasin / La Réserve (oc.Store)"},
         {"Section": "Préférences", "Description": "Paramètres système OC"},
-        {"Section": "Fournisseurs", "Description": "Liste fournisseurs + comptes"},
-        {"Section": "Fournisseur-Items", "Description": "Qui fournit quoi (CaseSize)"},
+        {"Section": "Fournisseurs", "Description": "1 ligne par fournisseur (pas de doublon magasin)"},
+        {"Section": "Fournisseur-Comptes", "Description": "Comptes fournisseur par magasin (5 stores)"},
+        {"Section": "Fournisseur-Items", "Description": "Qui fournit quoi (CaseSize, prix magasin 1)"},
         {"Section": "Emplacements", "Description": "Storage locations"},
         {"Section": "Items complet", "Description": "Toutes les fiches avec UOM, stock, emplacement"},
         {"Section": "Case Sizes", "Description": "Tous les conditionnements / prix"},
@@ -825,9 +893,28 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
     store_rows = fetch(conn, SQL_STORE)
     pref_rows = fetch(conn, SQL_PREFERENCES)
     supplier_rows = fetch(conn, SQL_SUPPLIERS)
+    try:
+        supplier_acct_rows = fetch(conn, SQL_SUPPLIER_ACCOUNTS)
+    except pyodbc.Error:
+        supplier_acct_rows = []
     supplier_items = fetch(conn, SQL_SUPPLIER_ITEMS)
     location_rows = fetch(conn, SQL_LOCATIONS)
     item_rows = enrich_items(fetch(conn, SQL_ITEMS_MASTER))
+    print(f"  items charges: {len(item_rows)}")
+    try:
+        item_loc_rows = fetch(conn, SQL_ITEM_LOCATIONS)
+    except pyodbc.Error:
+        item_loc_rows = []
+    # enrich emplacements secondaires depuis ItemLocation
+    locs_by_item: dict = defaultdict(list)
+    for lr in item_loc_rows:
+        locs_by_item[lr.get("Item")].append(str(lr.get("Location", "")))
+    for r in item_rows:
+        all_locs = [x for x in locs_by_item.get(r.get("ItemId"), []) if x]
+        prim = str(r.get("PrimaryLocation") or "")
+        secs = [x for x in all_locs if x != prim]
+        r["SecondaryLocations"] = ", ".join(dict.fromkeys(secs))
+        r["Emplacement"] = ", ".join(x for x in [prim, r["SecondaryLocations"]] if x)
     case_rows = fetch(conn, SQL_CASE_SIZES)
     conv_rows = fetch(conn, SQL_CONVERSIONS)
     prep_rows = fetch(conn, SQL_PREPS)
@@ -907,8 +994,10 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
         ("Etablissement", list(store_rows[0].keys()) if store_rows else ["Info"], store_rows),
         ("Preferences", list(pref_rows[0].keys()) if pref_rows else ["Name", "Value"], pref_rows),
         ("Fournisseurs", list(supplier_rows[0].keys()) if supplier_rows else ["SupplierId"], supplier_rows),
+        ("Fournisseur-Comptes", list(supplier_acct_rows[0].keys()) if supplier_acct_rows else ["SupplierId"], supplier_acct_rows),
         ("Fournisseur-Items", list(supplier_items[0].keys()) if supplier_items else ["Fournisseur"], supplier_items),
         ("Emplacements", list(location_rows[0].keys()) if location_rows else ["Location"], location_rows),
+        ("Item-Locations", list(item_loc_rows[0].keys()) if item_loc_rows else ["Item"], item_loc_rows),
         ("Items complet", list(item_rows[0].keys()) if item_rows else ["ItemId"], item_rows),
         ("Case Sizes", list(case_rows[0].keys()) if case_rows else ["CaseSizeId"], case_rows),
         ("Conversions", list(conv_rows[0].keys()) if conv_rows else ["ItemId"], conv_rows),
@@ -943,6 +1032,10 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
 
 
 def main() -> None:
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     args = parse_args()
     if args.list_drivers:
         print("Drivers ODBC installés :")
