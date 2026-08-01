@@ -318,7 +318,7 @@ def fuzzy_duplicate_groups(item_rows: list[dict], min_score: float = 0.82) -> li
     entries = [
         (r["ItemId"], r.get("Descrip", ""), norm_name(r.get("Descrip", "")))
         for r in item_rows
-        if r.get("Type") in ("I", "P", "")  # skip products pour perfs
+        if r.get("Type") in ("I", "P", "")  # skip products (M/R) pour perfs
     ]
     entries = [e for e in entries if e[2] and len(e[2]) >= 4]
     blocks: dict[str, list] = defaultdict(list)
@@ -581,7 +581,8 @@ SQL_ITEMS_MASTER = """
 SELECT
     i.ItemId,
     i.Type,
-    CASE i.Type WHEN 'I' THEN 'Item' WHEN 'P' THEN 'Prep' WHEN 'M' THEN 'Product' ELSE i.Type END AS TypeLabel,
+    CASE i.Type WHEN 'I' THEN 'Item' WHEN 'P' THEN 'Prep'
+         WHEN 'M' THEN 'Product' WHEN 'R' THEN 'Product' ELSE i.Type END AS TypeLabel,
     i.Descrip,
     g.Descrip AS InventoryGroup,
     cat.Name AS SalesCategory,
@@ -723,16 +724,18 @@ JOIN oc.Uom u ON u.UomId = ing.Uom
 ORDER BY parent.Descrip, ing.Idx
 """
 
+# OC v5 : Products = Type 'M' (Menu) ; certaines bases (ex. La Réserve) utilisent 'R' (Recipe/Product).
 SQL_PRODUCTS = """
-SELECT i.ItemId, i.Descrip, pp.Plu AS PosId, pp.PluDescrip, pp.Price, pp.Active,
+SELECT i.ItemId, i.Type AS TypeCode, i.Descrip,
+       pp.Plu AS PosId, pp.PluDescrip, pp.Price, pp.Active,
        g.Descrip AS SalesGroup, cat.Name AS SalesCategory,
        (SELECT COUNT(*) FROM oc.Ingredient ing WHERE ing.Recipe = i.ItemId) AS IngredientCount
 FROM oc.Item i
-JOIN oc.ProductPrice pp ON pp.Item = i.ItemId
+LEFT JOIN oc.ProductPrice pp ON pp.Item = i.ItemId
 LEFT JOIN oc.[Group] g ON g.GroupId = i.ItemGroup
 LEFT JOIN oc.Category cat ON cat.CategoryId = g.Category
-WHERE i.Type = 'M'
-ORDER BY pp.Plu, i.Descrip
+WHERE i.Type IN ('M', 'R')
+ORDER BY COALESCE(pp.Plu, ''), i.Descrip
 """
 
 SQL_DUPLICATE_NAMES = """
@@ -883,7 +886,7 @@ def build_resume(store_rows, item_rows, anomaly_rows, supplier_rows, dup_rows, s
         {"Indicateur": "Fournisseurs actifs", "Valeur": sum(1 for r in supplier_rows if r.get("Active"))},
         {"Indicateur": "Items (I)", "Valeur": types.get("Item", 0)},
         {"Indicateur": "Preps (P)", "Valeur": types.get("Prep", 0)},
-        {"Indicateur": "Products (M)", "Valeur": types.get("Product", 0)},
+        {"Indicateur": "Products (M/R)", "Valeur": types.get("Product", 0)},
         {"Indicateur": "Total fiches Item", "Valeur": len(item_rows)},
         {"Indicateur": "Doublons noms exacts", "Valeur": len(dup_rows)},
         {"Indicateur": "Doublons flous", "Valeur": len(fuzzy_rows)},
@@ -915,7 +918,7 @@ def build_readme() -> list[dict]:
         {"Section": "Conversions", "Description": "Conversions unités par item"},
         {"Section": "Preps", "Description": "Préparations batch"},
         {"Section": "Ingrédients", "Description": "Recettes (items/preps/products)"},
-        {"Section": "Products", "Description": "Menu + POS ID"},
+        {"Section": "Products", "Description": "Menu Type M ou R + POS ID (LEFT JOIN ProductPrice)"},
         {"Section": "Doublons noms", "Description": "Candidats amalgame (même nom, IDs différents)"},
         {"Section": "Anomalies", "Description": "P1 critique / P2 important / P3 doublons"},
         {"Section": "Factures résumé", "Description": "Achats par fournisseur"},
