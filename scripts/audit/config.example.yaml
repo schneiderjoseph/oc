@@ -4,6 +4,8 @@ store_id: null
 
 thresholds:
   stock_value_alert: 15000
+  unit_cost_absurd: 20000
+  purchase_vs_tracking_max_ratio: 5.0
   fuzzy_duplicate_min_score: 0.82
 
 exclude_name_patterns:

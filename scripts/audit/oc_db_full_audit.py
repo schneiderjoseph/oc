@@ -29,7 +29,7 @@ from openpyxl.utils import get_column_letter
 
 BASE = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE.parents[1]
-VERSION = "2.0.1"
+VERSION = "2.0.2"
 DEFAULT_OUT = PROJECT_ROOT / "output" / f"OC_Audit_Complet_{date.today():%Y%m%d}.xlsx"
 
 POS_STATUS = {
@@ -42,7 +42,12 @@ POS_STATUS = {
 
 DEFAULT_CONFIG = {
     "client_name": "",
-    "thresholds": {"stock_value_alert": 15_000, "fuzzy_duplicate_min_score": 0.82},
+    "thresholds": {
+        "stock_value_alert": 15_000,
+        "unit_cost_absurd": 20_000,
+        "purchase_vs_tracking_max_ratio": 5.0,
+        "fuzzy_duplicate_min_score": 0.82,
+    },
     "exclude_name_patterns": [],
     "spirit_keywords": ["GIN", "WHISK", "RUM", "VODKA", "TEQUILA", "COGNAC", "HENNESSY"],
     "locations_bar": ["Bar", "bar"],
@@ -214,8 +219,18 @@ def conversion_text(cs: dict) -> str:
     return " / ".join(parts)
 
 
-def classify_anomalies(item_rows: list[dict]) -> list[dict]:
-    """Détection P1/P2/P3 — logique alignée sur l'audit La Réserve (bar.csv)."""
+def classify_anomalies(item_rows: list[dict], cfg: dict | None = None) -> list[dict]:
+    """Détection P1/P2/P3 — logique alignée sur l'audit La Réserve (bar.csv).
+
+    Valeur stock élevée n'est P1 que si incohérente avec Qty × coût.
+    Ex. 18 bouteilles × 5 625 $ = OK (P3 info) ; 5 bouteilles × millions = P1.
+    """
+    cfg = cfg or DEFAULT_CONFIG
+    thr = cfg.get("thresholds") or {}
+    value_alert = float(thr.get("stock_value_alert", 15_000))
+    unit_absurd = float(thr.get("unit_cost_absurd", 20_000))
+    max_ratio = float(thr.get("purchase_vs_tracking_max_ratio", 5.0))
+
     by_name = defaultdict(list)
     for r in item_rows:
         by_name[norm_name(r.get("Descrip", ""))].append(r)
@@ -231,6 +246,9 @@ def classify_anomalies(item_rows: list[dict]) -> list[dict]:
         u3 = str(r.get("RecipeUom", "")).lower()
         conv = str(r.get("Conversion", ""))
         val = float(r.get("StockValue") or 0)
+        qty = float(r.get("QtyOnHand") or 0)
+        unit_used = float(r.get("UnitCostUsed") or 0)
+        purchase = float(r.get("PurchasePrice") or 0)
         nkey = norm_name(name)
 
         def add(prio, typ, impact):
@@ -240,6 +258,9 @@ def classify_anomalies(item_rows: list[dict]) -> list[dict]:
                 "ItemId": r.get("ItemId", ""),
                 "Item": name,
                 "Emplacement": loc,
+                "QtyOnHand": round(qty, 3),
+                "Cout suivi": round(unit_used, 4),
+                "Prix achat": round(purchase, 4) if purchase else "",
                 "UOM achat": r.get("PurchaseUom", ""),
                 "UOM case": r.get("CaseUom", ""),
                 "UOM recette": r.get("RecipeUom", ""),
@@ -260,8 +281,34 @@ def classify_anomalies(item_rows: list[dict]) -> list[dict]:
             add("P1", "mg au lieu de ml", "Erreur d'unité — coût portion ×1000.")
         if conv.strip().upper() in ("MUSCADOR", "LIQUOR") or (conv.strip() == "1.12" and "DIMPLE" in name.upper()):
             add("P1", "Conversion non numérique", "Champ conversion incohérent.")
-        if val >= 15_000:
-            add("P1", "Valeur inventaire aberrante", f"Stock valorisé {val:,.0f} $ — vérifier case size / conversion.")
+
+        # Valeur haute : P1 seulement si Qty × coût est incohérent
+        if val >= value_alert:
+            coherent = False
+            if qty > 0 and unit_used > 0 and unit_used < unit_absurd:
+                if purchase > 0:
+                    ratio = unit_used / purchase
+                    coherent = (1.0 / max_ratio) <= ratio <= max_ratio
+                else:
+                    coherent = True
+            if qty <= 0 and unit_used >= unit_absurd:
+                coherent = False
+
+            detail = f"Qty {qty:g} × coût suivi {unit_used:,.2f} = {val:,.0f} $"
+            if purchase:
+                detail += f" (prix achat {purchase:,.2f})"
+            if coherent:
+                add(
+                    "P3",
+                    "Valeur inventaire elevee (coherente)",
+                    f"{detail} — Qty×prix OK, pas un bug conversion. Valider métier si besoin.",
+                )
+            else:
+                add(
+                    "P1",
+                    "Valeur inventaire aberrante",
+                    f"{detail} — incohérent avec Qty/prix ; vérifier case size / conversion / tracking cost.",
+                )
 
         loc_l = loc.lower()
         if loc_l == "bar" or "bar" in loc_l.split(","):
@@ -296,6 +343,9 @@ def classify_anomalies(item_rows: list[dict]) -> list[dict]:
                     "ItemId": ", ".join(str(i) for i in sorted(ids)),
                     "Item": name,
                     "Emplacement": ", ".join(sorted(l for l in locs if l)),
+                    "QtyOnHand": "",
+                    "Cout suivi": "",
+                    "Prix achat": "",
                     "UOM achat": r.get("PurchaseUom", ""),
                     "UOM case": r.get("CaseUom", ""),
                     "UOM recette": r.get("RecipeUom", ""),
@@ -1063,7 +1113,7 @@ def run_audit(conn: pyodbc.Connection, out_path: Path, cfg: dict | None = None) 
     fuzzy_rows = fuzzy_duplicate_groups(item_rows, min_fuzzy)
     quality_rows = build_quality_issues(item_rows, product_rows, prep_rows)
     amalgam_rows = build_amalgamation_proposals(dup_rows, fuzzy_rows)
-    anomaly_rows = classify_anomalies(item_rows)
+    anomaly_rows = classify_anomalies(item_rows, cfg)
     inv_sum = fetch(conn, SQL_INVOICES_SUMMARY)
     inv_recent = fetch(conn, SQL_INVOICES_RECENT)
     sales_status = fetch(conn, SQL_SALES_STATUS)
